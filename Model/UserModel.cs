@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,10 +9,12 @@ namespace Hospital_Reservation_App.Model
 {
     public class UserModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }  
-        public string UserName { get; set; }
+        public string id { get; set; }
+        public string PESEL { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string sex { get; set; }
+        public string email { get; set; }
+        public SecureString Password { get; set; }
     }
 }

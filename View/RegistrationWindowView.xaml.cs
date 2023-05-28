@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Hospital_Reservation_App.View
 {
     /// <summary>
-    /// Interaction logic for StartWindow.xaml
+    /// Interaction logic for RegistrationWindowView.xaml
     /// </summary>
-    public partial class StartWindow : Window
+    public partial class RegistrationWindowView : Window
     {
-        public StartWindow()
+        public RegistrationWindowView()
         {
             InitializeComponent();
         }
@@ -35,6 +35,25 @@ namespace Hospital_Reservation_App.View
         private void btnClose_click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+        private void TextBlockLogin_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var logWindow = new LoginWindowView();
+            this.Close();
+            logWindow.Show();
+        }
+
+        private void btnRegistrate_Click(object sender, RoutedEventArgs e)
+        {
+            this.IsVisibleChanged += (s, ev) =>
+            {
+                var mainView = new LoginWindowView();
+                if (this.IsVisible == false)
+                {
+                    mainView.Show();
+                    this.Close();
+                }
+            };
         }
     }
 }
