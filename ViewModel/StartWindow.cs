@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Hospital_Reservation_App.Model;
+using Hospital_Reservation_App.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -6,74 +8,121 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Net;
+using System.Security.Principal;
+using System.Threading;
 
 namespace Hospital_Reservation_App.ViewModel
 {
     public class StartWindow : ViewModelBase
     {
-        private string _txt;
-        private SecureString _mytxt;
-        private bool _loginAttempt = false;
-        public ICommand command { get; }
+        private string _username;
+        private SecureString _password;
+        private string _errorMessage = "";
+        private string _errorMessage2 = "";
+        private bool _isViewVisible = true;
 
-        public string txt
+        public string username
         {
-            get { return _txt; }
+            get { return _username; }
             set
             {
-                if (txt != value)
+                if (username != value)
                 {
-                    _txt = value;
-                    OnPropertyChanged(nameof(txt));
+                    _username = value;
+                    OnPropertyChanged(nameof(username));
                 }
             }
         }
-        public SecureString mytxt
+        public SecureString password
         {
-            get { return _mytxt; }
+            get { return _password; }
             set
             {
-                    _mytxt = value;
-                    OnPropertyChanged(nameof(mytxt));
+                _password = value; 
+                OnPropertyChanged(nameof(password));
             }
         }
-        public StartWindow()
+        public string errorMessage
         {
-            command = new ViewModelCommand(execute, canExecute);
+            get { return _errorMessage; }
+            set
+            {
+                if (_errorMessage != value)
+                {
+                    _errorMessage = value;
+                    OnPropertyChanged(nameof(errorMessage));
+                }
+
+            }
+        }
+        public string errorMessage2
+        {
+            get { return errorMessage2; }
+            set
+            {
+                if (_errorMessage2 != value)
+                {
+                    _errorMessage2 = value;
+                    OnPropertyChanged(nameof(errorMessage2));
+                }
+            }
+        }
+        public bool isViewVisible
+        {
+            get { return _isViewVisible; }
+            set
+            {
+                if (_isViewVisible != value)
+                {
+                    _isViewVisible = value;
+                    OnPropertyChanged(nameof(isViewVisible));
+                }
+            }
         }
 
-        private bool canExecute(object obj)
+        private IUserRepository userRepository;
+
+        public ICommand LoginCommand { get; }
+
+        public StartWindow()
         {
-            if (SecureStringToString(mytxt) == "123" || _loginAttempt == false)
+            userRepository = new UserRepository();
+            LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
+        }
+
+        private bool CanExecuteLoginCommand(object obj)
+        {
+            bool validData;
+            if (string.IsNullOrWhiteSpace(username))
             {
-                _loginAttempt = false;
-                return true;
+                errorMessage = "Login nie może być pusty!";
+                validData = false;
+            }
+            else if (password == null)
+            {
+                errorMessage = "Hasło nie może być puste!";
+                validData = false;
             }
             else
             {
-                _loginAttempt = true;
-                txt = "Idi w pizdu!!!!";
+                errorMessage = "";
+                validData = true;
             }
-            return false;
+            return validData;
         }
 
-        private void execute(object obj)
+        private void ExecuteLoginCommand(object obj)
         {
-            //txt = "Pizda";
-            
-        }
-
-        private string SecureStringToString(SecureString pass)
-        {
-            IntPtr valuePtr = IntPtr.Zero;
-            try
+            if (userRepository.AuthentificateUser(new NetworkCredential(username, password)))
             {
-                valuePtr = Marshal.SecureStringToGlobalAllocUnicode(pass);
-                return Marshal.PtrToStringUni(valuePtr);
+                Thread.CurrentPrincipal = new GenericPrincipal(
+                    new GenericIdentity(username), null);
+                isViewVisible = false;
             }
-            finally
+            else
             {
-                Marshal.ZeroFreeGlobalAllocUnicode(valuePtr);
+                errorMessage2 = "Ly login lub hasło"; 
             }
         }
     }

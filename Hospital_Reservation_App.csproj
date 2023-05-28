@@ -62,6 +62,9 @@
     <Compile Include="CustomControlls\PassBox.xaml.cs">
       <DependentUpon>PassBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\IUserRepository.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="ViewModel\StartWindow.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelCommand.cs" />
@@ -96,8 +99,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Styles\" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +110,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back-image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
