@@ -33,5 +33,14 @@ namespace Hospital_Reservation_App.View
         {
 
         }
+        private void btnMinimize_click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+        private void btnClose_click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
+
