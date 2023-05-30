@@ -36,7 +36,33 @@ namespace Hospital_Reservation_App.Repositories
 
         public bool AuthentificateUser(NetworkCredential credential)
         {
-            bool validUser = true;
+            bool validUser;
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                string passUserDB = "";
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM 'users' WHERE 'email' = @mail";
+                command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = credential.UserName;
+                MySqlDataReader data = command.ExecuteReader();
+                if (data.HasRows)
+                { 
+                    while (data.Read())
+                    {
+                        passUserDB = Convert.ToString(data.GetValue(6));
+                    }
+                }
+                if (BCrypt.Net.BCrypt.Verify(Convert.ToString(credential.Password), passUserDB))
+                {
+                    validUser = true;
+                }
+                else
+                {
+                    validUser = false;
+                }
+
+            }
             return validUser;
         }
 

@@ -162,9 +162,26 @@ namespace Hospital_Reservation_App.ViewModel
 
         private bool CanExecuteRegistrationCommand(object obj)
         {
-            bool validData = true;
-
-            return validData;
+            bool validCreate;
+            string pattern = @"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$";
+            Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
+            if (string.IsNullOrEmpty(firstname) || firstname.Length < 3)
+            {
+                ErrorMessageRegistration = "Imię musi być więcej 3 znaków!";
+                validCreate = false;
+            }
+            else if (string.IsNullOrEmpty(lastname) || lastname.Length < 3)
+            {
+                ErrorMessageRegistration = "Nazwisko musi być więcej 3 znaków!";
+                validCreate = false;
+            }
+            else if (string.IsNullOrEmpty(email) || !regex.Match(email).Success)
+            {
+                ErrorMessageRegistration = "Niepoprawna poczta!";
+                validCreate = false;
+            }
+            
+            return validCreate;
         }
 
         private void ExecuteRegistrationCommand(object obj)
