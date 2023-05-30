@@ -45,15 +45,9 @@ namespace Hospital_Reservation_App.View
 
         private void btnRegistrate_Click(object sender, RoutedEventArgs e)
         {
-            this.IsVisibleChanged += (s, ev) =>
-            {
-                var mainView = new LoginWindowView();
-                if (this.IsVisible == false)
-                {
-                    mainView.Show();
-                    this.Close();
-                }
-            };
+            var LoginWindow = new LoginWindowView();
+            LoginWindow.Show();
+            this.Close();
         }
     }
 }

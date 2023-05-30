@@ -17,13 +17,13 @@ namespace Hospital_Reservation_App.Repositories
         {
             using (var connection = GetConnection())
             {
-                using(var command = new MySqlCommand()) 
+                using (var command = new MySqlCommand())
                 {
                     string passHash = BCrypt.Net.BCrypt.HashPassword(SecureStringToString(userModel.Password));
                     connection.Open();
                     command.Connection = connection;
-                    command.CommandText = "INSERT INTO users('PESEL', 'firstname', 'lastname', 'sex', 'email', 'password') VALUES (@pesel, @fname, @lname, @sx, @mail, @pass)";
-                    command.Parameters.Add("@pesel", MySqlDbType.VarChar).Value = userModel.PESEL;
+                    command.CommandText = "INSERT INTO users(PESEL, firstname, lastname, sex, email, password) VALUES (@pesel, @fname, @lname, @sx, @mail, @pass)";
+                    command.Parameters.Add("@pesel", MySqlDbType.VarChar).Value = SecureStringToString(userModel.PESEL);
                     command.Parameters.Add("@fname", MySqlDbType.VarChar).Value = userModel.firstName;
                     command.Parameters.Add("@lname", MySqlDbType.VarChar).Value = userModel.lastName;
                     command.Parameters.Add("@sx", MySqlDbType.VarChar).Value = userModel.sex;
@@ -43,11 +43,11 @@ namespace Hospital_Reservation_App.Repositories
                 string passUserDB = "";
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "SELECT * FROM 'users' WHERE 'email' = @mail";
+                command.CommandText = "SELECT * FROM users WHERE email = @mail";
                 command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = credential.UserName;
                 MySqlDataReader data = command.ExecuteReader();
                 if (data.HasRows)
-                { 
+                {
                     while (data.Read())
                     {
                         passUserDB = Convert.ToString(data.GetValue(6));
@@ -78,6 +78,54 @@ namespace Hospital_Reservation_App.Repositories
             {
                 Marshal.ZeroFreeGlobalAllocUnicode(valuePtr);
             }
+        }
+
+        public bool checkMail(string email)
+        {
+            bool validMail;
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT email FROM users WHERE email = @mail";
+                command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = email;
+                validMail = command.ExecuteScalar() == null ? false : true;
+            }
+            return validMail;
+        }
+
+        public bool checkPeselLength(SecureString pesel)
+        {
+            bool validPeselLength;
+            if (SecureStringToString(pesel).Length != 11)
+                validPeselLength = false;
+            else
+                validPeselLength = true;
+            return validPeselLength;
+        }
+
+        public bool checkPeselUser(SecureString pesel)
+        {
+            bool validPeselUser;
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT PESEL FROM users WHERE PESEL = @pesel";
+                command.Parameters.Add("@pesel", MySqlDbType.VarChar).Value = SecureStringToString(pesel);
+                validPeselUser = command.ExecuteScalar() == null ? false : true;
+            }
+            return validPeselUser;
+        }
+
+        public bool checkPassRepeat(SecureString password, SecureString passwordRep)
+        {
+            if (SecureStringToString(password) == SecureStringToString(passwordRep))
+                return true;
+            else
+                return false;
         }
     }
 }

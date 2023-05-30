@@ -158,6 +158,7 @@ namespace Hospital_Reservation_App.ViewModel
         {
             userRepository = new UserRepository();
             LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
+            RegistrationCommand = new ViewModelCommand(ExecuteRegistrationCommand, CanExecuteRegistrationCommand);
         }
 
         private bool CanExecuteRegistrationCommand(object obj)
@@ -180,13 +181,57 @@ namespace Hospital_Reservation_App.ViewModel
                 ErrorMessageRegistration = "Niepoprawna poczta!";
                 validCreate = false;
             }
-            
+            else if (email != null && userRepository.checkMail(email))
+            {
+                ErrorMessageRegistration = "Dana poczta jest juz zarejestrowana!";
+                validCreate = false;
+            }
+            else if (pesel == null)
+            {
+                ErrorMessageRegistration = "PESEl nie może byc pusty";
+                validCreate = false;
+            }
+            else if (pesel != null && !userRepository.checkPeselLength(pesel))
+            {
+                ErrorMessageRegistration = "PESEl musi być 11 znaków!";
+                validCreate = false;
+            }
+            else if (userRepository.checkPeselUser(pesel))
+            {
+                ErrorMessageRegistration = "Taki PESEL jest już zarejestrowany!";
+                validCreate = false;
+            }
+            else if (password == null || password.Length < 6 || passwordRep == null || passwordRep.Length < 6)
+            {
+                ErrorMessageRegistration = "Hasła powinny być więcej niż 6 znaków!";
+                validCreate = false;
+            }
+            else
+            {
+                if (!userRepository.checkPassRepeat(password, passwordRep))
+                {
+                    ErrorMessageRegistration = "Niepoprawne drugie hasło!";
+                    validCreate = false;
+                }
+                else
+                {
+                    ErrorMessageRegistration = "";
+                    validCreate = true;
+                }
+            }
             return validCreate;
         }
 
         private void ExecuteRegistrationCommand(object obj)
         {
-
+            UserModel user = new UserModel();
+            user.firstName = firstname;
+            user.lastName = lastname;
+            user.email = email;
+            user.PESEL = pesel;
+            user.Password = password;
+            user.sex = "m";
+            userRepository.Add(user);
         }
 
         private bool CanExecuteLoginCommand(object obj)
@@ -224,7 +269,6 @@ namespace Hospital_Reservation_App.ViewModel
                 Thread.CurrentPrincipal = new GenericPrincipal(
                     new GenericIdentity(email), null);
                 isViewVisible = false;
-                ErrorMessageLogin = "";
             }
             else
             {

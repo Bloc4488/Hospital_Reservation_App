@@ -10,7 +10,7 @@ namespace Hospital_Reservation_App.Model
     public class UserModel
     {
         public string id { get; set; }
-        public string PESEL { get; set; }
+        public SecureString PESEL { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string sex { get; set; }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,5 +12,9 @@ namespace Hospital_Reservation_App.Model
     {
         void Add(UserModel userModel);
         bool AuthentificateUser(NetworkCredential credential);
+        bool checkMail(string email);
+        bool checkPeselLength(SecureString pesel);
+        bool checkPeselUser(SecureString pesel);
+        bool checkPassRepeat(SecureString password, SecureString passwordRep);
     }
 }
