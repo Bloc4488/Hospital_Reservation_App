@@ -23,5 +23,15 @@ namespace Hospital_Reservation_App.View
         {
             InitializeComponent();
         }
+
+        private void btnReserveVisit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMyAcc_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

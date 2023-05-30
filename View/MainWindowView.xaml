@@ -6,7 +6,178 @@
         xmlns:local="clr-namespace:Hospital_Reservation_App.View"
         mc:Ignorable="d"
         Title="MainWindowView" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+    </Window.Resources>
+
+    <Window.Visibility>
+        <Binding Path="isRegViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
+    </Window.Visibility>
+
+    <Border CornerRadius="10">
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/back-image.jpg"
+                        Stretch="Fill"/>
+        </Border.Background>
+
+        <Border CornerRadius="10"
+                BorderThickness="1"
+                Opacity="0.95" BorderBrush="Black">
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="Aqua" Offset="0.25"/>
+                    <GradientStop Color="#1B1448" Offset="0.95"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="176*"/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="btnExitName"
+                            Command="{Binding RegistrationCommand}"
+                            BorderThickness="0"
+                            Content="Wyloguj się"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="-16,282,614,30" Grid.Row="3" Background="#FFD8352A">
+                    <!--Click="btnRegistrate_Click"--> 
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Border BorderThickness="1" Margin="0,0,630,0" Width="NaN" Height="NaN" Grid.RowSpan="3" BorderBrush="Black" HorizontalAlignment="Right"/>
+                <Button x:Name="btnMyReservations"
+                        BorderThickness="0"
+                        Content="Moje rezerwacje" 
+                        HorizontalAlignment="Left" 
+                        Margin="9,0,0,0" 
+                        Grid.Row="1" 
+                        VerticalAlignment="Top"
+                        Foreground="White"
+                        FontSize="12"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand">
+                    <!--Click="btnReserveVisit_Click"--> 
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnMyAcc"
+                        Content="Moje konto" 
+                        HorizontalAlignment="Left"
+                        Margin="9,208,0,0" 
+                        Grid.Row="2" 
+                        VerticalAlignment="Top"
+                        Foreground="White"
+                        FontSize="12"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnPacients_visits_toDr"
+                        Content="Wizyty do mnie" 
+                        HorizontalAlignment="Left" 
+                        Margin="9,10,0,0" 
+                        Grid.Row="2" 
+                        VerticalAlignment="Top"
+                        Foreground="White"
+                        FontSize="12"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand"> 
+                    <!--Click="btnPacients_vists_toDr_click"-->
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBlock HorizontalAlignment="Left" 
+                           Margin="316,55,0,0" 
+                           Grid.Row="2" 
+                           TextWrapping="Wrap" 
+                           Foreground="White"
+                           Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Hugo Steinhausa we Wrocławiu!" 
+                           VerticalAlignment="Top" 
+                           Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
+
+            </Grid>
+        </Border>
+    </Border>
 </Window>
+
