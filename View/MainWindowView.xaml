@@ -122,20 +122,20 @@
                     </Button>
                 </Grid >
 
-                <Button x:Name="btnMyReservations"
+                <!--<Button x:Name="btnMyReservations"
                         BorderThickness="0"
                         Content="Moje rezerwacje" 
                         HorizontalAlignment="Left" 
                         Grid.Row="2"
                         Grid.Column="1"
-                        Margin="9,10,0,0"  
+                        Margin="5,10,0,0"  
                         VerticalAlignment="Top"
                         Foreground="White"
                         FontSize="12"
                         FontFamily="Monsterrat"
                         Cursor="Hand">
 
-                    <!--Click="btnReserveVisit_Click"-->
+                    --><!--Click="btnReserveVisit_Click"--><!--
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="#462AD8"/>
@@ -148,7 +148,7 @@
                     </Button.Style>
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="150" Height="40"
+                            <Border Width="90" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -156,12 +156,12 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                </Button>
+                </Button>-->
 
-                <Button x:Name="btnPacients_visits_toDr"
+                <!--<Button x:Name="btnPacients_visits_toDr"
                         Content="Wizyty do mnie" 
                         HorizontalAlignment="Left" 
-                        Margin="9,85,0,0" 
+                        Margin="5,85,0,0" 
                         VerticalAlignment="Top"
                         Grid.Row="2"
                         Grid.Column="1"
@@ -169,7 +169,7 @@
                         FontSize="12"
                         FontFamily="Monsterrat"
                         Cursor="Hand">
-                    <!--Click="btnPacients_vists_toDr_click"-->
+                    --><!--Click="btnPacients_vists_toDr_click"--><!--
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="#462AD8"/>
@@ -182,7 +182,7 @@
                     </Button.Style>
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="150" Height="40"
+                            <Border Width="90" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -190,12 +190,48 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                </Button>
+                </Button>-->
 
-                <Button x:Name="btnMyAcc"
+                <Image Source="/Images/reservation-icon.png"
+                           Grid.Row="2"
+                           Grid.Column="1" 
+                           Margin="10,10,0,0" 
+                           Width="50"
+                           Height="50"
+                           Cursor="Hand"
+                           PreviewMouseDown="My_reserevations_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <Image Source="/Images/list_of_visits.png"
+                           Grid.Row="2"
+                           Grid.Column="1" 
+                           Margin="10,85,0,0"
+                           Width="50"
+                           Height="50"
+                           Cursor="Hand"
+                           PreviewMouseDown="Visits_to_doctor_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <Image Source="/Images/user-icon.png"
+                           Grid.Row="2"
+                           Grid.Column="1" 
+                           Margin="10,160,0,0" 
+                           Width="50"
+                           Height="50"
+                           Cursor="Hand"
+                           PreviewMouseDown="My_account_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <Image Source="/Images/Exit_Icon.png"
+                           Grid.Row="2"
+                           Grid.Column="1" 
+                           Margin="10,350,0,6" 
+                           Width="50"
+                           Height="50"
+                           Cursor="Hand"
+                           PreviewMouseDown="Exit_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <!--<Button x:Name="btnMyAcc"
                         Content="Moje konto" 
                         HorizontalAlignment="Left"
-                        Margin="9,160,0,0" 
+                        Margin="5,160,0,0" 
                         Grid.Row="2" 
                         VerticalAlignment="Top"
                         Foreground="White"
@@ -214,7 +250,7 @@
                     </Button.Style>
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="150" Height="40"
+                            <Border Width="90" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -222,23 +258,22 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                </Button>
+                </Button>-->
 
-                <Button x:Name="btnExitName"
-                            Command="{Binding RegistrationCommand}"
-                            BorderThickness="0"
-                            Content="Wyloguj się"
-                            HorizontalAlignment="Left"
-                            Foreground="White"
-                            FontSize="12"
-                            Grid.Column="1"
-                            FontFamily="Monsterrat"
-                            Cursor="Hand"
-                            Margin="9,300,0,0" Grid.Row="2" Background="#FFD8352A">
-                    <!--Click="btnRegistrate_Click"-->
+                <!--<Button x:Name="btnExitName"
+                        Content="Wyloguj się" 
+                        HorizontalAlignment="Left"
+                        Margin="5,350,0,6" 
+                        Grid.Row="2" 
+                        VerticalAlignment="Top"
+                        Foreground="White"
+                        FontSize="12"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand" 
+                        Click="btnExitName_Click">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
-                            <Setter Property="Background" Value="#462AD8"/>
+                            <Setter Property="Background" Value="#FFD8352A"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Background" Value="#28AEED"/>
@@ -248,7 +283,7 @@
                     </Button.Style>
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="150" Height="40"
+                            <Border Width="90" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -256,8 +291,9 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                </Button>
-                <!--<Border BorderThickness="1" Margin="0,-10,632,10" Width="NaN" Height="NaN" Grid.RowSpan="3" BorderBrush="Black" HorizontalAlignment="Right"/>-->
+                </Button>-->
+
+                <Border BorderThickness="1" Margin="0,-10,730,0" Width="NaN" Height="NaN" Grid.RowSpan="3" BorderBrush="#FFF8F8F8" HorizontalAlignment="Right"/>
 
 
 

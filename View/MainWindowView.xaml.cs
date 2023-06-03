@@ -41,6 +41,28 @@ namespace Hospital_Reservation_App.View
         {
             Application.Current.Shutdown();
         }
+
+        private void My_reserevations_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Visits_to_doctor_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void My_account_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Exit_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var logWindow = new LoginWindowView();
+            this.Close();
+            logWindow.Show();
+        }
     }
 }
 

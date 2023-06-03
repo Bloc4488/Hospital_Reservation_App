@@ -187,5 +187,17 @@
   <ItemGroup>
     <Resource Include="Images\email-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\my_acc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\reservation-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Exit_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\list_of_visits.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
