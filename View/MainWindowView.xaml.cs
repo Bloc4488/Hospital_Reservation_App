@@ -44,17 +44,17 @@ namespace Hospital_Reservation_App.View
 
         private void My_reserevations_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            
+
         }
 
         private void Visits_to_doctor_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            
+
         }
 
         private void My_account_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            
+
         }
 
         private void Exit_PreviewMouseDown(object sender, MouseButtonEventArgs e)
@@ -65,4 +65,3 @@ namespace Hospital_Reservation_App.View
         }
     }
 }
-

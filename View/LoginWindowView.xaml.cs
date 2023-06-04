@@ -41,6 +41,7 @@ namespace Hospital_Reservation_App.View
             /*var forWin = new forgotPasswordWindow();
             this.Close();
             forWin.Show();*/
+            MessageBox.Show("In working process!");
         }
 
         private void TextBlockRegister_PreviewMouseDown(object sender, MouseButtonEventArgs e)

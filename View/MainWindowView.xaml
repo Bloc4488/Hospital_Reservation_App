@@ -49,7 +49,7 @@
                     <RowDefinition Height="176*"/>
                 </Grid.RowDefinitions>
 
-                <Grid >
+                <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="25"/>
@@ -86,7 +86,6 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
-
                     <Button x:Name="btnClose"
                             BorderThickness="0"
                             Content="X"
@@ -121,196 +120,61 @@
                         </Button.Template>
                     </Button>
                 </Grid >
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                <!--<Button x:Name="btnMyReservations"
-                        BorderThickness="0"
-                        Content="Moje rezerwacje" 
-                        HorizontalAlignment="Left" 
-                        Grid.Row="2"
-                        Grid.Column="1"
-                        Margin="5,10,0,0"  
-                        VerticalAlignment="Top"
-                        Foreground="White"
-                        FontSize="12"
-                        FontFamily="Monsterrat"
-                        Cursor="Hand">
+                    <StackPanel Grid.Column="0">
+                        <Image Source="/Images/reservation-icon.png"
+                                   Grid.Row="2"
+                                   Grid.Column="1" 
+                                   Margin="10,5,0,0" 
+                                   Width="50"
+                                   Height="50"
+                                   Cursor="Hand"
+                                   PreviewMouseDown="My_reserevations_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
 
-                    --><!--Click="btnReserveVisit_Click"--><!--
-                    <Button.Style>
-                        <Style TargetType="{x:Type Button}">
-                            <Setter Property="Background" Value="#462AD8"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#28AEED"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="90" Height="40"
-                                        CornerRadius="20"
-                                        Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>-->
+                        <Image Source="/Images/list_of_visits.png"
+                                   Grid.Row="2"
+                                   Grid.Column="1" 
+                                   Margin="10,15,0,0"
+                                   Width="50"
+                                   Height="50"
+                                   Cursor="Hand"
+                                   PreviewMouseDown="Visits_to_doctor_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
 
-                <!--<Button x:Name="btnPacients_visits_toDr"
-                        Content="Wizyty do mnie" 
-                        HorizontalAlignment="Left" 
-                        Margin="5,85,0,0" 
-                        VerticalAlignment="Top"
-                        Grid.Row="2"
-                        Grid.Column="1"
-                        Foreground="White"
-                        FontSize="12"
-                        FontFamily="Monsterrat"
-                        Cursor="Hand">
-                    --><!--Click="btnPacients_vists_toDr_click"--><!--
-                    <Button.Style>
-                        <Style TargetType="{x:Type Button}">
-                            <Setter Property="Background" Value="#462AD8"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#28AEED"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="90" Height="40"
-                                        CornerRadius="20"
-                                        Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>-->
+                        <Image Source="/Images/my_acc.png"
+                                   Grid.Row="2"
+                                   Grid.Column="1" 
+                                   Margin="10,15,0,0" 
+                                   Width="50"
+                                   Height="50"
+                                   Cursor="Hand"
+                                   PreviewMouseDown="My_account_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
 
-                <Image Source="/Images/reservation-icon.png"
-                           Grid.Row="2"
-                           Grid.Column="1" 
-                           Margin="10,10,0,0" 
-                           Width="50"
-                           Height="50"
-                           Cursor="Hand"
-                           PreviewMouseDown="My_reserevations_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
-
-                <Image Source="/Images/list_of_visits.png"
-                           Grid.Row="2"
-                           Grid.Column="1" 
-                           Margin="10,85,0,0"
-                           Width="50"
-                           Height="50"
-                           Cursor="Hand"
-                           PreviewMouseDown="Visits_to_doctor_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
-
-                <Image Source="/Images/user-icon.png"
-                           Grid.Row="2"
-                           Grid.Column="1" 
-                           Margin="10,160,0,0" 
-                           Width="50"
-                           Height="50"
-                           Cursor="Hand"
-                           PreviewMouseDown="My_account_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
-
-                <Image Source="/Images/Exit_Icon.png"
-                           Grid.Row="2"
-                           Grid.Column="1" 
-                           Margin="10,350,0,6" 
-                           Width="50"
-                           Height="50"
-                           Cursor="Hand"
-                           PreviewMouseDown="Exit_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
-
-                <!--<Button x:Name="btnMyAcc"
-                        Content="Moje konto" 
-                        HorizontalAlignment="Left"
-                        Margin="5,160,0,0" 
-                        Grid.Row="2" 
-                        VerticalAlignment="Top"
-                        Foreground="White"
-                        FontSize="12"
-                        FontFamily="Monsterrat"
-                        Cursor="Hand">
-                    <Button.Style>
-                        <Style TargetType="{x:Type Button}">
-                            <Setter Property="Background" Value="#462AD8"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#28AEED"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="90" Height="40"
-                                        CornerRadius="20"
-                                        Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>-->
-
-                <!--<Button x:Name="btnExitName"
-                        Content="Wyloguj się" 
-                        HorizontalAlignment="Left"
-                        Margin="5,350,0,6" 
-                        Grid.Row="2" 
-                        VerticalAlignment="Top"
-                        Foreground="White"
-                        FontSize="12"
-                        FontFamily="Monsterrat"
-                        Cursor="Hand" 
-                        Click="btnExitName_Click">
-                    <Button.Style>
-                        <Style TargetType="{x:Type Button}">
-                            <Setter Property="Background" Value="#FFD8352A"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#28AEED"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Width="90" Height="40"
-                                        CornerRadius="20"
-                                        Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>-->
-
-                <Border BorderThickness="1" Margin="0,-10,730,0" Width="NaN" Height="NaN" Grid.RowSpan="3" BorderBrush="#FFF8F8F8" HorizontalAlignment="Right"/>
-
-
-
-                <TextBlock HorizontalAlignment="Left" 
-                           Margin="316,55,0,0" 
-                           Grid.Column="2"
-                           Grid.Row="2" 
-                           TextWrapping="Wrap" 
-                           Foreground="White"
-                           Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Mikołaja Kopernika we Wrocławiu!" 
-                           VerticalAlignment="Top" 
-                           Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
-
-
-
+                        <Image Source="/Images/Exit_Icon.png"
+                                   Grid.Row="2"
+                                   Grid.Column="1" 
+                                   Margin="10,150,0,0" 
+                                   Width="50"
+                                   Height="50"
+                                   Cursor="Hand"
+                                   PreviewMouseDown="Exit_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                    </StackPanel>
+                    <Border Grid.Column="1" BorderThickness="1" Margin="0,0,0,0" Width="NaN" Height="NaN" BorderBrush="#FFF8F8F8" HorizontalAlignment="Right"/>
+                    <TextBlock HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"
+                               Grid.Column="3"
+                               Grid.Row="2" 
+                               TextWrapping="Wrap" 
+                               Foreground="White"
+                               Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Mikołaja Kopernika we Wrocławiu!" 
+                               Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
+                </Grid>
             </Grid>
         </Border>
     </Border>
 </Window>
-

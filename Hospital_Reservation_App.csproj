@@ -113,11 +113,11 @@
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelCommand.cs" />
-    <Compile Include="View\MainWindowView.xaml.cs">
-      <DependentUpon>MainWindowView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\LoginWindowView.xaml.cs">
       <DependentUpon>LoginWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindowView.xaml.cs">
+      <DependentUpon>MainWindowView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\RegistrationWindowView.xaml.cs">
       <DependentUpon>RegistrationWindowView.xaml</DependentUpon>
@@ -162,11 +162,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainWindowView.xaml">
+    <Page Include="View\LoginWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\LoginWindowView.xaml">
+    <Page Include="View\MainWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,16 +188,10 @@
     <Resource Include="Images\email-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\my_acc.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\reservation-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Exit_Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\list_of_visits.png" />
+    <Resource Include="Images\my_acc.png" />
+    <Resource Include="Images\reservation-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

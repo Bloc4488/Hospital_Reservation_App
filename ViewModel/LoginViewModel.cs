@@ -23,10 +23,15 @@ namespace Hospital_Reservation_App.ViewModel
         private SecureString _password;
         private SecureString _passwordRep;
         private SecureString _pesel;
+        
         private string _errorMessageLogin;
         private string _errorMessageRegistration;
+        
         private bool _isViewVisible = true;
         private bool _isRegViewVisible = false;
+
+        private bool _checkBoxMaleChecked = true;
+        private bool _checkBoxFemaleChecked;
 
         public string email
         {
@@ -149,6 +154,34 @@ namespace Hospital_Reservation_App.ViewModel
             }
         }
 
+        public bool CheckBoxMaleChecked
+        {
+            get { return _checkBoxMaleChecked; }
+            set
+            {
+                _checkBoxMaleChecked = value;
+                if (value)
+                {
+                    CheckBoxFemaleChecked = false;
+                }
+                OnPropertyChanged(nameof(CheckBoxMaleChecked));
+            }
+        }
+
+        public bool CheckBoxFemaleChecked
+        {
+            get { return _checkBoxFemaleChecked; }
+            set
+            {
+                _checkBoxFemaleChecked = value;
+                if (value)
+                {
+                    CheckBoxMaleChecked = false;
+                }
+                OnPropertyChanged(nameof(CheckBoxFemaleChecked));
+            }
+        }
+
         private IUserRepository userRepository;
 
         public ICommand LoginCommand { get; }
@@ -230,7 +263,10 @@ namespace Hospital_Reservation_App.ViewModel
             user.email = email;
             user.PESEL = pesel;
             user.Password = password;
-            user.sex = "m";
+            if (CheckBoxMaleChecked)
+                user.sex = "M";
+            else if (CheckBoxFemaleChecked)
+                user.sex = "F";
             userRepository.Add(user);
         }
 
