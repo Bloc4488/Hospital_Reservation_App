@@ -1,4 +1,4 @@
-﻿<Window x:Class="Hospital_Reservation_App.View.MainWindowView"
+﻿<UserControl x:Class="Hospital_Reservation_App.View.MainWindowView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,24 +7,25 @@
         xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
         xmlns:customcontrol="clr-namespace:Hospital_Reservation_App.CustomControlls"
         mc:Ignorable="d"
-        Title="MainWindowView" Height="450" Width="800"
+        d:Height="450" d:Width="800"
+        Background="Transparent">
+    <!--AllowsTransparency="True">-->
+    <!--Title="MainWindowView" Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        WindowStyle="None"
-        Background="Transparent"
-        AllowsTransparency="True">
+        WindowStyle="None"-->
     <!--MouseDown="Window_MouseDown">-->
-    <Window.DataContext>
+    <UserControl.DataContext>
         <viewmodel:MainViewModel/>
-    </Window.DataContext>
+    </UserControl.DataContext>
 
-    <Window.Resources>
+    <UserControl.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
-    </Window.Resources>
+    </UserControl.Resources>
 
-    <Window.Visibility>
+    <UserControl.Visibility>
         <Binding Path="isMainViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
-    </Window.Visibility>
+    </UserControl.Visibility>
 
     <Border CornerRadius="10">
         <Border.Background>
@@ -177,4 +178,4 @@
             </Grid>
         </Border>
     </Border>
-</Window>
+</UserControl>

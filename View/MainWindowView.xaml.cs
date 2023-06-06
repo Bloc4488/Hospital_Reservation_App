@@ -17,7 +17,7 @@ namespace Hospital_Reservation_App.View
     /// <summary>
     /// Interaction logic for MainWindowView.xaml
     /// </summary>
-    public partial class MainWindowView : Window
+    public partial class MainWindowView : UserControl
     {
         public MainWindowView()
         {
@@ -35,7 +35,8 @@ namespace Hospital_Reservation_App.View
         }
         private void btnMinimize_click(object sender, RoutedEventArgs e)
         {
-            WindowState = WindowState.Minimized;
+            Window mainwindow = Window.GetWindow(this);
+            mainwindow.WindowState = WindowState.Minimized;
         }
         private void btnClose_click(object sender, RoutedEventArgs e)
         {
@@ -60,7 +61,9 @@ namespace Hospital_Reservation_App.View
         private void Exit_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             var logWindow = new LoginWindowView();
-            this.Close();
+            //this.Close();
+            var mainWindow = Window.GetWindow(this);
+            mainWindow.Close();
             logWindow.Show();
         }
     }
