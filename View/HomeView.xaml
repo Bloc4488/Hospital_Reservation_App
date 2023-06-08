@@ -5,30 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hospital_Reservation_App.View"
         mc:Ignorable="d"
-        Height="350" Width="600">
+        Height="350" Width="500">
     <Grid>
-        <Border BorderBrush="LightGray" BorderThickness="2">
-            <StackPanel>
-                <TextBlock Text="Jak to działa?"
-                        Foreground="Cyan"
-                               FontSize="40"
-                               FontWeight="Medium"
-                               FontFamily="Montserrat"
-                               HorizontalAlignment="Center"
-                       Margin="10"
-                       TextAlignment="Center"
-                       TextWrapping="WrapWithOverflow"/>
-
-                <TextBlock Text=" "
-                           Foreground="Cyan"
-                               FontSize="23"
-                               FontWeight="Medium"
-                               FontFamily="Montserrat"
-                               HorizontalAlignment="Center"
-                       Margin="5"
-                       TextWrapping="Wrap"
-                       TextAlignment="Justify"/>
-            </StackPanel>
+        <Border BorderBrush="DarkCyan" BorderThickness="2">
+            <TextBlock HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap" 
+                               Foreground="Cyan"
+                               Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Mikołaja Kopernika we Wrocławiu!" 
+                               Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
         </Border>
     </Grid>
 </UserControl>

@@ -24,15 +24,6 @@ namespace Hospital_Reservation_App.View
             InitializeComponent();
         }
 
-        private void btnReserveVisit_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnMyAcc_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
         private void btnMinimize_click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
@@ -48,11 +39,6 @@ namespace Hospital_Reservation_App.View
             {
                 DragMove();
             }
-        }
-
-        private void My_account_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-
         }
 
         private void Exit_PreviewMouseDown(object sender, MouseButtonEventArgs e)

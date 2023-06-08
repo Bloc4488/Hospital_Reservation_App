@@ -32,6 +32,14 @@ namespace Hospital_Reservation_App.Repositories
                     command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = passHash;
                     command.ExecuteNonQuery();
                 }
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "INSERT INTO patients(user_id) VALUES(@id)";
+                    command.Parameters.Add("@id", MySqlDbType.Int64).Value = userModel.id;
+                    command.ExecuteNonQuery();
+                }
             }
         }
 
@@ -155,5 +163,22 @@ namespace Hospital_Reservation_App.Repositories
             }
             return user;
         }
+        /*public bool PatientOrDoctor(int user_id)
+        {
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM patients WHERE user_id = @id";
+                command.Parameters.Add("@id", MySqlDbType.Int64).Value = user_id;
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            if (table.Rows.Count > 0)
+                return true;
+        }*/
     }
 }
