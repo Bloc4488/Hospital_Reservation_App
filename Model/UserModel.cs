@@ -16,6 +16,7 @@ namespace Hospital_Reservation_App.Model
         public string sex { get; set; }
         public string email { get; set; }
         public SecureString Password { get; set; }
+        public string privilege { get; set; }
         public string DisplayName { get; set; }
     }
 }

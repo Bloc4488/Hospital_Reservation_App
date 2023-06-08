@@ -60,7 +60,7 @@ namespace Hospital_Reservation_App.ViewModel
             ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
             ShowPatientViewCommand = new ViewModelCommand(ExecutePatientHomeViewCommand);
             ExecuteShowHomeViewCommand(null);
-            //LoadCuurentAccountData();
+            LoadCurrentAccountData();
         }
         private void ExecuteShowHomeViewCommand(object obj)
         {
@@ -68,9 +68,12 @@ namespace Hospital_Reservation_App.ViewModel
         }
         private void ExecutePatientHomeViewCommand(object obj)
         {
-            ChildView = new PatientMainViewModel();
+            if (CurrentAccount.privilege == "1")
+                ChildView = new PatientMainViewModel();
+            else if (CurrentAccount.privilege == "2")
+                ChildView = new DoctorMainViewModel();
         }
-        private void LoadCuurentAccountData()
+        private void LoadCurrentAccountData()
         {
             var user = userRepository.GetUser(Thread.CurrentPrincipal.Identity.Name);
             if (user != null)
@@ -82,6 +85,7 @@ namespace Hospital_Reservation_App.ViewModel
                 CurrentAccount.sex = user.sex;
                 CurrentAccount.email = user.email;
                 CurrentAccount.Password = user.Password;
+                CurrentAccount.privilege = user.privilege;
                 CurrentAccount.DisplayName = $"Witam {user.firstName} {user.lastName} !";
             }
             else
