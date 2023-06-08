@@ -53,12 +53,14 @@ namespace Hospital_Reservation_App.ViewModel
         }
         public ICommand ShowHomeViewCommand { get; }
         public ICommand ShowPatientViewCommand { get; }
+        public ICommand ShowDoctorViewCommand { get; }
         public MainViewModel()
         {
             userRepository = new UserRepository();
             CurrentAccount = new UserModel();
             ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
             ShowPatientViewCommand = new ViewModelCommand(ExecutePatientHomeViewCommand);
+            ShowDoctorViewCommand = new ViewModelCommand(ExecuteDoctorHomeViewCommand);
             ExecuteShowHomeViewCommand(null);
             //LoadCuurentAccountData();
         }
@@ -69,6 +71,10 @@ namespace Hospital_Reservation_App.ViewModel
         private void ExecutePatientHomeViewCommand(object obj)
         {
             ChildView = new PatientMainViewModel();
+        }
+        private void ExecuteDoctorHomeViewCommand(object obj)
+        {
+            ChildView = new DoctorMainViewModel();
         }
         private void LoadCuurentAccountData()
         {
