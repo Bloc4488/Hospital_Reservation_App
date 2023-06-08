@@ -41,7 +41,7 @@ namespace Hospital_Reservation_App.View
             }
         }
 
-        private void Exit_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private void Exit_Checked(object sender, RoutedEventArgs e)
         {
             var logWindow = new LoginWindowView();
             this.Close();
