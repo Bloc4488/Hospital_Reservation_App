@@ -56,7 +56,13 @@ namespace Hospital_Reservation_App.ViewModel
         {
             userRepository = new UserRepository();
             CurrentAccount = new UserModel();
+            ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
+            ExecuteShowHomeViewCommand(null);
             LoadCuurentAccountData();
+        }
+        private void ExecuteShowHomeViewCommand(object obj)
+        {
+            ChildView = new HomeViewModel();
         }
         private void LoadCuurentAccountData()
         {

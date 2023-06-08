@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Hospital_Reservation_App.View.HomeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital_Reservation_App.View"
+        mc:Ignorable="d"
+        Height="350" Width="600">
+    <Grid>
+        <Border BorderBrush="LightGray" BorderThickness="2">
+            <StackPanel>
+                <TextBlock Text="Jak to działa?"
+                        Foreground="Cyan"
+                               FontSize="40"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"
+                       Margin="10"
+                       TextAlignment="Center"
+                       TextWrapping="WrapWithOverflow"/>
+
+                <TextBlock Text=" "
+                           Foreground="Cyan"
+                               FontSize="23"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"
+                       Margin="5"
+                       TextWrapping="Wrap"
+                       TextAlignment="Justify"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

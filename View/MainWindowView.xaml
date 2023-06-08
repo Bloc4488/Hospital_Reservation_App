@@ -15,17 +15,15 @@
         ResizeMode="NoResize"
         WindowStyle="None"
         MouseDown="Window_MouseDown">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+            <local:HomeView/>
+        </DataTemplate>
+    </Window.Resources>
+
     <Window.DataContext>
         <viewmodel:MainViewModel/>
     </Window.DataContext>
-
-    <Window.Resources>
-        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
-    </Window.Resources>
-
-    <Window.Visibility>
-        <Binding Path="isMainViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
-    </Window.Visibility>
 
     <Border CornerRadius="10">
         <Border.Background>
@@ -154,8 +152,9 @@
                                    Width="50"
                                    Height="50"
                                    Cursor="Hand"
-                                   PreviewMouseDown="My_account_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
-
+                                   HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <Button Content="123"
+                                Command="{Binding ShowHomeViewCommand}"/>
                         <Image Source="/Images/Exit_Icon.png"
                                    Grid.Row="2"
                                    Grid.Column="1" 
@@ -170,12 +169,14 @@
                                Grid.Row="2" >
                         <TextBlock Text="{Binding CurrentAccount.DisplayName}"
                                    Margin="0,5,0,0"/>
-                        <TextBlock HorizontalAlignment="Center" 
+                        <!--<TextBlock HorizontalAlignment="Center" 
                                    Margin="0,100,0,0"
                                    TextWrapping="Wrap" 
                                    Foreground="White"
                                    Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Mikołaja Kopernika we Wrocławiu!" 
-                                   Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
+                                   Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>-->
+                        <ContentControl Content="{Binding ChildView}"
+                                        Margin="25"/>
                     </StackPanel>
                 </Grid>
             </Grid>
