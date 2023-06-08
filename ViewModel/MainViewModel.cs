@@ -16,6 +16,7 @@ namespace Hospital_Reservation_App.ViewModel
         private UserModel _currentAccount;
         private ViewModelBase _childView;
         private string _title;
+        private string _reservationText;
         private IUserRepository userRepository;
         public string StringPass
         {
@@ -51,27 +52,62 @@ namespace Hospital_Reservation_App.ViewModel
                 OnPropertyChanged(nameof(Title));
             }
         }
+        public string ReservationText
+        {
+            get { return _reservationText; }
+            set
+            {
+                _reservationText = value;
+                OnPropertyChanged(nameof(ReservationText));
+            }
+        }
         public ICommand ShowHomeViewCommand { get; }
-        public ICommand ShowPatientViewCommand { get; }
+        public ICommand ShowReservationsViewCommand { get; }
+        public ICommand ShowAddReservationViewCommand { get; }
+        public ICommand ShowSettingsViewCommand { get; }
         public MainViewModel()
         {
             userRepository = new UserRepository();
             CurrentAccount = new UserModel();
             ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
-            ShowPatientViewCommand = new ViewModelCommand(ExecutePatientHomeViewCommand);
+            ShowReservationsViewCommand = new ViewModelCommand(ExecuteReservationsViewCommand);
+            ShowAddReservationViewCommand = new ViewModelCommand(ExecuteAddReservationViewCommand);
+            ShowSettingsViewCommand = new ViewModelCommand(ExecuteSettingsViewCommand);
             ExecuteShowHomeViewCommand(null);
             LoadCurrentAccountData();
         }
         private void ExecuteShowHomeViewCommand(object obj)
         {
             ChildView = new HomeViewModel();
+            Title = "Menu główne";
         }
-        private void ExecutePatientHomeViewCommand(object obj)
+        private void ExecuteReservationsViewCommand(object obj)
         {
             if (CurrentAccount.privilege == "1")
+            {
                 ChildView = new PatientMainViewModel();
+                Title = "Rezerwacje";
+            }
             else if (CurrentAccount.privilege == "2")
+            {
                 ChildView = new DoctorMainViewModel();
+                Title = "Wizyty";
+            }
+            else if (CurrentAccount.privilege == "0")
+            {
+                ChildView = new AdminViewModel();
+                Title = "Użytkownicy";
+            }
+        }
+        private void ExecuteAddReservationViewCommand(object obj)
+        {
+            ChildView = new AddReservationViewModel();
+            Title = "Dodawanie rezerwacji";
+        }
+        private void ExecuteSettingsViewCommand(object obj)
+        {
+            ChildView = new SettingsViewModel();
+            Title = "Ustawienia";
         }
         private void LoadCurrentAccountData()
         {
@@ -86,6 +122,12 @@ namespace Hospital_Reservation_App.ViewModel
                 CurrentAccount.email = user.email;
                 CurrentAccount.Password = user.Password;
                 CurrentAccount.privilege = user.privilege;
+                if (CurrentAccount.privilege == "1")
+                    ReservationText = "Rezerwacje";
+                else if (CurrentAccount.privilege == "2")
+                    ReservationText = "Wizyty";
+                else if (CurrentAccount.privilege == "0")
+                    ReservationText = "Użytkownicy";
                 CurrentAccount.DisplayName = $"Witam {user.firstName} {user.lastName} !";
             }
             else
