@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
@@ -126,6 +127,33 @@ namespace Hospital_Reservation_App.Repositories
                 return true;
             else
                 return false;
+        }
+        public UserModel GetUser(string Email)
+        {
+            UserModel user = new UserModel();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM users WHERE email = @mail";
+                command.Parameters.Add("@mail", MySqlDbType.VarChar).Value=Email;
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach(DataRow row in table.Rows)
+            {
+                user.id = row[0].ToString();
+                user.PESEL = new NetworkCredential("", row[1].ToString()).SecurePassword;
+                user.firstName = row[2].ToString();
+                user.lastName = row[3].ToString();
+                user.sex = row[4].ToString();
+                user.email = row[5].ToString();
+                user.Password = new NetworkCredential("", row[6].ToString()).SecurePassword;
+            }
+            return user;
         }
     }
 }

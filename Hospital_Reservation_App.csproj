@@ -105,9 +105,12 @@
     <Compile Include="CustomControlls\PassBox.xaml.cs">
       <DependentUpon>PassBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\IUserAccountRepository.cs" />
     <Compile Include="Model\IUserRepository.cs" />
+    <Compile Include="Model\UserAccountModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Repositories\DataBaseRepository.cs" />
+    <Compile Include="Repositories\UserAccountRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />

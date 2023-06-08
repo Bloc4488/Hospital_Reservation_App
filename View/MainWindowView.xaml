@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Hospital_Reservation_App.View.MainWindowView"
+﻿<Window x:Class="Hospital_Reservation_App.View.MainWindowView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,24 +8,24 @@
         xmlns:customcontrol="clr-namespace:Hospital_Reservation_App.CustomControlls"
         mc:Ignorable="d"
         d:Height="450" d:Width="800"
-        Background="Transparent">
-    <!--AllowsTransparency="True">-->
-    <!--Title="MainWindowView" Height="450" Width="800"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Title="MainWindowView" Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        WindowStyle="None"-->
-    <!--MouseDown="Window_MouseDown">-->
-    <UserControl.DataContext>
+        WindowStyle="None"
+        MouseDown="Window_MouseDown">
+    <Window.DataContext>
         <viewmodel:MainViewModel/>
-    </UserControl.DataContext>
+    </Window.DataContext>
 
-    <UserControl.Resources>
+    <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
-    </UserControl.Resources>
+    </Window.Resources>
 
-    <UserControl.Visibility>
+    <Window.Visibility>
         <Binding Path="isMainViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
-    </UserControl.Visibility>
+    </Window.Visibility>
 
     <Border CornerRadius="10">
         <Border.Background>
@@ -166,16 +166,19 @@
                                    PreviewMouseDown="Exit_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
                     </StackPanel>
                     <Border Grid.Column="1" BorderThickness="1" Margin="0,0,0,0" Width="NaN" Height="NaN" BorderBrush="#FFF8F8F8" HorizontalAlignment="Right"/>
-                    <TextBlock HorizontalAlignment="Center" 
-                               VerticalAlignment="Center"
-                               Grid.Column="3"
-                               Grid.Row="2" 
-                               TextWrapping="Wrap" 
-                               Foreground="White"
-                               Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Mikołaja Kopernika we Wrocławiu!" 
-                               Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
+                    <StackPanel Grid.Column="3"
+                               Grid.Row="2" >
+                        <TextBlock Text="{Binding CurrentAccount.DisplayName}"
+                                   Margin="0,5,0,0"/>
+                        <TextBlock HorizontalAlignment="Center" 
+                                   Margin="0,100,0,0"
+                                   TextWrapping="Wrap" 
+                                   Foreground="White"
+                                   Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Mikołaja Kopernika we Wrocławiu!" 
+                                   Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
+                    </StackPanel>
                 </Grid>
             </Grid>
         </Border>
     </Border>
-</UserControl>
+</Window>

@@ -16,5 +16,6 @@ namespace Hospital_Reservation_App.Model
         bool checkPeselLength(SecureString pesel);
         bool checkPeselUser(SecureString pesel);
         bool checkPassRepeat(SecureString password, SecureString passwordRep);
+        UserModel GetUser(string Email);
     }
 }
