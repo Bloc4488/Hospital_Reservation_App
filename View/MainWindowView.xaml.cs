@@ -50,16 +50,6 @@ namespace Hospital_Reservation_App.View
             }
         }
 
-        private void My_reserevations_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void Visits_to_doctor_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
         private void My_account_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
 
@@ -68,9 +58,7 @@ namespace Hospital_Reservation_App.View
         private void Exit_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             var logWindow = new LoginWindowView();
-            //this.Close();
-            var mainWindow = Window.GetWindow(this);
-            mainWindow.Close();
+            this.Close();
             logWindow.Show();
         }
     }
