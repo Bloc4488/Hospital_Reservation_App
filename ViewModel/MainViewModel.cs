@@ -150,18 +150,6 @@ namespace Hospital_Reservation_App.ViewModel
                 CurrentAccount.email = user.email;
                 CurrentAccount.Password = user.Password;
                 CurrentAccount.privilege = user.privilege;
-                if (CurrentAccount.privilege == "1")
-                {
-
-                }
-                else if (CurrentAccount.privilege == "2")
-                {
-
-                }
-                else if (CurrentAccount.privilege == "0")
-                {
-
-                }
                 CurrentAccount.DisplayName = $"Witam {user.firstName} {user.lastName} !";
             }
             else

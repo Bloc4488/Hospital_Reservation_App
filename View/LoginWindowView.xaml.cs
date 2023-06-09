@@ -20,11 +20,9 @@ namespace Hospital_Reservation_App.View
     /// </summary>
     public partial class LoginWindowView : Window
     {
-        private LoginViewModel _loginVM;
         public LoginWindowView()
         {
             InitializeComponent();
-            _loginVM = new LoginViewModel();
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
