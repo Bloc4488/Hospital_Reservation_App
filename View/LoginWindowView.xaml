@@ -13,7 +13,8 @@
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True"
-        MouseDown="Window_MouseDown">
+        MouseDown="Window_MouseDown"
+        IsEnabled="{Binding isViewVisible}">
     <Window.DataContext>
         <viewmodel:LoginViewModel/>
     </Window.DataContext>
@@ -203,8 +204,7 @@
                             FontSize="12"
                             FontFamily="Monsterrat"
                             Cursor="Hand"
-                            Margin="0,30,0,0"
-                            Click="btnLogin_Click">
+                            Margin="0,30,0,0">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#462AD8"/>

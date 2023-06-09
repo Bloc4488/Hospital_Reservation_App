@@ -8,7 +8,7 @@
         xmlns:customcontrol="clr-namespace:Hospital_Reservation_App.CustomControlls"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d"
-        Title="MainWindowView" Height="450" Width="800"
+        Title="MainWindowView" Height="750" Width="1200"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         WindowStyle="None"
@@ -159,12 +159,33 @@
                             </StackPanel>
                         </RadioButton>
                         <RadioButton Style="{StaticResource menuButton}"
-                                     Tag="{StaticResource color2}"
+                                     Tag="{StaticResource color10}"
                                      Margin="0,10,0,0"
-                                     Command="{Binding ShowReservationsViewCommand}">
+                                     Command="{Binding ShowUsersAdminViewCommand}"
+                                     Visibility="{Binding IsVisibleUsers, UpdateSourceTrigger=PropertyChanged}">
                             <StackPanel Orientation="Horizontal">
                                 <fa:IconImage Icon="List" Style="{StaticResource menuButtonIcon}"/>
-                                <TextBlock Text="{Binding ReservationText}" Style="{StaticResource menuButtonText}"/>
+                                <TextBlock Text="Użytkownicy" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color2}"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowReservationsViewCommand}"
+                                     Visibility="{Binding IsVisibleReservation, UpdateSourceTrigger=PropertyChanged}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="List" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Rezerwacje" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color2}"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowVisitsViewCommand}"
+                                     Visibility="{Binding IsVisibleVisits, UpdateSourceTrigger=PropertyChanged}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="List" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Wizyty" Style="{StaticResource menuButtonText}"/>
                             </StackPanel>
                         </RadioButton>
                         <RadioButton Style="{StaticResource menuButton}"
@@ -185,16 +206,16 @@
                                 <TextBlock Text="Ustawienia" Style="{StaticResource menuButtonText}"/>
                             </StackPanel>
                         </RadioButton>
-                        <RadioButton Style="{StaticResource menuButton}"
-                                     Tag="{StaticResource color5}"
-                                     Margin="0,100,0,0"
-                                     Checked="Exit_Checked">
-                            <StackPanel Orientation="Horizontal">
-                                <fa:IconImage Icon="RightFromBracket" Style="{StaticResource menuButtonIcon}"/>
-                                <TextBlock Text="Wyłoguj się" Style="{StaticResource menuButtonText}"/>
-                            </StackPanel>
-                        </RadioButton>
                     </StackPanel>
+                    <RadioButton Grid.Column="0" Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color5}"
+                                     Margin="0,600,0,0"
+                                     Checked="Exit_Checked">
+                        <StackPanel Orientation="Horizontal">
+                            <fa:IconImage Icon="RightFromBracket" Style="{StaticResource menuButtonIcon}"/>
+                            <TextBlock Text="Wyłoguj się" Style="{StaticResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
                     <Border Grid.Column="1" BorderThickness="1" Margin="0,0,0,0" Width="NaN" Height="NaN" BorderBrush="#FFF8F8F8" HorizontalAlignment="Right"/>
                     <ContentControl Content="{Binding ChildView}"
                                     Grid.Column="2"

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hospital_Reservation_App.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,11 @@ namespace Hospital_Reservation_App.View
     /// </summary>
     public partial class LoginWindowView : Window
     {
+        private LoginViewModel _loginVM;
         public LoginWindowView()
         {
             InitializeComponent();
+            _loginVM = new LoginViewModel();
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -51,17 +54,5 @@ namespace Hospital_Reservation_App.View
             regWindow.Show();
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            this.IsVisibleChanged += (s, ev) =>
-            {
-                var mainView = new MainWindowView();
-                if (this.IsVisible == false)
-                {
-                    mainView.Show();
-                    this.Close();
-                }
-            };
-        }
     }
 }

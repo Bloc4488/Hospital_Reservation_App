@@ -16,8 +16,11 @@ namespace Hospital_Reservation_App.ViewModel
         private UserModel _currentAccount;
         private ViewModelBase _childView;
         private string _title;
-        private string _reservationText;
-        private IUserRepository userRepository;
+
+        private System.Windows.Visibility _isVisibleReservation = System.Windows.Visibility.Collapsed;
+        private System.Windows.Visibility _isVisibleVisits = System.Windows.Visibility.Collapsed;
+        private System.Windows.Visibility _isVisibleUsers = System.Windows.Visibility.Collapsed;
+
         public string StringPass
         {
             get
@@ -52,52 +55,77 @@ namespace Hospital_Reservation_App.ViewModel
                 OnPropertyChanged(nameof(Title));
             }
         }
-        public string ReservationText
+        public System.Windows.Visibility IsVisibleReservation
         {
-            get { return _reservationText; }
+            get { return _isVisibleReservation; }
             set
             {
-                _reservationText = value;
-                OnPropertyChanged(nameof(ReservationText));
+                if (_isVisibleReservation != value)
+                {
+                    _isVisibleReservation = value;
+                    OnPropertyChanged(nameof(IsVisibleReservation));
+                }
+            }
+        }
+        public System.Windows.Visibility IsVisibleVisits
+        {
+            get { return _isVisibleVisits; }
+            set
+            {
+                if (_isVisibleVisits != value)
+                {
+                    _isVisibleVisits = value;
+                    OnPropertyChanged(nameof(IsVisibleVisits));
+                }
+            }
+        }
+        public System.Windows.Visibility IsVisibleUsers
+        {
+            get { return _isVisibleUsers; }
+            set
+            {
+                if (_isVisibleUsers != value)
+                {
+                    _isVisibleUsers = value;
+                    OnPropertyChanged(nameof(IsVisibleUsers));
+                }
             }
         }
         public ICommand ShowHomeViewCommand { get; }
+        public ICommand ShowUsersAdminViewCommand { get; }
+        public ICommand ShowVisitsViewCommand { get; }
         public ICommand ShowReservationsViewCommand { get; }
         public ICommand ShowAddReservationViewCommand { get; }
         public ICommand ShowSettingsViewCommand { get; }
+
+        private IUserRepository userRepository;
         public MainViewModel()
         {
             userRepository = new UserRepository();
             CurrentAccount = new UserModel();
             ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
+            ShowUsersAdminViewCommand = new ViewModelCommand(ExecuteShowUsersAdminViewCommand);
             ShowReservationsViewCommand = new ViewModelCommand(ExecuteReservationsViewCommand);
             ShowAddReservationViewCommand = new ViewModelCommand(ExecuteAddReservationViewCommand);
             ShowSettingsViewCommand = new ViewModelCommand(ExecuteSettingsViewCommand);
             ExecuteShowHomeViewCommand(null);
             LoadCurrentAccountData();
+            ShowButtons();
         }
         private void ExecuteShowHomeViewCommand(object obj)
         {
             ChildView = new HomeViewModel();
             Title = "Menu główne";
         }
+        private void ExecuteShowUsersAdminViewCommand(object obj)
+        {
+            //ChildView = new UsersAdminViewModel;
+            Title = "Użytkownicy";
+        }
         private void ExecuteReservationsViewCommand(object obj)
         {
-            if (CurrentAccount.privilege == "1")
-            {
-                ChildView = new PatientMainViewModel();
-                Title = "Rezerwacje";
-            }
-            else if (CurrentAccount.privilege == "2")
-            {
-                ChildView = new DoctorMainViewModel();
-                Title = "Wizyty";
-            }
-            else if (CurrentAccount.privilege == "0")
-            {
-                ChildView = new AdminViewModel();
-                Title = "Użytkownicy";
-            }
+            ChildView = new PatientMainViewModel();
+            Title = "Rezerwacje";
         }
         private void ExecuteAddReservationViewCommand(object obj)
         {
@@ -123,16 +151,37 @@ namespace Hospital_Reservation_App.ViewModel
                 CurrentAccount.Password = user.Password;
                 CurrentAccount.privilege = user.privilege;
                 if (CurrentAccount.privilege == "1")
-                    ReservationText = "Rezerwacje";
+                {
+
+                }
                 else if (CurrentAccount.privilege == "2")
-                    ReservationText = "Wizyty";
+                {
+
+                }
                 else if (CurrentAccount.privilege == "0")
-                    ReservationText = "Użytkownicy";
+                {
+
+                }
                 CurrentAccount.DisplayName = $"Witam {user.firstName} {user.lastName} !";
             }
             else
             {
                 CurrentAccount.DisplayName = "User not logged in!";
+            }
+        }
+        private void ShowButtons()
+        {
+            if (CurrentAccount.privilege == "1")
+            {
+                IsVisibleReservation = System.Windows.Visibility.Visible;
+            }
+            else if (CurrentAccount.privilege == "2")
+            {
+                IsVisibleVisits = System.Windows.Visibility.Visible;
+            }
+            else if (CurrentAccount.privilege == "0")
+            {
+                IsVisibleUsers = System.Windows.Visibility.Visible;
             }
         }
     }

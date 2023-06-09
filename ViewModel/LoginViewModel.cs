@@ -12,6 +12,7 @@ using System.Net;
 using System.Security.Principal;
 using System.Threading;
 using System.Text.RegularExpressions;
+using Hospital_Reservation_App.View;
 
 namespace Hospital_Reservation_App.ViewModel
 {
@@ -25,6 +26,7 @@ namespace Hospital_Reservation_App.ViewModel
         private SecureString _pesel;
         
         private string _errorMessageLogin;
+        private string _errorMessageLogin2;
         private string _errorMessageRegistration;
         
         private bool _isViewVisible = true;
@@ -116,6 +118,19 @@ namespace Hospital_Reservation_App.ViewModel
 
             }
         }
+        public string ErrorMessageLogin2
+        {
+            get { return _errorMessageLogin2; }
+            set
+            {
+                if (_errorMessageLogin2 != value)
+                {
+                    _errorMessageLogin2 = value;
+                    OnPropertyChanged(nameof(ErrorMessageLogin2));
+                }
+
+            }
+        }
         public string ErrorMessageRegistration
         {
             get { return _errorMessageRegistration; }
@@ -192,6 +207,13 @@ namespace Hospital_Reservation_App.ViewModel
             userRepository = new UserRepository();
             LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
             RegistrationCommand = new ViewModelCommand(ExecuteRegistrationCommand, CanExecuteRegistrationCommand);
+        }
+
+        private void RaiseLoginCompleted()
+        {
+            MainWindowView main = new MainWindowView();
+            main.Show();
+            isViewVisible = false;
         }
 
         private bool CanExecuteRegistrationCommand(object obj)
@@ -304,11 +326,11 @@ namespace Hospital_Reservation_App.ViewModel
             {
                 Thread.CurrentPrincipal = new GenericPrincipal(
                     new GenericIdentity(email), null);
-                isViewVisible = false;
+                RaiseLoginCompleted();
             }
             else
             {
-                ErrorMessageLogin = "Zły email lub hasło"; 
+                ErrorMessageLogin2 = "Zły email lub hasło"; 
             }
         }
     }
