@@ -124,7 +124,7 @@ namespace Hospital_Reservation_App.ViewModel
         }
         private void ExecuteReservationsViewCommand(object obj)
         {
-            ChildView = new PatientMainViewModel();
+            ChildView = new ReservationViewModel();
             Title = "Rezerwacje";
         }
         private void ExecuteAddReservationViewCommand(object obj)

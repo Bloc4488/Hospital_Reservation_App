@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.ViewModel
 {
-    public class PatientMainViewModel : ViewModelBase
+    public class ReservationViewModel : ViewModelBase
     {
+
     }
 }
