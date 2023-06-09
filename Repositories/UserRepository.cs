@@ -35,6 +35,26 @@ namespace Hospital_Reservation_App.Repositories
             }
         }
 
+        public void Update(UserModel userModel)
+        {
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "UPDATE users SET PESEL = @pesel, firstname = @fname, lastname = @lname, sex = @sx, email = @mail WHERE id = @UserId";
+                    command.Parameters.Add("@pesel", MySqlDbType.VarChar).Value = SecureStringToString(userModel.PESEL);
+                    command.Parameters.Add("@fname", MySqlDbType.VarChar).Value = userModel.firstName;
+                    command.Parameters.Add("@lname", MySqlDbType.VarChar).Value = userModel.lastName;
+                    command.Parameters.Add("@sx", MySqlDbType.VarChar).Value = userModel.sex;
+                    command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = userModel.email;
+                    command.Parameters.Add("@UserId", MySqlDbType.Int64).Value = userModel.id;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public bool AuthentificateUser(NetworkCredential credential)
         {
             bool validUser;

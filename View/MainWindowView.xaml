@@ -37,6 +37,10 @@
         <DataTemplate DataType="{x:Type viewmodel:AddReservationViewModel}">
             <local:AddReservationView/>
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:SettingsViewModel}">
+            <local:SettingsView/>
+        </DataTemplate>
     </Window.Resources>
 
     <!--<Window.Visibility>
@@ -146,7 +150,7 @@
                 </Grid >
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="220"/>
                         <ColumnDefinition Width="1"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>

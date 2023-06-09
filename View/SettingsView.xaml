@@ -1,0 +1,353 @@
+﻿<UserControl x:Class="Hospital_Reservation_App.View.SettingsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital_Reservation_App.View"
+        xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
+        xmlns:customcontrol="clr-namespace:Hospital_Reservation_App.CustomControlls"
+        mc:Ignorable="d"
+        Height="670" Width="1000">
+    <UserControl.DataContext>
+        <viewmodel:SettingsViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <StackPanel>
+                <Button x:Name="btnChangeData"
+                            Command="{Binding ShowChangeDataUserCommand}"
+                            BorderThickness="0"
+                            Content="Zmień dane"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnChangePassword"
+                            Command="{Binding ChangeUserPassword}"
+                            BorderThickness="0"
+                            Content="Zmień hasło"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnDeleteReservation"
+                            Command="{Binding DeleteReservationsUser}"
+                            BorderThickness="0"
+                            Content="Usuń rezerwacje"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="DarkRed"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnDeleteAccount"
+                            Command="{Binding DeleteUserAccount}"
+                            BorderThickness="0"
+                            Content="Usuń konto"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="DarkRed"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBlock Text="Proszę wprowadzić hasło"
+                           Foreground="DarkGray"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Monsterrat"
+                           Margin="0,100,0,0"
+                           HorizontalAlignment="Center"
+                           Visibility="{Binding IsCheckPasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
+                <customcontrol:PassBox Password="{Binding CheckPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"
+                            Visibility="{Binding IsCheckPasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button x:Name="btnCheckPassword"
+                            Command="{Binding }"
+                            BorderThickness="0"
+                            Content="Sprawdż hasło"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,30,0,0"
+                            Visibility="{Binding IsCheckPasswordVisible, UpdateSourceTrigger=PropertyChanged}">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <StackPanel VerticalAlignment="Center"
+                        Width="300"
+                        Orientation="Vertical"
+                        Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}">
+                <TextBlock Text="Imię"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <TextBox x:Name="txtFirstName"
+                             Text="{Binding CurrentAccount.firstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                             FontSize="15"
+                             FontWeight="Medium"
+                             FontFamily="Monsterrat"
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="/Images/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock Text="Nazwisko"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <TextBox x:Name="txtLastName"
+                             Text="{Binding CurrentAccount.lastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                             FontSize="15"
+                             FontWeight="Medium"
+                             FontFamily="Monsterrat"
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="/Images/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock Text="E-mail"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <TextBox x:Name="txtEmail"
+                             Text="{Binding CurrentAccount.email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                             FontSize="15"
+                             FontWeight="Medium"
+                             FontFamily="Monsterrat"
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="/Images/email-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock Text="PESEL"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <customcontrol:PassBox Password="{Binding CurrentAccount.PESEL, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"/>
+                <TextBlock Text="{Binding ErrorMessageChangeData}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,10,0,0" 
+                               TextWrapping="Wrap"/>
+                <!--<TextBlock Text="Płeć"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox IsChecked="{Binding CheckBoxMaleChecked, Mode=TwoWay}"
+                                  Grid.Column="0"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Pan"
+                                           TextWrapping="Wrap"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </CheckBox>
+                    <CheckBox IsChecked="{Binding CheckBoxFemaleChecked, Mode=TwoWay}"
+                                  Grid.Column="1"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Pani"
+                                           TextWrapping="Wrap"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </CheckBox>
+                </Grid>-->
+                <Button x:Name="btnRegistration"
+                            Command="{Binding ChangeDataUserCommand}"
+                            BorderThickness="0"
+                            Content="Zmienić dane"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,70,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

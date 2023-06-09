@@ -11,6 +11,7 @@ namespace Hospital_Reservation_App.Model
     interface IUserRepository
     {
         void Add(UserModel userModel);
+        void Update(UserModel userModel);
         bool AuthentificateUser(NetworkCredential credential);
         bool checkMail(string email);
         bool checkPeselLength(SecureString pesel);

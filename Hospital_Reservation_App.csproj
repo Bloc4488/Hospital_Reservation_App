@@ -145,8 +145,13 @@
     <Compile Include="View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="View\ReservationView.xaml.cs">
       <DependentUpon>ReservationView.xaml</DependentUpon>
+=======
+    <Compile Include="View\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+>>>>>>> 17f6d89e715bd1105c406e9985b2bad549e9c9a4
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -220,7 +225,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="View\ReservationView.xaml">
+=======
+    <Page Include="View\SettingsView.xaml">
+>>>>>>> 17f6d89e715bd1105c406e9985b2bad549e9c9a4
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
