@@ -168,7 +168,7 @@
                                      Command="{Binding ShowUsersAdminViewCommand}"
                                      Visibility="{Binding IsVisibleUsers, UpdateSourceTrigger=PropertyChanged}">
                             <StackPanel Orientation="Horizontal">
-                                <fa:IconImage Icon="List" Style="{StaticResource menuButtonIcon}"/>
+                                <fa:IconImage Icon="UserGroup" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Użytkownicy" Style="{StaticResource menuButtonText}"/>
                             </StackPanel>
                         </RadioButton>
@@ -178,7 +178,7 @@
                                      Command="{Binding ShowReservationsViewCommand}"
                                      Visibility="{Binding IsVisibleReservation, UpdateSourceTrigger=PropertyChanged}">
                             <StackPanel Orientation="Horizontal">
-                                <fa:IconImage Icon="List" Style="{StaticResource menuButtonIcon}"/>
+                                <fa:IconImage Icon="ListDots" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Rezerwacje" Style="{StaticResource menuButtonText}"/>
                             </StackPanel>
                         </RadioButton>
@@ -188,7 +188,7 @@
                                      Command="{Binding ShowVisitsViewCommand}"
                                      Visibility="{Binding IsVisibleVisits, UpdateSourceTrigger=PropertyChanged}">
                             <StackPanel Orientation="Horizontal">
-                                <fa:IconImage Icon="List" Style="{StaticResource menuButtonIcon}"/>
+                                <fa:IconImage Icon="UserDoctor" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Wizyty" Style="{StaticResource menuButtonText}"/>
                             </StackPanel>
                         </RadioButton>
