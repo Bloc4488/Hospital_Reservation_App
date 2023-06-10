@@ -35,6 +35,21 @@ namespace Hospital_Reservation_App.Repositories
             }
         }
 
+        public void Delete(UserModel userModel)
+        {
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "DELETE FROM users WHERE id = @patient";
+                    command.Parameters.Add("@patient", MySqlDbType.VarChar).Value = userModel.id;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void Update(UserModel userModel)
         {
             using (var connection = GetConnection())
@@ -49,6 +64,23 @@ namespace Hospital_Reservation_App.Repositories
                     command.Parameters.Add("@lname", MySqlDbType.VarChar).Value = userModel.lastName;
                     command.Parameters.Add("@sx", MySqlDbType.VarChar).Value = userModel.sex;
                     command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = userModel.email;
+                    command.Parameters.Add("@UserId", MySqlDbType.Int64).Value = userModel.id;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void UpdatePassword(UserModel userModel) 
+        { 
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    string passHash = BCrypt.Net.BCrypt.HashPassword(SecureStringToString(userModel.Password));
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "UPDATE users SET password = @pass WHERE id = @UserId";
+                    command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = passHash;
                     command.Parameters.Add("@UserId", MySqlDbType.Int64).Value = userModel.id;
                     command.ExecuteNonQuery();
                 }
@@ -147,6 +179,17 @@ namespace Hospital_Reservation_App.Repositories
                 return true;
             else
                 return false;
+        }
+        public bool checkOldPassword(NetworkCredential credential, UserModel userModel)
+        {
+            if (BCrypt.Net.BCrypt.Verify(Convert.ToString(credential.Password), SecureStringToString(userModel.Password)))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public UserModel GetUser(string Email)
         {

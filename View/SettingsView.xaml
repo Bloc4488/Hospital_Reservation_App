@@ -49,7 +49,7 @@
                     </Button.Template>
                 </Button>
                 <Button x:Name="btnChangePassword"
-                            Command="{Binding ChangeUserPassword}"
+                            Command="{Binding ShowChangeUserPasswordCommand}"
                             BorderThickness="0"
                             Content="Zmień hasło"
                             Foreground="White"
@@ -79,7 +79,7 @@
                     </Button.Template>
                 </Button>
                 <Button x:Name="btnDeleteReservation"
-                            Command="{Binding DeleteReservationsUser}"
+                            Command="{Binding ShowDeleteReservationsUserCommand}"
                             BorderThickness="0"
                             Content="Usuń rezerwacje"
                             Foreground="White"
@@ -109,7 +109,7 @@
                     </Button.Template>
                 </Button>
                 <Button x:Name="btnDeleteAccount"
-                            Command="{Binding DeleteUserAccount}"
+                            Command="{Binding ShowDeleteUserAccountCommand}"
                             BorderThickness="0"
                             Content="Usuń konto"
                             Foreground="White"
@@ -138,7 +138,7 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <TextBlock Text="Proszę wprowadzić hasło"
+                <!--<TextBlock Text="Proszę wprowadzić hasło"
                            Foreground="DarkGray"
                            FontSize="12"
                            FontWeight="Medium"
@@ -180,7 +180,7 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                </Button>
+                </Button>-->
             </StackPanel>
         </Grid>
         <Grid Grid.Column="1">
@@ -263,7 +263,7 @@
                                         AlignmentX="Left"/>
                     </TextBox.Background>
                 </TextBox>
-                <TextBlock Text="PESEL"
+                <!---<TextBlock Text="PESEL"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
@@ -271,15 +271,8 @@
                                Margin="0,5,0,0"/>
                 <customcontrol:PassBox Password="{Binding CurrentAccount.PESEL, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                             Height="28"
-                            Margin="0,5,0,0"/>
-                <TextBlock Text="{Binding ErrorMessageChangeData}"
-                               Foreground="#D7596D"
-                               FontSize="12"
-                               FontFamily="Montserrat"
-                               FontWeight="Medium"
-                               Margin="0,10,0,0" 
-                               TextWrapping="Wrap"/>
-                <!--<TextBlock Text="Płeć"
+                            Margin="0,5,0,0"/>-->
+                <TextBlock Text="Płeć"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
@@ -316,8 +309,15 @@
                                            FontSize="12"/>
                         </StackPanel>
                     </CheckBox>
-                </Grid>-->
-                <Button x:Name="btnRegistration"
+                </Grid>
+                <TextBlock Text="{Binding ErrorMessageChangeData}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,10,0,0" 
+                               TextWrapping="Wrap"/>
+                <Button x:Name="btnChangeDataAccept"
                             Command="{Binding ChangeDataUserCommand}"
                             BorderThickness="0"
                             Content="Zmienić dane"
@@ -332,6 +332,182 @@
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center"
+                        Width="300"
+                        Orientation="Vertical"
+                        Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}">
+                <TextBlock Text="Stare hasło"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <customcontrol:PassBox Password="{Binding passwordOld, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"/>
+                <TextBlock Text="Nowe hasło"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <customcontrol:PassBox Password="{Binding passwordNew, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"/>
+                <TextBlock Text="Powtórz nowe hasło"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <customcontrol:PassBox Password="{Binding passwordRepNew, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"/>
+                <TextBlock Text="{Binding ErrorMessageChangePassword}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,10,0,0" 
+                               TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding ErrorMessageChangePassword2}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,10,0,0" 
+                               TextWrapping="Wrap"/>
+                <Button x:Name="btnRegistration"
+                            Command="{Binding ChangeUserPasswordCommand}"
+                            BorderThickness="0"
+                            Content="Zmienić hasło"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center"
+                        Width="300"
+                        Orientation="Vertical"
+                        Visibility="{Binding IsDeleteReservationsVisible, UpdateSourceTrigger=PropertyChanged}">
+                <TextBlock Text="Proszę wprowadzić hasło"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <customcontrol:PassBox Password="{Binding passwordCheck, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"/>
+                <TextBlock Text="{Binding ErrorMessageDeleteReservations}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,10,0,0" 
+                               TextWrapping="Wrap"/>
+                <Button Command="{Binding DeleteReservationsUserCommand}"
+                            BorderThickness="0"
+                            Content="Usunąć rezerwacje"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="DarkRed"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center"
+                        Width="300"
+                        Orientation="Vertical"
+                        Visibility="{Binding IsDeleteUserVisible, UpdateSourceTrigger=PropertyChanged}">
+                <TextBlock Text="Proszę wprowadzić hasło"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"/>
+                <customcontrol:PassBox Password="{Binding passwordDeleteUser, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"/>
+                <TextBlock Text="{Binding ErrorMessageDeleteUser}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,10,0,0" 
+                               TextWrapping="Wrap"/>
+                <Button Command="{Binding DeleteUserAccountCommand}"
+                            BorderThickness="0"
+                            Content="Usunąć konto"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="DarkRed"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
