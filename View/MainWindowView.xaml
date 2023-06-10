@@ -25,15 +25,11 @@
         <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
             <local:HomeView/>
         </DataTemplate>
-        
-        <DataTemplate DataType="{x:Type viewmodel:PatientMainViewModel}">
-            <local:PatientMainView/>
+
+        <DataTemplate DataType="{x:Type viewmodel:ReservationViewModel}">
+            <local:ReservationView/>
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type viewmodel:DoctorMainViewModel}">
-            <local:DoctorMainView/>
-        </DataTemplate>
-        
         <DataTemplate DataType="{x:Type viewmodel:AddReservationViewModel}">
             <local:AddReservationView/>
         </DataTemplate>

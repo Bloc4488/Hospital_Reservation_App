@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Hospital_Reservation_App.View
 {
     /// <summary>
-    /// Interaction logic for PatientMainView.xaml
+    /// Interaction logic for ReservationView.xaml
     /// </summary>
-    public partial class PatientMainView : UserControl
+    public partial class ReservationView : UserControl
     {
-        public PatientMainView()
+        public ReservationView()
         {
             InitializeComponent();
         }
