@@ -110,11 +110,13 @@
     <Compile Include="CustomControlls\PassBox.xaml.cs">
       <DependentUpon>PassBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\IReservationRepository.cs" />
     <Compile Include="Model\IUserAccountRepository.cs" />
     <Compile Include="Model\IUserRepository.cs" />
     <Compile Include="Model\UserAccountModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Repositories\DataBaseRepository.cs" />
+    <Compile Include="Repositories\ReservationRepository.cs" />
     <Compile Include="Repositories\UserAccountRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="ViewModel\AddReservationViewModel.cs" />

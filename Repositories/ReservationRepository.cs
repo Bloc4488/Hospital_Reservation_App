@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.Repositories
 {
-    public class ReservationRepository : DataBaseRepository
+    public class ReservationRepository : DataBaseRepository, IReservationRepository
     {
-        public void Add(int reservation_id, int doctor_id, DateTime res)
+        public void AddRes(int reservation_id, int doctor_id, DateTime res)
         {
             using (var connection = GetConnection())
             {
@@ -24,6 +24,21 @@ namespace Hospital_Reservation_App.Repositories
                     command.Parameters.Add("@res_id", MySqlDbType.VarChar).Value = reservation_id;
                     command.Parameters.Add("@dr_id", MySqlDbType.VarChar).Value = doctor_id;
                     command.Parameters.Add("@date", MySqlDbType.VarChar).Value = res;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void DeleteAllReservationuser(UserModel userModel)
+        {
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "DELETE FROM reservations WHERE patient_id = @patient";
+                    command.Parameters.Add("@patient", MySqlDbType.VarChar).Value = userModel.id;
                     command.ExecuteNonQuery();
                 }
             }
