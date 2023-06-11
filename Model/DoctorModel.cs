@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.Model
 {
-    public class UserAccountModel
+    public class DoctorModel
     {
         public string Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Privilege { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public SpecialityModel Speciality { get; set; }
     }
 }

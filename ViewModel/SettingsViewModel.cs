@@ -374,6 +374,7 @@ namespace Hospital_Reservation_App.ViewModel
             else
             {
                 ErrorMessageChangePassword2 = "";
+                CurrentAccount.Password = passwordNew;
                 userRepository.UpdatePassword(CurrentAccount);
                 IsChangePasswordVisible = System.Windows.Visibility.Collapsed;
                 LoadCurrentAccountData();

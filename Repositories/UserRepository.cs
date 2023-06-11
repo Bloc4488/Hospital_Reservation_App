@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Hospital_Reservation_App.Repositories
 {
@@ -218,6 +219,37 @@ namespace Hospital_Reservation_App.Repositories
                 user.privilege = row[7].ToString();
             }
             return user;
+        }
+
+        public List<DoctorModel> GetDoctorsData()
+        {
+            List<DoctorModel> doctorModels = new List<DoctorModel>();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT u.firstname, u.lastname, u.id AS user_id, d.speciality_id, s.name AS speciality_name " +
+                    "FROM doctors d " +
+                    "JOIN users u ON d.user_id = u.id " +
+                    "JOIN specialties s ON d.speciality_id = s.speciality_id;";
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                DoctorModel doctorModel = new DoctorModel();
+                doctorModel.Speciality = new SpecialityModel();
+                doctorModel.FirstName = row[0].ToString();
+                doctorModel.LastName = row[1].ToString();
+                doctorModel.Id = row[2].ToString();
+                doctorModel.Speciality.Id = row[3].ToString();
+                doctorModel.Speciality.Name = row[4].ToString();
+                doctorModels.Add(doctorModel);
+            }
+            return doctorModels;
         }
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.Model
 {
-    public interface IUserAccountRepository
+    public class SpecialityModel
     {
-
+        public string Id { get; set; }
+        public string Name { get; set; }
     }
 }
