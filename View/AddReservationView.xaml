@@ -21,12 +21,61 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0">
-                <Calendar Height="330" HorizontalAlignment="Left" Margin="58,32,0,0"  
-                 Name="calendar1"
-                 DisplayDateStart="{x:Static sys:DateTime.Now}"
-                 VerticalAlignment="Top" Width="180" />
-            <!--<CalendarDayButton-->
-
+                <DatePicker Height="30" HorizontalAlignment="Left" Margin="115,32,-10,0"  
+                 Name="datepicker1"
+                 Text="{Binding day, UpdateSourceTrigger=PropertyChanged}"
+                 VerticalAlignment="Top" Width="180">
+                    <DatePicker.BlackoutDates>
+                        <CalendarDateRange Start="2019-04-01" End="{x:Static sys:DateTime.Now}" />
+                    </DatePicker.BlackoutDates>
+                </DatePicker>
+                <ComboBox x:Name="ComboBoxTimePicker" 
+                          Text="{Binding hour, UpdateSourceTrigger=PropertyChanged}"
+                          Margin="115,40,-10,0"
+                          Height="30" 
+                          HorizontalAlignment="Left"
+                          FontSize="12"
+                          VerticalAlignment="Top" Width="180">
+                    <ComboBoxItem>09:00:00</ComboBoxItem>
+                    <ComboBoxItem>10:00:00</ComboBoxItem>
+                    <ComboBoxItem>11:00:00</ComboBoxItem>
+                    <ComboBoxItem>12:00:00</ComboBoxItem>
+                    <ComboBoxItem>13:00:00</ComboBoxItem>
+                    <ComboBoxItem>14:00:00</ComboBoxItem>
+                    <ComboBoxItem>15:00:00</ComboBoxItem>
+                    <ComboBoxItem>16:00:00</ComboBoxItem>
+                    <ComboBoxItem>17:00:00</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="btnAddReservation"
+                            Command="{Binding AddReservationCommand}"
+                            BorderThickness="0"
+                            Content="Rezerwuj termin"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="20,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </StackPanel>
         </Grid>
     </Grid>
