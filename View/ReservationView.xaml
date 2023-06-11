@@ -48,7 +48,7 @@
                     </Button.Template>
                 </Button>
                 <Button x:Name="btnDeleteReservation"
-                            Command="{Binding }"
+                            Command="{Binding DeleteReservationCommand}"
                             BorderThickness="0"
                             Content="Usuń rezerwację"
                             Foreground="White"
@@ -81,19 +81,25 @@
         </Grid>
         <Grid Grid.Column="1">
             <StackPanel Width="650">
-                <ListBox ItemsSource="{Binding RezervationList}"
+                <ListBox ItemsSource="{Binding ShowReservations}"
                          FontSize="12"
-                         Foreground="AliceBlue"
+                         Foreground="White"
                          FontFamily="Monsterrat"
-                         FontWeight="Medium">
+                         FontWeight="Medium"
+                         Margin="0,20,0,0"
+                         SelectedItem="{Binding SelectedReservation, UpdateSourceTrigger=PropertyChanged}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <CheckBox Content="{Binding TheText}" Tag="{Binding TheValue}"
-                                      Foreground="AliceBlue"
-                                      FontSize="12"
-                                      FontFamily="Monsterrat"
-                                      Checked="{Binding ReservationAddList}"
-                                      Unchecked="{Binding ReservationDeleteList}"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="{Binding ReservationTime}" Foreground="Black"/>
+                                <TextBlock Grid.Column="1" Text="{Binding Doctor.Fullname}" Foreground="Black"/>
+                                <TextBlock Grid.Column="2" Text="{Binding Doctor.Speciality.Name}" Foreground="Black"/>
+                            </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>

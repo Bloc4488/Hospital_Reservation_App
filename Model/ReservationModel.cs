@@ -8,9 +8,9 @@ namespace Hospital_Reservation_App.Model
 {
     public class ReservationModel
     {
-        public int Id { get; set; }
-        public int PatientId { get; set; }
-        public int DoctorId { get; set; }
+        public string Id { get; set; }
+        public string PatientId { get; set; }
+        public DoctorModel Doctor { get; set; }
         public DateTime ReservationTime { get; set; }
     }
 }

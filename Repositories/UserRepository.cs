@@ -244,6 +244,7 @@ namespace Hospital_Reservation_App.Repositories
                 doctorModel.Speciality = new SpecialityModel();
                 doctorModel.FirstName = row[0].ToString();
                 doctorModel.LastName = row[1].ToString();
+                doctorModel.Fullname = doctorModel.FirstName + " " + doctorModel.LastName;
                 doctorModel.Id = row[2].ToString();
                 doctorModel.Speciality.Id = row[3].ToString();
                 doctorModel.Speciality.Name = row[4].ToString();
