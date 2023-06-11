@@ -20,7 +20,7 @@ namespace Hospital_Reservation_App.Repositories
                 {
                     connection.Open();
                     command.Connection = connection;
-                    command.CommandText = "INSERT INTO reservations(reservation_id, doctor_id, date_res) VALUES (@res_id, @dr_id, @date)";
+                    command.CommandText = "INSERT INTO reservations VALUES (@dr_id, @date)";
                     // command.Parameters.Add("@res_id", MySqlDbType.VarChar).Value = reservation_id;
                     command.Parameters.Add("@dr_id", MySqlDbType.Int32).Value = doctor_id;
                     command.Parameters.Add("@date", MySqlDbType.DateTime).Value = res;
