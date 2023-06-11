@@ -77,6 +77,8 @@ namespace Hospital_Reservation_App.ViewModel
 
         public AddReservationViewModel()
         {
+            userRepository = new UserRepository();
+            reservationRepository = new ReservationRepository();    
             AddReservationCommand = new ViewModelCommand(ExecuteAddReservationCommand, CanExecuteAddReservationCommand);
         }
         private bool CanExecuteAddReservationCommand(object obj)

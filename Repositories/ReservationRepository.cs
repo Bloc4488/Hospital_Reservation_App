@@ -12,7 +12,7 @@ namespace Hospital_Reservation_App.Repositories
 {
     public class ReservationRepository : DataBaseRepository, IReservationRepository
     {
-        public void AddRes(int reservation_id, int doctor_id, DateTime res)
+        public void AddRes(int pacient_id, int doctor_id, DateTime res)
         {
             using (var connection = GetConnection())
             {
@@ -20,9 +20,9 @@ namespace Hospital_Reservation_App.Repositories
                 {
                     connection.Open();
                     command.Connection = connection;
-                    command.CommandText = "INSERT INTO reservations VALUES (@dr_id, @date)";
-                    // command.Parameters.Add("@res_id", MySqlDbType.VarChar).Value = reservation_id;
-                    command.Parameters.Add("@dr_id", MySqlDbType.Int32).Value = doctor_id;
+                    command.CommandText = "INSERT INTO reservations(patient_id, doctor_id, date_res) VALUES (@pac_id, @dr_id, @date)";
+                    command.Parameters.Add("@pac_id", MySqlDbType.Int64).Value = pacient_id;
+                    command.Parameters.Add("@dr_id", MySqlDbType.Int64).Value = doctor_id;
                     command.Parameters.Add("@date", MySqlDbType.DateTime).Value = res;
                     command.ExecuteNonQuery();
                 }
