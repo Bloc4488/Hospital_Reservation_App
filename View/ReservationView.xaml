@@ -4,30 +4,99 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Hospital_Reservation_App.View"
+             xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="670" d:DesignWidth="1000">
+    <UserControl.DataContext>
+        <viewmodel:ReservationViewModel/>
+    </UserControl.DataContext>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="176*"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70"/>
-                <ColumnDefinition Width="1"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <StackPanel Grid.Column="0">
-                <Image Source="/Images/reservation-icon.png"
-                                   Grid.Row="2"
-                                   Grid.Column="1" 
-                                   Margin="10,5,0,0" 
-                                   Width="50"
-                                   Height="50"
-                                   Cursor="Hand"
-                                   PreviewMouseDown="My_reserevations_PreviewMouseDown" HorizontalAlignment="Left" VerticalAlignment="Top" />
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <StackPanel>
+                <Button x:Name="btnChangeReservation"
+                            Command="{Binding }"
+                            BorderThickness="0"
+                            Content="Zmień rezerwację"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnDeleteReservation"
+                            Command="{Binding }"
+                            BorderThickness="0"
+                            Content="Usuń rezerwację"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="DarkRed"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <StackPanel Width="650">
+                <ListBox ItemsSource="{Binding RezervationList}"
+                         FontSize="12"
+                         Foreground="AliceBlue"
+                         FontFamily="Monsterrat"
+                         FontWeight="Medium">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox Content="{Binding TheText}" Tag="{Binding TheValue}"
+                                      Foreground="AliceBlue"
+                                      FontSize="12"
+                                      FontFamily="Monsterrat"
+                                      Checked="{Binding ReservationAddList}"
+                                      Unchecked="{Binding ReservationDeleteList}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
             </StackPanel>
         </Grid>
     </Grid>
