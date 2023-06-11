@@ -28,6 +28,7 @@ namespace Hospital_Reservation_App.ViewModel
         private List<SpecialityModel> _listSpeciality;
         private ObservableCollection<DoctorModel> _showListDoctors;
         private ObservableCollection<SpecialityModel> _showSpecialties;
+        private DoctorModel _selectedDoctor;
 
         public UserModel CurrentAccount
         {
@@ -114,6 +115,18 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
+        public DoctorModel selectedDoctor
+        {
+            get { return _selectedDoctor; }
+            set
+            {
+                if (_selectedDoctor != value)
+                {
+                    _selectedDoctor = value;
+                    OnPropertyChanged(nameof(selectedDoctor));
+                }
+            }
+        }
         public ICommand AddReservationCommand { get; }
         private IUserRepository userRepository;
         private IReservationRepository reservationRepository;
@@ -135,35 +148,23 @@ namespace Hospital_Reservation_App.ViewModel
         }
         private bool CanExecuteAddReservationCommand(object obj)
         {
+            //if (string.IsNullOrEmpty(firstname) || firstname.Length < 3)
+            //{
+            //    ErrorMessageRegistration = "Imię musi być więcej 3 znaków!";
+            //    validCreate = false;
+            //}
             bool validAdd = true;
             return validAdd;
         }
         private void ExecuteAddReservationCommand(object obj)
         {
-            /*DateTime d = day;
-            DateTime h = hour;*/
-            /*String s = "2015-05-05";
-            String a = "10:00:00";*/
-            //DateTime time = new DateTime(s,a);
-            DateTime time = new DateTime(2023, 12, 31, 10, 0, 0);
-            //ReservationModel reservation = new ReservationModel();
-            //var user = userRepository.GetUser(Thread.CurrentPrincipal.Identity.Name);
-            //if (user != null)
-            //{
-            //    CurrentAccount.id = user.id;
-            //    CurrentAccount.PESEL = user.PESEL;
-            //    CurrentAccount.firstName = user.firstName;
-            //    CurrentAccount.lastName = user.lastName;
-            //    CurrentAccount.sex = user.sex;
-            //    CurrentAccount.email = user.email;
-            //    CurrentAccount.Password = user.Password;
-            //}
-            //else
-            //{
-            //    //TODO
-            //    //MessageBox.Show("User not logged in!");
-            //}
-            reservationRepository.AddRes(1, 2, time);
+            ReservationModel ResModel = new ReservationModel();
+            ResModel.Doctor = new DoctorModel();
+            ResModel.PatientId = CurrentAccount.id;
+            ResModel.Doctor = selectedDoctor;
+            ResModel.ReservationTime = Day;
+          
+            reservationRepository.AddRes(ResModel.PatientId,ResModel.Doctor.Id, ResModel.ReservationTime);
         }
 
         private void LoadCurrentAccountData()

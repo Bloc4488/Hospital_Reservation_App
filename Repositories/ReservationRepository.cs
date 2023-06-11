@@ -12,7 +12,7 @@ namespace Hospital_Reservation_App.Repositories
 {
     public class ReservationRepository : DataBaseRepository, IReservationRepository
     {
-        public void AddRes(int pacient_id, int doctor_id, DateTime res)
+        public void AddRes(string pacient_id, string doctor_id, DateTime res)
         {
             using (var connection = GetConnection())
             {

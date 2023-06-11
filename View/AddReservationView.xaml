@@ -32,12 +32,13 @@
                             SelectedDate="{Binding Day, UpdateSourceTrigger=PropertyChanged}"
                             Width="180"
                             DisplayDateStart="{x:Static sys:DateTime.Now}"/>-->
-            <xctk:DateTimePicker Value="{Binding Day, Mode=TwoWay}"
+            <xctk:DateTimePicker Value="{Binding Day, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                  Format="Custom"
-                                 FormatString="dd/MM/yyyy HH:mm"
+                                 Height="30" 
+                                 FormatString="dd/MM/yyyy HH:mm:ss"
                                  CultureInfo="pl-PL"
                                  ShowDropDownButton="True"/>
-            <ComboBox x:Name="ComboBoxTimePicker" 
+            <!--<ComboBox x:Name="ComboBoxTimePicker" 
                           Text="{Binding Hour, UpdateSourceTrigger=PropertyChanged}"
                           Margin="0,25,0,0"
                           Height="30" 
@@ -52,7 +53,7 @@
                  <ComboBoxItem>15:00:00</ComboBoxItem>
                  <ComboBoxItem>16:00:00</ComboBoxItem>
                  <ComboBoxItem>17:00:00</ComboBoxItem>
-            </ComboBox>
+            </ComboBox>-->
             <ComboBox ItemsSource="{Binding ShowSpecialties}"
                           Width="180"
                           Margin="0,20,0,0">
@@ -65,6 +66,7 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
             <ComboBox ItemsSource="{Binding ShowListDoctors}"
+                      SelectedItem="{Binding selectedDoctor}"
                           Width="180"
                           Margin="0,20,0,0">
                 <ComboBox.ItemTemplate>
