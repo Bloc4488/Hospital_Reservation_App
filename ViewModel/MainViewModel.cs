@@ -167,10 +167,12 @@ namespace Hospital_Reservation_App.ViewModel
             else if (CurrentAccount.privilege == "2")
             {
                 IsVisibleVisits = System.Windows.Visibility.Visible;
+                IsVisibleReservation = System.Windows.Visibility.Visible;
             }
             else if (CurrentAccount.privilege == "0")
             {
                 IsVisibleUsers = System.Windows.Visibility.Visible;
+                IsVisibleReservation = System.Windows.Visibility.Visible;
             }
         }
     }

@@ -87,6 +87,7 @@
                          FontFamily="Monsterrat"
                          FontWeight="Medium"
                          Margin="0,20,0,0"
+                         Height="Auto"
                          SelectedItem="{Binding SelectedReservation, UpdateSourceTrigger=PropertyChanged}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
