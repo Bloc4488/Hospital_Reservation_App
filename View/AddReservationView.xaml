@@ -13,87 +13,38 @@
         <viewmodel:AddReservationViewModel/>
     </UserControl.DataContext>
     <Grid>
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="90"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="390"/>
-                <ColumnDefinition Width="1"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>-->
-
-        <StackPanel HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Width="400">
-            <!--<DatePicker Height="30" 
-                            Margin="0,25,0,0"
-                            SelectedDate="{Binding Day, UpdateSourceTrigger=PropertyChanged}"
-                            Width="180"
-                            DisplayDateStart="{x:Static sys:DateTime.Now}"/>-->
-            <xctk:DateTimePicker Value="{Binding Day, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                 Format="Custom"
-                                 Height="30" 
-                                 FormatString="dd/MM/yyyy HH:mm:ss"
-                                 CultureInfo="pl-PL"
-                                 ShowDropDownButton="True"/>
-            <!--<ComboBox x:Name="ComboBoxTimePicker" 
-                          Text="{Binding Hour, UpdateSourceTrigger=PropertyChanged}"
-                          Margin="0,25,0,0"
-                          Height="30" 
-                          FontSize="12"
-                          Width="180">
-                 <ComboBoxItem>09:00:00</ComboBoxItem>
-                 <ComboBoxItem>10:00:00</ComboBoxItem>
-                 <ComboBoxItem>11:00:00</ComboBoxItem>
-                 <ComboBoxItem>12:00:00</ComboBoxItem>
-                 <ComboBoxItem>13:00:00</ComboBoxItem>
-                 <ComboBoxItem>14:00:00</ComboBoxItem>
-                 <ComboBoxItem>15:00:00</ComboBoxItem>
-                 <ComboBoxItem>16:00:00</ComboBoxItem>
-                 <ComboBoxItem>17:00:00</ComboBoxItem>
-            </ComboBox>-->
-            <ComboBox ItemsSource="{Binding ShowSpecialties}"
-                          Width="180"
-                          Margin="0,20,0,0">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Name}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-            <ComboBox ItemsSource="{Binding ShowListDoctors}"
-                      SelectedItem="{Binding selectedDoctor}"
-                          Width="180"
-                          Margin="0,20,0,0">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding FirstName}"/>
-                            <TextBlock Text=" "/>
-                            <TextBlock Text="{Binding LastName}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-            <Button x:Name="btnAddReservation"
-                            Command="{Binding AddReservationCommand}"
-                            BorderThickness="0"
-                            Content="Rezerwuj termin"
-                            Foreground="White"
-                            FontSize="12"
-                            FontFamily="Monsterrat"
-                            Cursor="Hand"
-                            Margin="20,30,0,0">
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="400"
+                    Visibility="{Binding IsDateVisible, UpdateSourceTrigger=PropertyChanged}">
+            <TextBlock Text="Proszę wybrać datę"
+                       Foreground="DarkGray"
+                       FontSize="12"
+                       FontWeight="Medium"
+                       FontFamily="Monsterrat"
+                       HorizontalAlignment="Left"
+                       Margin="0,20,0,0"/>
+            <DatePicker Height="40" 
+                        Margin="0,25,0,0"
+                        DisplayDateStart="{x:Static sys:DateTime.Today}"
+                        SelectedDate="{Binding SelectedDay, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"
+                        Width="180"
+                        HorizontalAlignment="Left"/>
+            <Button Command="{Binding NextWindowCommand1}"
+                    BorderThickness="0"
+                    Content="Dalej"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Right"
+                    Margin="0,30,0,0">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="#462AD8"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                 <Setter Property="Background" Value="#28AEED"/>
+                                <Setter Property="Background" Value="#28AEED"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -110,6 +61,437 @@
                 </Button.Template>
             </Button>
         </StackPanel>
-        <!--</Grid>-->
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="400"
+                    Visibility="{Binding IsTimeVisible, UpdateSourceTrigger=PropertyChanged}"> 
+        <TextBlock Text="Proszę wybrać godzinę"
+                       Foreground="DarkGray"
+                       FontSize="12"
+                       FontWeight="Medium"
+                       FontFamily="Monsterrat"
+                       Margin="0,20,0,0"/>
+        <ComboBox SelectedValue="{Binding SelectedTime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  Margin="0,25,0,0"
+                  Height="30" 
+                  FontSize="12"
+                  Width="180"
+                  HorizontalAlignment="Left"
+                  ItemsSource="{Binding ShowListTime, UpdateSourceTrigger=PropertyChanged}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            <Button Command="{Binding NextWindowCommand2}"
+                    Grid.Column="1"
+                    BorderThickness="0"
+                    Content="Dalej"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#462AD8"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#28AEED"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Command="{Binding PreviousWindowCommand}"
+                    Grid.Column="0"
+                    BorderThickness="0"
+                    Content="Back"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#462AD8"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#28AEED"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="400"
+                    Visibility="{Binding IsSpecialityVisible, UpdateSourceTrigger=PropertyChanged}">
+            <TextBlock Text="Proszę wybrać specjalność doktora"
+                       Foreground="DarkGray"
+                       FontSize="12"
+                       FontWeight="Medium"
+                       FontFamily="Monsterrat"
+                       Margin="0,20,0,0"/>
+            <ComboBox ItemsSource="{Binding ShowListSpeciality}"
+                      SelectedItem="{Binding SelectedSpeciality, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                      Width="180"
+                      Margin="0,20,0,0"
+                      HorizontalAlignment="Left">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Name}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Command="{Binding NextWindowCommand3}"
+                    Grid.Column="1"
+                    BorderThickness="0"
+                    Content="Dalej"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Command="{Binding PreviousWindowCommand}"
+                    Grid.Column="0"
+                    BorderThickness="0"
+                    Content="Back"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="400"
+                    Visibility="{Binding IsDoctorVisible, UpdateSourceTrigger=PropertyChanged}">
+            <TextBlock Text="Proszę wybrać doktora"
+                       Foreground="DarkGray"
+                       FontSize="12"
+                       FontWeight="Medium"
+                       FontFamily="Monsterrat"
+                       Margin="0,20,0,0"/>
+            <ComboBox ItemsSource="{Binding ShowListDoctors}"
+                      SelectedItem="{Binding SelectedDoctor}"
+                      Width="180"
+                      Margin="0,20,0,0"
+                      HorizontalAlignment="Left">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding FirstName}"/>
+                            <TextBlock Text=" "/>
+                            <TextBlock Text="{Binding LastName}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Command="{Binding NextWindowCommand4}"
+                    Grid.Column="1"
+                    BorderThickness="0"
+                    Content="Potwierdzić wizytę"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Command="{Binding PreviousWindowCommand}"
+                    Grid.Column="0"
+                    BorderThickness="0"
+                    Content="Back"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="400"
+                    Visibility="{Binding IsReservationVisible, UpdateSourceTrigger=PropertyChanged}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Data wizyty: "
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,20,0,0"/>
+                    <TextBlock Text="Doktor: "
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,20,0,0"/>
+                    <TextBlock Text="Specjalność doktora: "
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,20,0,0"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="{Binding SelectedDayTime, UpdateSourceTrigger=PropertyChanged}"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,20,0,0"/>
+                    <TextBlock Text="{Binding SelectedDoctor.Fullname, UpdateSourceTrigger=PropertyChanged}"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,20,0,0"/>
+                    <TextBlock Text="{Binding SelectedDoctor.Speciality.Name, UpdateSourceTrigger=PropertyChanged}"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,20,0,0"/>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Command="{Binding AddReservationCommand}"
+                    Grid.Column="1"
+                    BorderThickness="0"
+                    Content="Dodaj wizytę"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Command="{Binding PreviousWindowCommand}"
+                    Grid.Column="0"
+                    BorderThickness="0"
+                    Content="Back"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="400"
+                    Visibility="{Binding IsReservationCompleteVisible, UpdateSourceTrigger=PropertyChanged}">
+            <TextBlock Text="{Binding SelectedDoctor.Fullname, StringFormat='Dodałeś wizytę do lekarza {0}. Sprawdż w swoich rezerwacjach!'}"
+                       Foreground="DarkGray"
+                       FontSize="12"
+                       FontWeight="Medium"
+                       FontFamily="Monsterrat"
+                       Margin="0,20,0,0"/>
+            <Button Command="{Binding StartWindowCommand}"
+                    BorderThickness="0"
+                    Content="Dodaj nowę wizytę"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#462AD8"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#28AEED"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="150" Height="40"
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
     </Grid>
 </UserControl>

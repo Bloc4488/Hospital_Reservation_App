@@ -106,16 +106,19 @@ namespace Hospital_Reservation_App.Repositories
                     {
                         passUserDB = Convert.ToString(data.GetValue(6));
                     }
-                }
-                if (BCrypt.Net.BCrypt.Verify(Convert.ToString(credential.Password), passUserDB))
-                {
-                    validUser = true;
+                    if (BCrypt.Net.BCrypt.Verify(Convert.ToString(credential.Password), passUserDB))
+                    {
+                        validUser = true;
+                    }
+                    else
+                    {
+                        validUser = false;
+                    }
                 }
                 else
                 {
                     validUser = false;
                 }
-
             }
             return validUser;
         }
@@ -221,7 +224,7 @@ namespace Hospital_Reservation_App.Repositories
             return user;
         }
 
-        public List<DoctorModel> GetDoctorsData()
+        public List<DoctorModel> GetDoctorsData(DateTime date, SpecialityModel speciality)
         {
             List<DoctorModel> doctorModels = new List<DoctorModel>();
             MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
@@ -234,7 +237,14 @@ namespace Hospital_Reservation_App.Repositories
                 command.CommandText = "SELECT u.firstname, u.lastname, u.id AS user_id, d.speciality_id, s.name AS speciality_name " +
                     "FROM doctors d " +
                     "JOIN users u ON d.user_id = u.id " +
-                    "JOIN specialties s ON d.speciality_id = s.speciality_id;";
+                    "JOIN specialties s ON d.speciality_id = s.speciality_id " +
+                    "WHERE d.user_id NOT IN (" +
+                    "SELECT r.doctor_id " +
+                    "FROM reservations r " +
+                    "WHERE r.date_res = @date) " +
+                    "AND d.speciality_id = @spec_id";
+                command.Parameters.Add("@date", MySqlDbType.DateTime).Value = date;
+                command.Parameters.Add("@spec_id", MySqlDbType.Int64).Value = speciality.Id;
                 mySqlDataAdapter.SelectCommand = command;
                 mySqlDataAdapter.Fill(table);
             }

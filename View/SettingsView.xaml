@@ -187,13 +187,14 @@
             <StackPanel VerticalAlignment="Center"
                         Width="300"
                         Orientation="Vertical"
-                        Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}">
+                        >
                 <TextBlock Text="Imię"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBox x:Name="txtFirstName"
                              Text="{Binding CurrentAccount.firstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                              FontSize="15"
@@ -206,7 +207,8 @@
                              Height="28"
                              VerticalContentAlignment="Center"
                              Margin="0,5,0,0"
-                             Padding="20,0,0,0">
+                             Padding="20,0,0,0"
+                         Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}">
                     <TextBox.Background>
                         <ImageBrush ImageSource="/Images/user-icon.png"
                                         Stretch="None"
@@ -218,7 +220,8 @@
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBox x:Name="txtLastName"
                              Text="{Binding CurrentAccount.lastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                              FontSize="15"
@@ -231,7 +234,8 @@
                              Height="28"
                              VerticalContentAlignment="Center"
                              Margin="0,5,0,0"
-                             Padding="20,0,0,0">
+                             Padding="20,0,0,0"
+                         Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}">
                     <TextBox.Background>
                         <ImageBrush ImageSource="/Images/user-icon.png"
                                         Stretch="None"
@@ -243,7 +247,8 @@
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBox x:Name="txtEmail"
                              Text="{Binding CurrentAccount.email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                              FontSize="15"
@@ -256,7 +261,8 @@
                              Height="28"
                              VerticalContentAlignment="Center"
                              Margin="0,5,0,0"
-                             Padding="20,0,0,0">
+                             Padding="20,0,0,0"
+                         Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}">
                     <TextBox.Background>
                         <ImageBrush ImageSource="/Images/email-icon.png"
                                         Stretch="None"
@@ -277,8 +283,10 @@
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
-                <Grid>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}"/>
+                <Grid
+                    Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -316,7 +324,8 @@
                                FontFamily="Montserrat"
                                FontWeight="Medium"
                                Margin="0,10,0,0" 
-                               TextWrapping="Wrap"/>
+                               TextWrapping="Wrap"
+                           Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button x:Name="btnChangeDataAccept"
                             Command="{Binding ChangeDataUserCommand}"
                             BorderThickness="0"
@@ -325,7 +334,8 @@
                             FontSize="12"
                             FontFamily="Monsterrat"
                             Cursor="Hand"
-                            Margin="0,70,0,0">
+                            Margin="0,70,0,0"
+                        Visibility="{Binding IsChangeDataVisible, UpdateSourceTrigger=PropertyChanged}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#462AD8"/>
@@ -347,52 +357,55 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-            </StackPanel>
-            <StackPanel VerticalAlignment="Center"
-                        Width="300"
-                        Orientation="Vertical"
-                        Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}">
                 <TextBlock Text="Stare hasło"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <customcontrol:PassBox Password="{Binding passwordOld, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                             Height="28"
-                            Margin="0,5,0,0"/>
+                            Margin="0,5,0,0"
+                                       Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="Nowe hasło"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <customcontrol:PassBox Password="{Binding passwordNew, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                             Height="28"
-                            Margin="0,5,0,0"/>
+                            Margin="0,5,0,0"
+                                       Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="Powtórz nowe hasło"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <customcontrol:PassBox Password="{Binding passwordRepNew, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                             Height="28"
-                            Margin="0,5,0,0"/>
+                            Margin="0,5,0,0"
+                                       Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="{Binding ErrorMessageChangePassword}"
                                Foreground="#D7596D"
                                FontSize="12"
                                FontFamily="Montserrat"
                                FontWeight="Medium"
                                Margin="0,10,0,0" 
-                               TextWrapping="Wrap"/>
+                               TextWrapping="Wrap"
+                           Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="{Binding ErrorMessageChangePassword2}"
                                Foreground="#D7596D"
                                FontSize="12"
                                FontFamily="Montserrat"
                                FontWeight="Medium"
                                Margin="0,10,0,0" 
-                               TextWrapping="Wrap"/>
+                               TextWrapping="Wrap"
+                           Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button x:Name="btnRegistration"
                             Command="{Binding ChangeUserPasswordCommand}"
                             BorderThickness="0"
@@ -401,7 +414,8 @@
                             FontSize="12"
                             FontFamily="Monsterrat"
                             Cursor="Hand"
-                            Margin="0,30,0,0">
+                            Margin="0,30,0,0"
+                        Visibility="{Binding IsChangePasswordVisible, UpdateSourceTrigger=PropertyChanged}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#462AD8"/>
@@ -423,27 +437,25 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-            </StackPanel>
-            <StackPanel VerticalAlignment="Center"
-                        Width="300"
-                        Orientation="Vertical"
-                        Visibility="{Binding IsDeleteReservationsVisible, UpdateSourceTrigger=PropertyChanged}">
                 <TextBlock Text="Proszę wprowadzić hasło"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsDeleteReservationsVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <customcontrol:PassBox Password="{Binding passwordCheck, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                             Height="28"
-                            Margin="0,5,0,0"/>
+                            Margin="0,5,0,0"
+                                       Visibility="{Binding IsDeleteReservationsVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="{Binding ErrorMessageDeleteReservations}"
                                Foreground="#D7596D"
                                FontSize="12"
                                FontFamily="Montserrat"
                                FontWeight="Medium"
                                Margin="0,10,0,0" 
-                               TextWrapping="Wrap"/>
+                               TextWrapping="Wrap"
+                           Visibility="{Binding IsDeleteReservationsVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button Command="{Binding DeleteReservationsUserCommand}"
                             BorderThickness="0"
                             Content="Usunąć rezerwacje"
@@ -451,7 +463,8 @@
                             FontSize="12"
                             FontFamily="Monsterrat"
                             Cursor="Hand"
-                            Margin="0,30,0,0">
+                            Margin="0,30,0,0"
+                        Visibility="{Binding IsDeleteReservationsVisible, UpdateSourceTrigger=PropertyChanged}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="DarkRed"/>
@@ -473,27 +486,25 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-            </StackPanel>
-            <StackPanel VerticalAlignment="Center"
-                        Width="300"
-                        Orientation="Vertical"
-                        Visibility="{Binding IsDeleteUserVisible, UpdateSourceTrigger=PropertyChanged}">
                 <TextBlock Text="Proszę wprowadzić hasło"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
-                               Margin="0,5,0,0"/>
+                               Margin="0,5,0,0"
+                           Visibility="{Binding IsDeleteUserVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <customcontrol:PassBox Password="{Binding passwordDeleteUser, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                             Height="28"
-                            Margin="0,5,0,0"/>
+                            Margin="0,5,0,0"
+                                       Visibility="{Binding IsDeleteUserVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="{Binding ErrorMessageDeleteUser}"
                                Foreground="#D7596D"
                                FontSize="12"
                                FontFamily="Montserrat"
                                FontWeight="Medium"
                                Margin="0,10,0,0" 
-                               TextWrapping="Wrap"/>
+                               TextWrapping="Wrap"
+                           Visibility="{Binding IsDeleteUserVisible, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button Command="{Binding DeleteUserAccountCommand}"
                             BorderThickness="0"
                             Content="Usunąć konto"
@@ -501,7 +512,8 @@
                             FontSize="12"
                             FontFamily="Monsterrat"
                             Cursor="Hand"
-                            Margin="0,30,0,0">
+                            Margin="0,30,0,0"
+                        Visibility="{Binding IsDeleteUserVisible, UpdateSourceTrigger=PropertyChanged}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="DarkRed"/>

@@ -20,15 +20,25 @@ namespace Hospital_Reservation_App.ViewModel
 {
     public class AddReservationViewModel : ViewModelBase
     {
+        private UserModel _currentAccount; 
 
-        private UserModel _currentAccount;
-        private DateTime _day;
-        private DateTime _hour;
-        private List<DoctorModel> _listDoctors;
-        private List<SpecialityModel> _listSpeciality;
-        private ObservableCollection<DoctorModel> _showListDoctors;
-        private ObservableCollection<SpecialityModel> _showSpecialties;
         private DoctorModel _selectedDoctor;
+        private SpecialityModel _selectedSpeciality;
+        private DateTime _selectedDay;
+        private TimeSpan _selectedTime;
+        private DateTime _selectedDayTime;
+
+        private ObservableCollection<TimeSpan> _showListTime;
+        private ObservableCollection<SpecialityModel> _showListSpeciality;
+        private ObservableCollection<DoctorModel> _showListDoctors;
+        
+        private System.Windows.Visibility _isDateVisible = Visibility.Visible;
+        private System.Windows.Visibility _isTimeVisible = Visibility.Collapsed;
+        private System.Windows.Visibility _isSpecialityVisible = Visibility.Collapsed;
+        private System.Windows.Visibility _isDoctorVisible = Visibility.Collapsed;
+        private System.Windows.Visibility _isReservationVisible = Visibility.Collapsed;
+        private System.Windows.Visibility _isReservationCompleteVisible = Visibility.Collapsed;
+
 
         public UserModel CurrentAccount
         {
@@ -42,52 +52,87 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
-        public DateTime Day
+        public DoctorModel SelectedDoctor
         {
-            get { return _day; }
+            get { return _selectedDoctor; }
             set
             {
-                if (_day != value)
+                if (_selectedDoctor != value)
                 {
-                    _day = value;
-                    OnPropertyChanged(nameof(Day));
+                    _selectedDoctor = value;
+                    OnPropertyChanged(nameof(SelectedDoctor));
                 }
             }
         }
-
-        public DateTime Hour
+        public SpecialityModel SelectedSpeciality
         {
-            get { return _hour; }
+            get { return _selectedSpeciality; }
             set
             {
-                if (_hour != value)
+                if (_selectedSpeciality != value)
                 {
-                    _hour = value;
-                    OnPropertyChanged(nameof(Hour));
+                    _selectedSpeciality = value;
+                    OnPropertyChanged(nameof(SelectedSpeciality));
                 }
             }
         }
-        public List<DoctorModel> ListDoctors
+        public DateTime SelectedDay
         {
-            get { return _listDoctors; }
+            get { return _selectedDay; }
+            set
+            { 
+                if (_selectedDay != value)
+                {
+                    _selectedDay = value;
+                    OnPropertyChanged(nameof(SelectedDay));
+                } 
+            }
+        }
+        public TimeSpan SelectedTime
+        {
+            get { return _selectedTime; }
             set
             {
-                if (_listDoctors != value)
+                if (_selectedTime != value)
                 {
-                    _listDoctors = value;
-                    OnPropertyChanged(nameof(ListDoctors));
+                    _selectedTime = value;
+                    OnPropertyChanged(nameof(SelectedTime));
                 }
             }
         }
-        public List<SpecialityModel> ListSpeciality
+        public DateTime SelectedDayTime
         {
-            get { return _listSpeciality; }
+            get { return _selectedDayTime; }
             set
             {
-                if (_listSpeciality != value)
+                if (_selectedDayTime != value)
                 {
-                    _listSpeciality = value;
-                    OnPropertyChanged(nameof(ListSpeciality));
+                    _selectedDayTime = value;
+                    OnPropertyChanged(nameof(SelectedDayTime));
+                }
+            }
+        }
+        public ObservableCollection<TimeSpan> ShowListTime
+        {
+            get { return _showListTime; }
+            set
+            {
+                if (_showListTime != value)
+                {
+                    _showListTime = value;
+                    OnPropertyChanged(nameof(ShowListTime));
+                }
+            }
+        }
+        public ObservableCollection<SpecialityModel> ShowListSpeciality
+        {
+            get { return _showListSpeciality; }
+            set
+            {
+                if (_showListSpeciality  != value)
+                {
+                    _showListSpeciality = value;
+                    OnPropertyChanged(nameof(ShowListSpeciality));
                 }
             }
         }
@@ -103,70 +148,236 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
-        public ObservableCollection<SpecialityModel> ShowSpecialties
+        public System.Windows.Visibility IsDateVisible
         {
-            get { return _showSpecialties; }
+            get { return _isDateVisible; }
             set
             {
-                if (_showSpecialties != value)
+                if (_isDateVisible != value)
                 {
-                    _showSpecialties = value;
-                    OnPropertyChanged(nameof(ShowSpecialties));
+                    _isDateVisible = value;
+                    OnPropertyChanged(nameof(IsDateVisible));
                 }
             }
         }
-        public DoctorModel selectedDoctor
+        public System.Windows.Visibility IsTimeVisible
         {
-            get { return _selectedDoctor; }
+            get { return _isTimeVisible; }
             set
             {
-                if (_selectedDoctor != value)
+                if (_isTimeVisible != value)
                 {
-                    _selectedDoctor = value;
-                    OnPropertyChanged(nameof(selectedDoctor));
+                    _isTimeVisible = value;
+                    OnPropertyChanged(nameof(IsTimeVisible));
                 }
             }
         }
+        public System.Windows.Visibility IsSpecialityVisible
+        {
+            get { return _isSpecialityVisible; }
+            set
+            {
+                if (_isSpecialityVisible != value)
+                {
+                    _isSpecialityVisible = value;
+                    OnPropertyChanged(nameof(IsSpecialityVisible));
+                }
+            }
+        }
+        public System.Windows.Visibility IsDoctorVisible
+        {
+            get { return _isDoctorVisible; }
+            set
+            {
+                if (_isDoctorVisible != value)
+                {
+                    _isDoctorVisible = value;
+                    OnPropertyChanged(nameof(IsDoctorVisible));
+                }
+            }
+        }
+        public System.Windows.Visibility IsReservationVisible
+        {
+            get { return _isReservationVisible; }
+            set
+            {
+                if (_isReservationVisible != value)
+                {
+                    _isReservationVisible = value;
+                    OnPropertyChanged(nameof(IsReservationVisible));
+                }
+            }
+        }
+        public System.Windows.Visibility IsReservationCompleteVisible
+        {
+            get { return _isReservationCompleteVisible; }
+            set
+            {
+                if (_isReservationCompleteVisible != value)
+                {
+                    _isReservationCompleteVisible = value;
+                    OnPropertyChanged(nameof(IsReservationCompleteVisible));
+                }
+            }
+        }
+
         public ICommand AddReservationCommand { get; }
+        public ICommand NextWindowCommand1 { get; }
+        public ICommand NextWindowCommand2 { get; }
+        public ICommand NextWindowCommand3 { get; }
+        public ICommand NextWindowCommand4 { get; }
+        public ICommand PreviousWindowCommand { get; }
+        public ICommand StartWindowCommand { get; }
+
         private IUserRepository userRepository;
         private IReservationRepository reservationRepository;
         private ISpecialityRepository specialityRepository;
 
         public AddReservationViewModel()
         {
-            CurrentAccount = new UserModel();
-            ListDoctors = new List<DoctorModel>();
-            ListSpeciality = new List<SpecialityModel>();
             userRepository = new UserRepository();
             reservationRepository = new ReservationRepository();
             specialityRepository = new SpecialityRepository();
-            AddReservationCommand = new ViewModelCommand(ExecuteAddReservationCommand, CanExecuteAddReservationCommand);
+
+            CurrentAccount = new UserModel();
+
+            AddReservationCommand = new ViewModelCommand(ExecuteAddReservationCommand);
+            NextWindowCommand1 = new ViewModelCommand(ExecuteNextWindowCommand1, CanExecuteNextWindowCommand1);
+            NextWindowCommand2 = new ViewModelCommand(ExecuteNextWindowCommand2, CanExecuteNextWindowCommand2);
+            NextWindowCommand3 = new ViewModelCommand(ExecuteNextWindowCommand3, CanExecuteNextWindowCommand3);
+            NextWindowCommand4 = new ViewModelCommand(ExecuteNextWindowCommand4, CanExecuteNextWindowCommand4);
+            PreviousWindowCommand = new ViewModelCommand(ExecutePreviousWindowCommand);
+            StartWindowCommand = new ViewModelCommand(ExecuteStartWindowCommand);
             LoadCurrentAccountData();
-            LoadDoctorsData();
-            LoadSpecialtiesData();
-            Day = DateTime.Now;
-        }
-        private bool CanExecuteAddReservationCommand(object obj)
-        {
-            //if (string.IsNullOrEmpty(firstname) || firstname.Length < 3)
-            //{
-            //    ErrorMessageRegistration = "Imię musi być więcej 3 znaków!";
-            //    validCreate = false;
-            //}
-            bool validAdd = true;
-            return validAdd;
-        }
-        private void ExecuteAddReservationCommand(object obj)
-        {
-            ReservationModel ResModel = new ReservationModel();
-            ResModel.Doctor = new DoctorModel();
-            ResModel.PatientId = CurrentAccount.id;
-            ResModel.Doctor = selectedDoctor;
-            ResModel.ReservationTime = Day;
-          
-            reservationRepository.AddRes(ResModel.PatientId,ResModel.Doctor.Id, ResModel.ReservationTime);
         }
 
+        private void ExecuteAddReservationCommand(object obj)
+        {
+
+            ReservationModel reservation = new ReservationModel();
+            reservation.PatientId = CurrentAccount.id;
+            reservation.Doctor = SelectedDoctor;
+            reservation.ReservationTime = SelectedDayTime;
+            reservationRepository.AddRes(reservation);
+            IsReservationVisible = Visibility.Collapsed;
+            IsReservationCompleteVisible = Visibility.Visible;
+        }
+        private bool CanExecuteNextWindowCommand1(object obj)
+        {
+            if (SelectedDay < DateTime.Today)
+            {
+                return false;
+            }
+            else return true;
+        }
+        private void ExecuteNextWindowCommand1(object obj)
+        {
+            IsDateVisible = Visibility.Collapsed;
+            IsTimeVisible = Visibility.Visible;
+            LoadShowListTime();
+            SelectedTime = new TimeSpan();
+        }
+        private bool CanExecuteNextWindowCommand2(object obj)
+        {
+            if (SelectedTime < new TimeSpan(9,0,0) || SelectedTime > new TimeSpan(17, 0, 0))
+            {
+                return false;
+            }
+            else return true;
+        }
+        private void ExecuteNextWindowCommand2(object obj)
+        {
+            IsTimeVisible = Visibility.Collapsed;
+            IsSpecialityVisible = Visibility.Visible;
+            LoadShowListSpecialty();
+            SelectedSpeciality = null;
+        }
+        private bool CanExecuteNextWindowCommand3(object obj)
+        {
+            if (SelectedSpeciality == null)
+            {
+                return false;
+            }
+            else return true;
+        }
+        private void ExecuteNextWindowCommand3(object obj)
+        {
+            IsSpecialityVisible = Visibility.Collapsed;
+            IsDoctorVisible = Visibility.Visible;
+            LoadShowListDoctors();
+            SelectedDoctor = null;
+        }
+        private bool CanExecuteNextWindowCommand4(object obj)
+        {
+            if (SelectedDoctor == null)
+            {
+                return false;
+            }
+            else return true;
+        }
+        private void ExecuteNextWindowCommand4(object obj)
+        {
+            IsDoctorVisible = Visibility.Collapsed;
+            IsReservationVisible = Visibility.Visible;
+        }
+
+        private void ExecutePreviousWindowCommand(object obj)
+        {
+            if (IsTimeVisible == Visibility.Visible)
+            {
+                IsTimeVisible = Visibility.Collapsed;
+                IsDateVisible = Visibility.Visible;
+            }
+            else if (IsSpecialityVisible == Visibility.Visible)
+            {
+                IsSpecialityVisible = Visibility.Collapsed;
+                IsTimeVisible = Visibility.Visible;
+            }
+            else if (IsDoctorVisible == Visibility.Visible)
+            {
+                IsDoctorVisible = Visibility.Collapsed;
+                IsSpecialityVisible = Visibility.Visible;
+            }
+            else if (IsReservationVisible == Visibility.Visible)
+            {
+                IsReservationVisible = Visibility.Collapsed;
+                IsDoctorVisible = Visibility.Visible;
+            }
+        }
+        private void ExecuteStartWindowCommand(object obj)
+        {
+            IsReservationCompleteVisible = Visibility.Collapsed;
+            IsDateVisible = Visibility.Visible;
+            SelectedDay = new DateTime();
+            SelectedTime = new TimeSpan();
+            SelectedDayTime = new DateTime();
+            SelectedSpeciality = new SpecialityModel();
+            SelectedDoctor = new DoctorModel();
+        }
+
+        private void LoadShowListTime()
+        {
+            //TODO: check time for user
+            ShowListTime = new ObservableCollection<TimeSpan>();
+            for (int i = 9; i <= 17; i++)
+            {
+                TimeSpan time = new TimeSpan(i, 0, 0);
+                ShowListTime.Add(time);
+            }
+        }
+        private void LoadShowListSpecialty()
+        {
+            List<SpecialityModel> specialities = new List<SpecialityModel>();
+            specialities = specialityRepository.GetAll();
+            ShowListSpeciality = new ObservableCollection<SpecialityModel>(specialities);
+        }
+        private void LoadShowListDoctors()
+        {
+            SelectedDayTime = new DateTime(SelectedDay.Year, SelectedDay.Month, SelectedDay.Day, SelectedTime.Hours, SelectedTime.Minutes, SelectedTime.Seconds);
+            List<DoctorModel> doctors = new List<DoctorModel>();
+            doctors = userRepository.GetDoctorsData(SelectedDayTime, SelectedSpeciality);
+            ShowListDoctors = new ObservableCollection<DoctorModel>(doctors);
+        }
         private void LoadCurrentAccountData()
         {
             var user = userRepository.GetUser(Thread.CurrentPrincipal.Identity.Name);
@@ -185,16 +396,6 @@ namespace Hospital_Reservation_App.ViewModel
                 //TODO
                 MessageBox.Show("User not logged in!");
             }
-        }
-        private void LoadDoctorsData()
-        {
-            ListDoctors = userRepository.GetDoctorsData();
-            ShowListDoctors = new ObservableCollection<DoctorModel>(ListDoctors);
-        }
-        private void LoadSpecialtiesData()
-        {
-            ListSpeciality = specialityRepository.GetAll();
-            ShowSpecialties = new ObservableCollection<SpecialityModel>(ListSpeciality);
         }
     }
 }

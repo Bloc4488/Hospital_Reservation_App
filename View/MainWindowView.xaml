@@ -14,8 +14,7 @@
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True"
-        MouseDown="Window_MouseDown"
-        IsEnabled="{Binding IsMainVisible}">
+        MouseDown="Window_MouseDown">
     <Window.DataContext>
         <viewmodel:MainViewModel/>
     </Window.DataContext>

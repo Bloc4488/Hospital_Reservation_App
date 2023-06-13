@@ -9,7 +9,7 @@ namespace Hospital_Reservation_App.Model
 {
     interface IReservationRepository
     {
-       void AddRes(string pacient_id, string doctor_id, DateTime res);
+       void AddRes(ReservationModel reservation);
        void DeleteReservation(ReservationModel reservation);
        void DeleteAllReservationuser(UserModel userModel);
        List<ReservationModel> GetReservationsData(UserModel user);
