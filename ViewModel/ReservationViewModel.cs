@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 using System.Windows.Input;
 
 namespace Hospital_Reservation_App.ViewModel
@@ -19,6 +20,8 @@ namespace Hospital_Reservation_App.ViewModel
         private ReservationModel _selectedReservation;
         private List<ReservationModel> _listReservations;
         private ObservableCollection<ReservationModel> _showReservations;
+        private string _showComment;
+        private string _gradeChoice;
 
         public UserModel CurrentAccount
         {
@@ -69,10 +72,38 @@ namespace Hospital_Reservation_App.ViewModel
             }
         }
 
+        public string ShowComment
+        {
+            get { return _showComment; }
+            set
+            {
+                if (_showComment != value)
+                {
+                    _showComment = value;
+                    OnPropertyChanged(nameof(ShowComment));
+                }
+            }
+        }
+
+        public string GradeChoice
+        {
+            get { return _gradeChoice; }
+            set
+            {
+                if (_gradeChoice != value)
+                {
+                    _gradeChoice = value;
+                    OnPropertyChanged(nameof(GradeChoice));
+                }
+            }
+        }
+
         public ICommand DeleteReservationCommand { get; }
+        public ICommand AddCommentCommand { get; }
 
         private IUserRepository userRepository;
         private IReservationRepository reservationRepository;
+        private IGradeAndCommentRepository gradeAndCommentRepository;
 
         public ReservationViewModel()
         {
@@ -81,7 +112,9 @@ namespace Hospital_Reservation_App.ViewModel
             ShowReservations = new ObservableCollection<ReservationModel>();
             userRepository = new UserRepository();
             reservationRepository = new ReservationRepository();
+            gradeAndCommentRepository = new GradeAndCommentRepository();
             DeleteReservationCommand = new ViewModelCommand(ExecuteDeleteReservationCommand, CanExecuteDeleteReservationCommand);
+            AddCommentCommand = new ViewModelCommand(ExecuteAddCommentCommand, CanExecuteAddCommentCommand);
             LoadCurrentAccountData();
             LoadCurrentUserReservations();
         }
@@ -100,11 +133,39 @@ namespace Hospital_Reservation_App.ViewModel
             return validDelete;
         }
 
+        private bool CanExecuteAddCommentCommand(object obj)
+        {
+            bool validAdd;
+            if (SelectedReservation == null)
+            {
+                validAdd = false;
+            }
+            else
+            {
+                validAdd = true;
+            }
+            return validAdd;
+        }
+
+        private void ExecuteAddCommentCommand(object obj)
+        {
+            GradeAndCommentModel GradeAndCom = new GradeAndCommentModel();
+
+            GradeAndCom.ReservationID = SelectedReservation.Id;
+            //GradeAndCom.grade = GradeChoice;
+            GradeAndCom.grade = "4";
+            GradeAndCom.comment = ShowComment;
+
+            gradeAndCommentRepository.AddComment(GradeAndCom);
+        }
+
         private void ExecuteDeleteReservationCommand(object obj)
         {
             reservationRepository.DeleteReservation(SelectedReservation);
             LoadCurrentUserReservations();
         }
+
+
 
         private void LoadCurrentAccountData()
         {
@@ -122,7 +183,7 @@ namespace Hospital_Reservation_App.ViewModel
             else
             {
                 //TODO
-                MessageBox.Show("User not logged in!");
+                //MessageBox.Show("User not logged in!");
             }
         }
 

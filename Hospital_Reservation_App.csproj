@@ -135,6 +135,8 @@
       <DependentUpon>PassBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\DoctorModel.cs" />
+    <Compile Include="Model\GradeAndCommentModel.cs" />
+    <Compile Include="Model\IGradeAndCommentRepository.cs" />
     <Compile Include="Model\IReservationRepository.cs" />
     <Compile Include="Model\ISpecialityRepository.cs" />
     <Compile Include="Model\IUserRepository.cs" />
@@ -142,6 +144,7 @@
     <Compile Include="Model\SpecialityModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Repositories\DataBaseRepository.cs" />
+    <Compile Include="Repositories\GradeAndCommentRepository.cs" />
     <Compile Include="Repositories\ReservationRepository.cs" />
     <Compile Include="Repositories\SpecialityRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
