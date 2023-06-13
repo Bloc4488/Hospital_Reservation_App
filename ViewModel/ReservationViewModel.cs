@@ -22,6 +22,7 @@ namespace Hospital_Reservation_App.ViewModel
         private ObservableCollection<ReservationModel> _showReservations;
         private string _showComment;
         private string _gradeChoice;
+        private ObservableCollection<string> _showListGrades;
 
         public UserModel CurrentAccount
         {
@@ -97,6 +98,18 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
+        public ObservableCollection<string> ShowListGrades
+        {
+            get { return _showListGrades; }
+            set
+            {
+                if (_showListGrades != value)
+                {
+                    _showListGrades = value;
+                    OnPropertyChanged(nameof(ShowListGrades));
+                }
+            }
+        }
 
         public ICommand DeleteReservationCommand { get; }
         public ICommand AddCommentCommand { get; }
@@ -117,6 +130,7 @@ namespace Hospital_Reservation_App.ViewModel
             AddCommentCommand = new ViewModelCommand(ExecuteAddCommentCommand, CanExecuteAddCommentCommand);
             LoadCurrentAccountData();
             LoadCurrentUserReservations();
+            LoadShowListGrades();
         }
 
         private bool CanExecuteDeleteReservationCommand(object obj)
@@ -152,8 +166,7 @@ namespace Hospital_Reservation_App.ViewModel
             GradeAndCommentModel GradeAndCom = new GradeAndCommentModel();
 
             GradeAndCom.ReservationID = SelectedReservation.Id;
-            //GradeAndCom.grade = GradeChoice;
-            GradeAndCom.grade = "4";
+            GradeAndCom.grade = GradeChoice;
             GradeAndCom.comment = ShowComment;
 
             gradeAndCommentRepository.AddComment(GradeAndCom);
@@ -166,6 +179,17 @@ namespace Hospital_Reservation_App.ViewModel
         }
 
 
+
+        private void LoadShowListGrades()
+        {
+            //TODO: check time for user
+            ShowListGrades = new ObservableCollection<string>();
+            for (int i = 5; i >= 1; i--)
+            {
+                string time = i.ToString();
+                ShowListGrades.Add(time);
+            }
+        }
 
         private void LoadCurrentAccountData()
         {
