@@ -6,7 +6,7 @@
              xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
              xmlns:local="clr-namespace:Hospital_Reservation_App.View"
              mc:Ignorable="d" 
-             d:DesignHeight="660" d:DesignWidth="900">
+             d:DesignHeight="650" d:DesignWidth="900">
     <UserControl.DataContext>
         <viewmodel:AdminViewModel/>
     </UserControl.DataContext>

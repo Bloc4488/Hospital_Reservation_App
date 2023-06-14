@@ -9,10 +9,8 @@ namespace Hospital_Reservation_App.Model
     public class GradeAndCommentModel
     {
         public string iD { get; set; }
-
         public string ReservationID { get; set; }   
         public string grade { get; set;}
-
         public string comment { get; set;}
     }
 }

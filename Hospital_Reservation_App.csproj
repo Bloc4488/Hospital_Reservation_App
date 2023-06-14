@@ -145,6 +145,7 @@
     <Compile Include="Model\ReservationModel.cs" />
     <Compile Include="Model\SpecialityModel.cs" />
     <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Model\VisitModel.cs" />
     <Compile Include="Repositories\DataBaseRepository.cs" />
     <Compile Include="Repositories\DoctorNoteRepository.cs" />
     <Compile Include="Repositories\GradeAndCommentRepository.cs" />
@@ -160,6 +161,7 @@
     <Compile Include="ViewModel\SettingsViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelCommand.cs" />
+    <Compile Include="ViewModel\VisitsViewModel.cs" />
     <Compile Include="View\AddReservationView.xaml.cs">
       <DependentUpon>AddReservationView.xaml</DependentUpon>
     </Compile>
@@ -183,6 +185,9 @@
     </Compile>
     <Compile Include="View\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VisitsView.xaml.cs">
+      <DependentUpon>VisitsView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +269,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\VisitsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\back-image.jpg" />
@@ -276,15 +285,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\email-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Exit_Icon.png" />
-    <Resource Include="Images\list_of_visits.png" />
-    <Resource Include="Images\my_acc.png" />
-    <Resource Include="Images\reservation-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\home-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

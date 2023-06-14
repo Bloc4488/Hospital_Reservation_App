@@ -109,6 +109,7 @@ namespace Hospital_Reservation_App.ViewModel
             ShowReservationsViewCommand = new ViewModelCommand(ExecuteReservationsViewCommand);
             ShowAddReservationViewCommand = new ViewModelCommand(ExecuteAddReservationViewCommand);
             ShowSettingsViewCommand = new ViewModelCommand(ExecuteSettingsViewCommand);
+            ShowVisitsViewCommand = new ViewModelCommand(ExecuteShowVisitsViewCommand);
             ExecuteShowHomeViewCommand(null);
             LoadCurrentAccountData();
             ShowButtons();
@@ -137,6 +138,11 @@ namespace Hospital_Reservation_App.ViewModel
         {
             ChildView = new SettingsViewModel();
             Title = "Ustawienia";
+        }
+        private void ExecuteShowVisitsViewCommand(object obj)
+        {
+            ChildView = new VisitsViewModel();
+            Title = "Wizyty";
         }
         private void LoadCurrentAccountData()
         {

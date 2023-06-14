@@ -7,7 +7,7 @@
         xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
         xmlns:customcontrol="clr-namespace:Hospital_Reservation_App.CustomControlls"
         mc:Ignorable="d"
-        Height="660" Width="900">
+        Height="650" Width="900">
     <UserControl.DataContext>
         <viewmodel:SettingsViewModel/>
     </UserControl.DataContext>

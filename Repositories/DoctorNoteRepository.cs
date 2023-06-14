@@ -37,5 +37,21 @@ namespace Hospital_Reservation_App.Repositories
             }
             return doctorNote;
         }
+
+        public void AddDoctorNote(DoctorNoteModel doctorNote)
+        {
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "INSERT INTO doctor_notes(reservation_id, note) VALUES (@res_id, @note)";
+                    command.Parameters.Add("@res_id", MySqlDbType.VarChar).Value = doctorNote.Reservation_id;
+                    command.Parameters.Add("@note", MySqlDbType.Text).Value = doctorNote.Note;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

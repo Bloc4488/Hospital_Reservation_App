@@ -9,5 +9,6 @@ namespace Hospital_Reservation_App.Model
     public interface IDoctorNoteRepository
     {
         DoctorNoteModel GetDoctorNote(ReservationModel reservation);
+        void AddDoctorNote(DoctorNoteModel doctorNote);
     }
 }

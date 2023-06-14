@@ -10,6 +10,6 @@ namespace Hospital_Reservation_App.Model
     {
         void AddComment(GradeAndCommentModel GradeAndCom);
 
-        void GetComment(GradeAndCommentModel GradeAndCom);
+        GradeAndCommentModel GetComment(VisitModel visit);
     }
 }
