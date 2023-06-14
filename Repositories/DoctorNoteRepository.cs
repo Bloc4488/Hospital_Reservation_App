@@ -13,6 +13,11 @@ namespace Hospital_Reservation_App.Repositories
 {
     public class DoctorNoteRepository : DataBaseRepository, IDoctorNoteRepository
     {
+        /// <summary>
+        /// The method geting doctor note to pacient.
+        /// </summary>
+        /// <param name="reservation"></param>
+        /// <returns> doctor note for selected reservation</returns>
         public DoctorNoteModel GetDoctorNote(ReservationModel reservation)
         {
             DoctorNoteModel doctorNote = new DoctorNoteModel();
@@ -37,7 +42,10 @@ namespace Hospital_Reservation_App.Repositories
             }
             return doctorNote;
         }
-
+        /// <summary>
+        /// The method adding doctor note to dataBase after pacients visit.
+        /// </summary>
+        /// <param name="doctorNote"></param>
         public void AddDoctorNote(DoctorNoteModel doctorNote)
         {
             using (var connection = GetConnection())

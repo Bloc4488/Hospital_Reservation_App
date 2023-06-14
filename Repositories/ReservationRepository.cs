@@ -13,6 +13,10 @@ namespace Hospital_Reservation_App.Repositories
 {
     public class ReservationRepository : DataBaseRepository, IReservationRepository
     {
+        /// <summary>
+        /// The method user adding reservation on selected date, speciality and doctor.
+        /// </summary>
+        /// <param name="reservation"></param>
         public void AddRes(ReservationModel reservation)
         {
             using (var connection = GetConnection())
@@ -29,7 +33,11 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for get all reservations user had been done.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>list of all reservations done by user.</returns>
         public List<ReservationModel> GetAllReservationsData(UserModel user)
         {
             List<ReservationModel> reservations = new List<ReservationModel>();
@@ -72,7 +80,11 @@ namespace Hospital_Reservation_App.Repositories
             }
             return reservations;
         }
-
+        /// <summary>
+        /// The method for get past reservations data for user.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>list of all past reservations of user.</returns>
         public List<ReservationModel> GetPastReservationsData(UserModel user)
         {
             List<ReservationModel> reservations = new List<ReservationModel>();
@@ -117,7 +129,11 @@ namespace Hospital_Reservation_App.Repositories
             }
             return reservations;
         }
-
+        /// <summary>
+        /// The method for get future reservations data for user.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>list of all future reservations for user</returns>
         public List<ReservationModel> GetFutureReservationsData(UserModel user)
         {
             List<ReservationModel> reservations = new List<ReservationModel>();
@@ -162,7 +178,11 @@ namespace Hospital_Reservation_App.Repositories
             }
             return reservations;
         }
-
+        /// <summary>
+        /// The method for get all reservations which doctor have.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>list of all reservations doctor have.</returns>
         public List<VisitModel> GetAllReservationsData(DoctorModel user)
         {
             List<VisitModel> reservations = new List<VisitModel>();
@@ -199,6 +219,11 @@ namespace Hospital_Reservation_App.Repositories
             }
             return reservations;
         }
+        /// <summary>
+        /// The method for get past reservations data for doctor.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>List of all past reservations of doctor.</returns>
         public List<VisitModel> GetPastReservationsData(DoctorModel user)
         {
             List<VisitModel> reservations = new List<VisitModel>();
@@ -237,6 +262,12 @@ namespace Hospital_Reservation_App.Repositories
             }
             return reservations;
         }
+
+        /// <summary>
+        /// The method for get future reservations data for doctor.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>List of all future reservations doctor have.</returns>
         public List<VisitModel> GetFutureReservationsData(DoctorModel user)
         {
             List<VisitModel> reservations = new List<VisitModel>();
@@ -276,6 +307,10 @@ namespace Hospital_Reservation_App.Repositories
             return reservations;
         }
 
+        /// <summary>
+        /// The method for deleting selected reservation by user.
+        /// </summary>
+        /// <param name="reservation"></param>
         public void DeleteReservation(ReservationModel reservation)
         {
             using (var connection = GetConnection())
@@ -290,7 +325,10 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for deleting all reservations by user.
+        /// </summary>
+        /// <param name="userModel"></param>
         public void DeleteAllReservationuser(UserModel userModel)
         {
             using (var connection = GetConnection())
@@ -306,6 +344,12 @@ namespace Hospital_Reservation_App.Repositories
             }
         }
 
+        /// <summary>
+        /// The method get list of hours when user already have reserved visit to doctor.
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="user"></param>
+        /// <returns>list of hours when user already have reserved visit to doctor</returns>
         public List<DateTime> GetUserTime(DateTime date, UserModel user)
         {
             List<DateTime> result = new List<DateTime>();

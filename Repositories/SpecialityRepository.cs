@@ -12,6 +12,10 @@ namespace Hospital_Reservation_App.Repositories
 {
     public class SpecialityRepository : DataBaseRepository, ISpecialityRepository
     {
+        /// <summary>
+        /// The method getting all specialties in hospital from database.
+        /// </summary>
+        /// <returns>list of all specialties in hospital.</returns>
         public List<SpecialityModel> GetAll()
         {
             List<SpecialityModel> specialityModels = new List<SpecialityModel>();
@@ -35,7 +39,10 @@ namespace Hospital_Reservation_App.Repositories
             }
             return specialityModels;
         }
-
+        /// <summary>
+        /// The method for adding new speciality in database 
+        /// </summary>
+        /// <param name="speciality"></param>
         public void Add(SpecialityModel speciality)
         {
             using (var connection = GetConnection())
@@ -48,7 +55,10 @@ namespace Hospital_Reservation_App.Repositories
                 command.ExecuteNonQuery();
             }
         }
-
+        /// <summary>
+        /// The method for delete selected speciality from database.
+        /// </summary>
+        /// <param name="speciality"></param>
         public void Delete(SpecialityModel speciality)
         {
             using (var connection = GetConnection())

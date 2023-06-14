@@ -11,6 +11,10 @@ namespace Hospital_Reservation_App.Repositories
 {
     public class GradeAndCommentRepository : DataBaseRepository, IGradeAndCommentRepository
     {
+        /// <summary>
+        /// The method user adding comment about selected visit
+        /// </summary>
+        /// <param name="GradeAndCom"></param>
         public void AddComment(GradeAndCommentModel GradeAndCom)
         {
             using (var connection = GetConnection())
@@ -27,7 +31,11 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method getting selected comment for show them to doctor 
+        /// </summary>
+        /// <param name="visit"></param>
+        /// <returns></returns>
         public GradeAndCommentModel GetComment(VisitModel visit)
         {
             GradeAndCommentModel commentModel = new GradeAndCommentModel();

@@ -20,6 +20,7 @@ namespace Hospital_Reservation_App.View
     /// </summary>
     public partial class LoginWindowView : Window
     {
+
         public LoginWindowView()
         {
             InitializeComponent();
@@ -29,10 +30,20 @@ namespace Hospital_Reservation_App.View
             if (e.LeftButton == MouseButtonState.Pressed)
                 DragMove();
         }
+        /// <summary>
+        /// Action for the minimize size of window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMinimize_click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
+        /// <summary>
+        /// Action for close the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnClose_click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
@@ -44,7 +55,11 @@ namespace Hospital_Reservation_App.View
             forWin.Show();*/
             MessageBox.Show("In working process!");
         }
-
+        /// <summary>
+        /// Action for close login window and open registration window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBlockRegister_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             var regWindow = new RegistrationWindowView();
