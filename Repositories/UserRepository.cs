@@ -51,6 +51,21 @@ namespace Hospital_Reservation_App.Repositories
             }
         }
 
+        public void Delete(DoctorModel doctor)
+        {
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "DELETE FROM users WHERE id = @doctor";
+                    command.Parameters.Add("@doctor", MySqlDbType.VarChar).Value = doctor.Id;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void Update(UserModel userModel)
         {
             using (var connection = GetConnection())
@@ -287,6 +302,70 @@ namespace Hospital_Reservation_App.Repositories
                 users.Add(user);
             }
             return users;
+        }
+        public List<DoctorModel> GetDoctors()
+        {
+            List<DoctorModel> users = new List<DoctorModel>();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT u.id, u.firstname, u.lastname, u.email, sp.speciality_id, sp.name FROM users u " +
+                    "JOIN doctors d ON d.user_id = u.id " +
+                    "JOIN specialties sp ON sp.speciality_id = d.speciality_id " +
+                    "WHERE u.privilege = 2";
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                DoctorModel user = new DoctorModel();
+                user.Speciality = new SpecialityModel();
+                user.Id = row[0].ToString();
+                user.FirstName = row[1].ToString();
+                user.LastName = row[2].ToString();
+                user.Email = row[3].ToString();
+                user.Speciality.Id = row[4].ToString();
+                user.Speciality.Name = row[5].ToString();
+                users.Add(user);
+            }
+            return users;
+        }
+
+        public void DeleteDoctorFromDoctors(DoctorModel doctor)
+        {
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "UPDATE users SET privilege = 1 WHERE id = @UserId; " +
+                        "DELETE FROM doctors WHERE user_id = @UserID";
+                    command.Parameters.Add("@UserId", MySqlDbType.Int32).Value = doctor.Id;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void CreateDoctor(UserModel user, SpecialityModel speciality)
+        {
+            using (var connection = GetConnection())
+            {
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "UPDATE users SET privilege = 2 WHERE id = @UserId; " +
+                        "INSERT INTO doctors(user_id, speciality_id) VALUES (@UserId, @spec_id)";
+                    command.Parameters.Add("@UserId", MySqlDbType.Int64).Value = user.id;
+                    command.Parameters.Add("@spec_id", MySqlDbType.Int64).Value = speciality.Id;
+                    command.ExecuteNonQuery();
+                }
+            }
         }
     }
 }

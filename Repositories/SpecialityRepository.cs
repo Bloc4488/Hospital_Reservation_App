@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,37 @@ namespace Hospital_Reservation_App.Repositories
                 specialityModels.Add(specialityModel);
             }
             return specialityModels;
+        }
+
+        public void Add(SpecialityModel speciality)
+        {
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO specialties(name) VALUES (@name)";
+                command.Parameters.Add("@name", MySqlDbType.VarChar).Value = speciality.Name;
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public void Delete(SpecialityModel speciality)
+        {
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "UPDATE users SET privelege = 1 " +
+                    "WHERE id IN (" +
+                    "SELECT user_id FROM doctors d " +
+                    "JOIN specialties s ON d.speciality_id = s.speciality_id " +
+                    "WHERE s.speciality_id = @spec_id); " +
+                    "DELETE FROM specialties WHERE speciality_id = @spec_id;";
+                command.Parameters.Add("@spec_id", MySqlDbType.Int64).Value = speciality.Id;
+                command.ExecuteNonQuery();
+            }
         }
     }
 }

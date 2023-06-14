@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.Model
 {
-    public interface ISpecialityRepository
+    public class DoctorNoteModel
     {
-        List<SpecialityModel> GetAll();
-        void Add(SpecialityModel model);
-        void Delete(SpecialityModel speciality);
+        public string Id { get; set; }
+        public string Reservation_id { get; set; }
+        public string Note { get; set; }
     }
 }

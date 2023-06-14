@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.Model
 {
-    public interface ISpecialityRepository
+    public interface IDoctorNoteRepository
     {
-        List<SpecialityModel> GetAll();
-        void Add(SpecialityModel model);
-        void Delete(SpecialityModel speciality);
+        DoctorNoteModel GetDoctorNote(ReservationModel reservation);
     }
 }

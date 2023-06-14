@@ -21,6 +21,7 @@ namespace Hospital_Reservation_App.ViewModel
         private ObservableCollection<ReservationModel> _showReservations;
         private string _showComment;
         private string _gradeChoice;
+        private DoctorNoteModel _doctorNote;
         private ObservableCollection<string> _showListGrades;
 
         private bool _checkBoxAllChecked = true;
@@ -47,6 +48,14 @@ namespace Hospital_Reservation_App.ViewModel
                 if (_selectedReservation != value)
                 {
                     _selectedReservation = value;
+                    if (_selectedReservation == null)
+                    {
+                        DoctorNoteModel note = new DoctorNoteModel();
+                        note.Note = "";
+                        DoctorNote = note;
+                    }
+                    else
+                        LoadDoctorNote();
                     OnPropertyChanged(nameof(SelectedReservation));
                 }
             }
@@ -134,6 +143,18 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
+        public DoctorNoteModel DoctorNote
+        {
+            get { return _doctorNote; }
+            set
+            {
+                if (_doctorNote != value)
+                {
+                    _doctorNote = value;
+                    OnPropertyChanged(nameof(DoctorNote));
+                }
+            }
+        }
         public ObservableCollection<string> ShowListGrades
         {
             get { return _showListGrades; }
@@ -153,6 +174,7 @@ namespace Hospital_Reservation_App.ViewModel
         private readonly IUserRepository userRepository;
         private readonly IReservationRepository reservationRepository;
         private readonly IGradeAndCommentRepository gradeAndCommentRepository;
+        private readonly IDoctorNoteRepository doctorNoteRepository;
 
         public ReservationViewModel()
         {
@@ -161,10 +183,12 @@ namespace Hospital_Reservation_App.ViewModel
             userRepository = new UserRepository();
             reservationRepository = new ReservationRepository();
             gradeAndCommentRepository = new GradeAndCommentRepository();
+            doctorNoteRepository = new DoctorNoteRepository();
             DeleteReservationCommand = new ViewModelCommand(ExecuteDeleteReservationCommand, CanExecuteDeleteReservationCommand);
             AddCommentCommand = new ViewModelCommand(ExecuteAddCommentCommand, CanExecuteAddCommentCommand);
             LoadCurrentAccountData();
             LoadCurrentUserAllReservations();
+            LoadShowListGrades();
         }
 
         private bool CanExecuteDeleteReservationCommand(object obj)
@@ -188,6 +212,10 @@ namespace Hospital_Reservation_App.ViewModel
             {
                 validAdd = false;
             }
+            else if (string.IsNullOrEmpty(ShowComment))
+            {
+                validAdd = false;
+            }
             else
             {
                 validAdd = true;
@@ -204,6 +232,9 @@ namespace Hospital_Reservation_App.ViewModel
             GradeAndCom.comment = ShowComment;
 
             gradeAndCommentRepository.AddComment(GradeAndCom);
+            GradeChoice = "";
+            ShowComment = "";
+            SelectedReservation = null;
         }
 
         private void ExecuteDeleteReservationCommand(object obj)
@@ -217,7 +248,6 @@ namespace Hospital_Reservation_App.ViewModel
 
         private void LoadShowListGrades()
         {
-            //TODO: check time for user
             ShowListGrades = new ObservableCollection<string>();
             for (int i = 5; i >= 1; i--)
             {
@@ -260,6 +290,16 @@ namespace Hospital_Reservation_App.ViewModel
         {
             List<ReservationModel> list = reservationRepository.GetFutureReservationsData(CurrentAccount);
             ShowReservations = new ObservableCollection<ReservationModel>(list);
+        }
+        private void LoadDoctorNote()
+        {
+            DoctorNote = doctorNoteRepository.GetDoctorNote(SelectedReservation);
+            if (DoctorNote.Note == null)
+            {
+                DoctorNoteModel note = new DoctorNoteModel();
+                note.Note = "Nie ma notatek od lekarza!";
+                DoctorNote = note;
+            }
         }
     }
 }

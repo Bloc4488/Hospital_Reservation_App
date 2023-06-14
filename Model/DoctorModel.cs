@@ -12,6 +12,7 @@ namespace Hospital_Reservation_App.Model
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Fullname { get; set; }
+        public string Email { get; set; }
         public SpecialityModel Speciality { get; set; }
     }
 }

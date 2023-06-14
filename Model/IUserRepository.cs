@@ -12,6 +12,7 @@ namespace Hospital_Reservation_App.Model
     {
         void Add(UserModel userModel);
         void Delete(UserModel userModel);
+        void Delete(DoctorModel doctor);
         void Update(UserModel userModel);
         void UpdatePassword(UserModel userModel);
         bool AuthentificateUser(NetworkCredential credential);
@@ -22,6 +23,9 @@ namespace Hospital_Reservation_App.Model
         bool checkOldPassword(NetworkCredential credential, UserModel userModel);
         UserModel GetUser(string Email);
         List<UserModel> GetPatients();
+        List<DoctorModel> GetDoctors();
+        void DeleteDoctorFromDoctors(DoctorModel doctor);
+        void CreateDoctor(UserModel user, SpecialityModel speciality);
         List<DoctorModel> GetDoctorsData(DateTime date, SpecialityModel speciality);
     }
 }
