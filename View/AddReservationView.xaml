@@ -8,7 +8,7 @@
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d" 
-             d:DesignHeight="670" d:DesignWidth="1000">
+             d:DesignHeight="660" d:DesignWidth="900">
     <UserControl.DataContext>
         <viewmodel:AddReservationViewModel/>
     </UserControl.DataContext>

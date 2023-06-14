@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Hospital_Reservation_App.View"
              xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="670" d:DesignWidth="1000">
+             d:DesignHeight="660" d:DesignWidth="900">
     <UserControl.DataContext>
         <viewmodel:ReservationViewModel/>
     </UserControl.DataContext>
@@ -77,23 +77,87 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                <Grid Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton IsChecked="{Binding CheckBoxAllChecked, Mode=TwoWay}"
+                                  Grid.Column="0"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="All"
+                                           TextWrapping="Wrap"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton IsChecked="{Binding CheckBoxPastChecked, Mode=TwoWay}"
+                                  Grid.Column="1"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Past"
+                                           TextWrapping="Wrap"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton IsChecked="{Binding CheckBoxFutureChecked, Mode=TwoWay}"
+                                  Grid.Column="2"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Future"
+                                           TextWrapping="Wrap"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </RadioButton>
+                </Grid>
             </StackPanel>
         </Grid>
         <Grid Grid.Column="1">
             <StackPanel Width="650">
                 <ListBox ItemsSource="{Binding ShowReservations}"
-                         FontSize="12"
-                         Foreground="White"
+                         FontSize="16"
+                         Foreground="Transparent"
+                         Background="Transparent"
                          FontFamily="Monsterrat"
                          FontWeight="Medium"
                          Margin="0,20,0,0"
                          Height="Auto"
                          SelectedItem="{Binding SelectedReservation, UpdateSourceTrigger=PropertyChanged}">
+                    <ListBox.Template>
+                        <ControlTemplate>
+                            <DockPanel LastChildFill="True">
+                                <Grid DockPanel.Dock="Top" Height="30">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0">Data wizyty</Label>
+                                    <Label Grid.Column="1">Lekarz</Label>
+                                    <Label Grid.Column="2">Specjalność lekarza</Label>
+                                </Grid>
+                                <ItemsPresenter></ItemsPresenter>
+                            </DockPanel>
+                        </ControlTemplate>
+                    </ListBox.Template>
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="200"/>
                                     <ColumnDefinition Width="200"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>

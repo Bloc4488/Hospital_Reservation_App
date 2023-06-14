@@ -30,7 +30,7 @@ namespace Hospital_Reservation_App.Repositories
             }
         }
 
-        public List<ReservationModel> GetReservationsData(UserModel user)
+        public List<ReservationModel> GetAllReservationsData(UserModel user)
         {
             List<ReservationModel> reservations = new List<ReservationModel>();
             MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
@@ -46,15 +46,108 @@ namespace Hospital_Reservation_App.Repositories
                     "INNER JOIN doctors doc ON doc.user_id = res.doctor_id " +
                     "INNER JOIN specialties spec ON spec.speciality_id = doc.speciality_id " +
                     "INNER JOIN users u ON u.id = doc.user_id " +
-                    "WHERE res.patient_id = @id";
+                    "WHERE res.patient_id = @id " +
+                    "ORDER BY res.date_res DESC";
                 command.Parameters.Add("@id", MySqlDbType.Int64).Value = user.id;
                 mySqlDataAdapter.SelectCommand = command;
                 mySqlDataAdapter.Fill(table);
             }
             foreach (DataRow row in table.Rows)
             {
-                ReservationModel reservation = new ReservationModel();
-                reservation.Doctor = new DoctorModel();
+                ReservationModel reservation = new ReservationModel
+                {
+                    Doctor = new DoctorModel()
+                };
+                reservation.Doctor.Speciality = new SpecialityModel();
+                reservation.Id = row[0].ToString();
+                reservation.PatientId = row[1].ToString();
+                reservation.Doctor.Id = row[2].ToString();
+                reservation.Doctor.FirstName = row[3].ToString();
+                reservation.Doctor.LastName = row[4].ToString();
+                reservation.Doctor.Fullname = reservation.Doctor.FirstName + " " + reservation.Doctor.LastName;
+                reservation.Doctor.Speciality.Id = row[5].ToString();
+                reservation.Doctor.Speciality.Name = row[6].ToString();
+                reservation.ReservationTime = (DateTime)row[7];
+                reservations.Add(reservation);
+            }
+            return reservations;
+        }
+
+        public List<ReservationModel> GetPastReservationsData(UserModel user)
+        {
+            List<ReservationModel> reservations = new List<ReservationModel>();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            DateTime date = DateTime.Now;
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT res.reservation_id AS id_reservation, res.patient_id AS id_patient, res.doctor_id AS id_doctor, u.firstname, u.lastname, " +
+                    "doc.speciality_id, spec.name AS specialty_name, res.date_res AS reservation_time " +
+                    "FROM reservations res " +
+                    "INNER JOIN doctors doc ON doc.user_id = res.doctor_id " +
+                    "INNER JOIN specialties spec ON spec.speciality_id = doc.speciality_id " +
+                    "INNER JOIN users u ON u.id = doc.user_id " +
+                    "WHERE res.patient_id = @id AND res.date_res < @date " +
+                    "ORDER BY res.date_res DESC";
+                command.Parameters.Add("@id", MySqlDbType.Int64).Value = user.id;
+                command.Parameters.Add("@date", MySqlDbType.DateTime).Value = date;
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                ReservationModel reservation = new ReservationModel
+                {
+                    Doctor = new DoctorModel()
+                };
+                reservation.Doctor.Speciality = new SpecialityModel();
+                reservation.Id = row[0].ToString();
+                reservation.PatientId = row[1].ToString();
+                reservation.Doctor.Id = row[2].ToString();
+                reservation.Doctor.FirstName = row[3].ToString();
+                reservation.Doctor.LastName = row[4].ToString();
+                reservation.Doctor.Fullname = reservation.Doctor.FirstName + " " + reservation.Doctor.LastName;
+                reservation.Doctor.Speciality.Id = row[5].ToString();
+                reservation.Doctor.Speciality.Name = row[6].ToString();
+                reservation.ReservationTime = (DateTime)row[7];
+                reservations.Add(reservation);
+            }
+            return reservations;
+        }
+
+        public List<ReservationModel> GetFutureReservationsData(UserModel user)
+        {
+            List<ReservationModel> reservations = new List<ReservationModel>();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            DateTime date = DateTime.Now;
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT res.reservation_id AS id_reservation, res.patient_id AS id_patient, res.doctor_id AS id_doctor, u.firstname, u.lastname, " +
+                    "doc.speciality_id, spec.name AS specialty_name, res.date_res AS reservation_time " +
+                    "FROM reservations res " +
+                    "INNER JOIN doctors doc ON doc.user_id = res.doctor_id " +
+                    "INNER JOIN specialties spec ON spec.speciality_id = doc.speciality_id " +
+                    "INNER JOIN users u ON u.id = doc.user_id " +
+                    "WHERE res.patient_id = @id AND res.date_res > @date " +
+                    "ORDER BY res.date_res DESC";
+                command.Parameters.Add("@id", MySqlDbType.Int64).Value = user.id;
+                command.Parameters.Add("@date", MySqlDbType.DateTime).Value = date;
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                ReservationModel reservation = new ReservationModel
+                {
+                    Doctor = new DoctorModel()
+                };
                 reservation.Doctor.Speciality = new SpecialityModel();
                 reservation.Id = row[0].ToString();
                 reservation.PatientId = row[1].ToString();
@@ -98,6 +191,33 @@ namespace Hospital_Reservation_App.Repositories
                     command.ExecuteNonQuery();
                 }
             }
+        }
+
+        public List<DateTime> GetUserTime(DateTime date, UserModel user)
+        {
+            List<DateTime> result = new List<DateTime>();
+            DateTime dateFirst = new DateTime(date.Year, date.Month, date.Day, 9, 0, 0);
+            DateTime dateLast = new DateTime(date.Year, date.Month, date.Day, 17, 0, 0);
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT date_res FROM reservations WHERE patient_id = @id AND date_res BETWEEN @datef AND @datel";
+                command.Parameters.Add("@id", MySqlDbType.Int64).Value = user.id;
+                command.Parameters.Add("@datef", MySqlDbType.DateTime).Value = dateFirst;
+                command.Parameters.Add("@datel", MySqlDbType.DateTime).Value = dateLast;
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                DateTime dhour = (DateTime)row[0];
+                result.Add(dhour);
+            }
+            return result;
         }
     }
 }

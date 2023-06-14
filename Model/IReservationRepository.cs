@@ -12,6 +12,9 @@ namespace Hospital_Reservation_App.Model
        void AddRes(ReservationModel reservation);
        void DeleteReservation(ReservationModel reservation);
        void DeleteAllReservationuser(UserModel userModel);
-       List<ReservationModel> GetReservationsData(UserModel user);
+       List<ReservationModel> GetAllReservationsData(UserModel user);
+       List<ReservationModel> GetPastReservationsData(UserModel user);
+       List<ReservationModel> GetFutureReservationsData(UserModel user);
+       List<DateTime> GetUserTime(DateTime date, UserModel user);
     }
 }

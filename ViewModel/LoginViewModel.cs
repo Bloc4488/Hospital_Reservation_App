@@ -143,7 +143,7 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
-        public bool isViewVisible
+        public bool IsViewVisible
         {
             get { return _isViewVisible; }
             set
@@ -151,12 +151,12 @@ namespace Hospital_Reservation_App.ViewModel
                 if (_isViewVisible != value)
                 {
                     _isViewVisible = value;
-                    OnPropertyChanged(nameof(isViewVisible));
+                    OnPropertyChanged(nameof(IsViewVisible));
                 }
             }
         }
 
-        public bool isRegViewVisible
+        public bool IsRegViewVisible
         {
             get { return _isRegViewVisible; }
             set
@@ -164,7 +164,7 @@ namespace Hospital_Reservation_App.ViewModel
                 if (_isRegViewVisible != value)
                 {
                     _isRegViewVisible = value;
-                    OnPropertyChanged(nameof(isRegViewVisible));
+                    OnPropertyChanged(nameof(IsRegViewVisible));
                 }
             }
         }
@@ -197,7 +197,7 @@ namespace Hospital_Reservation_App.ViewModel
             }
         }
 
-        private IUserRepository userRepository;
+        private readonly IUserRepository userRepository;
 
         public ICommand LoginCommand { get; }
         public ICommand RegistrationCommand { get; }
@@ -213,7 +213,7 @@ namespace Hospital_Reservation_App.ViewModel
         {
             MainWindowView main = new MainWindowView();
             main.Show();
-            isViewVisible = false;
+            IsViewVisible = false;
         }
 
         private bool CanExecuteRegistrationCommand(object obj)
@@ -279,12 +279,14 @@ namespace Hospital_Reservation_App.ViewModel
 
         private void ExecuteRegistrationCommand(object obj)
         {
-            UserModel user = new UserModel();
-            user.firstName = firstname;
-            user.lastName = lastname;
-            user.email = email;
-            user.PESEL = pesel;
-            user.Password = password;
+            UserModel user = new UserModel
+            {
+                firstName = firstname,
+                lastName = lastname,
+                email = email,
+                PESEL = pesel,
+                Password = password
+            };
             if (CheckBoxMaleChecked)
                 user.sex = "M";
             else if (CheckBoxFemaleChecked)

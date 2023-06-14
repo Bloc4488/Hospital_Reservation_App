@@ -14,7 +14,7 @@
         Background="Transparent"
         AllowsTransparency="True"
         MouseDown="Window_MouseDown"
-        IsEnabled="{Binding isViewVisible}">
+        IsEnabled="{Binding IsViewVisible}">
     <Window.DataContext>
         <viewmodel:LoginViewModel/>
     </Window.DataContext>
@@ -24,7 +24,7 @@
     </Window.Resources>
 
     <Window.Visibility>
-        <Binding Path="isViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
+        <Binding Path="IsViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
     </Window.Visibility>
 
     <Border CornerRadius="10">

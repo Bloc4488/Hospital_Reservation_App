@@ -23,7 +23,7 @@
     </Window.Resources>
 
     <Window.Visibility>
-        <Binding Path="isRegViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
+        <Binding Path="IsRegViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
     </Window.Visibility>
 
     <Border CornerRadius="10">
@@ -249,7 +249,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <CheckBox IsChecked="{Binding CheckBoxMaleChecked, Mode=TwoWay}"
+                        <RadioButton IsChecked="{Binding CheckBoxMaleChecked, Mode=TwoWay}"
                                   Grid.Column="0"
                                   Tag="#FFFFFF"
                                   Margin="5">
@@ -261,8 +261,8 @@
                                            FontFamily="Monsterrat"
                                            FontSize="12"/>
                             </StackPanel>
-                        </CheckBox>
-                        <CheckBox IsChecked="{Binding CheckBoxFemaleChecked, Mode=TwoWay}"
+                        </RadioButton>
+                        <RadioButton IsChecked="{Binding CheckBoxFemaleChecked, Mode=TwoWay}"
                                   Grid.Column="1"
                                   Tag="#FFFFFF"
                                   Margin="5">
@@ -274,7 +274,7 @@
                                            FontFamily="Monsterrat"
                                            FontSize="12"/>
                             </StackPanel>
-                        </CheckBox>
+                        </RadioButton>
                     </Grid>
                     <TextBlock Text="Hasło"
                                Foreground="DarkGray"

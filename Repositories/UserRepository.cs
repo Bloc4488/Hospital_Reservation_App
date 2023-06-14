@@ -262,5 +262,31 @@ namespace Hospital_Reservation_App.Repositories
             }
             return doctorModels;
         }
+        public List<UserModel> GetPatients()
+        {
+            List<UserModel> users = new List<UserModel>();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT id, firstname, lastname, email, privilege FROM users WHERE privilege = 1";
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                UserModel user = new UserModel();
+                user.id = row[0].ToString();
+                user.firstName = row[1].ToString();
+                user.lastName = row[2].ToString();
+                user.email = row[3].ToString();
+                user.privilege = row[4].ToString();
+                users.Add(user);
+            }
+            return users;
+        }
     }
 }

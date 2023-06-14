@@ -37,6 +37,10 @@
         <DataTemplate DataType="{x:Type viewmodel:SettingsViewModel}">
             <local:SettingsView/>
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:AdminViewModel}">
+            <local:AdminView/>
+        </DataTemplate>
     </Window.Resources>
 
     <!--<Window.Visibility>

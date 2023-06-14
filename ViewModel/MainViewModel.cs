@@ -120,7 +120,7 @@ namespace Hospital_Reservation_App.ViewModel
         }
         private void ExecuteShowUsersAdminViewCommand(object obj)
         {
-            //ChildView = new UsersAdminViewModel;
+            ChildView = new AdminViewModel();
             Title = "Użytkownicy";
         }
         private void ExecuteReservationsViewCommand(object obj)

@@ -21,6 +21,7 @@ namespace Hospital_Reservation_App.Model
         bool checkPassRepeat(SecureString password, SecureString passwordRep);
         bool checkOldPassword(NetworkCredential credential, UserModel userModel);
         UserModel GetUser(string Email);
+        List<UserModel> GetPatients();
         List<DoctorModel> GetDoctorsData(DateTime date, SpecialityModel speciality);
     }
 }

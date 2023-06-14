@@ -17,8 +17,11 @@ namespace Hospital_Reservation_App.ViewModel
     {
         private UserModel _currentAccount;
         private ReservationModel _selectedReservation;
-        private List<ReservationModel> _listReservations;
         private ObservableCollection<ReservationModel> _showReservations;
+
+        private bool _checkBoxAllChecked = true;
+        private bool _checkBoxPastChecked;
+        private bool _checkBoxFutureChecked;
 
         public UserModel CurrentAccount
         {
@@ -44,18 +47,6 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
-        public List<ReservationModel> ListReservations
-        {
-            get { return _listReservations; }
-            set
-            {
-                if (_listReservations != value)
-                {
-                    _listReservations = value;
-                    OnPropertyChanged(nameof(ListReservations));
-                }
-            }
-        }
         public ObservableCollection<ReservationModel> ShowReservations
         {
             get { return _showReservations; }
@@ -68,22 +59,66 @@ namespace Hospital_Reservation_App.ViewModel
                 }
             }
         }
+        public bool CheckBoxAllChecked
+        {
+            get { return _checkBoxAllChecked; }
+            set
+            {
+                _checkBoxAllChecked = value;
+                if (value)
+                {
+                    LoadCurrentUserAllReservations();
+                    CheckBoxPastChecked = false;
+                    CheckBoxFutureChecked = false;
+                }
+                OnPropertyChanged(nameof(CheckBoxAllChecked));
+            }
+        }
+        public bool CheckBoxPastChecked
+        {
+            get { return _checkBoxPastChecked; }
+            set
+            {
+                _checkBoxPastChecked = value;
+                if (value)
+                {
+                    LoadCurrentUserPastReservations();
+                    CheckBoxAllChecked = false;
+                    CheckBoxFutureChecked = false;
+                }
+                OnPropertyChanged(nameof(CheckBoxPastChecked));
+            }
+        }
+        public bool CheckBoxFutureChecked
+        {
+            get { return _checkBoxFutureChecked; }
+            set
+            {
+                _checkBoxFutureChecked = value;
+                if (value)
+                {
+                    LoadCurrentUserFutureReservations();
+                    CheckBoxPastChecked = false;
+                    CheckBoxAllChecked = false;
+                }
+                OnPropertyChanged(nameof(CheckBoxFutureChecked));
+            }
+        }
 
         public ICommand DeleteReservationCommand { get; }
 
-        private IUserRepository userRepository;
-        private IReservationRepository reservationRepository;
+        private readonly IUserRepository userRepository;
+        private readonly IReservationRepository reservationRepository;
 
         public ReservationViewModel()
         {
             CurrentAccount = new UserModel();
-            ListReservations = new List<ReservationModel>();
             ShowReservations = new ObservableCollection<ReservationModel>();
             userRepository = new UserRepository();
             reservationRepository = new ReservationRepository();
             DeleteReservationCommand = new ViewModelCommand(ExecuteDeleteReservationCommand, CanExecuteDeleteReservationCommand);
             LoadCurrentAccountData();
-            LoadCurrentUserReservations();
+            LoadCurrentUserAllReservations();
         }
 
         private bool CanExecuteDeleteReservationCommand(object obj)
@@ -103,7 +138,8 @@ namespace Hospital_Reservation_App.ViewModel
         private void ExecuteDeleteReservationCommand(object obj)
         {
             reservationRepository.DeleteReservation(SelectedReservation);
-            LoadCurrentUserReservations();
+            LoadCurrentUserAllReservations();
+            CheckBoxAllChecked = true;
         }
 
         private void LoadCurrentAccountData()
@@ -126,10 +162,20 @@ namespace Hospital_Reservation_App.ViewModel
             }
         }
 
-        private void LoadCurrentUserReservations()
+        private void LoadCurrentUserAllReservations()
         {
-            ListReservations = reservationRepository.GetReservationsData(CurrentAccount);
-            ShowReservations = new ObservableCollection<ReservationModel>(ListReservations);
+            List<ReservationModel> list = reservationRepository.GetAllReservationsData(CurrentAccount);
+            ShowReservations = new ObservableCollection<ReservationModel>(list);
+        }
+        private void LoadCurrentUserPastReservations()
+        {
+            List<ReservationModel> list = reservationRepository.GetPastReservationsData(CurrentAccount);
+            ShowReservations = new ObservableCollection<ReservationModel>(list);
+        }
+        private void LoadCurrentUserFutureReservations()
+        {
+            List<ReservationModel> list = reservationRepository.GetFutureReservationsData(CurrentAccount);
+            ShowReservations = new ObservableCollection<ReservationModel>(list);
         }
     }
 }

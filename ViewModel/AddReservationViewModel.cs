@@ -229,9 +229,9 @@ namespace Hospital_Reservation_App.ViewModel
         public ICommand PreviousWindowCommand { get; }
         public ICommand StartWindowCommand { get; }
 
-        private IUserRepository userRepository;
-        private IReservationRepository reservationRepository;
-        private ISpecialityRepository specialityRepository;
+        private readonly IUserRepository userRepository;
+        private readonly IReservationRepository reservationRepository;
+        private readonly ISpecialityRepository specialityRepository;
 
         public AddReservationViewModel()
         {
@@ -254,10 +254,12 @@ namespace Hospital_Reservation_App.ViewModel
         private void ExecuteAddReservationCommand(object obj)
         {
 
-            ReservationModel reservation = new ReservationModel();
-            reservation.PatientId = CurrentAccount.id;
-            reservation.Doctor = SelectedDoctor;
-            reservation.ReservationTime = SelectedDayTime;
+            ReservationModel reservation = new ReservationModel
+            {
+                PatientId = CurrentAccount.id,
+                Doctor = SelectedDoctor,
+                ReservationTime = SelectedDayTime
+            };
             reservationRepository.AddRes(reservation);
             IsReservationVisible = Visibility.Collapsed;
             IsReservationCompleteVisible = Visibility.Visible;
@@ -357,25 +359,25 @@ namespace Hospital_Reservation_App.ViewModel
 
         private void LoadShowListTime()
         {
-            //TODO: check time for user
+            List<DateTime> list = reservationRepository.GetUserTime(SelectedDay, CurrentAccount);
             ShowListTime = new ObservableCollection<TimeSpan>();
             for (int i = 9; i <= 17; i++)
             {
+                if (list.Contains(new DateTime(SelectedDay.Year, SelectedDay.Month, SelectedDay.Day, i, 0, 0)))
+                    continue;
                 TimeSpan time = new TimeSpan(i, 0, 0);
                 ShowListTime.Add(time);
             }
         }
         private void LoadShowListSpecialty()
         {
-            List<SpecialityModel> specialities = new List<SpecialityModel>();
-            specialities = specialityRepository.GetAll();
+            List<SpecialityModel> specialities = specialityRepository.GetAll();
             ShowListSpeciality = new ObservableCollection<SpecialityModel>(specialities);
         }
         private void LoadShowListDoctors()
         {
             SelectedDayTime = new DateTime(SelectedDay.Year, SelectedDay.Month, SelectedDay.Day, SelectedTime.Hours, SelectedTime.Minutes, SelectedTime.Seconds);
-            List<DoctorModel> doctors = new List<DoctorModel>();
-            doctors = userRepository.GetDoctorsData(SelectedDayTime, SelectedSpeciality);
+            List<DoctorModel> doctors = userRepository.GetDoctorsData(SelectedDayTime, SelectedSpeciality);
             ShowListDoctors = new ObservableCollection<DoctorModel>(doctors);
         }
         private void LoadCurrentAccountData()

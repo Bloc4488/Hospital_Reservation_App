@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hospital_Reservation_App.View"
         mc:Ignorable="d"
-        Height="350" Width="500">
+        Height="660" Width="900">
     <Grid>
         <Border BorderBrush="DarkCyan" BorderThickness="2">
             <TextBlock HorizontalAlignment="Center" 
