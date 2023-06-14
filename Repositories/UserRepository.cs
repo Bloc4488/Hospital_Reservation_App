@@ -239,6 +239,38 @@ namespace Hospital_Reservation_App.Repositories
             return user;
         }
 
+        public DoctorModel GetDoctor(string Email)
+        {
+            DoctorModel doctor = new DoctorModel();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT u.id, u.firstname, u.lastname, u.email, sp.speciality_id, sp.name FROM users u " +
+                    "JOIN doctors d ON d.user_id = u.id " +
+                    "JOIN specialties sp ON sp.speciality_id = d.speciality_id " +
+                    "WHERE u.email = @mail";
+                command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = Email;
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                doctor.Id = row[0].ToString();
+                doctor.FirstName = row[1].ToString();
+                doctor.LastName = row[2].ToString();
+                doctor.Fullname = doctor.FirstName + " " + doctor.LastName;
+                doctor.Email = row[3].ToString();
+                doctor.Speciality = new SpecialityModel();
+                doctor.Speciality.Id = row[4].ToString();
+                doctor.Speciality.Name = row[5].ToString();
+            }
+            return doctor;
+        }
+
         public List<DoctorModel> GetDoctorsData(DateTime date, SpecialityModel speciality)
         {
             List<DoctorModel> doctorModels = new List<DoctorModel>();

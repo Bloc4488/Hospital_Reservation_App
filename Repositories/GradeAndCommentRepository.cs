@@ -28,7 +28,30 @@ namespace Hospital_Reservation_App.Repositories
             }
         }
 
+        public GradeAndCommentModel GetComment(VisitModel visit)
+        {
+            GradeAndCommentModel commentModel = new GradeAndCommentModel();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM grades_and_comments WHERE reservation_id = @id ORDER BY comment_id DESC";
+                command.Parameters.Add("@id", MySqlDbType.Int64).Value = visit.ReservationId;
+                mySqlDataAdapter.SelectCommand = command;
+                mySqlDataAdapter.Fill(table);
+            }
+            foreach (DataRow row in table.Rows)
+            {
+                commentModel.iD = row[0].ToString();
+                commentModel.ReservationID = row[1].ToString();
+                commentModel.grade = row[2].ToString();
+                commentModel.comment = row[3].ToString();
+                break;
+            }
+            return commentModel;
+        }
     }
-
-    
 }

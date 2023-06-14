@@ -294,7 +294,7 @@ namespace Hospital_Reservation_App.ViewModel
         private void LoadDoctorNote()
         {
             DoctorNote = doctorNoteRepository.GetDoctorNote(SelectedReservation);
-            if (DoctorNote.Note == null)
+            if (string.IsNullOrEmpty(DoctorNote.Note))
             {
                 DoctorNoteModel note = new DoctorNoteModel();
                 note.Note = "Nie ma notatek od lekarza!";

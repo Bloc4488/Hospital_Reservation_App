@@ -23,6 +23,9 @@ namespace Hospital_Reservation_App.Model
        List<ReservationModel> GetAllReservationsData(UserModel user);
        List<ReservationModel> GetPastReservationsData(UserModel user);
        List<ReservationModel> GetFutureReservationsData(UserModel user);
+       List<VisitModel> GetAllReservationsData(DoctorModel user);
+       List<VisitModel> GetPastReservationsData(DoctorModel user);
+       List<VisitModel> GetFutureReservationsData(DoctorModel user);
        List<DateTime> GetUserTime(DateTime date, UserModel user);
     }
 }

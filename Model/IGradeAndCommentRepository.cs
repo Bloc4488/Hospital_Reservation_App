@@ -12,5 +12,7 @@ namespace Hospital_Reservation_App.Model
     interface IGradeAndCommentRepository
     {
         void AddComment(GradeAndCommentModel GradeAndCom);
+
+        GradeAndCommentModel GetComment(VisitModel visit);
     }
 }

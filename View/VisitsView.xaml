@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Hospital_Reservation_App.View.ReservationView"
+﻿<UserControl x:Class="Hospital_Reservation_App.View.VisitsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,7 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="650" d:DesignWidth="900">
     <UserControl.DataContext>
-        <viewmodel:ReservationViewModel/>
+        <viewmodel:VisitsViewModel/>
     </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -17,37 +17,7 @@
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0">
             <StackPanel>
-                <Button x:Name="btnChangeReservation"
-                            Command="{Binding }"
-                            BorderThickness="0"
-                            Content="Zmień rezerwację"
-                            Foreground="White"
-                            FontSize="12"
-                            FontFamily="Monsterrat"
-                            Cursor="Hand"
-                            Margin="0,50,0,0">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#462AD8"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#28AEED"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="150" Height="40"
-                                        CornerRadius="20"
-                                        Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button x:Name="btnDeleteReservation"
+                <!--<Button x:Name="btnDeleteReservation"
                             Command="{Binding DeleteReservationCommand}"
                             BorderThickness="0"
                             Content="Usuń rezerwację"
@@ -76,7 +46,7 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                </Button>
+                </Button>-->
                 <Grid Margin="0,20,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -132,7 +102,7 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <StackPanel Width="650">
-                    <ListBox ItemsSource="{Binding ShowReservations}"
+                    <ListBox ItemsSource="{Binding ShowVisits}"
                          FontSize="16"
                          Foreground="Transparent"
                          Background="Transparent"
@@ -140,19 +110,17 @@
                          FontWeight="Medium"
                          Margin="0,20,0,0"
                          Height="Auto"
-                         SelectedItem="{Binding SelectedReservation, UpdateSourceTrigger=PropertyChanged}">
+                         SelectedItem="{Binding SelectedVisit, UpdateSourceTrigger=PropertyChanged}">
                         <ListBox.Template>
                             <ControlTemplate>
                                 <DockPanel LastChildFill="True">
                                     <Grid DockPanel.Dock="Top" Height="30">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="200"></ColumnDefinition>
-                                            <ColumnDefinition Width="200"></ColumnDefinition>
-                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                            <ColumnDefinition Width="250"></ColumnDefinition>
+                                            <ColumnDefinition Width="400"></ColumnDefinition>
                                         </Grid.ColumnDefinitions>
                                         <Label Grid.Column="0">Data wizyty</Label>
-                                        <Label Grid.Column="1">Lekarz</Label>
-                                        <Label Grid.Column="2">Specjalność lekarza</Label>
+                                        <Label Grid.Column="1">Pacjent</Label>
                                     </Grid>
                                     <ItemsPresenter></ItemsPresenter>
                                 </DockPanel>
@@ -162,13 +130,11 @@
                             <DataTemplate>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="200"/>
-                                        <ColumnDefinition Width="200"/>
-                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="250"/>
+                                        <ColumnDefinition Width="400"/>
                                     </Grid.ColumnDefinitions>
                                     <TextBlock Grid.Column="0" Text="{Binding ReservationTime}" Foreground="Black"/>
-                                    <TextBlock Grid.Column="1" Text="{Binding Doctor.Fullname}" Foreground="Black"/>
-                                    <TextBlock Grid.Column="2" Text="{Binding Doctor.Speciality.Name}" Foreground="Black"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding Patient.DisplayName}" Foreground="Black"/>
                                 </Grid>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
@@ -182,71 +148,56 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-                    <TextBlock Text="Napisz komentarz o odbytej wizycie"
+                    <TextBlock Text="Napisz notatkę dla pacjenta"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
                                Margin="0,15,0,0"/>
-                    <TextBox Text="{Binding ShowComment, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding DoctorNote, UpdateSourceTrigger=PropertyChanged}"
                          Width="200" 
                          Height="100"
                          HorizontalAlignment="Left" Margin="0,5,0,0"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" HorizontalAlignment="Center">
-                    <TextBlock Text="Oceń wizytę w skali od 1 do 5"
-                               Foreground="DarkGray"
-                               FontSize="12"
-                               FontWeight="Medium"
-                               FontFamily="Monsterrat"
-                               Margin="0,15,0,0"/>
-                    <ComboBox x:Name="ComboBoxGradeChoice" 
-                          SelectedValue="{Binding GradeChoice, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                          Margin="0,5,0,0"
-                          Height="30" 
-                          FontSize="12"
-                          Width="150"
-                          ItemsSource="{Binding ShowListGrades, UpdateSourceTrigger=PropertyChanged}"/>
-                    <Button x:Name="btnAddComment"
-                            Command="{Binding AddCommentCommand}"
+                    <Button Command="{Binding AddNoteCommand}"
                             BorderThickness="0"
-                            Content="Dodaj komentarz"
+                            Content="Dodaj notatkę"
                             Foreground="White"
                             FontSize="12"
                             FontFamily="Monsterrat"
                             Cursor="Hand"
                             Margin="0,80,0,0">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#462AD8"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#28AEED"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="150" Height="40"
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#462AD8"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#28AEED"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
+                                    <ContentPresenter VerticalAlignment="Center"
                                                       HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
                 </StackPanel>
                 <StackPanel Grid.Column="0" HorizontalAlignment="Center">
-                    <TextBlock Text="Notatka lekarza"
+                    <TextBlock Text="Komentarz pacjenta"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
                                Margin="0,15,0,0"/>
-                    <TextBox x:Name="TextBoxForShowingComment"
-                             Text="{Binding DoctorNote.Note, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding PatientComment.comment, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                              IsReadOnly="True"
                          Width="200" 
                          Height="100"

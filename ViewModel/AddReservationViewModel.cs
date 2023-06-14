@@ -378,6 +378,7 @@ namespace Hospital_Reservation_App.ViewModel
         {
             SelectedDayTime = new DateTime(SelectedDay.Year, SelectedDay.Month, SelectedDay.Day, SelectedTime.Hours, SelectedTime.Minutes, SelectedTime.Seconds);
             List<DoctorModel> doctors = userRepository.GetDoctorsData(SelectedDayTime, SelectedSpeciality);
+            doctors.Remove(doctors.Find(x => x.Id == CurrentAccount.id));
             ShowListDoctors = new ObservableCollection<DoctorModel>(doctors);
         }
         private void LoadCurrentAccountData()
