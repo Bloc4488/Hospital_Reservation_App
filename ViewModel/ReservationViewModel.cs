@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 using System.Windows.Input;
 
 namespace Hospital_Reservation_App.ViewModel
@@ -18,6 +19,9 @@ namespace Hospital_Reservation_App.ViewModel
         private UserModel _currentAccount;
         private ReservationModel _selectedReservation;
         private ObservableCollection<ReservationModel> _showReservations;
+        private string _showComment;
+        private string _gradeChoice;
+        private ObservableCollection<string> _showListGrades;
 
         private bool _checkBoxAllChecked = true;
         private bool _checkBoxPastChecked;
@@ -105,7 +109,46 @@ namespace Hospital_Reservation_App.ViewModel
             }
         }
 
+        public string ShowComment
+        {
+            get { return _showComment; }
+            set
+            {
+                if (_showComment != value)
+                {
+                    _showComment = value;
+                    OnPropertyChanged(nameof(ShowComment));
+                }
+            }
+        }
+
+        public string GradeChoice
+        {
+            get { return _gradeChoice; }
+            set
+            {
+                if (_gradeChoice != value)
+                {
+                    _gradeChoice = value;
+                    OnPropertyChanged(nameof(GradeChoice));
+                }
+            }
+        }
+        public ObservableCollection<string> ShowListGrades
+        {
+            get { return _showListGrades; }
+            set
+            {
+                if (_showListGrades != value)
+                {
+                    _showListGrades = value;
+                    OnPropertyChanged(nameof(ShowListGrades));
+                }
+            }
+        }
+
         public ICommand DeleteReservationCommand { get; }
+        public ICommand AddCommentCommand { get; }
 
         private readonly IUserRepository userRepository;
         private readonly IReservationRepository reservationRepository;
@@ -116,7 +159,9 @@ namespace Hospital_Reservation_App.ViewModel
             ShowReservations = new ObservableCollection<ReservationModel>();
             userRepository = new UserRepository();
             reservationRepository = new ReservationRepository();
+            gradeAndCommentRepository = new GradeAndCommentRepository();
             DeleteReservationCommand = new ViewModelCommand(ExecuteDeleteReservationCommand, CanExecuteDeleteReservationCommand);
+            AddCommentCommand = new ViewModelCommand(ExecuteAddCommentCommand, CanExecuteAddCommentCommand);
             LoadCurrentAccountData();
             LoadCurrentUserAllReservations();
         }
@@ -135,11 +180,49 @@ namespace Hospital_Reservation_App.ViewModel
             return validDelete;
         }
 
+        private bool CanExecuteAddCommentCommand(object obj)
+        {
+            bool validAdd;
+            if (SelectedReservation == null)
+            {
+                validAdd = false;
+            }
+            else
+            {
+                validAdd = true;
+            }
+            return validAdd;
+        }
+
+        private void ExecuteAddCommentCommand(object obj)
+        {
+            GradeAndCommentModel GradeAndCom = new GradeAndCommentModel();
+
+            GradeAndCom.ReservationID = SelectedReservation.Id;
+            GradeAndCom.grade = GradeChoice;
+            GradeAndCom.comment = ShowComment;
+
+            gradeAndCommentRepository.AddComment(GradeAndCom);
+        }
+
         private void ExecuteDeleteReservationCommand(object obj)
         {
             reservationRepository.DeleteReservation(SelectedReservation);
             LoadCurrentUserAllReservations();
             CheckBoxAllChecked = true;
+        }
+
+
+
+        private void LoadShowListGrades()
+        {
+            //TODO: check time for user
+            ShowListGrades = new ObservableCollection<string>();
+            for (int i = 5; i >= 1; i--)
+            {
+                string time = i.ToString();
+                ShowListGrades.Add(time);
+            }
         }
 
         private void LoadCurrentAccountData()
@@ -158,7 +241,7 @@ namespace Hospital_Reservation_App.ViewModel
             else
             {
                 //TODO
-                MessageBox.Show("User not logged in!");
+                //MessageBox.Show("User not logged in!");
             }
         }
 
