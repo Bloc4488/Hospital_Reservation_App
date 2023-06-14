@@ -195,7 +195,7 @@
                          HorizontalAlignment="Left" Margin="0,5,0,0"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" HorizontalAlignment="Center">
-                    <TextBlock Text="Oceń wizyt w skali od 1 do 5"
+                    <TextBlock Text="Oceń wizytę w skali od 1 do 5"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"

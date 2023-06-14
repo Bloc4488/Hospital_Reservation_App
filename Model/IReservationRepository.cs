@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.Model
 {
+    /// <summary>
+    /// Interface represents methods user add reservation
+    /// user delete selected reservation
+    /// user delete all reservations
+    /// List of all reservations
+    /// List of past reservations
+    /// List of future reservations
+    /// </summary>
     interface IReservationRepository
     {
        void AddRes(ReservationModel reservation);
