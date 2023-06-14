@@ -152,6 +152,7 @@ namespace Hospital_Reservation_App.ViewModel
 
         private readonly IUserRepository userRepository;
         private readonly IReservationRepository reservationRepository;
+        private readonly IGradeAndCommentRepository gradeAndCommentRepository;
 
         public ReservationViewModel()
         {
