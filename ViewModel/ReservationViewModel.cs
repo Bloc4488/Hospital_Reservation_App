@@ -251,8 +251,8 @@ namespace Hospital_Reservation_App.ViewModel
             ShowListGrades = new ObservableCollection<string>();
             for (int i = 5; i >= 1; i--)
             {
-                string time = i.ToString();
-                ShowListGrades.Add(time);
+                string g = i.ToString();
+                ShowListGrades.Add(g);
             }
         }
 

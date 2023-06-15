@@ -28,21 +28,40 @@ namespace Hospital_Reservation_App.View
             if (e.LeftButton == MouseButtonState.Pressed)
                 DragMove();
         }
+        /// <summary>
+        /// Action for collapse the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMinimize_click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
+        /// <summary>
+        /// Action for close the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnClose_click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
+        /// <summary>
+        /// Action closing registration window and showing a login window after clicking on textblock.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBlockLogin_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             var logWindow = new LoginWindowView();
             this.Close();
             logWindow.Show();
         }
-
+        /// <summary>
+        /// Action showing login window and close registration window after clicking on registraion button.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnRegistrate_Click(object sender, RoutedEventArgs e)
         {
             var LoginWindow = new LoginWindowView();

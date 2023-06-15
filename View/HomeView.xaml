@@ -10,7 +10,7 @@
         <TextBlock HorizontalAlignment="Center" 
                                VerticalAlignment="Center"
                                TextWrapping="Wrap" 
-                               Foreground="Cyan"
+                               Foreground="White"
                                Text="Witamy w systemie online rezerwacji wizyt do lekarzy w szpitalu im. Mikołaja Kopernika we Wrocławiu!" 
                                Height="121" Width="258" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI"/>
     </Grid>

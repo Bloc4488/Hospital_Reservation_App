@@ -15,6 +15,10 @@ namespace Hospital_Reservation_App.Repositories
 {
     public class UserRepository : DataBaseRepository, IUserRepository
     {
+        /// <summary>
+        /// The method for add new user to database.
+        /// </summary>
+        /// <param name="userModel"></param>
         public void Add(UserModel userModel)
         {
             using (var connection = GetConnection())
@@ -35,7 +39,10 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for delete user from database.
+        /// </summary>
+        /// <param name="userModel"></param>
         public void Delete(UserModel userModel)
         {
             using (var connection = GetConnection())
@@ -50,7 +57,10 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for delete doctor from database.
+        /// </summary>
+        /// <param name="doctor"></param>
         public void Delete(DoctorModel doctor)
         {
             using (var connection = GetConnection())
@@ -65,7 +75,10 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for update data of user in database.
+        /// </summary>
+        /// <param name="userModel"></param>
         public void Update(UserModel userModel)
         {
             using (var connection = GetConnection())
@@ -85,7 +98,10 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for set new password data to database.
+        /// </summary>
+        /// <param name="userModel"></param>
         public void UpdatePassword(UserModel userModel) 
         { 
             using (var connection = GetConnection())
@@ -102,7 +118,11 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for check user data in database.
+        /// </summary>
+        /// <param name="credential"></param>
+        /// <returns></returns>
         public bool AuthentificateUser(NetworkCredential credential)
         {
             bool validUser;
@@ -151,7 +171,11 @@ namespace Hospital_Reservation_App.Repositories
                 Marshal.ZeroFreeGlobalAllocUnicode(valuePtr);
             }
         }
-
+        /// <summary>
+        /// The method checking email from user in database.
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns>True in case when mail is valid and false when vice versa</returns>
         public bool checkMail(string email)
         {
             bool validMail;
@@ -166,7 +190,11 @@ namespace Hospital_Reservation_App.Repositories
             }
             return validMail;
         }
-
+        /// <summary>
+        /// The method for checking pesel length.
+        /// </summary>
+        /// <param name="pesel"></param>
+        /// <returns>True when pesel length equals 11 and false when not.</returns>
         public bool checkPeselLength(SecureString pesel)
         {
             bool validPeselLength;
@@ -176,7 +204,11 @@ namespace Hospital_Reservation_App.Repositories
                 validPeselLength = true;
             return validPeselLength;
         }
-
+        /// <summary>
+        /// The method for check user pesel.
+        /// </summary>
+        /// <param name="pesel"></param>
+        /// <returns>True when pesel typed in window and user pesel in database are equals and vice versa.</returns>
         public bool checkPeselUser(SecureString pesel)
         {
             bool validPeselUser;
@@ -191,7 +223,12 @@ namespace Hospital_Reservation_App.Repositories
             }
             return validPeselUser;
         }
-
+        /// <summary>
+        /// The method for checking typed password in second textbox equals to typed password in first textbox.
+        /// </summary>
+        /// <param name="password"></param>
+        /// <param name="passwordRep"></param>
+        /// <returns>True when equals and false when not.</returns>
         public bool checkPassRepeat(SecureString password, SecureString passwordRep)
         {
             if (SecureStringToString(password) == SecureStringToString(passwordRep))
@@ -199,6 +236,12 @@ namespace Hospital_Reservation_App.Repositories
             else
                 return false;
         }
+        /// <summary>
+        /// The method for checking if previous password equals to old password before user will change it.
+        /// </summary>
+        /// <param name="credential"></param>
+        /// <param name="userModel"></param>
+        /// <returns>True if eqauls and false if not.</returns>
         public bool checkOldPassword(NetworkCredential credential, UserModel userModel)
         {
             if (BCrypt.Net.BCrypt.Verify(Convert.ToString(credential.Password), SecureStringToString(userModel.Password)))
@@ -210,6 +253,11 @@ namespace Hospital_Reservation_App.Repositories
                 return false;
             }
         }
+        /// <summary>
+        /// The method geting user by email.
+        /// </summary>
+        /// <param name="Email"></param>
+        /// <returns>user object.</returns>
         public UserModel GetUser(string Email)
         {
             UserModel user = new UserModel();
@@ -238,7 +286,11 @@ namespace Hospital_Reservation_App.Repositories
             }
             return user;
         }
-
+        /// <summary>
+        /// The method geting doctor by email.
+        /// </summary>
+        /// <param name="Email"></param>
+        /// <returns>doctor object</returns>
         public DoctorModel GetDoctor(string Email)
         {
             DoctorModel doctor = new DoctorModel();
@@ -270,7 +322,12 @@ namespace Hospital_Reservation_App.Repositories
             }
             return doctor;
         }
-
+        /// <summary>
+        /// The method geting doctors data.
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="speciality"></param>
+        /// <returns>list of doctors of current specialties avalible at current date.</returns>
         public List<DoctorModel> GetDoctorsData(DateTime date, SpecialityModel speciality)
         {
             List<DoctorModel> doctorModels = new List<DoctorModel>();
@@ -309,6 +366,10 @@ namespace Hospital_Reservation_App.Repositories
             }
             return doctorModels;
         }
+        /// <summary>
+        /// The method geting patients.
+        /// </summary>
+        /// <returns>All pacients existing in database.</returns>
         public List<UserModel> GetPatients()
         {
             List<UserModel> users = new List<UserModel>();
@@ -335,6 +396,10 @@ namespace Hospital_Reservation_App.Repositories
             }
             return users;
         }
+        /// <summary>
+        /// The method geting all doctors.
+        /// </summary>
+        /// <returns>All doctors from database.</returns>
         public List<DoctorModel> GetDoctors()
         {
             List<DoctorModel> users = new List<DoctorModel>();
@@ -366,7 +431,10 @@ namespace Hospital_Reservation_App.Repositories
             }
             return users;
         }
-
+        /// <summary>
+        /// The method for delete doctor from database.
+        /// </summary>
+        /// <param name="doctor"></param>
         public void DeleteDoctorFromDoctors(DoctorModel doctor)
         {
             using (var connection = GetConnection())
@@ -382,7 +450,11 @@ namespace Hospital_Reservation_App.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// The method for adding doctor to doctor table in database by admin.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="speciality"></param>
         public void CreateDoctor(UserModel user, SpecialityModel speciality)
         {
             using (var connection = GetConnection())

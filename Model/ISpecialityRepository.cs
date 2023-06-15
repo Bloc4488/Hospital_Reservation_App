@@ -8,8 +8,11 @@ namespace Hospital_Reservation_App.Model
 {
     public interface ISpecialityRepository
     {
+
         List<SpecialityModel> GetAll();
+
         void Add(SpecialityModel model);
+
         void Delete(SpecialityModel speciality);
     }
 }

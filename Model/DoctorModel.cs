@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.Model
 {
+    /// <summary>
+    /// Class represents doctors table of DataBase.
+    /// </summary>
     public class DoctorModel
     {
         public string Id { get; set; }

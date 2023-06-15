@@ -24,11 +24,20 @@ namespace Hospital_Reservation_App.View
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Action for collapse the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMinimize_click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
+        /// <summary>
+        /// Action for close the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnClose_click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
@@ -41,7 +50,11 @@ namespace Hospital_Reservation_App.View
                 DragMove();
             }
         }
-
+        /// <summary>
+        /// Action for log out from ORS by clicking on "wyloguj się" button. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Exit_Checked(object sender, RoutedEventArgs e)
         {
             var logWindow = new LoginWindowView();

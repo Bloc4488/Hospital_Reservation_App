@@ -112,7 +112,7 @@
             <StackPanel Grid.Row="0" >
                 <ListBox ItemsSource="{Binding ShowDoctors}"
                              FontSize="16"
-                             Foreground="Transparent"
+                             Foreground="White"
                              Background="Transparent"
                              FontFamily="Monsterrat"
                              FontWeight="Medium"
@@ -129,10 +129,10 @@
                                         <ColumnDefinition Width="260"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Column="0">Imię</Label>
-                                    <Label Grid.Column="1">Nazwisko</Label>
-                                    <Label Grid.Column="2">Poczta</Label>
-                                    <Label Grid.Column="3">Specjalność</Label>
+                                    <Label Grid.Column="0" Foreground="White">Imię</Label>
+                                    <Label Grid.Column="1" Foreground="White">Nazwisko</Label>
+                                    <Label Grid.Column="2" Foreground="White">Poczta</Label>
+                                    <Label Grid.Column="3" Foreground="White">Specjalność</Label>
                                 </Grid>
                                 <ItemsPresenter></ItemsPresenter>
                             </DockPanel>
@@ -147,10 +147,10 @@
                                     <ColumnDefinition Width="260"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{Binding FirstName}" Foreground="Black"/>
-                                <TextBlock Grid.Column="1" Text="{Binding LastName}" Foreground="Black"/>
-                                <TextBlock Grid.Column="2" Text="{Binding Email}" Foreground="Black"/>
-                                <TextBlock Grid.Column="3" Text="{Binding Speciality.Name}" Foreground="Black"/>
+                                <TextBlock Grid.Column="0" Text="{Binding FirstName}" Foreground="LightGray"/>
+                                <TextBlock Grid.Column="1" Text="{Binding LastName}" Foreground="LightGray"/>
+                                <TextBlock Grid.Column="2" Text="{Binding Email}" Foreground="LightGray"/>
+                                <TextBlock Grid.Column="3" Text="{Binding Speciality.Name}" Foreground="LightGray"/>
                             </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -243,9 +243,9 @@
                                         <ColumnDefinition Width="200"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Column="0">Imię</Label>
-                                    <Label Grid.Column="1">Nazwisko</Label>
-                                    <Label Grid.Column="2">Poczta</Label>
+                                    <Label Grid.Column="0" Foreground="White">Imię</Label>
+                                    <Label Grid.Column="1" Foreground="White">Nazwisko</Label>
+                                    <Label Grid.Column="2" Foreground="White">Poczta</Label>
                                 </Grid>
                                 <ItemsPresenter></ItemsPresenter>
                             </DockPanel>
@@ -259,9 +259,9 @@
                                     <ColumnDefinition Width="200"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{Binding firstName}" Foreground="Black"/>
-                                <TextBlock Grid.Column="1" Text="{Binding lastName}" Foreground="Black"/>
-                                <TextBlock Grid.Column="2" Text="{Binding email}" Foreground="Black"/>
+                                <TextBlock Grid.Column="0" Text="{Binding firstName}" Foreground="LightGray"/>
+                                <TextBlock Grid.Column="1" Text="{Binding lastName}" Foreground="LightGray"/>
+                                <TextBlock Grid.Column="2" Text="{Binding email}" Foreground="LightGray"/>
                             </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -275,7 +275,7 @@
                 <StackPanel Grid.Column="0" HorizontalAlignment="Center"
                             Width="200">
                     <TextBlock Text="Wybierz specjalność"
-                               Foreground="DarkGray"
+                               Foreground="White"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
@@ -380,7 +380,7 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Column="0">Nazwa specjalności</Label>
+                                    <Label Grid.Column="0" Foreground="White">Nazwa specjalności</Label>
                                 </Grid>
                                 <ItemsPresenter></ItemsPresenter>
                             </DockPanel>
@@ -392,7 +392,7 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{Binding Name}" Foreground="Black"/>
+                                <TextBlock Grid.Column="0" Text="{Binding Name}" Foreground="LightGray"/>
                             </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -406,7 +406,7 @@
                 <StackPanel Grid.Column="0" HorizontalAlignment="Center"
                             Width="200">
                     <TextBlock Text="Wpisz specjalność"
-                               Foreground="DarkGray"
+                               Foreground="White"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
