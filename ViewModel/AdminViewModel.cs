@@ -29,7 +29,7 @@ namespace Hospital_Reservation_App.ViewModel
 
         private System.Windows.Visibility _isPatientsVisible = Visibility.Collapsed;
         private System.Windows.Visibility _isDoctorsVisible = Visibility.Collapsed;
-        private System.Windows.Visibility _isSpecialityVisible = Visibility.Visible;
+        private System.Windows.Visibility _isSpecialityVisible = Visibility.Collapsed;
 
 
         public ObservableCollection<UserModel> ShowPatients

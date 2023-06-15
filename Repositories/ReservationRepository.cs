@@ -331,14 +331,16 @@ namespace Hospital_Reservation_App.Repositories
         /// <param name="userModel"></param>
         public void DeleteAllReservationuser(UserModel userModel)
         {
+            DateTime time = DateTime.Now;
             using (var connection = GetConnection())
             {
                 using (var command = new MySqlCommand())
                 {
                     connection.Open();
                     command.Connection = connection;
-                    command.CommandText = "DELETE FROM reservations WHERE patient_id = @patient";
+                    command.CommandText = "DELETE FROM reservations WHERE patient_id = @patient AND date_res > @time";
                     command.Parameters.Add("@patient", MySqlDbType.VarChar).Value = userModel.id;
+                    command.Parameters.Add("@time", MySqlDbType.DateTime).Value = time;
                     command.ExecuteNonQuery();
                 }
             }
