@@ -425,7 +425,37 @@
                     FontSize="12"
                     FontFamily="Monsterrat"
                     Cursor="Hand"
-                    Margin="0,50,0,0">
+                    Margin="0,20,0,0">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#462AD8"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#28AEED"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Command="{Binding UpdateSpecialityCommand}"
+                    BorderThickness="0"
+                    Grid.Row="1"
+                    Content="Zmień nazwę"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Monsterrat"
+                    Cursor="Hand"
+                    Margin="0,20,0,0">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#462AD8"/>
@@ -455,7 +485,7 @@
                     FontSize="12"
                     FontFamily="Monsterrat"
                     Cursor="Hand"
-                    Margin="0,50,0,0">
+                    Margin="0,20,0,0">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="DarkRed"/>

@@ -66,15 +66,30 @@ namespace Hospital_Reservation_App.Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "UPDATE users SET privelege = 1 " +
-                    "WHERE id IN (" +
-                    "SELECT user_id FROM doctors d " +
-                    "JOIN specialties s ON d.speciality_id = s.speciality_id " +
-                    "WHERE s.speciality_id = @spec_id); " +
+                command.CommandText = "UPDATE doctors d SET d.speciality_id = 0 " +
+                    "WHERE speciality_id = @spec_id; " +
                     "DELETE FROM specialties WHERE speciality_id = @spec_id;";
                 command.Parameters.Add("@spec_id", MySqlDbType.Int64).Value = speciality.Id;
                 command.ExecuteNonQuery();
             }
         }
+        /// <summary>
+        /// The method for update selected speciality name.
+        /// </summary>
+        /// <param name="speciality"></param>
+        public void Update(SpecialityModel speciality)
+        {
+            using (var connection = GetConnection())
+            using (var command = new MySqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "UPDATE specialties SET name = @name WHERE speciality_id = @spec_id;";
+                command.Parameters.Add("name", MySqlDbType.VarChar).Value= speciality.Name;
+                command.Parameters.Add("@spec_id", MySqlDbType.Int64).Value = speciality.Id;
+                command.ExecuteNonQuery();
+            }
+        }
+
     }
 }

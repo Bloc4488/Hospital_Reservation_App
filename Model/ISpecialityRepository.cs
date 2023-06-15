@@ -14,5 +14,7 @@ namespace Hospital_Reservation_App.Model
         void Add(SpecialityModel model);
 
         void Delete(SpecialityModel speciality);
+
+        void Update(SpecialityModel speciality);
     }
 }

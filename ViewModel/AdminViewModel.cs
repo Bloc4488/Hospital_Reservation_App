@@ -29,7 +29,7 @@ namespace Hospital_Reservation_App.ViewModel
 
         private System.Windows.Visibility _isPatientsVisible = Visibility.Collapsed;
         private System.Windows.Visibility _isDoctorsVisible = Visibility.Collapsed;
-        private System.Windows.Visibility _isSpecialityVisible = Visibility.Collapsed;
+        private System.Windows.Visibility _isSpecialityVisible = Visibility.Visible;
 
 
         public ObservableCollection<UserModel> ShowPatients
@@ -186,6 +186,7 @@ namespace Hospital_Reservation_App.ViewModel
         public ICommand DeleteUserCommand { get; }
         public ICommand DeleteSpecialityCommand { get; }
         public ICommand MakeSpecialityCommand { get; }
+        public ICommand UpdateSpecialityCommand { get; }
 
         private readonly IUserRepository userRepository;
         private readonly ISpecialityRepository specialityRepository;
@@ -203,6 +204,7 @@ namespace Hospital_Reservation_App.ViewModel
             DeleteUserCommand = new ViewModelCommand(ExecuteDeleteUserCommand, CanExecuteDeleteUserCommand);
             DeleteSpecialityCommand = new ViewModelCommand(ExecuteDeleteSpecialityCommand, CanExecuteDeleteSpecialityCommand);
             MakeSpecialityCommand = new ViewModelCommand(ExecuteMakeSpecialityCommand, CanExecuteMakeSpecialityCommand);
+            UpdateSpecialityCommand = new ViewModelCommand(ExecuteUpdateSpecialityCommand, CanExecuteUpdateSpecialityCommand);
         }
 
         private void ExecuteShowPatientsCommand(object obj)
@@ -307,6 +309,33 @@ namespace Hospital_Reservation_App.ViewModel
             else
                 validAdd = true;
             return validAdd;
+        }
+        private bool CanExecuteUpdateSpecialityCommand(object obj)
+        {
+            bool validUpdate;
+            if (SelectedSpeciality2 == null)
+            {
+                validUpdate = false;
+            }
+            else if (string.IsNullOrEmpty (NewSpeciality))
+            {
+                validUpdate = false;
+            }
+            else
+            {
+                validUpdate = true;
+            }
+            return validUpdate;
+        }
+        private void ExecuteUpdateSpecialityCommand(object obj)
+        {
+            SpecialityModel speciality = new SpecialityModel();
+            speciality.Id = SelectedSpeciality2.Id;
+            speciality.Name = NewSpeciality;
+            specialityRepository.Update(speciality);
+            LoadSpecialties();
+            NewSpeciality = "";
+            SelectedSpeciality2 = null;
         }
         private void LoadPatients()
         {
