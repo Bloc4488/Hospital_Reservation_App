@@ -1,0 +1,480 @@
+\doxysection{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository Class Reference}
+\hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository}{}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository}\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+Inheritance diagram for Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.555556cm]{class_hospital___reservation___app_1_1_repositories_1_1_user_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_acb405909216b63d19428e9d883b30b83}{Add}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\begin{DoxyCompactList}\small\item\em The method for add new user to database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aef0bf3fcbf86189ca7a48ce29b69bf02}{Delete}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\begin{DoxyCompactList}\small\item\em The method for delete user from database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ac3b67ae6c770da5db06e054972a5fd1f}{Delete}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} doctor)
+\begin{DoxyCompactList}\small\item\em The method for delete doctor from database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ae57cb9f5a8caed91499de7144900a4cf}{Update}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\begin{DoxyCompactList}\small\item\em The method for update data of user in database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ad0e2352cc5b174d3a04bb04f792b45d2}{Update\+Password}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\begin{DoxyCompactList}\small\item\em The method for set new password data to database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a392653547325df727487d3298022c0c9}{Authentificate\+User}} (Network\+Credential credential)
+\begin{DoxyCompactList}\small\item\em The method for check user data in database. \end{DoxyCompactList}\item 
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a95de5e6cc6e8377397d6196d7c705d8c}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a95de5e6cc6e8377397d6196d7c705d8c} 
+String {\bfseries Secure\+String\+To\+String} (Secure\+String value)
+\item 
+bool \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a660fa0a8c0b92b662e48e91dd8ecc957}{check\+Mail}} (string email)
+\begin{DoxyCompactList}\small\item\em The method checking email from user in database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a2ef74e28af203e35d114c1475d373505}{check\+Pesel\+Length}} (Secure\+String pesel)
+\begin{DoxyCompactList}\small\item\em The method for checking pesel length. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aa906cc1bc60fd83f5304121612c256f5}{check\+Pesel\+User}} (Secure\+String pesel)
+\begin{DoxyCompactList}\small\item\em The method for check user pesel. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a3da0087fec95ea4357abbecbbdd1d261}{check\+Pass\+Repeat}} (Secure\+String password, Secure\+String password\+Rep)
+\begin{DoxyCompactList}\small\item\em The method for checking typed password in second textbox equals to typed password in first textbox. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_af6e9f67e5217d1b4884b8e5540e7c8f5}{check\+Old\+Password}} (Network\+Credential credential, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\begin{DoxyCompactList}\small\item\em The method for checking if previous password equals to old password before user will change it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a4bfdc4089b613948ad364feeeb90ff28}{Get\+User}} (string Email)
+\begin{DoxyCompactList}\small\item\em The method geting user by email. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a8e20138db91360e3a6f3bebcecc4e1ea}{Get\+Doctor}} (string Email)
+\begin{DoxyCompactList}\small\item\em The method geting doctor by email. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a37b975b3b70733caf5f44f7d85fc49bd}{Get\+Doctors\+Data}} (Date\+Time date, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_speciality_model}{Speciality\+Model}} speciality)
+\begin{DoxyCompactList}\small\item\em The method geting doctors data. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ae72299342d7406ce98cc22932a1f1286}{Get\+Patients}} ()
+\begin{DoxyCompactList}\small\item\em The method geting patients. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aa178128ef07586d508a483ca45509622}{Get\+Doctors}} ()
+\begin{DoxyCompactList}\small\item\em The method geting all doctors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a440e11ec73389a39d9191bf8d908cee3}{Delete\+Doctor\+From\+Doctors}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} doctor)
+\begin{DoxyCompactList}\small\item\em The method for delete doctor from database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ab206920b24bf9f8fae680fa51eb1b434}{Create\+Doctor}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_speciality_model}{Speciality\+Model}} speciality)
+\begin{DoxyCompactList}\small\item\em The method for adding doctor to doctor table in database by admin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Data\+Base\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Data\+Base\+Repository} ()
+\begin{DoxyCompactList}\small\item\em The object about database information using in program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a5f9bf2a72f9fbeb7874a14bf1cd007b6}{Add}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a38b3b2144d535e85b690adcbb36854ca}{Delete}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_aea2ddc7290f401588e97dc6f88c4d4fe}{Delete}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} doctor)
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a1b04e331aac63aa24bb477586f5473ba}{Update}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_ad69032782935d31eddcbe27de96028a8}{Update\+Password}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\item 
+bool \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a80c253ea91e534cd230078af16ecdca2}{Authentificate\+User}} (Network\+Credential credential)
+\item 
+bool \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a98f7acff3c689e7f11891e5e2ac2a89a}{check\+Mail}} (string email)
+\item 
+bool \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a97db2121d435c11f345af73b2d0a8838}{check\+Pesel\+Length}} (Secure\+String pesel)
+\item 
+bool \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a2ff715e019b931a8e9f34f3b8a1978d3}{check\+Pesel\+User}} (Secure\+String pesel)
+\item 
+bool \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a8a297bd7adc0f9544317505830dfd1ef}{check\+Pass\+Repeat}} (Secure\+String password, Secure\+String password\+Rep)
+\item 
+bool \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a75cc105e878beba329fff81cae7e8c84}{check\+Old\+Password}} (Network\+Credential credential, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\item 
+\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_ae8c3d44cefaeedef39423e24e1488ebe}{Get\+User}} (string Email)
+\item 
+\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a93a5fda9e58dbbaa2dd29d00c9c2f439}{Get\+Doctor}} (string Email)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_ab399b339efdc2927bab0cfef9abe3abc}{Get\+Patients}} ()
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_ae67b8801b306e96badb00c1c1bc92e0f}{Get\+Doctors}} ()
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_a89163d5224c94b38fb06a0cc9007c168}{Delete\+Doctor\+From\+Doctors}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} doctor)
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_aa1269bfddd52ab57728ddade1d222999}{Create\+Doctor}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_speciality_model}{Speciality\+Model}} speciality)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_ab83cb7bb6f3bac28f31c263bd248e9b0}{Get\+Doctors\+Data}} (Date\+Time date, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_speciality_model}{Speciality\+Model}} speciality)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Data\+Base\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+My\+Sql\+Connection \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_aa5b4f73aad0190fb8ea0e1ca2cf03fd2}{Get\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em The method for get connection with database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_acb405909216b63d19428e9d883b30b83}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_acb405909216b63d19428e9d883b30b83} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!Add@{Add}}
+\index{Add@{Add}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for add new user to database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a392653547325df727487d3298022c0c9}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a392653547325df727487d3298022c0c9} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!AuthentificateUser@{AuthentificateUser}}
+\index{AuthentificateUser@{AuthentificateUser}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{AuthentificateUser()}{AuthentificateUser()}}
+{\footnotesize\ttfamily bool Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Authentificate\+User (\begin{DoxyParamCaption}\item[{Network\+Credential}]{credential }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for check user data in database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em credential} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a660fa0a8c0b92b662e48e91dd8ecc957}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a660fa0a8c0b92b662e48e91dd8ecc957} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!checkMail@{checkMail}}
+\index{checkMail@{checkMail}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{checkMail()}{checkMail()}}
+{\footnotesize\ttfamily bool Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+check\+Mail (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method checking email from user in database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True in case when mail is valid and false when vice versa
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_af6e9f67e5217d1b4884b8e5540e7c8f5}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_af6e9f67e5217d1b4884b8e5540e7c8f5} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!checkOldPassword@{checkOldPassword}}
+\index{checkOldPassword@{checkOldPassword}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{checkOldPassword()}{checkOldPassword()}}
+{\footnotesize\ttfamily bool Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+check\+Old\+Password (\begin{DoxyParamCaption}\item[{Network\+Credential}]{credential,  }\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for checking if previous password equals to old password before user will change it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em credential} & \\
+\hline
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if eqauls and false if not.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a3da0087fec95ea4357abbecbbdd1d261}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a3da0087fec95ea4357abbecbbdd1d261} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!checkPassRepeat@{checkPassRepeat}}
+\index{checkPassRepeat@{checkPassRepeat}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{checkPassRepeat()}{checkPassRepeat()}}
+{\footnotesize\ttfamily bool Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+check\+Pass\+Repeat (\begin{DoxyParamCaption}\item[{Secure\+String}]{password,  }\item[{Secure\+String}]{password\+Rep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for checking typed password in second textbox equals to typed password in first textbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & \\
+\hline
+{\em password\+Rep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when equals and false when not.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a2ef74e28af203e35d114c1475d373505}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a2ef74e28af203e35d114c1475d373505} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!checkPeselLength@{checkPeselLength}}
+\index{checkPeselLength@{checkPeselLength}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{checkPeselLength()}{checkPeselLength()}}
+{\footnotesize\ttfamily bool Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+check\+Pesel\+Length (\begin{DoxyParamCaption}\item[{Secure\+String}]{pesel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for checking pesel length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pesel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when pesel length equals 11 and false when not.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aa906cc1bc60fd83f5304121612c256f5}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aa906cc1bc60fd83f5304121612c256f5} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!checkPeselUser@{checkPeselUser}}
+\index{checkPeselUser@{checkPeselUser}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{checkPeselUser()}{checkPeselUser()}}
+{\footnotesize\ttfamily bool Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+check\+Pesel\+User (\begin{DoxyParamCaption}\item[{Secure\+String}]{pesel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for check user pesel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pesel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True when pesel typed in window and user pesel in database are equals and vice versa.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ab206920b24bf9f8fae680fa51eb1b434}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ab206920b24bf9f8fae680fa51eb1b434} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!CreateDoctor@{CreateDoctor}}
+\index{CreateDoctor@{CreateDoctor}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{CreateDoctor()}{CreateDoctor()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Create\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user,  }\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_speciality_model}{Speciality\+Model}}}]{speciality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for adding doctor to doctor table in database by admin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em speciality} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ac3b67ae6c770da5db06e054972a5fd1f}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ac3b67ae6c770da5db06e054972a5fd1f} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!Delete@{Delete}}
+\index{Delete@{Delete}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}}}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for delete doctor from database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aef0bf3fcbf86189ca7a48ce29b69bf02}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aef0bf3fcbf86189ca7a48ce29b69bf02} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!Delete@{Delete}}
+\index{Delete@{Delete}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for delete user from database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a440e11ec73389a39d9191bf8d908cee3}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a440e11ec73389a39d9191bf8d908cee3} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!DeleteDoctorFromDoctors@{DeleteDoctorFromDoctors}}
+\index{DeleteDoctorFromDoctors@{DeleteDoctorFromDoctors}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteDoctorFromDoctors()}{DeleteDoctorFromDoctors()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Delete\+Doctor\+From\+Doctors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}}}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for delete doctor from database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a8e20138db91360e3a6f3bebcecc4e1ea}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a8e20138db91360e3a6f3bebcecc4e1ea} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!GetDoctor@{GetDoctor}}
+\index{GetDoctor@{GetDoctor}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{GetDoctor()}{GetDoctor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Get\+Doctor (\begin{DoxyParamCaption}\item[{string}]{Email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method geting doctor by email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+doctor object
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aa178128ef07586d508a483ca45509622}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_aa178128ef07586d508a483ca45509622} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!GetDoctors@{GetDoctors}}
+\index{GetDoctors@{GetDoctors}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{GetDoctors()}{GetDoctors()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Get\+Doctors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method geting all doctors. 
+
+\begin{DoxyReturn}{Returns}
+All doctors from database.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a37b975b3b70733caf5f44f7d85fc49bd}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a37b975b3b70733caf5f44f7d85fc49bd} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!GetDoctorsData@{GetDoctorsData}}
+\index{GetDoctorsData@{GetDoctorsData}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{GetDoctorsData()}{GetDoctorsData()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Get\+Doctors\+Data (\begin{DoxyParamCaption}\item[{Date\+Time}]{date,  }\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_speciality_model}{Speciality\+Model}}}]{speciality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method geting doctors data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+{\em speciality} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of doctors of current specialties avalible at current date.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ae72299342d7406ce98cc22932a1f1286}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ae72299342d7406ce98cc22932a1f1286} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!GetPatients@{GetPatients}}
+\index{GetPatients@{GetPatients}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{GetPatients()}{GetPatients()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Get\+Patients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method geting patients. 
+
+\begin{DoxyReturn}{Returns}
+All pacients existing in database.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a4bfdc4089b613948ad364feeeb90ff28}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_a4bfdc4089b613948ad364feeeb90ff28} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Get\+User (\begin{DoxyParamCaption}\item[{string}]{Email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method geting user by email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user object.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ae57cb9f5a8caed91499de7144900a4cf}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ae57cb9f5a8caed91499de7144900a4cf} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!Update@{Update}}
+\index{Update@{Update}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for update data of user in database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ad0e2352cc5b174d3a04bb04f792b45d2}\label{class_hospital___reservation___app_1_1_repositories_1_1_user_repository_ad0e2352cc5b174d3a04bb04f792b45d2} 
+\index{Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}!UpdatePassword@{UpdatePassword}}
+\index{UpdatePassword@{UpdatePassword}!Hospital\_Reservation\_App.Repositories.UserRepository@{Hospital\_Reservation\_App.Repositories.UserRepository}}
+\doxysubsubsection{\texorpdfstring{UpdatePassword()}{UpdatePassword()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+User\+Repository.\+Update\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for set new password data to database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_user_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IUser\+Repository}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/User\+Repository.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_90fb269620c4cf7988c632a868bf56ed" kind="dir">
+    <compoundname>obj/Release/View</compoundname>
+    <innerfile refid="_release_2_view_2_add_reservation_view_8g_8cs">AddReservationView.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_admin_view_8g_8cs">AdminView.g.cs</innerfile>
+    <innerfile refid="_doctor_main_view_8g_8cs">DoctorMainView.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_home_view_8g_8cs">HomeView.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_login_window_view_8g_8cs">LoginWindowView.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_main_window_view_8g_8cs">MainWindowView.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_registration_window_view_8g_8cs">RegistrationWindowView.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_reservation_view_8g_8cs">ReservationView.g.cs</innerfile>
+    <innerfile refid="_reservation_window_view_8g_8cs">ReservationWindowView.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_settings_view_8g_8cs">SettingsView.g.cs</innerfile>
+    <innerfile refid="_start_window_8g_8cs">StartWindow.g.cs</innerfile>
+    <innerfile refid="_release_2_view_2_visits_view_8g_8cs">VisitsView.g.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Release/View/"/>
+  </compounddef>
+</doxygen>

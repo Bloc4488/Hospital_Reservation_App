@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_1_1_visits_view" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::View::VisitsView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Controls.UserControl</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a02595209ff325384513c69e498b07159" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.View.VisitsView::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/VisitsView.g.cs" line="44" column="22" bodyfile="obj/Debug/View/VisitsView.g.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.VisitsView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/VisitsView.g.cs" line="51" column="21" bodyfile="obj/Debug/View/VisitsView.g.cs" bodystart="51" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.VisitsView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/VisitsView.g.i.cs" line="51" column="21" bodyfile="obj/Debug/View/VisitsView.g.i.cs" bodystart="51" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.VisitsView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/VisitsView.g.cs" line="51" column="21" bodyfile="obj/Release/View/VisitsView.g.cs" bodystart="51" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a16fcb7bd6d9c9c42664475604166581f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.View.VisitsView.VisitsView</definition>
+        <argsstring>()</argsstring>
+        <name>VisitsView</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView.VisitsView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/VisitsView.xaml.cs" line="23" column="16" bodyfile="View/VisitsView.xaml.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.VisitsView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/VisitsView.g.cs" line="71" column="52" bodyfile="obj/Debug/View/VisitsView.g.cs" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.VisitsView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/VisitsView.g.i.cs" line="71" column="52" bodyfile="obj/Debug/View/VisitsView.g.i.cs" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.VisitsView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.VisitsView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/VisitsView.g.cs" line="71" column="52" bodyfile="obj/Release/View/VisitsView.g.cs" bodystart="71" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>VisitsView. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Interaction logic for VisitsView.xaml. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.VisitsView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_visits_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.VisitsView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_visits_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+    </collaborationgraph>
+    <location file="obj/Debug/View/VisitsView.g.cs" line="42" column="19" bodyfile="obj/Debug/View/VisitsView.g.cs" bodystart="42" bodyend="74"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a02595209ff325384513c69e498b07159" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>_contentLoaded</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a16fcb7bd6d9c9c42664475604166581f" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::VisitsView</scope><name>VisitsView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

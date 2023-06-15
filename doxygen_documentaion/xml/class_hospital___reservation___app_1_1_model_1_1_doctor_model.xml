@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::DoctorModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a3ff25243ee3c0aeec8273f1a420b85d8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorModel.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorModel.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorModel.cs" line="14" column="23" bodyfile="Model/DoctorModel.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1af085a591b08d361c486c94197453ddb5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorModel.FirstName</definition>
+        <argsstring></argsstring>
+        <name>FirstName</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorModel.FirstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorModel.cs" line="15" column="23" bodyfile="Model/DoctorModel.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a641f1aed353c8acef74fe04493d74c72" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorModel.LastName</definition>
+        <argsstring></argsstring>
+        <name>LastName</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorModel.LastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorModel.cs" line="16" column="23" bodyfile="Model/DoctorModel.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1ad4510b2241eb5f36bbcecdcd166237bc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorModel.Fullname</definition>
+        <argsstring></argsstring>
+        <name>Fullname</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorModel.Fullname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorModel.cs" line="17" column="23" bodyfile="Model/DoctorModel.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a23ce61b97d1babdaf037ed15938de1f7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorModel.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorModel.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorModel.cs" line="18" column="23" bodyfile="Model/DoctorModel.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a20760ae6cc07e2a740a549bf335cc133" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref></type>
+        <definition>SpecialityModel Hospital_Reservation_App.Model.DoctorModel.Speciality</definition>
+        <argsstring></argsstring>
+        <name>Speciality</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorModel.Speciality</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorModel.cs" line="19" column="32" bodyfile="Model/DoctorModel.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents doctors table of DataBase. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/DoctorModel.cs" line="12" column="11" bodyfile="Model/DoctorModel.cs" bodystart="13" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a23ce61b97d1babdaf037ed15938de1f7" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorModel</scope><name>Email</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1af085a591b08d361c486c94197453ddb5" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorModel</scope><name>FirstName</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1ad4510b2241eb5f36bbcecdcd166237bc" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorModel</scope><name>Fullname</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a3ff25243ee3c0aeec8273f1a420b85d8" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorModel</scope><name>Id</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a641f1aed353c8acef74fe04493d74c72" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorModel</scope><name>LastName</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a20760ae6cc07e2a740a549bf335cc133" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorModel</scope><name>Speciality</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

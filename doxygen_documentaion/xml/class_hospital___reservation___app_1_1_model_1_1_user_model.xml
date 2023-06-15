@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_model_1_1_user_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::UserModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1a85a08241a17bbaeb3a3678e9f1bc5a76" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.UserModel.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="15" column="23" bodyfile="Model/UserModel.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1a445ca237b6d6d8ada643daf15988bc67" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.Model.UserModel.PESEL</definition>
+        <argsstring></argsstring>
+        <name>PESEL</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.PESEL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="16" column="29" bodyfile="Model/UserModel.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1ab43bfaa364a58becc418b8b199689b01" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.UserModel.firstName</definition>
+        <argsstring></argsstring>
+        <name>firstName</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.firstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="17" column="23" bodyfile="Model/UserModel.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1a01be3197da4fa1cb24483179097d33e4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.UserModel.lastName</definition>
+        <argsstring></argsstring>
+        <name>lastName</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.lastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="18" column="23" bodyfile="Model/UserModel.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1a9ab42821273822f21438ab34668da137" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.UserModel.sex</definition>
+        <argsstring></argsstring>
+        <name>sex</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.sex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="19" column="23" bodyfile="Model/UserModel.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1aa2d0df01728346f9fcd7b25227a6699d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.UserModel.email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="20" column="23" bodyfile="Model/UserModel.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1aaf17aeb5b6562ccf02ca28a43abe967d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.Model.UserModel.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="21" column="29" bodyfile="Model/UserModel.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1acd5c58d99a4a20bdaf9c2c62d9ae0653" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.UserModel.privilege</definition>
+        <argsstring></argsstring>
+        <name>privilege</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.privilege</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="22" column="23" bodyfile="Model/UserModel.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_user_model_1afd7b2eea8f47b203d753fc0cbcd8749f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.UserModel.DisplayName</definition>
+        <argsstring></argsstring>
+        <name>DisplayName</name>
+        <qualifiedname>Hospital_Reservation_App.Model.UserModel.DisplayName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/UserModel.cs" line="23" column="23" bodyfile="Model/UserModel.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents users table of DataBase. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/UserModel.cs" line="13" column="11" bodyfile="Model/UserModel.cs" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1afd7b2eea8f47b203d753fc0cbcd8749f" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>DisplayName</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1aa2d0df01728346f9fcd7b25227a6699d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>email</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1ab43bfaa364a58becc418b8b199689b01" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>firstName</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a85a08241a17bbaeb3a3678e9f1bc5a76" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>id</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a01be3197da4fa1cb24483179097d33e4" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>lastName</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1aaf17aeb5b6562ccf02ca28a43abe967d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>Password</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a445ca237b6d6d8ada643daf15988bc67" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>PESEL</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1acd5c58d99a4a20bdaf9c2c62d9ae0653" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>privilege</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a9ab42821273822f21438ab34668da137" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::UserModel</scope><name>sex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

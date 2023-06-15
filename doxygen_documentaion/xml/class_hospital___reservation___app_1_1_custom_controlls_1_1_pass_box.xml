@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::CustomControlls::PassBox</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UserControl</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Controls.UserControl</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a7861aff7fcd446af817629200e9d7ab7" prot="public" static="yes" mutable="no">
+        <type>readonly DependencyProperty</type>
+        <definition>readonly DependencyProperty Hospital_Reservation_App.CustomControlls.PassBox.PasswordProperty</definition>
+        <argsstring></argsstring>
+        <name>PasswordProperty</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.PasswordProperty</qualifiedname>
+        <initializer>=
+            DependencyProperty.Register(&quot;Password&quot;, typeof(SecureString), typeof(<ref refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box" kindref="compound">PassBox</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomControlls/PassBox.xaml.cs" line="24" column="51" bodyfile="CustomControlls/PassBox.xaml.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a8f8b1f91ac5e3e3b42a201b72e00ebd2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.CustomControlls.PassBox.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomControlls/PassBox.xaml.cs" line="27" column="29" bodyfile="CustomControlls/PassBox.xaml.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a621d2ea31f6a1b24880aa7ebfe940627" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.PasswordBox</type>
+        <definition>System Windows Controls PasswordBox Hospital_Reservation_App.CustomControlls.PassBox::txtPassword</definition>
+        <argsstring></argsstring>
+        <name>txtPassword</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.txtPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/CustomControlls/PassBox.g.cs" line="46" column="51" bodyfile="obj/Debug/CustomControlls/PassBox.g.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a9e3f30838855c3363280e6abf52fe2ac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.CustomControlls.PassBox::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/CustomControlls/PassBox.g.cs" line="51" column="22" bodyfile="obj/Debug/CustomControlls/PassBox.g.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a8232144b37ddf840b2d40518b8f2079b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.CustomControlls.PassBox.PassBox</definition>
+        <argsstring>()</argsstring>
+        <name>PassBox</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.PassBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomControlls/PassBox.xaml.cs" line="32" column="16" bodyfile="CustomControlls/PassBox.xaml.cs" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.CustomControlls.PassBox.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/CustomControlls/PassBox.g.cs" line="58" column="21" bodyfile="obj/Debug/CustomControlls/PassBox.g.cs" bodystart="58" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.CustomControlls.PassBox.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/CustomControlls/PassBox.g.i.cs" line="58" column="21" bodyfile="obj/Debug/CustomControlls/PassBox.g.i.cs" bodystart="58" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.CustomControlls.PassBox.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/CustomControlls/PassBox.g.cs" line="58" column="21" bodyfile="obj/Release/CustomControlls/PassBox.g.cs" bodystart="58" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1aa2fc88b18c21e06b877120805acae6cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.CustomControlls.PassBox.OnPasswordChanges</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>OnPasswordChanges</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.OnPasswordChanges</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomControlls/PassBox.xaml.cs" line="38" column="22" bodyfile="CustomControlls/PassBox.xaml.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.CustomControlls.PassBox.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/CustomControlls/PassBox.g.cs" line="78" column="52" bodyfile="obj/Debug/CustomControlls/PassBox.g.cs" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.CustomControlls.PassBox.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/CustomControlls/PassBox.g.i.cs" line="78" column="52" bodyfile="obj/Debug/CustomControlls/PassBox.g.i.cs" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.CustomControlls.PassBox.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.CustomControlls.PassBox.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/CustomControlls/PassBox.g.cs" line="78" column="52" bodyfile="obj/Release/CustomControlls/PassBox.g.cs" bodystart="78" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interaction logic for PassBox.xaml. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>PassBox. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.CustomControlls.PassBox</label>
+        <link refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="4">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="2">
+        <label>UserControl</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.CustomControlls.PassBox</label>
+        <link refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PasswordProperty</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>txtPassword</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>System</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="4">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="2">
+        <label>UserControl</label>
+      </node>
+      <node id="5">
+        <label>static</label>
+      </node>
+    </collaborationgraph>
+    <location file="CustomControlls/PassBox.xaml.cs" line="22" column="19" bodyfile="CustomControlls/PassBox.xaml.cs" bodystart="23" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a9e3f30838855c3363280e6abf52fe2ac" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>_contentLoaded</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1aa2fc88b18c21e06b877120805acae6cc" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>OnPasswordChanges</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a8232144b37ddf840b2d40518b8f2079b" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>PassBox</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a8f8b1f91ac5e3e3b42a201b72e00ebd2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>Password</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a7861aff7fcd446af817629200e9d7ab7" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>PasswordProperty</name></member>
+      <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a621d2ea31f6a1b24880aa7ebfe940627" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::CustomControlls::PassBox</scope><name>txtPassword</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

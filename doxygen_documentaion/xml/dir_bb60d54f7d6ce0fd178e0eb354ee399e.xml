@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_bb60d54f7d6ce0fd178e0eb354ee399e" kind="dir">
+    <compoundname>obj/Debug/CustomControlls</compoundname>
+    <innerfile refid="_debug_2_custom_controlls_2_pass_box_8g_8cs">PassBox.g.cs</innerfile>
+    <innerfile refid="_pass_box_8g_8i_8cs">PassBox.g.i.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/CustomControlls/"/>
+  </compounddef>
+</doxygen>

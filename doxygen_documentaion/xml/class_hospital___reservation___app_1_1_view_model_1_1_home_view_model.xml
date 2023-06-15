@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_model_1_1_home_view_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::ViewModel::HomeViewModel</compoundname>
+    <basecompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.ViewModelBase</basecompoundref>
+    <briefdescription>
+<para>ViewModel class for HomeView. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.HomeViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_home_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2">
+        <label>ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.HomeViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_home_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2">
+        <label>ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ViewModel/HomeViewModel.cs" line="12" column="11" bodyfile="ViewModel/HomeViewModel.cs" bodystart="13" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a04dccc71666ad3c682eaba547d40dc4e" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::HomeViewModel</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a1b05557ff9266295ab38a0d097ad9357" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::HomeViewModel</scope><name>PropertyChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

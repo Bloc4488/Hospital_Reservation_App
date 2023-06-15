@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_hospital___reservation___app_1_1_custom_controlls" kind="namespace" language="C#">
+    <compoundname>Hospital_Reservation_App::CustomControlls</compoundname>
+    <innerclass refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box" prot="public">Hospital_Reservation_App::CustomControlls::PassBox</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CustomControlls/PassBox.xaml.cs" line="17" column="1"/>
+  </compounddef>
+</doxygen>

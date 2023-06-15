@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_1_1_login_window_view" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::View::LoginWindowView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Window</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ac5a3808229b14f22cf2e7f153ae74d30" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.LoginWindowView::btnMinimize</definition>
+        <argsstring></argsstring>
+        <name>btnMinimize</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.btnMinimize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="48" column="46" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1aee26d1e26ab68826320641e3d0a44ed4" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.LoginWindowView::btnClose</definition>
+        <argsstring></argsstring>
+        <name>btnClose</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.btnClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="56" column="46" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ab1345b4ad4f1992c2fc9cd783f22c908" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBox</type>
+        <definition>System Windows Controls TextBox Hospital_Reservation_App.View.LoginWindowView::txtEmail</definition>
+        <argsstring></argsstring>
+        <name>txtEmail</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.txtEmail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="64" column="47" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a3a3a9b15da6385a799c665f2543a1a51" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.LoginWindowView::btnLogin</definition>
+        <argsstring></argsstring>
+        <name>btnLogin</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.btnLogin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="72" column="46" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a30da99922370a0a06a66a44ad3505d52" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.View.LoginWindowView::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="77" column="22" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="84" column="21" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="84" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.i.cs" line="84" column="21" bodyfile="obj/Debug/View/LoginWindowView.g.i.cs" bodystart="84" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/LoginWindowView.g.cs" line="84" column="21" bodyfile="obj/Release/View/LoginWindowView.g.cs" bodystart="84" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a45429e3e605b3da86986fd7bbddc42f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.View.LoginWindowView.LoginWindowView</definition>
+        <argsstring>()</argsstring>
+        <name>LoginWindowView</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.LoginWindowView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/LoginWindowView.xaml.cs" line="24" column="16" bodyfile="View/LoginWindowView.xaml.cs" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>System.Delegate</type>
+        <definition>System.Delegate Hospital_Reservation_App.View.LoginWindowView._CreateDelegate</definition>
+        <argsstring>(System.Type delegateType, string handler)</argsstring>
+        <name>_CreateDelegate</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView._CreateDelegate</qualifiedname>
+        <param>
+          <type>System.Type</type>
+          <declname>delegateType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="101" column="33" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>System.Delegate</type>
+        <definition>System.Delegate Hospital_Reservation_App.View.LoginWindowView._CreateDelegate</definition>
+        <argsstring>(System.Type delegateType, string handler)</argsstring>
+        <name>_CreateDelegate</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView._CreateDelegate</qualifiedname>
+        <param>
+          <type>System.Type</type>
+          <declname>delegateType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.i.cs" line="101" column="33" bodyfile="obj/Debug/View/LoginWindowView.g.i.cs" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>System.Delegate</type>
+        <definition>System.Delegate Hospital_Reservation_App.View.LoginWindowView._CreateDelegate</definition>
+        <argsstring>(System.Type delegateType, string handler)</argsstring>
+        <name>_CreateDelegate</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView._CreateDelegate</qualifiedname>
+        <param>
+          <type>System.Type</type>
+          <declname>delegateType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/LoginWindowView.g.cs" line="101" column="33" bodyfile="obj/Release/View/LoginWindowView.g.cs" bodystart="101" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.LoginWindowView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.cs" line="111" column="52" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="111" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.LoginWindowView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/LoginWindowView.g.i.cs" line="111" column="52" bodyfile="obj/Debug/View/LoginWindowView.g.i.cs" bodystart="111" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.LoginWindowView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/LoginWindowView.g.cs" line="111" column="52" bodyfile="obj/Release/View/LoginWindowView.g.cs" bodystart="111" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a77751851348ce6181e8de7432fd6fcce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.Window_MouseDown</definition>
+        <argsstring>(object sender, MouseButtonEventArgs e)</argsstring>
+        <name>Window_MouseDown</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.Window_MouseDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseButtonEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/LoginWindowView.xaml.cs" line="28" column="22" bodyfile="View/LoginWindowView.xaml.cs" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a5dfcfc7a72068c0161b54ed9f38ad198" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.btnMinimize_click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>btnMinimize_click</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.btnMinimize_click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Action for the minimize size of window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/LoginWindowView.xaml.cs" line="38" column="22" bodyfile="View/LoginWindowView.xaml.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a0d472b690a069c184577b45d47b6d8c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.btnClose_click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>btnClose_click</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.btnClose_click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Action for close the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/LoginWindowView.xaml.cs" line="47" column="22" bodyfile="View/LoginWindowView.xaml.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ac41c793e5ba039bb660b3ef612491f5e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.TextBlockForgotPass_PreviewMouseDown</definition>
+        <argsstring>(object sender, MouseButtonEventArgs e)</argsstring>
+        <name>TextBlockForgotPass_PreviewMouseDown</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.TextBlockForgotPass_PreviewMouseDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseButtonEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/LoginWindowView.xaml.cs" line="51" column="22" bodyfile="View/LoginWindowView.xaml.cs" bodystart="51" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a92afbcf8fe5d9fa4ca36d1bc4abcaaa9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.LoginWindowView.TextBlockRegister_PreviewMouseDown</definition>
+        <argsstring>(object sender, MouseButtonEventArgs e)</argsstring>
+        <name>TextBlockRegister_PreviewMouseDown</name>
+        <qualifiedname>Hospital_Reservation_App.View.LoginWindowView.TextBlockRegister_PreviewMouseDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseButtonEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Action for close login window and open registration window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/LoginWindowView.xaml.cs" line="63" column="22" bodyfile="View/LoginWindowView.xaml.cs" bodystart="63" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LoginWindowView. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Interaction logic for LoginWindowView.xaml. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.LoginWindowView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="2">
+        <label>System::Windows::Window</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.LoginWindowView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>btnClose</edgelabel>
+          <edgelabel>btnLogin</edgelabel>
+          <edgelabel>btnMinimize</edgelabel>
+          <edgelabel>txtEmail</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>System</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="2">
+        <label>System::Windows::Window</label>
+      </node>
+    </collaborationgraph>
+    <location file="obj/Debug/View/LoginWindowView.g.cs" line="43" column="19" bodyfile="obj/Debug/View/LoginWindowView.g.cs" bodystart="43" bodyend="165"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a30da99922370a0a06a66a44ad3505d52" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>_contentLoaded</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>_CreateDelegate</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>_CreateDelegate</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>_CreateDelegate</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1aee26d1e26ab68826320641e3d0a44ed4" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>btnClose</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a0d472b690a069c184577b45d47b6d8c3" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>btnClose_click</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a3a3a9b15da6385a799c665f2543a1a51" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>btnLogin</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ac5a3808229b14f22cf2e7f153ae74d30" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>btnMinimize</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a5dfcfc7a72068c0161b54ed9f38ad198" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>btnMinimize_click</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a45429e3e605b3da86986fd7bbddc42f7" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>LoginWindowView</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ac41c793e5ba039bb660b3ef612491f5e" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>TextBlockForgotPass_PreviewMouseDown</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a92afbcf8fe5d9fa4ca36d1bc4abcaaa9" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>TextBlockRegister_PreviewMouseDown</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ab1345b4ad4f1992c2fc9cd783f22c908" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>txtEmail</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a77751851348ce6181e8de7432fd6fcce" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::LoginWindowView</scope><name>Window_MouseDown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_hospital___reservation___app_1_1_repositories" kind="namespace" language="C#">
+    <compoundname>Hospital_Reservation_App::Repositories</compoundname>
+    <innerclass refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository" prot="public">Hospital_Reservation_App::Repositories::DataBaseRepository</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository" prot="public">Hospital_Reservation_App::Repositories::DoctorNoteRepository</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository" prot="public">Hospital_Reservation_App::Repositories::GradeAndCommentRepository</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository" prot="public">Hospital_Reservation_App::Repositories::ReservationRepository</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository" prot="public">Hospital_Reservation_App::Repositories::SpecialityRepository</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository" prot="public">Hospital_Reservation_App::Repositories::UserRepository</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Repositories/DataBaseRepository.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

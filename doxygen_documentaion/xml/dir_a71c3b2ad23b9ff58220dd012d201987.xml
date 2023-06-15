@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir">
+    <compoundname>obj/Debug</compoundname>
+    <innerdir refid="dir_bb60d54f7d6ce0fd178e0eb354ee399e">obj/Debug/CustomControlls</innerdir>
+    <innerdir refid="dir_f5afee478c3ef8c79e79db73f9c4438f">obj/Debug/View</innerdir>
+    <innerfile refid="_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs">.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_debug_2_app_8g_8cs">App.g.cs</innerfile>
+    <innerfile refid="_app_8g_8i_8cs">App.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_generated_internal_type_helper_8g_8cs">GeneratedInternalTypeHelper.g.cs</innerfile>
+    <innerfile refid="_generated_internal_type_helper_8g_8i_8cs">GeneratedInternalTypeHelper.g.i.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/"/>
+  </compounddef>
+</doxygen>
