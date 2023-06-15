@@ -14,6 +14,9 @@ using System.Windows.Input;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// ViewModel class for ReservationView 
+    /// </summary>
     public class ReservationViewModel : ViewModelBase
     {
         private UserModel _currentAccount;

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_9fe5cc214b8578ee5b8e153089aca810" kind="dir">
+    <compoundname>obj/Release</compoundname>
+    <innerdir refid="dir_5773b5286603ba2985636d77d413a13a">obj/Release/CustomControlls</innerdir>
+    <innerdir refid="dir_90fb269620c4cf7988c632a868bf56ed">obj/Release/View</innerdir>
+    <innerfile refid="_release_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs">.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_release_2_app_8g_8cs">App.g.cs</innerfile>
+    <innerfile refid="_release_2_generated_internal_type_helper_8g_8cs">GeneratedInternalTypeHelper.g.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Release/"/>
+  </compounddef>
+</doxygen>

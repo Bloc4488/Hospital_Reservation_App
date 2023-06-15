@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::ViewModel::VisitsViewModel</compoundname>
+    <basecompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.ViewModelBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a16b30c7247fa3138593813f0dde74165" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+        <definition>DoctorModel Hospital_Reservation_App.ViewModel.VisitsViewModel._currentDoctor</definition>
+        <argsstring></argsstring>
+        <name>_currentDoctor</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._currentDoctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="19" column="29" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a5fa4aebdeaaaa736ecae92720fa39c34" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref></type>
+        <definition>VisitModel Hospital_Reservation_App.ViewModel.VisitsViewModel._selectedVisit</definition>
+        <argsstring></argsstring>
+        <name>_selectedVisit</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._selectedVisit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="20" column="28" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a74c2a136ac2da384dddccf5691176b54" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.VisitsViewModel._doctorNote</definition>
+        <argsstring></argsstring>
+        <name>_doctorNote</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._doctorNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="21" column="24" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a07410da35350dd9969a870949c728f0d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kindref="compound">GradeAndCommentModel</ref></type>
+        <definition>GradeAndCommentModel Hospital_Reservation_App.ViewModel.VisitsViewModel._patientComment</definition>
+        <argsstring></argsstring>
+        <name>_patientComment</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._patientComment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="22" column="38" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a20c34350a16b217b89ad78fc15d41534" prot="private" static="no" mutable="no">
+        <type>ObservableCollection&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref> &gt;</type>
+        <definition>ObservableCollection&lt;VisitModel&gt; Hospital_Reservation_App.ViewModel.VisitsViewModel._showVisits</definition>
+        <argsstring></argsstring>
+        <name>_showVisits</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._showVisits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="23" column="38" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a47df293ee41fabdb32fea962ebd9c943" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.VisitsViewModel._checkBoxAllChecked</definition>
+        <argsstring></argsstring>
+        <name>_checkBoxAllChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._checkBoxAllChecked</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="26" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a516e5903e0ee25fbadfc98b61c901b19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.VisitsViewModel._checkBoxPastChecked</definition>
+        <argsstring></argsstring>
+        <name>_checkBoxPastChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._checkBoxPastChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="27" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1ae9995749152b451af76e7f1a57ec675a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.VisitsViewModel._checkBoxFutureChecked</definition>
+        <argsstring></argsstring>
+        <name>_checkBoxFutureChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel._checkBoxFutureChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="28" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1aa46986f9990c8d881cdb061efef1345e" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository" kindref="compound">IReservationRepository</ref></type>
+        <definition>readonly IReservationRepository Hospital_Reservation_App.ViewModel.VisitsViewModel.reservationRepository</definition>
+        <argsstring></argsstring>
+        <name>reservationRepository</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.reservationRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="145" column="49" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a20221440ea54d9cd5c8f65aec5241ce4" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository" kindref="compound">IUserRepository</ref></type>
+        <definition>readonly IUserRepository Hospital_Reservation_App.ViewModel.VisitsViewModel.userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.userRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="146" column="42" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af0940634d639cd9440d3ce48500b3bf2" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository" kindref="compound">IGradeAndCommentRepository</ref></type>
+        <definition>readonly IGradeAndCommentRepository Hospital_Reservation_App.ViewModel.VisitsViewModel.gradeAndCommentRepository</definition>
+        <argsstring></argsstring>
+        <name>gradeAndCommentRepository</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.gradeAndCommentRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="147" column="53" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a0fae05bc814a053e7fe79e28964a5aab" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository" kindref="compound">IDoctorNoteRepository</ref></type>
+        <definition>readonly IDoctorNoteRepository Hospital_Reservation_App.ViewModel.VisitsViewModel.doctorNoteRepository</definition>
+        <argsstring></argsstring>
+        <name>doctorNoteRepository</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.doctorNoteRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="148" column="48" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a6dedc98f0ca8f266671389e147b18c46" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+        <definition>DoctorModel Hospital_Reservation_App.ViewModel.VisitsViewModel.CurrentDoctor</definition>
+        <argsstring></argsstring>
+        <name>CurrentDoctor</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.CurrentDoctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="31" column="28" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="32" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9e1f45642157bd4b1ac70532eb2c769d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref></type>
+        <definition>VisitModel Hospital_Reservation_App.ViewModel.VisitsViewModel.SelectedVisit</definition>
+        <argsstring></argsstring>
+        <name>SelectedVisit</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.SelectedVisit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="43" column="27" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="44" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af93a3316c01eddcf7fa491451e77b430" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.VisitsViewModel.DoctorNote</definition>
+        <argsstring></argsstring>
+        <name>DoctorNote</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.DoctorNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="63" column="23" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="64" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a479a548b043f80857e31efdd28f7443c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kindref="compound">GradeAndCommentModel</ref></type>
+        <definition>GradeAndCommentModel Hospital_Reservation_App.ViewModel.VisitsViewModel.PatientComment</definition>
+        <argsstring></argsstring>
+        <name>PatientComment</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.PatientComment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="75" column="37" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="76" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af817cf4e22fe73f5fc62f4b4d7dacca3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ObservableCollection&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref> &gt;</type>
+        <definition>ObservableCollection&lt;VisitModel&gt; Hospital_Reservation_App.ViewModel.VisitsViewModel.ShowVisits</definition>
+        <argsstring></argsstring>
+        <name>ShowVisits</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.ShowVisits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="87" column="37" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="88" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a02b0b2243b621890d5c3a7511294a891" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.VisitsViewModel.CheckBoxAllChecked</definition>
+        <argsstring></argsstring>
+        <name>CheckBoxAllChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.CheckBoxAllChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="99" column="21" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="100" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9a232bfb333d6208cc8feae8281da582" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.VisitsViewModel.CheckBoxPastChecked</definition>
+        <argsstring></argsstring>
+        <name>CheckBoxPastChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.CheckBoxPastChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="114" column="21" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="115" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1afa3d722510511c27e9f954a72857851e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.VisitsViewModel.CheckBoxFutureChecked</definition>
+        <argsstring></argsstring>
+        <name>CheckBoxFutureChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.CheckBoxFutureChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="129" column="21" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="130" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a94b2067bc1e78c029ac7ce4bf34fc01a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.VisitsViewModel.AddNoteCommand</definition>
+        <argsstring></argsstring>
+        <name>AddNoteCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.AddNoteCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="150" column="25" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="150" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9aaee2c52eef4c737e81ef3d2b64d5a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.ViewModel.VisitsViewModel.VisitsViewModel</definition>
+        <argsstring>()</argsstring>
+        <name>VisitsViewModel</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.VisitsViewModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="152" column="16" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="152" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a82d118ce161abd9447026df506a033fe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.VisitsViewModel.CanExecuteAddNoteCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>CanExecuteAddNoteCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.CanExecuteAddNoteCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="164" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="164" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a6f5d843ea74570c948ae8c752da53165" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.VisitsViewModel.ExecuteAddNoteCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteAddNoteCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.ExecuteAddNoteCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="175" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="175" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a1d35db497e47efe6aa7379ee1b9325d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctor</definition>
+        <argsstring>()</argsstring>
+        <name>LoadCurrentDoctor</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="184" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="184" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1aecf268e0faa5a58cc1ce3c8f3d321735" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadComment</definition>
+        <argsstring>()</argsstring>
+        <name>LoadComment</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadComment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="196" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="196" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a29e273ca25c6ddf71130d3a9fbb5c620" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctorAllVisits</definition>
+        <argsstring>()</argsstring>
+        <name>LoadCurrentDoctorAllVisits</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctorAllVisits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="206" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a13c0fb0a0895a9cf8ab2c757cdae6403" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctorPastVisits</definition>
+        <argsstring>()</argsstring>
+        <name>LoadCurrentDoctorPastVisits</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctorPastVisits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="210" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9ea49f54c2255908645704e3b46d4934" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctorFutureVisits</definition>
+        <argsstring>()</argsstring>
+        <name>LoadCurrentDoctorFutureVisits</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.VisitsViewModel.LoadCurrentDoctorFutureVisits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/VisitsViewModel.cs" line="214" column="22" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="214" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ViewModel class for VisitsView. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.VisitsViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2">
+        <label>ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.VisitsViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2">
+        <label>ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ViewModel/VisitsViewModel.cs" line="17" column="11" bodyfile="ViewModel/VisitsViewModel.cs" bodystart="18" bodyend="218"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a47df293ee41fabdb32fea962ebd9c943" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_checkBoxAllChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1ae9995749152b451af76e7f1a57ec675a" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_checkBoxFutureChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a516e5903e0ee25fbadfc98b61c901b19" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_checkBoxPastChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a16b30c7247fa3138593813f0dde74165" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_currentDoctor</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a74c2a136ac2da384dddccf5691176b54" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_doctorNote</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a07410da35350dd9969a870949c728f0d" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_patientComment</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a5fa4aebdeaaaa736ecae92720fa39c34" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_selectedVisit</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a20c34350a16b217b89ad78fc15d41534" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>_showVisits</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a94b2067bc1e78c029ac7ce4bf34fc01a" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>AddNoteCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a82d118ce161abd9447026df506a033fe" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>CanExecuteAddNoteCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a02b0b2243b621890d5c3a7511294a891" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>CheckBoxAllChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1afa3d722510511c27e9f954a72857851e" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>CheckBoxFutureChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9a232bfb333d6208cc8feae8281da582" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>CheckBoxPastChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a6dedc98f0ca8f266671389e147b18c46" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>CurrentDoctor</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af93a3316c01eddcf7fa491451e77b430" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>DoctorNote</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a0fae05bc814a053e7fe79e28964a5aab" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>doctorNoteRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a6f5d843ea74570c948ae8c752da53165" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>ExecuteAddNoteCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af0940634d639cd9440d3ce48500b3bf2" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>gradeAndCommentRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1aecf268e0faa5a58cc1ce3c8f3d321735" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>LoadComment</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a1d35db497e47efe6aa7379ee1b9325d4" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>LoadCurrentDoctor</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a29e273ca25c6ddf71130d3a9fbb5c620" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>LoadCurrentDoctorAllVisits</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9ea49f54c2255908645704e3b46d4934" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>LoadCurrentDoctorFutureVisits</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a13c0fb0a0895a9cf8ab2c757cdae6403" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>LoadCurrentDoctorPastVisits</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a04dccc71666ad3c682eaba547d40dc4e" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a479a548b043f80857e31efdd28f7443c" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>PatientComment</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a1b05557ff9266295ab38a0d097ad9357" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>PropertyChanged</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1aa46986f9990c8d881cdb061efef1345e" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>reservationRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9e1f45642157bd4b1ac70532eb2c769d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>SelectedVisit</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af817cf4e22fe73f5fc62f4b4d7dacca3" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>ShowVisits</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a20221440ea54d9cd5c8f65aec5241ce4" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>userRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9aaee2c52eef4c737e81ef3d2b64d5a2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::VisitsViewModel</scope><name>VisitsViewModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

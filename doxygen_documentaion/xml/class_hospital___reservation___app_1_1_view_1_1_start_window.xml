@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_1_1_start_window" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::View::StartWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Window</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_start_window_1aef26f7cba03f3116586448e2a94e708a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.View.StartWindow._contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Hospital_Reservation_App.View.StartWindow._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/StartWindow.g.cs" line="45" column="22" bodyfile="obj/Release/View/StartWindow.g.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_start_window_1a9e02af50219033ef026bfda6613db8a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.StartWindow.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.StartWindow.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/StartWindow.g.cs" line="52" column="21" bodyfile="obj/Release/View/StartWindow.g.cs" bodystart="52" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_start_window_1a3486aa52d44da98c6f8c1a9c280885f8" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>System.Delegate</type>
+        <definition>System.Delegate Hospital_Reservation_App.View.StartWindow._CreateDelegate</definition>
+        <argsstring>(System.Type delegateType, string handler)</argsstring>
+        <name>_CreateDelegate</name>
+        <qualifiedname>Hospital_Reservation_App.View.StartWindow._CreateDelegate</qualifiedname>
+        <param>
+          <type>System.Type</type>
+          <declname>delegateType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/StartWindow.g.cs" line="69" column="33" bodyfile="obj/Release/View/StartWindow.g.cs" bodystart="69" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_start_window_1a141659f3fbcffd8b223aea8d6b93935b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.StartWindow.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.StartWindow.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/StartWindow.g.cs" line="79" column="52" bodyfile="obj/Release/View/StartWindow.g.cs" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>StartWindow. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.StartWindow</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_start_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="2">
+        <label>System::Windows::Window</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.StartWindow</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_start_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="2">
+        <label>System::Windows::Window</label>
+      </node>
+    </collaborationgraph>
+    <location file="obj/Release/View/StartWindow.g.cs" line="43" column="19" bodyfile="obj/Release/View/StartWindow.g.cs" bodystart="43" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1aef26f7cba03f3116586448e2a94e708a" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::StartWindow</scope><name>_contentLoaded</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1a3486aa52d44da98c6f8c1a9c280885f8" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::StartWindow</scope><name>_CreateDelegate</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1a141659f3fbcffd8b223aea8d6b93935b" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::StartWindow</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1a9e02af50219033ef026bfda6613db8a3" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::StartWindow</scope><name>InitializeComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_hospital___reservation___app_1_1_view_model" kind="namespace" language="C#">
+    <compoundname>Hospital_Reservation_App::ViewModel</compoundname>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model" prot="public">Hospital_Reservation_App::ViewModel::AddReservationViewModel</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model" prot="public">Hospital_Reservation_App::ViewModel::AdminViewModel</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_home_view_model" prot="public">Hospital_Reservation_App::ViewModel::HomeViewModel</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model" prot="public">Hospital_Reservation_App::ViewModel::LoginViewModel</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model" prot="public">Hospital_Reservation_App::ViewModel::MainViewModel</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model" prot="public">Hospital_Reservation_App::ViewModel::ReservationViewModel</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model" prot="public">Hospital_Reservation_App::ViewModel::SettingsViewModel</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base" prot="public">Hospital_Reservation_App::ViewModel::ViewModelBase</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command" prot="public">Hospital_Reservation_App::ViewModel::ViewModelCommand</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model" prot="public">Hospital_Reservation_App::ViewModel::VisitsViewModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ViewModel/AddReservationViewModel.cs" line="19" column="1"/>
+  </compounddef>
+</doxygen>

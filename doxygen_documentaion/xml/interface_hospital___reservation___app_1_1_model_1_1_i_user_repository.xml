@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository" kind="interface" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::IUserRepository</compoundname>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.UserRepository</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a5f9bf2a72f9fbeb7874a14bf1cd007b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IUserRepository.Add</definition>
+        <argsstring>(UserModel userModel)</argsstring>
+        <name>Add</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.Add</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1acb405909216b63d19428e9d883b30b83">Add</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>userModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="13" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a38b3b2144d535e85b690adcbb36854ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IUserRepository.Delete</definition>
+        <argsstring>(UserModel userModel)</argsstring>
+        <name>Delete</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.Delete</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1aef0bf3fcbf86189ca7a48ce29b69bf02">Delete</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>userModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="14" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1aea2ddc7290f401588e97dc6f88c4d4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IUserRepository.Delete</definition>
+        <argsstring>(DoctorModel doctor)</argsstring>
+        <name>Delete</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.Delete</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ac3b67ae6c770da5db06e054972a5fd1f">Delete</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+          <declname>doctor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a1b04e331aac63aa24bb477586f5473ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IUserRepository.Update</definition>
+        <argsstring>(UserModel userModel)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.Update</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ae57cb9f5a8caed91499de7144900a4cf">Update</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>userModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ad69032782935d31eddcbe27de96028a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IUserRepository.UpdatePassword</definition>
+        <argsstring>(UserModel userModel)</argsstring>
+        <name>UpdatePassword</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.UpdatePassword</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ad0e2352cc5b174d3a04bb04f792b45d2">UpdatePassword</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>userModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="17" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a80c253ea91e534cd230078af16ecdca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.Model.IUserRepository.AuthentificateUser</definition>
+        <argsstring>(NetworkCredential credential)</argsstring>
+        <name>AuthentificateUser</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.AuthentificateUser</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a392653547325df727487d3298022c0c9">AuthentificateUser</reimplementedby>
+        <param>
+          <type>NetworkCredential</type>
+          <declname>credential</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a98f7acff3c689e7f11891e5e2ac2a89a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.Model.IUserRepository.checkMail</definition>
+        <argsstring>(string email)</argsstring>
+        <name>checkMail</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.checkMail</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a660fa0a8c0b92b662e48e91dd8ecc957">checkMail</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="19" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a97db2121d435c11f345af73b2d0a8838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.Model.IUserRepository.checkPeselLength</definition>
+        <argsstring>(SecureString pesel)</argsstring>
+        <name>checkPeselLength</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.checkPeselLength</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a2ef74e28af203e35d114c1475d373505">checkPeselLength</reimplementedby>
+        <param>
+          <type>SecureString</type>
+          <declname>pesel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="20" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a2ff715e019b931a8e9f34f3b8a1978d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.Model.IUserRepository.checkPeselUser</definition>
+        <argsstring>(SecureString pesel)</argsstring>
+        <name>checkPeselUser</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.checkPeselUser</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1aa906cc1bc60fd83f5304121612c256f5">checkPeselUser</reimplementedby>
+        <param>
+          <type>SecureString</type>
+          <declname>pesel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="21" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a8a297bd7adc0f9544317505830dfd1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.Model.IUserRepository.checkPassRepeat</definition>
+        <argsstring>(SecureString password, SecureString passwordRep)</argsstring>
+        <name>checkPassRepeat</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.checkPassRepeat</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a3da0087fec95ea4357abbecbbdd1d261">checkPassRepeat</reimplementedby>
+        <param>
+          <type>SecureString</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>SecureString</type>
+          <declname>passwordRep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a75cc105e878beba329fff81cae7e8c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.Model.IUserRepository.checkOldPassword</definition>
+        <argsstring>(NetworkCredential credential, UserModel userModel)</argsstring>
+        <name>checkOldPassword</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.checkOldPassword</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1af6e9f67e5217d1b4884b8e5540e7c8f5">checkOldPassword</reimplementedby>
+        <param>
+          <type>NetworkCredential</type>
+          <declname>credential</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>userModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="23" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ae8c3d44cefaeedef39423e24e1488ebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+        <definition>UserModel Hospital_Reservation_App.Model.IUserRepository.GetUser</definition>
+        <argsstring>(string Email)</argsstring>
+        <name>GetUser</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.GetUser</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a4bfdc4089b613948ad364feeeb90ff28">GetUser</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>Email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="24" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a93a5fda9e58dbbaa2dd29d00c9c2f439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+        <definition>DoctorModel Hospital_Reservation_App.Model.IUserRepository.GetDoctor</definition>
+        <argsstring>(string Email)</argsstring>
+        <name>GetDoctor</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.GetDoctor</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a8e20138db91360e3a6f3bebcecc4e1ea">GetDoctor</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>Email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="25" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ab399b339efdc2927bab0cfef9abe3abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref> &gt;</type>
+        <definition>List&lt; UserModel &gt; Hospital_Reservation_App.Model.IUserRepository.GetPatients</definition>
+        <argsstring>()</argsstring>
+        <name>GetPatients</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.GetPatients</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ae72299342d7406ce98cc22932a1f1286">GetPatients</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="26" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ae67b8801b306e96badb00c1c1bc92e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref> &gt;</type>
+        <definition>List&lt; DoctorModel &gt; Hospital_Reservation_App.Model.IUserRepository.GetDoctors</definition>
+        <argsstring>()</argsstring>
+        <name>GetDoctors</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.GetDoctors</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1aa178128ef07586d508a483ca45509622">GetDoctors</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="27" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a89163d5224c94b38fb06a0cc9007c168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IUserRepository.DeleteDoctorFromDoctors</definition>
+        <argsstring>(DoctorModel doctor)</argsstring>
+        <name>DeleteDoctorFromDoctors</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.DeleteDoctorFromDoctors</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a440e11ec73389a39d9191bf8d908cee3">DeleteDoctorFromDoctors</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+          <declname>doctor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1aa1269bfddd52ab57728ddade1d222999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IUserRepository.CreateDoctor</definition>
+        <argsstring>(UserModel user, SpecialityModel speciality)</argsstring>
+        <name>CreateDoctor</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.CreateDoctor</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ab206920b24bf9f8fae680fa51eb1b434">CreateDoctor</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref></type>
+          <declname>speciality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="29" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ab83cb7bb6f3bac28f31c263bd248e9b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref> &gt;</type>
+        <definition>List&lt; DoctorModel &gt; Hospital_Reservation_App.Model.IUserRepository.GetDoctorsData</definition>
+        <argsstring>(DateTime date, SpecialityModel speciality)</argsstring>
+        <name>GetDoctorsData</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IUserRepository.GetDoctorsData</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a37b975b3b70733caf5f44f7d85fc49bd">GetDoctorsData</reimplementedby>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref></type>
+          <declname>speciality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IUserRepository.cs" line="30" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.Model.IUserRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository"/>
+      </node>
+      <node id="2">
+        <label>Hospital_Reservation_App.Repositories.UserRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Model/IUserRepository.cs" line="11" column="15" bodyfile="Model/IUserRepository.cs" bodystart="12" bodyend="31"/>
+    <listofallmembers>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a5f9bf2a72f9fbeb7874a14bf1cd007b6" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>Add</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a80c253ea91e534cd230078af16ecdca2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>AuthentificateUser</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a98f7acff3c689e7f11891e5e2ac2a89a" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>checkMail</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a75cc105e878beba329fff81cae7e8c84" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>checkOldPassword</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a8a297bd7adc0f9544317505830dfd1ef" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>checkPassRepeat</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a97db2121d435c11f345af73b2d0a8838" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>checkPeselLength</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a2ff715e019b931a8e9f34f3b8a1978d3" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>checkPeselUser</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1aa1269bfddd52ab57728ddade1d222999" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>CreateDoctor</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a38b3b2144d535e85b690adcbb36854ca" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>Delete</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1aea2ddc7290f401588e97dc6f88c4d4fe" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>Delete</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a89163d5224c94b38fb06a0cc9007c168" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>DeleteDoctorFromDoctors</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a93a5fda9e58dbbaa2dd29d00c9c2f439" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>GetDoctor</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ae67b8801b306e96badb00c1c1bc92e0f" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>GetDoctors</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ab83cb7bb6f3bac28f31c263bd248e9b0" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>GetDoctorsData</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ab399b339efdc2927bab0cfef9abe3abc" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>GetPatients</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ae8c3d44cefaeedef39423e24e1488ebe" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>GetUser</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a1b04e331aac63aa24bb477586f5473ba" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>Update</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ad69032782935d31eddcbe27de96028a8" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IUserRepository</scope><name>UpdatePassword</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

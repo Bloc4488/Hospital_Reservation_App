@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::SpecialityModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_speciality_model_1ab6d43b550cffc04539164f0ab5c18db2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.SpecialityModel.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Hospital_Reservation_App.Model.SpecialityModel.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/SpecialityModel.cs" line="14" column="23" bodyfile="Model/SpecialityModel.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_speciality_model_1a6aff4fe574f77fcd0cb19591aa92a597" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.SpecialityModel.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Hospital_Reservation_App.Model.SpecialityModel.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/SpecialityModel.cs" line="15" column="23" bodyfile="Model/SpecialityModel.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents specialties table of DataBase. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/SpecialityModel.cs" line="12" column="11" bodyfile="Model/SpecialityModel.cs" bodystart="13" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model_1ab6d43b550cffc04539164f0ab5c18db2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::SpecialityModel</scope><name>Id</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model_1a6aff4fe574f77fcd0cb19591aa92a597" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::SpecialityModel</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

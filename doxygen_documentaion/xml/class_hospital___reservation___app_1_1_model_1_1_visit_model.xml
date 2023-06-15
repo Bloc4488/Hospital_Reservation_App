@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_model_1_1_visit_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::VisitModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_visit_model_1aad8b3520e5bb8ab0a1632ecc312042c5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.VisitModel.ReservationId</definition>
+        <argsstring></argsstring>
+        <name>ReservationId</name>
+        <qualifiedname>Hospital_Reservation_App.Model.VisitModel.ReservationId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/VisitModel.cs" line="14" column="23" bodyfile="Model/VisitModel.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_visit_model_1aaff80b778f1929e677ab67269ab722be" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+        <definition>UserModel Hospital_Reservation_App.Model.VisitModel.Patient</definition>
+        <argsstring></argsstring>
+        <name>Patient</name>
+        <qualifiedname>Hospital_Reservation_App.Model.VisitModel.Patient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/VisitModel.cs" line="15" column="26" bodyfile="Model/VisitModel.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_visit_model_1a5d244c650643874731c28813e8cd50bc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+        <definition>DoctorModel Hospital_Reservation_App.Model.VisitModel.Doctor</definition>
+        <argsstring></argsstring>
+        <name>Doctor</name>
+        <qualifiedname>Hospital_Reservation_App.Model.VisitModel.Doctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/VisitModel.cs" line="16" column="28" bodyfile="Model/VisitModel.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_visit_model_1ab54342d5b31b7259282d748d08fe5d20" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Hospital_Reservation_App.Model.VisitModel.ReservationTime</definition>
+        <argsstring></argsstring>
+        <name>ReservationTime</name>
+        <qualifiedname>Hospital_Reservation_App.Model.VisitModel.ReservationTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/VisitModel.cs" line="17" column="25" bodyfile="Model/VisitModel.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents visit data of reservation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/VisitModel.cs" line="12" column="11" bodyfile="Model/VisitModel.cs" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1a5d244c650643874731c28813e8cd50bc" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::VisitModel</scope><name>Doctor</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1aaff80b778f1929e677ab67269ab722be" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::VisitModel</scope><name>Patient</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1aad8b3520e5bb8ab0a1632ecc312042c5" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::VisitModel</scope><name>ReservationId</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1ab54342d5b31b7259282d748d08fe5d20" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::VisitModel</scope><name>ReservationTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

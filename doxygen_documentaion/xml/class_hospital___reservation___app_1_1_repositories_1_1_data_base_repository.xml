@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Repositories::DataBaseRepository</compoundname>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.DoctorNoteRepository</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.GradeAndCommentRepository</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.ReservationRepository</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.SpecialityRepository</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.UserRepository</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1a69e3e3c4e8a4c20f6d80dafe37e8df14" prot="private" static="no" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string Hospital_Reservation_App.Repositories.DataBaseRepository._connectionString</definition>
+        <argsstring></argsstring>
+        <name>_connectionString</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.DataBaseRepository._connectionString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/DataBaseRepository.cs" line="12" column="33" bodyfile="Repositories/DataBaseRepository.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aaa8d194e9cc3b9f5358b598f287992d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.Repositories.DataBaseRepository.DataBaseRepository</definition>
+        <argsstring>()</argsstring>
+        <name>DataBaseRepository</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.DataBaseRepository.DataBaseRepository</qualifiedname>
+        <briefdescription>
+<para>The object about database information using in program. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/DataBaseRepository.cs" line="16" column="16" bodyfile="Repositories/DataBaseRepository.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aa5b4f73aad0190fb8ea0e1ca2cf03fd2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MySqlConnection</type>
+        <definition>MySqlConnection Hospital_Reservation_App.Repositories.DataBaseRepository.GetConnection</definition>
+        <argsstring>()</argsstring>
+        <name>GetConnection</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.DataBaseRepository.GetConnection</qualifiedname>
+        <briefdescription>
+<para>The method for get connection with database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Connection with database specified in DataBaseRepository object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/DataBaseRepository.cs" line="24" column="35" bodyfile="Repositories/DataBaseRepository.cs" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.Repositories.DataBaseRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository"/>
+      </node>
+      <node id="2">
+        <label>Hospital_Reservation_App.Repositories.DoctorNoteRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Hospital_Reservation_App.Repositories.GradeAndCommentRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Hospital_Reservation_App.Repositories.ReservationRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Hospital_Reservation_App.Repositories.SpecialityRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Hospital_Reservation_App.Repositories.UserRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Repositories/DataBaseRepository.cs" line="10" column="21" bodyfile="Repositories/DataBaseRepository.cs" bodystart="11" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1a69e3e3c4e8a4c20f6d80dafe37e8df14" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::DataBaseRepository</scope><name>_connectionString</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aaa8d194e9cc3b9f5358b598f287992d6" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::DataBaseRepository</scope><name>DataBaseRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aa5b4f73aad0190fb8ea0e1ca2cf03fd2" prot="protected" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::DataBaseRepository</scope><name>GetConnection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

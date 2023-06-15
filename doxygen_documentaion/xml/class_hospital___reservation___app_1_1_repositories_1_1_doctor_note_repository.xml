@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Repositories::DoctorNoteRepository</compoundname>
+    <basecompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.DataBaseRepository</basecompoundref>
+    <basecompoundref refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Model.IDoctorNoteRepository</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository_1aae4371407f8139d0d8a767a573df7c2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model" kindref="compound">DoctorNoteModel</ref></type>
+        <definition>DoctorNoteModel Hospital_Reservation_App.Repositories.DoctorNoteRepository.GetDoctorNote</definition>
+        <argsstring>(ReservationModel reservation)</argsstring>
+        <name>GetDoctorNote</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.DoctorNoteRepository.GetDoctorNote</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository_1a465384b4b7e46fcd68ab0c3688970360">GetDoctorNote</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kindref="compound">ReservationModel</ref></type>
+          <declname>reservation</declname>
+        </param>
+        <briefdescription>
+<para>The method geting doctor note to pacient. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reservation</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>doctor note for selected reservation</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/DoctorNoteRepository.cs" line="21" column="32" bodyfile="Repositories/DoctorNoteRepository.cs" bodystart="21" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository_1a97d6d2b1d9647edfb1223977b59c6b73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Repositories.DoctorNoteRepository.AddDoctorNote</definition>
+        <argsstring>(DoctorNoteModel doctorNote)</argsstring>
+        <name>AddDoctorNote</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.DoctorNoteRepository.AddDoctorNote</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository_1a96be38226ee9197168843afed08a5217">AddDoctorNote</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model" kindref="compound">DoctorNoteModel</ref></type>
+          <declname>doctorNote</declname>
+        </param>
+        <briefdescription>
+<para>The method adding doctor note to dataBase after pacients visit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doctorNote</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/DoctorNoteRepository.cs" line="49" column="21" bodyfile="Repositories/DoctorNoteRepository.cs" bodystart="49" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DataBaseRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository"/>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.Repositories.DoctorNoteRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IDoctorNoteRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DataBaseRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository"/>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.Repositories.DoctorNoteRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IDoctorNoteRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository"/>
+      </node>
+    </collaborationgraph>
+    <location file="Repositories/DoctorNoteRepository.cs" line="14" column="11" bodyfile="Repositories/DoctorNoteRepository.cs" bodystart="15" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository_1a97d6d2b1d9647edfb1223977b59c6b73" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::DoctorNoteRepository</scope><name>AddDoctorNote</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aaa8d194e9cc3b9f5358b598f287992d6" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::DoctorNoteRepository</scope><name>DataBaseRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aa5b4f73aad0190fb8ea0e1ca2cf03fd2" prot="protected" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::DoctorNoteRepository</scope><name>GetConnection</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository_1aae4371407f8139d0d8a767a573df7c2e" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::DoctorNoteRepository</scope><name>GetDoctorNote</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

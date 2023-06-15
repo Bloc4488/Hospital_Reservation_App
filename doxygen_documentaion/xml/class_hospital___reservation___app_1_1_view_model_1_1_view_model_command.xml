@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::ViewModel::ViewModelCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ICommand</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a5b5aa870569f8cdf587e342d48498265" prot="private" static="no" mutable="no">
+        <type>readonly Action&lt; Object &gt;</type>
+        <definition>readonly Action&lt;Object&gt; Hospital_Reservation_App.ViewModel.ViewModelCommand._executeExtion</definition>
+        <argsstring></argsstring>
+        <name>_executeExtion</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelCommand._executeExtion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelCommand.cs" line="15" column="33" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1ada749bc66127c695543cf7e7ad749ab2" prot="private" static="no" mutable="no">
+        <type>readonly Predicate&lt; Object &gt;</type>
+        <definition>readonly Predicate&lt;Object&gt; Hospital_Reservation_App.ViewModel.ViewModelCommand._canExecuteAction</definition>
+        <argsstring></argsstring>
+        <name>_canExecuteAction</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelCommand._canExecuteAction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelCommand.cs" line="16" column="36" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1ac4647e59ec168be3c488ac6d54fd7e75" prot="public" static="no" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>EventHandler</type>
+        <definition>EventHandler Hospital_Reservation_App.ViewModel.ViewModelCommand.CanExecuteChanged</definition>
+        <argsstring></argsstring>
+        <name>CanExecuteChanged</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelCommand.CanExecuteChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelCommand.cs" line="27" column="35" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a2d601c8361584e803d049423d6f8c86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.ViewModel.ViewModelCommand.ViewModelCommand</definition>
+        <argsstring>(Action&lt; object &gt; executeExtion)</argsstring>
+        <name>ViewModelCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelCommand.ViewModelCommand</qualifiedname>
+        <param>
+          <type>Action&lt; object &gt;</type>
+          <declname>executeExtion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelCommand.cs" line="17" column="16" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a7a4468a1fd4238c8d23af5ea0aae4039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.ViewModel.ViewModelCommand.ViewModelCommand</definition>
+        <argsstring>(Action&lt; object &gt; executeExtion, Predicate&lt; object &gt; canExecuteAction)</argsstring>
+        <name>ViewModelCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelCommand.ViewModelCommand</qualifiedname>
+        <param>
+          <type>Action&lt; object &gt;</type>
+          <declname>executeExtion</declname>
+        </param>
+        <param>
+          <type>Predicate&lt; object &gt;</type>
+          <declname>canExecuteAction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelCommand.cs" line="22" column="16" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1aa09d684a43f2cf291f35a2a1f0c7885d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.ViewModelCommand.CanExecute</definition>
+        <argsstring>(object parameter)</argsstring>
+        <name>CanExecute</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelCommand.CanExecute</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelCommand.cs" line="32" column="21" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a52eab7309dcae16292501191df750410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.ViewModelCommand.Execute</definition>
+        <argsstring>(object parameter)</argsstring>
+        <name>Execute</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelCommand.Execute</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelCommand.cs" line="36" column="21" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="36" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to represent ViewModelCommand for buttons logic in View. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.ViewModelCommand</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommand</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.ViewModelCommand</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommand</label>
+      </node>
+    </collaborationgraph>
+    <location file="ViewModel/ViewModelCommand.cs" line="13" column="11" bodyfile="ViewModel/ViewModelCommand.cs" bodystart="14" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1ada749bc66127c695543cf7e7ad749ab2" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelCommand</scope><name>_canExecuteAction</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a5b5aa870569f8cdf587e342d48498265" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelCommand</scope><name>_executeExtion</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1aa09d684a43f2cf291f35a2a1f0c7885d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelCommand</scope><name>CanExecute</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1ac4647e59ec168be3c488ac6d54fd7e75" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelCommand</scope><name>CanExecuteChanged</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a52eab7309dcae16292501191df750410" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelCommand</scope><name>Execute</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a2d601c8361584e803d049423d6f8c86b" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelCommand</scope><name>ViewModelCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a7a4468a1fd4238c8d23af5ea0aae4039" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelCommand</scope><name>ViewModelCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

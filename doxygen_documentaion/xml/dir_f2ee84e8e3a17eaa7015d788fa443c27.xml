@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_f2ee84e8e3a17eaa7015d788fa443c27" kind="dir">
+    <compoundname>View</compoundname>
+    <innerfile refid="_add_reservation_view_8xaml_8cs">AddReservationView.xaml.cs</innerfile>
+    <innerfile refid="_admin_view_8xaml_8cs">AdminView.xaml.cs</innerfile>
+    <innerfile refid="_home_view_8xaml_8cs">HomeView.xaml.cs</innerfile>
+    <innerfile refid="_login_window_view_8xaml_8cs">LoginWindowView.xaml.cs</innerfile>
+    <innerfile refid="_main_window_view_8xaml_8cs">MainWindowView.xaml.cs</innerfile>
+    <innerfile refid="_registration_window_view_8xaml_8cs">RegistrationWindowView.xaml.cs</innerfile>
+    <innerfile refid="_reservation_view_8xaml_8cs">ReservationView.xaml.cs</innerfile>
+    <innerfile refid="_settings_view_8xaml_8cs">SettingsView.xaml.cs</innerfile>
+    <innerfile refid="_visits_view_8xaml_8cs">VisitsView.xaml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="View/"/>
+  </compounddef>
+</doxygen>

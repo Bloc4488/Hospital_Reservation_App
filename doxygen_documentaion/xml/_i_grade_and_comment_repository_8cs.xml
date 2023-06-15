@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_i_grade_and_comment_repository_8cs" kind="file" language="C#">
+    <compoundname>IGradeAndCommentRepository.cs</compoundname>
+    <innerclass refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository" prot="public">Hospital_Reservation_App::Model::IGradeAndCommentRepository</innerclass>
+    <innernamespace refid="namespace_hospital___reservation___app">Hospital_Reservation_App</innernamespace>
+    <innernamespace refid="namespace_hospital___reservation___app_1_1_model">Hospital_Reservation_App::Model</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_hospital___reservation___app_1_1_model" kindref="compound">Hospital_Reservation_App.Model</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository" kindref="compound">IGradeAndCommentRepository</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddComment(<ref refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kindref="compound">GradeAndCommentModel</ref><sp/>GradeAndCom);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kindref="compound">GradeAndCommentModel</ref><sp/>GetComment(<ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref><sp/>visit);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Model/IGradeAndCommentRepository.cs"/>
+  </compounddef>
+</doxygen>

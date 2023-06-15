@@ -1,0 +1,288 @@
+\chapter{bcrypt.\+net -\/ next}
+\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme}{}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme}\index{bcrypt.net -\/ next@{bcrypt.net -\/ next}}
+\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md0}%
+\Hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md0}%
+ Porting of bcrypt.\+codeplex.\+com with enhanced security, missing fixes, features and better .net support.
+
+\href{https://ci.appveyor.com/project/ChrisMcKee/bcrypt-net/branch/master}{\texttt{ }}
+
+\mbox{[}\mbox{]}()\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md1}{}\doxysection{\texorpdfstring{Nuget}{Nuget}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md1}
+Download using nuget or Paket (\href{https://fsprojects.github.io/Paket/}{\texttt{ https\+://fsprojects.\+github.\+io/\+Paket/}})
+
+Package\+: \href{https://www.nuget.org/packages/BCrypt.Net-Next/}{\texttt{ https\+://www.\+nuget.\+org/packages/\+BCrypt.\+Net-\/\+Next/}} \href{https://www.nuget.org/packages/BCrypt.Net-Next}{\texttt{ }}
+
+Signed Package -\/ \href{https://www.nuget.org/packages/BCrypt.Net-Next.StrongName/}{\texttt{ https\+://www.\+nuget.\+org/packages/\+BCrypt.\+Net-\/\+Next.\+Strong\+Name/}} \href{https://www.nuget.org/packages/BCrypt.Net-Next.StrongName}{\texttt{ }}\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md2}{}\doxysection{\texorpdfstring{How to use}{How to use}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md2}
+The simplest usage is as follows...
+
+To Hash a password\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{string}\ passwordHash\ =\ \ BCrypt.HashPassword(\textcolor{stringliteral}{"{}my\ password"{}});}
+
+\end{DoxyCode}
+
+
+{\itshape Note\+: Although this library allows you to supply your own salt, it is {\bfseries{highly}} advisable that you allow the library to generate the salt for you. These methods are supplied to maintain compatibility and for more advanced cross-\/platform requirements that may necessitate their use.}
+
+To Verify a password against a hash (assuming you\textquotesingle{}ve stored the hash and retrieved from storage for verification)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{BCrypt.Verify(\textcolor{stringliteral}{"{}my\ password"{}},\ passwordHash);}
+
+\end{DoxyCode}
+
+
+This implementation on hashing will generate a salt automatically for you with the work factor (2\texorpdfstring{$^\wedge$}{\string^}number of rounds) set to 11 (which matches the default across most implementation and is currently viewed as a good level of security/risk).
+
+To save you the maths a small table covering the iterations is provided below. The minimum allowed in this library is 4 for compatibility, the maximum is 31 (at 31 your processor will be wishing for death).
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{|\ Cost\ \ |\ Iterations\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|-\/-\/-\/-\/-\/-\/-\/|-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/|}
+\DoxyCodeLine{|\ \ \ 8\ \ \ |\ \ \ \ 256\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ \ 9\ \ \ |\ \ \ \ 512\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 10\ \ \ |\ \ 1,024\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 11\ \ \ |\ \ 2,048\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 12\ \ \ |\ \ 4,096\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 13\ \ \ |\ \ 8,192\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 14\ \ \ |\ 16,384\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 15\ \ \ |\ 32,768\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 16\ \ \ |\ 65,536\ iterations\ \ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 17\ \ \ |\ 131,072\ iterations\ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 18\ \ \ |\ 262,144\ iterations\ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 19\ \ \ |\ 524,288\ iterations\ \ \ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 20\ \ \ |\ 1,048,576\ iterations\ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 21\ \ \ |\ 2,097,152\ iterations\ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 22\ \ \ |\ 4,194,304\ iterations\ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 23\ \ \ |\ 8,388,608\ iterations\ \ \ \ \ |}
+\DoxyCodeLine{|\ \ 24\ \ \ |\ 16,777,216\ iterations\ \ \ \ |}
+\DoxyCodeLine{|\ \ 25\ \ \ |\ 33,554,432\ iterations\ \ \ \ |}
+\DoxyCodeLine{|\ \ 26\ \ \ |\ 67,108,864\ iterations\ \ \ \ |}
+\DoxyCodeLine{|\ \ 27\ \ \ |\ 134,217,728\ iterations\ \ \ |}
+\DoxyCodeLine{|\ \ 28\ \ \ |\ 268,435,456\ iterations\ \ \ |}
+\DoxyCodeLine{|\ \ 29\ \ \ |\ 536,870,912\ iterations\ \ \ |}
+\DoxyCodeLine{|\ \ 30\ \ \ |\ 1,073,741,824\ iterations\ |}
+\DoxyCodeLine{|\ \ 31\ \ \ |\ 2,147,483,648\ iterations\ |}
+\DoxyCodeLine{}
+\DoxyCodeLine{etc}
+
+\end{DoxyCode}
+
+
+and a simple benchmark you can run by creating a console program, adding this BCrypt Library and using this code.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ cost\ =\ 16;}
+\DoxyCodeLine{var\ timeTarget\ =\ 100;\ \textcolor{comment}{//\ Milliseconds}}
+\DoxyCodeLine{\textcolor{keywordtype}{long}\ timeTaken;}
+\DoxyCodeLine{\textcolor{keywordflow}{do}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ var\ sw\ =\ Stopwatch.StartNew();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ BCrypt.HashPassword(\textcolor{stringliteral}{"{}RwiKnN>9xg3*C)1AZl.)y8f\_:GCz,vt3T]PI"{}},\ workFactor:\ cost);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ sw.Stop();}
+\DoxyCodeLine{\ \ \ \ timeTaken\ =\ sw.ElapsedMilliseconds;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ cost\ -\/=\ 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}\ ((timeTaken)\ >=\ timeTarget);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Appropriate\ Cost\ Found:\ "{}}\ +\ (cost\ +\ 1));}
+\DoxyCodeLine{Console.ReadLine();}
+
+\end{DoxyCode}
+
+
+This will start at 16 which is {\ttfamily 65,536 iterations} and reduce the cost until the time target is reached. It\textquotesingle{}s up to you what you consider an allowable time, but if it\textquotesingle{}s below 10, I\textquotesingle{}d seriously advice leaving it at 10 and maybe investing in a larger server package.\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md3}{}\doxysubsection{\texorpdfstring{Enhanced Entropy}{Enhanced Entropy}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md3}
+The recommended 56 byte password limit (including null termination byte) for bcrypt relates to the 448 bit limit of the Blowfish key; Any bytes beyond that limit are not fully mixed into the hash, as such making the 72 byte absolute limit on bcrypt passwords less relevant considering what actual effect on the resulting hash by those bytes.
+
+Other languages have handled this perceived issue by pre-\/hashing the passphrase/password to increase the used entropy, dropbox being one of the more public articles on this.
+
+
+\begin{DoxyItemize}
+\item \href{https://blogs.dropbox.com/tech/2016/09/how-dropbox-securely-stores-your-passwords/}{\texttt{ https\+://blogs.\+dropbox.\+com/tech/2016/09/how-\/dropbox-\/securely-\/stores-\/your-\/passwords/}}
+\item \href{https://crypto.stackexchange.com/questions/42415/dropbox-password-security}{\texttt{ https\+://crypto.\+stackexchange.\+com/questions/42415/dropbox-\/password-\/security}}
+\end{DoxyItemize}
+
+You can opt into enhanced hashing simply using the following code (basically prefixing the method calls with Enhanced)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ enhancedHashPassword\ =\ BCrypt.EnhancedHashPassword(myPassword);}
+\DoxyCodeLine{var\ validatePassword\ =\ BCrypt.EnhancedVerify(myPassword,\ enhancedHashPassword);}
+
+\end{DoxyCode}
+
+
+By default the library uses SHA384 hashing of the passphrase, the material generated is then passed to bcrypt to form your hash via the usual bcrypt routine. If you want to specify a different version of SHA, or just wish to explicitly set in your code the version used in case it ever changes in a major release of the library, you can do so by using the following change to the above.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ enhancedHashPassword\ =\ BCrypt.EnhancedHashPassword(myPassword,\ hashType:\ HashType.SHA384);}
+\DoxyCodeLine{var\ validatePassword\ =\ BCrypt.EnhancedVerify(myPassword,\ enhancedHashPassword,\ hashType:HashType.SHA384);}
+
+\end{DoxyCode}
+
+
+{\itshape Why SHA384?} It\textquotesingle{}s a good balance of performance, security, collision protection and is the only version that wasn\textquotesingle{}t vulnerable to length extension attacks \href{https://blog.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks}{\texttt{ https\+://blog.\+skullsecurity.\+org/2012/everything-\/you-\/need-\/to-\/know-\/about-\/hash-\/length-\/extension-\/attacks}} .
+
+{\itshape Should I use Enhanced Entropy?} You lose nothing by using it
+
+{\itshape Why would I need to change the SHA type?} Some libraries like Pass\+Lib hash using SHA256, so mostly a compatibility thing. Drop\+Box used SHA512 so if you worked at dropbox you\textquotesingle{}d want compatibility. The enhancing is mostly a convenience extension in that you could already pre-\/hash and pass into the standard method calls.
+
+{\itshape What does it do?} We take the utf8 bytes of your password as input\+Bytes SHA hash them, convert to base64 (for compatibility with other language implementations) then use those bytes to perform the standard bcrypt call.\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md4}{}\doxysubsection{\texorpdfstring{Compiling}{Compiling}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md4}
+You\textquotesingle{}ll need at least VS2017 with the current SDK \href{https://www.microsoft.com/net/download;}{\texttt{ https\+://www.\+microsoft.\+com/net/download;}}
+
+The nuget packages can be built by running {\ttfamily buildfornuget.\+cmd} or
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dotnet\ restore\ .\(\backslash\)src}
+\DoxyCodeLine{dotnet\ pack\ .\(\backslash\)src\(\backslash\)BCrypt.Net\ -\/-\/configuration\ Release}
+
+\end{DoxyCode}
+\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md5}{}\doxysubsection{\texorpdfstring{Tests}{Tests}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md5}
+You can run the tests from the main folder by typing {\ttfamily dotnet test .\textbackslash{}src\textbackslash{}BCrypt.\+Net.\+Unit\+Tests\textbackslash{}} Running {\ttfamily Test\+Generate\+Salt\+With\+Max\+Work\+Factor} will take significant time.\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md6}{}\doxysubsection{\texorpdfstring{Description}{Description}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md6}
+A .Net port of j\+BCrypt implemented in C\#. It uses a variant of the Blowfish encryption algorithm’s keying schedule, and introduces a work factor, which allows you to determine how expensive the hash function will be, allowing the algorithm to be \"{}future-\/proof\"{}.\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md7}{}\doxysubsection{\texorpdfstring{Details}{Details}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md7}
+This is, for all intents and purposes, a direct port of j\+BCrypt written by Damien Miller. The main differences are the addition of some convenience methods and some mild re-\/factoring. The easiest way to verify BCrypt.\+Net\textquotesingle{}s parity with j\+BCrypt is to compare the unit tests.
+
+For an overview of why BCrypt is important, see How to Safely Store a Password. In general, it\textquotesingle{}s a hashing algorithm that can be adjusted over time to require more CPU power to generate the hashes. This, in essence, provides some protection against Moore\textquotesingle{}s Law. That is, as computers get faster, this algorithm can be adjusted to require more CPU power. The more CPU power that\textquotesingle{}s required to hash a given password, the more time a \"{}hacker\"{} must invest, per password. Since the \"{}work factor\"{} is embedded in the resultant hash, the hashes generated by this algorithm are forward/backward-\/compatible.\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md8}{}\doxysubsection{\texorpdfstring{Why BCrypt}{Why BCrypt}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md8}
+\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md9}{}\doxysubsubsection{\texorpdfstring{From How to Safely Store a Password\+:}{From How to Safely Store a Password:}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md9}
+It uses a variant of the Blowfish encryption algorithm’s keying schedule and introduces a work factor, which allows you to determine how expensive the hash function will be. Because of this, BCrypt can keep up with Moore’s law. As computers get faster you can increase the work factor and the hash will get slower.\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Blowfish-\/based scheme -\/ Versioning/\+BCrypt Revisions}{Blowfish-based scheme - Versioning/BCrypt Revisions}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md10}
+\begin{quote}
+Niels Provos and David Mazières designed a crypt() scheme called bcrypt based on Blowfish, and presented it at USENIX in 1999.\mbox{[}14\mbox{]} \end{quote}
+The printable form of these hashes starts with \$2\$, \$2a\$, \$2b\$, \$2x\$ or \$2y\$ depending on which variant of the algorithm is used\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$2\$\ –\ Currently\ obsolete}
+\DoxyCodeLine{\$2a\$\ –\ The\ current\ key\ used\ to\ identify\ this\ scheme.}
+\DoxyCodeLine{\ \ \ \ \ \ \ Since\ a\ major\ security\ flaw\ was\ discovered\ in\ 2011\ in\ a\ third-\/party\ implementation\ of\ the\ algorithm,}
+\DoxyCodeLine{\ \ \ \ \ \ \ hashes\ indicated\ by\ this\ string\ are\ now\ ambiguous\ and\ might\ have\ been\ generated\ by\ the\ flawed}
+\DoxyCodeLine{\ \ \ \ \ \ \ implementation,\ or\ a\ subsequent\ fixed,\ implementation.}
+\DoxyCodeLine{\ \ \ \ \ \ \ The\ flaw\ may\ be\ triggered\ by\ some\ password\ strings\ containing\ non-\/ASCII\ characters,\ such\ as\ specially}
+\DoxyCodeLine{\ \ \ \ \ \ \ crafted\ password\ strings.}
+\DoxyCodeLine{\$2b\$\ –\ Used\ by\ some\ recent\ implementations\ which\ include\ a\ mitigation\ to\ a\ wraparound\ problem.}
+\DoxyCodeLine{\ \ \ \ \ \ \ Previous\ versions\ of\ the\ algorithm\ have\ a\ problem\ with\ long\ passwords.\ By\ design,\ long\ passwords}
+\DoxyCodeLine{\ \ \ \ \ \ \ are\ truncated\ at\ 72\ characters,\ but\ there\ is\ an\ 8-\/bit\ wraparound\ problem\ with\ certain\ password}
+\DoxyCodeLine{\ \ \ \ \ \ \ lengths\ resulting\ in\ weak\ hashes.}
+\DoxyCodeLine{\$2x\$\ –\ Post-\/2011\ bug\ discovery,\ old\ hashes\ can\ be\ renamed\ to\ be\ \$2x\$\ to\ indicate\ that\ they\ were\ generated\ with}
+\DoxyCodeLine{\ \ \ \ \ \ \ the\ broken\ algorithm.\ These\ hashes\ are\ still\ weak,\ but\ at\ least\ it's\ clear\ which\ algorithm\ was\ used\ to}
+\DoxyCodeLine{\ \ \ \ \ \ \ generate\ them.}
+\DoxyCodeLine{\$2y\$\ –\ Post\ Post-\/2011\ bug\ discovery,\ \$2y\$\ may\ be\ used\ to\ unambiguously\ use\ the\ new,\ corrected\ algorithm.\ On\ an}
+\DoxyCodeLine{\ \ \ \ \ \ \ implementation\ suffering\ from\ the\ bug,\ \$2y\$\ simply\ won't\ work.\ On\ a\ newer,\ fixed\ implementation,\ it\ will}
+\DoxyCodeLine{\ \ \ \ \ \ \ produce\ the\ same\ result\ as\ using\ \$2a\$.}
+
+\end{DoxyCode}
+
+
+First and foremost this library originated as a port of j\+BCrypt from {\ttfamily mindrot}, and subsequently the bcrypt revision was set to match, which in this case is {\ttfamily \$2a\$}. This has been changed as handling only the single revision causes issues cross-\/platform with implementations that moved altered their revision to handle migrations and other issues.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The\ original\ bcrypt\ code\ (released\ in\ OpenBSD\ 2.1)\ identified\ itself\ as}
+\DoxyCodeLine{\$2\$.\ Shortly\ after\ release,\ a\ bug\ was\ fixed\ and\ the\ hash\ identifier}
+\DoxyCodeLine{changed\ to\ \$2a\$.\ Support\ for\ "{}minor"{}\ versions\ wasn't\ really}
+\DoxyCodeLine{planned,\ but\ it\ was\ backwards\ compatible.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Solar\ Designer\ wrote\ a\ second\ implementation\ of\ bcrypt.\ This}
+\DoxyCodeLine{reimplementation\ suffered\ from\ a\ flaw\ dealing\ with\ 8\ bit\ characters}
+\DoxyCodeLine{and\ led\ to\ the\ introduction\ of\ the\ 'x'\ and\ 'y'\ flavours.\ OpenBSD\ did}
+\DoxyCodeLine{not\ have\ this\ problem\ and\ supports\ neither\ 'x'\ nor\ 'y'\ hash\ versions.}
+\DoxyCodeLine{}
+\DoxyCodeLine{-\/-\/-\/}
+\DoxyCodeLine{}
+\DoxyCodeLine{Solar\ found\ a\ bug\ in\ their\ OpenBSD\ implementation\ of\ bcrypt\ when\ hashing}
+\DoxyCodeLine{long\ passwords.\ The\ length\ is\ stored\ in\ an\ unsigned\ char\ type,\ which}
+\DoxyCodeLine{will\ overflow\ and\ wrap\ at\ 256.\ Although\ we\ consider\ the\ existence\ of}
+\DoxyCodeLine{affected\ hashes\ very\ rare,\ in\ order\ to\ differentiate\ hashes\ generated}
+\DoxyCodeLine{before\ and\ after\ the\ fix,\ we\ are\ introducing\ a\ new\ minor\ 'b'.}
+\DoxyCodeLine{}
+\DoxyCodeLine{OpenBSD\ 5.5\ (coming\ this\ spring)\ will\ accept\ and\ verify\ 'b'\ hashes,}
+\DoxyCodeLine{although\ it\ will\ still\ generate\ 'a'\ hashes.\ OpenBSD\ 5.6\ (coming\ this}
+\DoxyCodeLine{fall)\ will\ change\ to\ generating\ 'b'\ hashes\ by\ default.}
+\DoxyCodeLine{}
+\DoxyCodeLine{A\ future\ release\ of\ Solar's\ bcrypt\ code\ should\ also\ support\ 'b'.}
+
+\end{DoxyCode}
+
+
+{\bfseries{There is no difference between 2a, 2x, 2y, and 2b. They all output the same result.}}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/spring-projects/spring-security/issues/3320}{\texttt{ https\+://github.\+com/spring-\/projects/spring-\/security/issues/3320}}
+\item \href{https://en.wikipedia.org/wiki/Crypt_(C)\#Blowfish-based_scheme}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+Crypt\+\_\+(\+C)\#\+Blowfish-\/based\+\_\+scheme}}
+\item \href{http://undeadly.org/cgi?action=article&sid=20140224132743}{\texttt{ http\+://undeadly.\+org/cgi?action=article\&sid=20140224132743}}
+\item \href{http://marc.info/?l=openbsd-misc&m=139320023202696}{\texttt{ http\+://marc.\+info/?l=openbsd-\/misc\&m=139320023202696}}
+\end{DoxyItemize}\hypertarget{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md11}{}\doxysection{\texorpdfstring{Releases}{Releases}}\label{md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_autotoc_md11}
+release notes are here \href{https://github.com/BcryptNet/bcrypt.net/releases}{\texttt{ https\+://github.\+com/\+Bcrypt\+Net/bcrypt.\+net/releases}}
+
+{\itshape v4.\+0.\+2} -\/ Addition of .net 5 targeting; wrap {\ttfamily shaxxx} creation in using to release.
+
+{\itshape v4.\+0.\+0 (breaking changes)} -\/ A bug in {\ttfamily Enhanced Hashing} was discovered that causes the hashes created to be inoperable between different languages. V4 provides the fix for this as well as adding test vectors from PHP and Python to ensure the issue remains fixed in the future. V4 also removes the legacy 384 option that came before Base64 was added.
+
+{\itshape v3.\+5.\+0} -\/ A bug in {\ttfamily Enhanced Hashing} was discovered that causes the hashes created to be inoperable between different languages. As part of the fix 3.\+5 release contains the ability to {\ttfamily Verify} and {\ttfamily Hash\+Password} were given an additional {\ttfamily v4\+Compatible\+Enhanced\+Entropy} parameter. This allows the user to verify their Enhanced hash as normal; then re-\/hash + store using V4. This functionality is purely to allow migration and is removed in V4.
+
+{\itshape v3.\+3.\+3} -\/Performance (heap reduction) for netcore and removal of regex \href{https://github.com/BcryptNet/bcrypt.net/releases/tag/3.3.0}{\texttt{ https\+://github.\+com/\+Bcrypt\+Net/bcrypt.\+net/releases/tag/3.\+3.\+0}}
+
+{\itshape v2.\+1.\+3 -\/}
+
+
+\begin{DoxyItemize}
+\item Update test SDK
+\item Match versions between Strong-\/\+Signed / Normal package
+\item Update copyright year in metadata
+\item Typo correction
+\end{DoxyItemize}
+
+{\itshape v2.\+1.\+2 -\/}
+
+
+\begin{DoxyItemize}
+\item Net\+Standard2 and Net 4.\+7 addition
+\item Correct typo in {\ttfamily Password\+Needs\+Reshash} to {\ttfamily Password\+Needs\+Rehash}
+\item Consolidate config changes
+\end{DoxyItemize}
+
+{\itshape v2.\+1.\+1 -\/}
+
+
+\begin{DoxyItemize}
+\item Minor csproj changes / typo
+\end{DoxyItemize}
+
+{\itshape v2.\+1.\+0 -\/}
+
+
+\begin{DoxyItemize}
+\item Adds enhanced mode; enhanced hashing allows you to opt-\/in to ensuring optimal entropy on your users passwords by first making use of the fast SHA384 algorithm before BCrypt hashes the password.
+\item Added Hash interrogation to allow a hash to be passed in and its component parts are returned.
+\item Added timeouts to regex and set compiler flags for msbuild so \texorpdfstring{$<$}{<} .net 4.\+5 (where timeouts were added to regex) we use old regex method.
+\item Alter safe equals from ceq/and to xor/and/ceq moving the check outside of the loop to mitigate against branch prediction causing a timing leak
+\item Add new method {\ttfamily Password\+Needs\+Reshash(string hash, int new\+Minimum\+Work\+Load)} as a helper method for developers to use when logging a user in to increase legacy workloads
+\item Add {\ttfamily Validate\+And\+Replace\+Password} method to allow inline password validation and replacement. Throws {\ttfamily Bcrypt\+Authentication\+Exception} in the event of authentication failure.
+\item Cleaned up XML-\/doc for intellisense
+\item Increased compatibility by allowing BCrypt revisions from other frameworks/languages to be validated and generated whilst maintaining compatibility.
+\item VS2017 RTW changes
+\end{DoxyItemize}
+
+{\itshape v2.\+0.\+1 -\/}
+
+
+\begin{DoxyItemize}
+\item Corrects usage of Secure random number generator
+\item Change UTF8 handling to safer default (throw\+On\+Invalid\+Bytes\+: true)
+\item .NET Encoding.\+UTF8 encoding instance does not raise exceptions used to encode bytes which cannot represent a valid encoding \& will return the same \textquotesingle{}unknown\textquotesingle{} character instead. This can cause entropy loss when converting from bytes to strings.
+\item Change secure equals to match .net identity implementation
+\item Inline vars in encipher method
+\end{DoxyItemize}
+
+{\itshape v2.\+0.\+0 -\/}
+
+Fresh release packaged for the majority of .net \& containing safe-\/equals to reduce the risks from timing attacks \href{https://en.wikipedia.org/wiki/Timing_attack}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+Timing\+\_\+attack}} / \href{https://cryptocoding.net/index.php/Coding_rules\#Compare_secret_strings_in_constant_time}{\texttt{ https\+://cryptocoding.\+net/index.\+php/\+Coding\+\_\+rules\#\+Compare\+\_\+secret\+\_\+strings\+\_\+in\+\_\+constant\+\_\+time}} Technically the implementation details of BCrypt theoretically mitigate against timing attacks. But the Bcrypt.\+net official validation function was vulnerable to timing attacks as it returned as soon as a non-\/matching byte was found in the hash comparison. 

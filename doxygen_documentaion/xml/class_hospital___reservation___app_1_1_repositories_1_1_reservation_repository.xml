@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Repositories::ReservationRepository</compoundname>
+    <basecompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.DataBaseRepository</basecompoundref>
+    <basecompoundref refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Model.IReservationRepository</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a6e799cc7dc8525bde2323cdb6d746f5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Repositories.ReservationRepository.AddRes</definition>
+        <argsstring>(ReservationModel reservation)</argsstring>
+        <name>AddRes</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.AddRes</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a3b278b44af960f1a6fc738dbae8de854">AddRes</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kindref="compound">ReservationModel</ref></type>
+          <declname>reservation</declname>
+        </param>
+        <briefdescription>
+<para>The method user adding reservation on selected date, speciality and doctor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reservation</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="20" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="20" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1ac2f0ca9b4f0947fb519a3c5a283956fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kindref="compound">ReservationModel</ref> &gt;</type>
+        <definition>List&lt; ReservationModel &gt; Hospital_Reservation_App.Repositories.ReservationRepository.GetAllReservationsData</definition>
+        <argsstring>(UserModel user)</argsstring>
+        <name>GetAllReservationsData</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.GetAllReservationsData</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1ad6bb0f147425174aaf333a36ef547844">GetAllReservationsData</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>The method for get all reservations user had been done. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>list of all reservations done by user.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="41" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="41" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a5b8e4051a4a8a48176f37d788abf39b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kindref="compound">ReservationModel</ref> &gt;</type>
+        <definition>List&lt; ReservationModel &gt; Hospital_Reservation_App.Repositories.ReservationRepository.GetPastReservationsData</definition>
+        <argsstring>(UserModel user)</argsstring>
+        <name>GetPastReservationsData</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.GetPastReservationsData</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a17bebd3de4cb6d7f0f346154a982b7c7">GetPastReservationsData</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>The method for get past reservations data for user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>list of all past reservations of user.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="88" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="88" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a8e016b963bc18c9322a8ba3bbc5bfa08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kindref="compound">ReservationModel</ref> &gt;</type>
+        <definition>List&lt; ReservationModel &gt; Hospital_Reservation_App.Repositories.ReservationRepository.GetFutureReservationsData</definition>
+        <argsstring>(UserModel user)</argsstring>
+        <name>GetFutureReservationsData</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.GetFutureReservationsData</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a2e772f1e2986a897ba0b638a425b9272">GetFutureReservationsData</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>The method for get future reservations data for user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>list of all future reservations for user</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="137" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="137" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a3c3444c42797ed7edad1c0c8ac3cf6cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref> &gt;</type>
+        <definition>List&lt; VisitModel &gt; Hospital_Reservation_App.Repositories.ReservationRepository.GetAllReservationsData</definition>
+        <argsstring>(DoctorModel user)</argsstring>
+        <name>GetAllReservationsData</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.GetAllReservationsData</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a345a33574f58fd7ff07901ca93f928b5">GetAllReservationsData</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>The method for get all reservations which doctor have. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>list of all reservations doctor have.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="186" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="186" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a8946c965c5423149ad3ada6dae553f56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref> &gt;</type>
+        <definition>List&lt; VisitModel &gt; Hospital_Reservation_App.Repositories.ReservationRepository.GetPastReservationsData</definition>
+        <argsstring>(DoctorModel user)</argsstring>
+        <name>GetPastReservationsData</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.GetPastReservationsData</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a829389cdac20e1cfc05ba8274a09eb1b">GetPastReservationsData</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>The method for get past reservations data for doctor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of all past reservations of doctor.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="227" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="227" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a838d24c9271fc8814215eda831f5cfc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref> &gt;</type>
+        <definition>List&lt; VisitModel &gt; Hospital_Reservation_App.Repositories.ReservationRepository.GetFutureReservationsData</definition>
+        <argsstring>(DoctorModel user)</argsstring>
+        <name>GetFutureReservationsData</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.GetFutureReservationsData</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a386bdf1b5af699aa3c002fca3d5e2794">GetFutureReservationsData</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>The method for get future reservations data for doctor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of all future reservations doctor have.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="271" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="271" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1af13d1dddcb2c80b3248ab580c14f309c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Repositories.ReservationRepository.DeleteReservation</definition>
+        <argsstring>(ReservationModel reservation)</argsstring>
+        <name>DeleteReservation</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.DeleteReservation</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a987a4490e2ba60c0e37c1d87ad954e69">DeleteReservation</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kindref="compound">ReservationModel</ref></type>
+          <declname>reservation</declname>
+        </param>
+        <briefdescription>
+<para>The method for deleting selected reservation by user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reservation</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="314" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="314" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1af9304bb491a841e927312c39d8191349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Repositories.ReservationRepository.DeleteAllReservationuser</definition>
+        <argsstring>(UserModel userModel)</argsstring>
+        <name>DeleteAllReservationuser</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.DeleteAllReservationuser</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1ade080ccb186218ac2fec923e7cb15835">DeleteAllReservationuser</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>userModel</declname>
+        </param>
+        <briefdescription>
+<para>The method for deleting all reservations by user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userModel</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="332" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="332" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1aeccc44b32461b0643f1b036e8fee9866" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; DateTime &gt;</type>
+        <definition>List&lt; DateTime &gt; Hospital_Reservation_App.Repositories.ReservationRepository.GetUserTime</definition>
+        <argsstring>(DateTime date, UserModel user)</argsstring>
+        <name>GetUserTime</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.ReservationRepository.GetUserTime</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a192327d069b33db540903179a313f3ea">GetUserTime</reimplements>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>The method get list of hours when user already have reserved visit to doctor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>date</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>list of hours when user already have reserved visit to doctor</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/ReservationRepository.cs" line="353" column="21" bodyfile="Repositories/ReservationRepository.cs" bodystart="353" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DataBaseRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository"/>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.Repositories.ReservationRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IReservationRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DataBaseRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository"/>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.Repositories.ReservationRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IReservationRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository"/>
+      </node>
+    </collaborationgraph>
+    <location file="Repositories/ReservationRepository.cs" line="14" column="11" bodyfile="Repositories/ReservationRepository.cs" bodystart="15" bodyend="379"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a6e799cc7dc8525bde2323cdb6d746f5f" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>AddRes</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aaa8d194e9cc3b9f5358b598f287992d6" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>DataBaseRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1af9304bb491a841e927312c39d8191349" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>DeleteAllReservationuser</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1af13d1dddcb2c80b3248ab580c14f309c" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>DeleteReservation</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1ac2f0ca9b4f0947fb519a3c5a283956fb" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetAllReservationsData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a3c3444c42797ed7edad1c0c8ac3cf6cb" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetAllReservationsData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aa5b4f73aad0190fb8ea0e1ca2cf03fd2" prot="protected" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetConnection</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a8e016b963bc18c9322a8ba3bbc5bfa08" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetFutureReservationsData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a838d24c9271fc8814215eda831f5cfc3" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetFutureReservationsData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a5b8e4051a4a8a48176f37d788abf39b7" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetPastReservationsData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a8946c965c5423149ad3ada6dae553f56" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetPastReservationsData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1aeccc44b32461b0643f1b036e8fee9866" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::ReservationRepository</scope><name>GetUserTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_4e3946749bd901a1689a0723e6cecb40" kind="dir">
+    <compoundname>packages/BCrypt.Net-Next.4.0.3</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="packages/BCrypt.Net-Next.4.0.3/"/>
+  </compounddef>
+</doxygen>

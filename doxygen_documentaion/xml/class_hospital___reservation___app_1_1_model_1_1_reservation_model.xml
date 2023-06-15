@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::ReservationModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1a90b7dd93e37391925c20c9b8a8a27014" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.ReservationModel.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Hospital_Reservation_App.Model.ReservationModel.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/ReservationModel.cs" line="14" column="23" bodyfile="Model/ReservationModel.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1aeea607a5792138f60195cb72a72c1099" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.ReservationModel.PatientId</definition>
+        <argsstring></argsstring>
+        <name>PatientId</name>
+        <qualifiedname>Hospital_Reservation_App.Model.ReservationModel.PatientId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/ReservationModel.cs" line="15" column="23" bodyfile="Model/ReservationModel.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1a8fcb1897766c3437058a384e40a6d342" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kindref="compound">DoctorModel</ref></type>
+        <definition>DoctorModel Hospital_Reservation_App.Model.ReservationModel.Doctor</definition>
+        <argsstring></argsstring>
+        <name>Doctor</name>
+        <qualifiedname>Hospital_Reservation_App.Model.ReservationModel.Doctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/ReservationModel.cs" line="16" column="28" bodyfile="Model/ReservationModel.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1afa845f90c24f01f650a0a43e30bbfe6b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Hospital_Reservation_App.Model.ReservationModel.ReservationTime</definition>
+        <argsstring></argsstring>
+        <name>ReservationTime</name>
+        <qualifiedname>Hospital_Reservation_App.Model.ReservationModel.ReservationTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/ReservationModel.cs" line="17" column="25" bodyfile="Model/ReservationModel.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents reservations table of DataBase. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/ReservationModel.cs" line="12" column="11" bodyfile="Model/ReservationModel.cs" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1a8fcb1897766c3437058a384e40a6d342" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::ReservationModel</scope><name>Doctor</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1a90b7dd93e37391925c20c9b8a8a27014" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::ReservationModel</scope><name>Id</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1aeea607a5792138f60195cb72a72c1099" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::ReservationModel</scope><name>PatientId</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1afa845f90c24f01f650a0a43e30bbfe6b" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::ReservationModel</scope><name>ReservationTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

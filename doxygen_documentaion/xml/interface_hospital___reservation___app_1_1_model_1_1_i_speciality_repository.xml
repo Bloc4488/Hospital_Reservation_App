@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository" kind="interface" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::ISpecialityRepository</compoundname>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.SpecialityRepository</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a06368e49047a8f65803f762bcf40a008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref> &gt;</type>
+        <definition>List&lt; SpecialityModel &gt; Hospital_Reservation_App.Model.ISpecialityRepository.GetAll</definition>
+        <argsstring>()</argsstring>
+        <name>GetAll</name>
+        <qualifiedname>Hospital_Reservation_App.Model.ISpecialityRepository.GetAll</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1a35e5184468696222548e894314657014">GetAll</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/ISpecialityRepository.cs" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1af671e5ed83e29a62ff03a4d62e0c3f48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.ISpecialityRepository.Add</definition>
+        <argsstring>(SpecialityModel model)</argsstring>
+        <name>Add</name>
+        <qualifiedname>Hospital_Reservation_App.Model.ISpecialityRepository.Add</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1aff2f6a95fe7268dcf2ffc114e990ab44">Add</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/ISpecialityRepository.cs" line="14" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a2f4461ed7c6c1b579849dcaed8dd8f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.ISpecialityRepository.Delete</definition>
+        <argsstring>(SpecialityModel speciality)</argsstring>
+        <name>Delete</name>
+        <qualifiedname>Hospital_Reservation_App.Model.ISpecialityRepository.Delete</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1ad110deb185e53f839d588c779e7d4830">Delete</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref></type>
+          <declname>speciality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/ISpecialityRepository.cs" line="16" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.Model.ISpecialityRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository"/>
+      </node>
+      <node id="2">
+        <label>Hospital_Reservation_App.Repositories.SpecialityRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Model/ISpecialityRepository.cs" line="9" column="22" bodyfile="Model/ISpecialityRepository.cs" bodystart="10" bodyend="17"/>
+    <listofallmembers>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1af671e5ed83e29a62ff03a4d62e0c3f48" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::ISpecialityRepository</scope><name>Add</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a2f4461ed7c6c1b579849dcaed8dd8f58" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::ISpecialityRepository</scope><name>Delete</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a06368e49047a8f65803f762bcf40a008" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::ISpecialityRepository</scope><name>GetAll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

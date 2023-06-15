@@ -1,0 +1,1035 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view" kind="class"><name>Hospital_Reservation_App::View::AddReservationView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1aaa05202aa837169b2151dbd0c0ff9452" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1a62b9dddd10bcadee306a12e49136f11f" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1a62b9dddd10bcadee306a12e49136f11f" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1a62b9dddd10bcadee306a12e49136f11f" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1afb4a1cc83238599994cc95694103018c" kind="function"><name>AddReservationView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1a2e04233b83db8207b1608fcd9cc92f8b" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1a2e04233b83db8207b1608fcd9cc92f8b" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view_1a2e04233b83db8207b1608fcd9cc92f8b" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::AddReservationViewModel</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a6852444cd7ea5436d4c55b6492b4c6cd" kind="variable"><name>_currentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a6fb3414d5ca9db863594c16e7f4a6959" kind="variable"><name>_selectedDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a0e5be99d8b48e65f1f47d6c9a15f369a" kind="variable"><name>_selectedSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1ad7548bd9da56e78b565a0c7271826ed4" kind="variable"><name>_selectedDay</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a6dc7b31faa9ea169c1dc90231f56a4bc" kind="variable"><name>_selectedTime</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a4879ec2880092271c47604851edda7b2" kind="variable"><name>_selectedDayTime</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a47e1d6706f90026016ef57a8aaa5e84a" kind="variable"><name>_showListTime</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a7316172f39c59e6a861e1ed6abcf72b3" kind="variable"><name>_showListSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1aa4ed902e36eba59a89ad77d6b99526a5" kind="variable"><name>_showListDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a00b2ae7688df21380240fd234bad1fe4" kind="variable"><name>_isDateVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a41a6b0d14de29586fa02fa5a341f38cd" kind="variable"><name>_isTimeVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a80ba869b75ccffe6d25fa69a7902af73" kind="variable"><name>_isSpecialityVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1aee3ca21676789d3b6b1bea9cbf72cc98" kind="variable"><name>_isDoctorVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a6321b98722552513b0d007df0280645e" kind="variable"><name>_isReservationVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1adea4e851970ae85b166aeeee33ba616f" kind="variable"><name>_isReservationCompleteVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1aa90d694b8045ccfb60dd2efd5b4e572a" kind="variable"><name>userRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a6e1a38b006930c13601971bc572230a3" kind="variable"><name>reservationRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a3b5d2d2f43abf8776de5694ac9edd99d" kind="variable"><name>specialityRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a913a8e6b1574261aee1242657d248ddd" kind="property"><name>CurrentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1acb88097c0dfd08ec1187d6384413adbe" kind="property"><name>SelectedDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a569ce7fd664f53c83738d5d9d60ee2e3" kind="property"><name>SelectedSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1ae9df001391b799a7224f3343d4de800e" kind="property"><name>SelectedDay</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a130caab800fa6a947e979300a97de6be" kind="property"><name>SelectedTime</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a2745830ed56e6dc2b7c673d114fa8c50" kind="property"><name>SelectedDayTime</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a9bbe7accef62ab407593d08fb4910bc9" kind="property"><name>ShowListTime</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a51ce22a7b85e8d05792f931655f2ab1c" kind="property"><name>ShowListSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a45319f5203cf729e2e588bd94b7b4cc1" kind="property"><name>ShowListDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a41fda9ec0ab783a397de433e6d989ad2" kind="property"><name>IsDateVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a3f1cd8767a5bb9382a0acc07315b38be" kind="property"><name>IsTimeVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a2ac642ae5bd48f1aa54a18c316c6b67b" kind="property"><name>IsSpecialityVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a0e64977e964ad8c6269574a28cc9d3af" kind="property"><name>IsDoctorVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a0f27ca8c0011af8153203acf7e40c273" kind="property"><name>IsReservationVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a86226f7f7a9123790b66d23f7abfa0c8" kind="property"><name>IsReservationCompleteVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1aa6ba5a6e6ee0798ea05a75067d209e88" kind="property"><name>AddReservationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a610efd1ad4ef9d351942102fcdbca4eb" kind="property"><name>NextWindowCommand1</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a9d713a6d099716436be0dc6befb4f4f0" kind="property"><name>NextWindowCommand2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1aebb3cba31b6f95f3cda95786476ba5c4" kind="property"><name>NextWindowCommand3</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1adaaefc01688a50dd31140cfdb0edb477" kind="property"><name>NextWindowCommand4</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a44c38902d98a8bf2952865f8459675eb" kind="property"><name>PreviousWindowCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1af05b0faf67e39a412cb3a12b42b5a367" kind="property"><name>StartWindowCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1ae26284eb5bc92eaecb0b826e5ae0757f" kind="function"><name>AddReservationViewModel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a9198065022fea9a1a848fafe4249ce42" kind="function"><name>ExecuteAddReservationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a625926ef7a8b4049272e0effa3a015df" kind="function"><name>CanExecuteNextWindowCommand1</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a63d6a1e22ff256fcef2fb6c3e1f83b3e" kind="function"><name>ExecuteNextWindowCommand1</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1afdaeaf544d278bf28fedd4487e1fb9cf" kind="function"><name>CanExecuteNextWindowCommand2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a9ac6ef8d6dac3677dc2624f3d83969d5" kind="function"><name>ExecuteNextWindowCommand2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a2ef6416984fd26fb9e9ee6f3d78d8004" kind="function"><name>CanExecuteNextWindowCommand3</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a4a327ad204163ad6bc78bc61e92cfd6a" kind="function"><name>ExecuteNextWindowCommand3</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a49135a1c4c336cde91c753dfddebbe3a" kind="function"><name>CanExecuteNextWindowCommand4</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1aeba20a2d6a4087accc5375c13e59c07c" kind="function"><name>ExecuteNextWindowCommand4</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a1046a00a237c8d7febc8ec86c0234a74" kind="function"><name>ExecutePreviousWindowCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a6ad05fe8c21687cacd612d9d01189c74" kind="function"><name>ExecuteStartWindowCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a633a657b43dc2f6fec1afc0e329a19f2" kind="function"><name>LoadShowListTime</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1a063b41015245a45cce106cccf12aae9e" kind="function"><name>LoadShowListSpecialty</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1af2abe8d8b17e1dac813fa272828196b8" kind="function"><name>LoadShowListDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model_1ac5aefc7a213f99c9ae6164f3af13509c" kind="function"><name>LoadCurrentAccountData</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_admin_view" kind="class"><name>Hospital_Reservation_App::View::AdminView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1aa44586b6b086ea75e5e7c4da46a0f49b" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1a40b358e1af2dd84f56ff3d9f6a7bdba4" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1a40b358e1af2dd84f56ff3d9f6a7bdba4" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1a40b358e1af2dd84f56ff3d9f6a7bdba4" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1a407206f535f3aedaa9cb343878cc874f" kind="function"><name>AdminView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1ab4c2221642f3263c613daef8ad78da71" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1ab4c2221642f3263c613daef8ad78da71" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_admin_view_1ab4c2221642f3263c613daef8ad78da71" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::AdminViewModel</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ac68fe889cd459788c4f2d0447ce62447" kind="variable"><name>_showPatients</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ad92c8432d6c4a48d35b328621d48d43e" kind="variable"><name>_showDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a33e05bc0777abf42cc476729f06af876" kind="variable"><name>_showListSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1af983e3e1cbd44826b8cb996cf574c985" kind="variable"><name>_showSpecialities</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a9ab476634ad51afcf184a5e70326e1f0" kind="variable"><name>_selectedPatient</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a34e37a904a0cdd74c7ac9aed537d50d8" kind="variable"><name>_selectedDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a188e7b231c91fef41646c4f9dc2ea091" kind="variable"><name>_selectedSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1aec9931721dc914d2f289f525786f301a" kind="variable"><name>_selectedSpeciality2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a411b724c0096cc7ab1d96ebac2e80106" kind="variable"><name>_newSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a390257034c3c424bdead30b99fde7532" kind="variable"><name>_isPatientsVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a70fe77d7603d8526ea96faa3eef2b20d" kind="variable"><name>_isDoctorsVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a58f4ccec7c9fafb63fe7ba86a3720d7a" kind="variable"><name>_isSpecialityVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a9fa6a3ae7bf5c12e7dc9112954d4d055" kind="variable"><name>userRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1afd2b39eb7a9ef192c8698e12f2ad6653" kind="variable"><name>specialityRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ac22a18ffcd1b20c69e26f586f17abe69" kind="property"><name>ShowPatients</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a83f556a64f972556d7688a392e5369a2" kind="property"><name>ShowDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a2a9b98ca1eaf5c127b8f784187dd5dea" kind="property"><name>ShowListSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a0c0cb7d7d96f0abe015f5e9ebb256be4" kind="property"><name>ShowSpecialities</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a7d6deb4a4899fe4b755e5195a5f14a84" kind="property"><name>SelectedPatient</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a361d3d04dbb6bc0ccb26fb7a6985c861" kind="property"><name>SelectedDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a84ce2525e39af98dcd0aab3292de20e0" kind="property"><name>SelectedSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a3295536ae44544f251a8a937d391adff" kind="property"><name>SelectedSpeciality2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ac8f7d9376ee5656fd114fdf545033bc7" kind="property"><name>NewSpeciality</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a451e96c4d2b749074dda2c2962f843c0" kind="property"><name>IsPatientsVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a1eba91977a732b50faea94edba745f4a" kind="property"><name>IsDoctorsVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a2c939cc08d5eab9a61a87553f63dc448" kind="property"><name>IsSpecialityVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ab818082fabaed1a5055683efe774fd1c" kind="property"><name>ShowPatientsCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a3bd7f3cdc42265d1a3bb81beceeee77f" kind="property"><name>ShowDoctorsCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ad6546a378dc5215137f96e5ceec94cd2" kind="property"><name>ShowSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a00477f3886499b0eb1a199bbf204f525" kind="property"><name>DeleteDoctorCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a4743ae56b9b6e8acc68a05f187a61013" kind="property"><name>DeleteDoctorUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1aaf7e8477858efffd6be4b53b93b48397" kind="property"><name>MakeDoctorCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a7a72dfa0c63c148741d4bb7f5976623a" kind="property"><name>DeleteUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ab5b99b22a498218202c201b76f61e405" kind="property"><name>DeleteSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1abddbf302b62401b8d53e0c9545f1dab9" kind="property"><name>MakeSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1abe380f823e628a6b40ae5a2463c899c2" kind="function"><name>AdminViewModel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a61837b26792721282c236b0aea570fa5" kind="function"><name>ExecuteShowPatientsCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1ae29e81bdfe6ab54bd23751783e8c7b7f" kind="function"><name>ExecuteShowDoctorsCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a04184cfcb04f671753f67887d2d08ae7" kind="function"><name>ExecuteShowSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a9cd2687404cd8f59c0131671cd001266" kind="function"><name>ExecuteDeleteDoctorCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a8076c8d85e2c598c676d2bde23f63761" kind="function"><name>ExecuteDeleteDoctorUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a81b870f0b10e70a0492a6c1461bd64f1" kind="function"><name>CanExecuteDeleteDoctorCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a63b34730a725914d769817ed017b9b90" kind="function"><name>CanExecuteMakeDoctorCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1acc2507c19fd95ca1ddd48b940dd898e0" kind="function"><name>ExecuteMakeDoctorCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a0ae8c2659b99f10a9e5173a5cdef36e9" kind="function"><name>ExecuteDeleteUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a9d64254e4b75b80a5c0be039ded577ec" kind="function"><name>CanExecuteDeleteUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1af4eb0e68761e95e1b2560e5623f9b7ce" kind="function"><name>ExecuteDeleteSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a7f94798f71bc844c0eb26fe09463444e" kind="function"><name>CanExecuteDeleteSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a10d7182dfeecd677c73d0d4dbb4508af" kind="function"><name>ExecuteMakeSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a4cdc6b7f3089ef671fdd9ddd517637e0" kind="function"><name>CanExecuteMakeSpecialityCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1aa95dcc6ded38e2f5448c227db7d950b9" kind="function"><name>LoadPatients</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a89da8da2d66aba61100d1a266c9eb8f5" kind="function"><name>LoadDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a7d3a4e24b4e4bf28df412d42d9695b4d" kind="function"><name>LoadListSpecialties</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model_1a41738b8d7c2f294d70fa12c4b5ae7288" kind="function"><name>LoadSpecialties</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_app" kind="class"><name>Hospital_Reservation_App::App</name>
+    <member refid="class_hospital___reservation___app_1_1_app_1af29fdd593109653c9d1f6f9c5be2ac1a" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" kind="function"><name>Main</name></member>
+    <member refid="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" kind="function"><name>Main</name></member>
+    <member refid="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository" kind="class"><name>Hospital_Reservation_App::Repositories::DataBaseRepository</name>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1a69e3e3c4e8a4c20f6d80dafe37e8df14" kind="variable"><name>_connectionString</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aaa8d194e9cc3b9f5358b598f287992d6" kind="function"><name>DataBaseRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aa5b4f73aad0190fb8ea0e1ca2cf03fd2" kind="function"><name>GetConnection</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_doctor_main_view" kind="class"><name>Hospital_Reservation_App::View::DoctorMainView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_doctor_main_view_1a565139d1c0283a5f878150d4b9692e16" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_doctor_main_view_1a931db8188733d518c244080734030ec5" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_doctor_main_view_1a931db8188733d518c244080734030ec5" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_doctor_main_view_1a63664513d320ad7672beeee0cd6e185e" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_doctor_main_view_1a63664513d320ad7672beeee0cd6e185e" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model" kind="class"><name>Hospital_Reservation_App::Model::DoctorModel</name>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a3ff25243ee3c0aeec8273f1a420b85d8" kind="property"><name>Id</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1af085a591b08d361c486c94197453ddb5" kind="property"><name>FirstName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a641f1aed353c8acef74fe04493d74c72" kind="property"><name>LastName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1ad4510b2241eb5f36bbcecdcd166237bc" kind="property"><name>Fullname</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a23ce61b97d1babdaf037ed15938de1f7" kind="property"><name>Email</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_model_1a20760ae6cc07e2a740a549bf335cc133" kind="property"><name>Speciality</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model" kind="class"><name>Hospital_Reservation_App::Model::DoctorNoteModel</name>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1adbcb84fa2cc232ae484efd7d72b8a9fb" kind="property"><name>Id</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1ad3b630e11760ce2ae823e7d3d1f85517" kind="property"><name>Reservation_id</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1a07e30da6662a573d569587cd70b99113" kind="property"><name>Note</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository" kind="class"><name>Hospital_Reservation_App::Repositories::DoctorNoteRepository</name>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository_1aae4371407f8139d0d8a767a573df7c2e" kind="function"><name>GetDoctorNote</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_doctor_note_repository_1a97d6d2b1d9647edfb1223977b59c6b73" kind="function"><name>AddDoctorNote</name></member>
+  </compound>
+  <compound refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper" kind="class"><name>XamlGeneratedNamespace::GeneratedInternalTypeHelper</name>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1aefb7a98fceb9c287cef4756942f441d1" kind="function"><name>CreateInstance</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1afdc9fe15b56607d02082908d934480c6" kind="function"><name>GetPropertyValue</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1ade0f04c0f7b18dd5b170e071d5534d38" kind="function"><name>SetPropertyValue</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1a8ec4c37e82d9f4e867e9655f4eac3a78" kind="function"><name>CreateDelegate</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1a73471f4a6d1ca4c4fceec9ad8610f0c8" kind="function"><name>AddEventHandler</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1aefb7a98fceb9c287cef4756942f441d1" kind="function"><name>CreateInstance</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1afdc9fe15b56607d02082908d934480c6" kind="function"><name>GetPropertyValue</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1ade0f04c0f7b18dd5b170e071d5534d38" kind="function"><name>SetPropertyValue</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1a8ec4c37e82d9f4e867e9655f4eac3a78" kind="function"><name>CreateDelegate</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1a73471f4a6d1ca4c4fceec9ad8610f0c8" kind="function"><name>AddEventHandler</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1aefb7a98fceb9c287cef4756942f441d1" kind="function"><name>CreateInstance</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1afdc9fe15b56607d02082908d934480c6" kind="function"><name>GetPropertyValue</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1ade0f04c0f7b18dd5b170e071d5534d38" kind="function"><name>SetPropertyValue</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1a8ec4c37e82d9f4e867e9655f4eac3a78" kind="function"><name>CreateDelegate</name></member>
+    <member refid="class_xaml_generated_namespace_1_1_generated_internal_type_helper_1a73471f4a6d1ca4c4fceec9ad8610f0c8" kind="function"><name>AddEventHandler</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kind="class"><name>Hospital_Reservation_App::Model::GradeAndCommentModel</name>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a6e03115264bd958595bc76a767c53833" kind="property"><name>iD</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a24c42705aebb0e6fea664f61405850c2" kind="property"><name>ReservationID</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1ac7c5b3afcc724188da27771f28692393" kind="property"><name>grade</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a03a215b129f0b3f13a015569c46ee704" kind="property"><name>comment</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository" kind="class"><name>Hospital_Reservation_App::Repositories::GradeAndCommentRepository</name>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository_1ab851c96fe015d883b4d6591bbb31e498" kind="function"><name>AddComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository_1a91c425b96a8502b073e86dd62ccc199b" kind="function"><name>GetComment</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_home_view" kind="class"><name>Hospital_Reservation_App::View::HomeView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a8ace20a0505cc40376e3d9d9548bce9a" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1ac9b3b9ad33fe1cf0351887a5051afadc" kind="function"><name>HomeView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_home_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::HomeViewModel</name>
+  </compound>
+  <compound refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository" kind="interface"><name>Hospital_Reservation_App::Model::IDoctorNoteRepository</name>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository_1a465384b4b7e46fcd68ab0c3688970360" kind="function"><name>GetDoctorNote</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_doctor_note_repository_1a96be38226ee9197168843afed08a5217" kind="function"><name>AddDoctorNote</name></member>
+  </compound>
+  <compound refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository" kind="interface"><name>Hospital_Reservation_App::Model::IGradeAndCommentRepository</name>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository_1aa3d1219d849f186cc09a7d73b4daa204" kind="function"><name>AddComment</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository_1a65d292afd85441394c213d17ce634d49" kind="function"><name>GetComment</name></member>
+  </compound>
+  <compound refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository" kind="interface"><name>Hospital_Reservation_App::Model::IReservationRepository</name>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a3b278b44af960f1a6fc738dbae8de854" kind="function"><name>AddRes</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a987a4490e2ba60c0e37c1d87ad954e69" kind="function"><name>DeleteReservation</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1ade080ccb186218ac2fec923e7cb15835" kind="function"><name>DeleteAllReservationuser</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1ad6bb0f147425174aaf333a36ef547844" kind="function"><name>GetAllReservationsData</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a17bebd3de4cb6d7f0f346154a982b7c7" kind="function"><name>GetPastReservationsData</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a2e772f1e2986a897ba0b638a425b9272" kind="function"><name>GetFutureReservationsData</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a345a33574f58fd7ff07901ca93f928b5" kind="function"><name>GetAllReservationsData</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a829389cdac20e1cfc05ba8274a09eb1b" kind="function"><name>GetPastReservationsData</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a386bdf1b5af699aa3c002fca3d5e2794" kind="function"><name>GetFutureReservationsData</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_1a192327d069b33db540903179a313f3ea" kind="function"><name>GetUserTime</name></member>
+  </compound>
+  <compound refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository" kind="interface"><name>Hospital_Reservation_App::Model::ISpecialityRepository</name>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a06368e49047a8f65803f762bcf40a008" kind="function"><name>GetAll</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1af671e5ed83e29a62ff03a4d62e0c3f48" kind="function"><name>Add</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a2f4461ed7c6c1b579849dcaed8dd8f58" kind="function"><name>Delete</name></member>
+  </compound>
+  <compound refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository" kind="interface"><name>Hospital_Reservation_App::Model::IUserRepository</name>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a5f9bf2a72f9fbeb7874a14bf1cd007b6" kind="function"><name>Add</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a38b3b2144d535e85b690adcbb36854ca" kind="function"><name>Delete</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1aea2ddc7290f401588e97dc6f88c4d4fe" kind="function"><name>Delete</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a1b04e331aac63aa24bb477586f5473ba" kind="function"><name>Update</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ad69032782935d31eddcbe27de96028a8" kind="function"><name>UpdatePassword</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a80c253ea91e534cd230078af16ecdca2" kind="function"><name>AuthentificateUser</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a98f7acff3c689e7f11891e5e2ac2a89a" kind="function"><name>checkMail</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a97db2121d435c11f345af73b2d0a8838" kind="function"><name>checkPeselLength</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a2ff715e019b931a8e9f34f3b8a1978d3" kind="function"><name>checkPeselUser</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a8a297bd7adc0f9544317505830dfd1ef" kind="function"><name>checkPassRepeat</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a75cc105e878beba329fff81cae7e8c84" kind="function"><name>checkOldPassword</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ae8c3d44cefaeedef39423e24e1488ebe" kind="function"><name>GetUser</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a93a5fda9e58dbbaa2dd29d00c9c2f439" kind="function"><name>GetDoctor</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ab399b339efdc2927bab0cfef9abe3abc" kind="function"><name>GetPatients</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ae67b8801b306e96badb00c1c1bc92e0f" kind="function"><name>GetDoctors</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1a89163d5224c94b38fb06a0cc9007c168" kind="function"><name>DeleteDoctorFromDoctors</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1aa1269bfddd52ab57728ddade1d222999" kind="function"><name>CreateDoctor</name></member>
+    <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository_1ab83cb7bb6f3bac28f31c263bd248e9b0" kind="function"><name>GetDoctorsData</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::LoginViewModel</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1af85ab9160af59f8961f822d20bcd7802" kind="variable"><name>_email</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a5a39ed125db40e285636233501eb6967" kind="variable"><name>_firstname</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1aa844750b97541c74eaa057a6489b6e28" kind="variable"><name>_lastname</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1ab4ed355563361e989b9890f85abf4fb5" kind="variable"><name>_password</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a10c0ea918a230e994ad00b12268d0e99" kind="variable"><name>_passwordRep</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a26af9a119d3cfad39f0799e1d75ceae5" kind="variable"><name>_pesel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1ac90c813c93491a21d01f7a39d63e2d45" kind="variable"><name>_errorMessageLogin</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1afab22da4a26c6d9f9e69a47612551bad" kind="variable"><name>_errorMessageLogin2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a25e512e60ba68747a1e470c0a5fd89ba" kind="variable"><name>_errorMessageRegistration</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a2c337707d830f298eacebb7b415c976c" kind="variable"><name>_isViewVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1af770df3a5a01820224c092fd3039b158" kind="variable"><name>_isRegViewVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a1fbbe7a6292b53523134364917a035cb" kind="variable"><name>_checkBoxMaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a5ff2aeb7a2f753f4de4b5f68d38e4bed" kind="variable"><name>_checkBoxFemaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a88330169f7a8020a0eec35d94e5b9e06" kind="variable"><name>userRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a6ccd688fd17b6652a74b4a51eeb9d5ce" kind="property"><name>email</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1ae66e37db917538e5346157bbd342f0d9" kind="property"><name>firstname</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a73169a9a69bdab5296a4e3ecc4385ee9" kind="property"><name>lastname</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1abd4b310dcfccde2e891da1ecbd881855" kind="property"><name>password</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1ae26523426172e7238e540cdaa38a4393" kind="property"><name>passwordRep</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a1e9072b96cd084d2e3bc9762dca74de4" kind="property"><name>pesel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a675e976fea0c348a9723cdff59d62f23" kind="property"><name>ErrorMessageLogin</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1ab9278c16e825499aa70c93896f2900c2" kind="property"><name>ErrorMessageLogin2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1ad4d81954b7ff792a341c96a7c0e9486e" kind="property"><name>ErrorMessageRegistration</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a645cfc004cb9d390106be1b11ec62a20" kind="property"><name>IsViewVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a55f6a3126739c2f811d4579bad8e6bab" kind="property"><name>IsRegViewVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a5664b0a311a234fa59821d245c6aa17c" kind="property"><name>CheckBoxMaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1aacb53bc5061e7b33164a2cbf7ff8d0b8" kind="property"><name>CheckBoxFemaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1adcb853d8896f2f26896c07e4a865c0dc" kind="property"><name>LoginCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1adcce8648ede17c21dcd0b07de4a3511c" kind="property"><name>RegistrationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a3ae01de14ca35cc4fec8417d42403532" kind="function"><name>LoginViewModel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a5c720e62cda1f77de7fe1fdeb3a6bde5" kind="function"><name>RaiseLoginCompleted</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a92b573cccec26090a9de2a4ea5d62217" kind="function"><name>CanExecuteRegistrationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1ae85e9137f6858732550c802698ea0aee" kind="function"><name>ExecuteRegistrationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1aa3df8a80b5f19258a2c153bd7add35d4" kind="function"><name>CanExecuteLoginCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model_1a4877ab38fdc6f32f84d90714b995fa0d" kind="function"><name>ExecuteLoginCommand</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view" kind="class"><name>Hospital_Reservation_App::View::LoginWindowView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ac5a3808229b14f22cf2e7f153ae74d30" kind="variable"><name>btnMinimize</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1aee26d1e26ab68826320641e3d0a44ed4" kind="variable"><name>btnClose</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ab1345b4ad4f1992c2fc9cd783f22c908" kind="variable"><name>txtEmail</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a3a3a9b15da6385a799c665f2543a1a51" kind="variable"><name>btnLogin</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a30da99922370a0a06a66a44ad3505d52" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a8cd464fa60477dcf37a3fcc3c54de716" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a45429e3e605b3da86986fd7bbddc42f7" kind="function"><name>LoginWindowView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a7dd548ae87897d0fc445e8524b03c29d" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a56d1a4803b8081e0b3bf3b008c50307b" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a77751851348ce6181e8de7432fd6fcce" kind="function"><name>Window_MouseDown</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a5dfcfc7a72068c0161b54ed9f38ad198" kind="function"><name>btnMinimize_click</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a0d472b690a069c184577b45d47b6d8c3" kind="function"><name>btnClose_click</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1ac41c793e5ba039bb660b3ef612491f5e" kind="function"><name>TextBlockForgotPass_PreviewMouseDown</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view_1a92afbcf8fe5d9fa4ca36d1bc4abcaaa9" kind="function"><name>TextBlockRegister_PreviewMouseDown</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::MainViewModel</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a91f482d0d0e0aa882b5a84f341701149" kind="variable"><name>_currentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1aafc06a76d65845a846d0b6635c625c70" kind="variable"><name>_childView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a111a438773ebee2b46c2357379dbe36c" kind="variable"><name>_title</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1aadef906eaa6e8fecdcca332902bc51a0" kind="variable"><name>_isVisibleReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a6767c9e9e3edce6dfa765f117094265e" kind="variable"><name>_isVisibleVisits</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a85a9e6faeceac06e4d544538655e8ee3" kind="variable"><name>_isVisibleUsers</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1ad6e76ec89ed63c3624c18baddc8a6435" kind="variable"><name>userRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a7fecba0636c4239e1734099d5db9649d" kind="property"><name>StringPass</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a80c0551309717a843249fafed0a9b410" kind="property"><name>CurrentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a1c02130f29345367e665fb4dd443972f" kind="property"><name>ChildView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1ad9c2460e5bf6a801b0f839d53961063a" kind="property"><name>Title</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a1292ec9b4e1552beba5aef45e2a7aa17" kind="property"><name>IsVisibleReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a742f4e16afd8336767f0f85d425302fb" kind="property"><name>IsVisibleVisits</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1ad18d10f17f37c8dfc7897c880798d357" kind="property"><name>IsVisibleUsers</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1abf4578081b10296e10b80289d2387c49" kind="property"><name>ShowHomeViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1aeaeb951910293a6f63de9c35c48a464c" kind="property"><name>ShowUsersAdminViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a3538c25afbfcdc08157e7e2a364e4623" kind="property"><name>ShowVisitsViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1accfbcf8dab5a965f760489fea01f1656" kind="property"><name>ShowReservationsViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a6462fc99ae105f6456a309d79d8dc9a8" kind="property"><name>ShowAddReservationViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a1ff54d99e7fedd0885eac995a595a52b" kind="property"><name>ShowSettingsViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a5625fa839e436b9eeccbc40a5ca60748" kind="function"><name>MainViewModel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1adbfa9b83cfb47f689872a54c7791386b" kind="function"><name>ExecuteShowHomeViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1aa8b32584ede5a534c4c01d3ab3af7c71" kind="function"><name>ExecuteShowUsersAdminViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a3828bc4adaeabf282b2270e4e244b16c" kind="function"><name>ExecuteReservationsViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a201927979066a4f404f01bdf94609828" kind="function"><name>ExecuteAddReservationViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1abf6591d0d113633e8a9ddee65d7738ef" kind="function"><name>ExecuteSettingsViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1ad2d749048ad1d2d4d87581d50c7b8826" kind="function"><name>ExecuteShowVisitsViewCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a69cd93891302759d9166fe2a4583a9fe" kind="function"><name>LoadCurrentAccountData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model_1a7685af19ad7a2e4dc62950a2851b34bf" kind="function"><name>ShowButtons</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view" kind="class"><name>Hospital_Reservation_App::View::MainWindowView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1a05fd95a9d9356d855383192f5e424c0a" kind="variable"><name>btnMinimize</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1af16107359d667d91653badcae95cdcd3" kind="variable"><name>btnClose</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1ac9e5004d3811644206ee728221131453" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1a41183352520432558583d99750975979" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1a41183352520432558583d99750975979" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1a41183352520432558583d99750975979" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1ac8361b5856646ed303ed9406d6c60e88" kind="function"><name>MainWindowView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1a4585065028356393d71ce504b7531585" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1a4585065028356393d71ce504b7531585" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1a4585065028356393d71ce504b7531585" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1abc875585afb0bf4547355af616e69835" kind="function"><name>btnMinimize_click</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1aed459b335b014a35a666a276d8530e27" kind="function"><name>btnClose_click</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1aeabc3e965f5b24b1893f9acd18955f38" kind="function"><name>Window_MouseDown</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view_1adc42c70d88c7bb6accae8d154ee49ff9" kind="function"><name>Exit_Checked</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box" kind="class"><name>Hospital_Reservation_App::CustomControlls::PassBox</name>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a7861aff7fcd446af817629200e9d7ab7" kind="variable"><name>PasswordProperty</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a8f8b1f91ac5e3e3b42a201b72e00ebd2" kind="property"><name>Password</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a621d2ea31f6a1b24880aa7ebfe940627" kind="variable"><name>txtPassword</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a9e3f30838855c3363280e6abf52fe2ac" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1a8232144b37ddf840b2d40518b8f2079b" kind="function"><name>PassBox</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ae8f37edb451b47f23cb197127398b8a2" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1aa2fc88b18c21e06b877120805acae6cc" kind="function"><name>OnPasswordChanges</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_custom_controlls_1_1_pass_box_1ab3d502bd52e4d0a8bd04b30fbb95e386" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_patient_main_view" kind="class"><name>Hospital_Reservation_App::View::PatientMainView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_patient_main_view_1a0a73d6d4c9e2817ebfa7f736283765bc" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_patient_main_view_1a840efc7c464dd331633d20a242250961" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_patient_main_view_1a45990cabd0203fb2d76c0d8324a30406" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view" kind="class"><name>Hospital_Reservation_App::View::RegistrationWindowView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1ad08db06d493c5c57256ed7a2e12bcda5" kind="variable"><name>btnMinimize</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a346c68a40dd302951c1f47e0fe5f99ae" kind="variable"><name>btnClose</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1abf11b6fe21dd3ad85948a5966656405c" kind="variable"><name>txtFirstName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1ae43b76007e4164569c991bd9386212af" kind="variable"><name>txtLastName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1ab2f2baef6a9aa1710a57108738d59901" kind="variable"><name>txtEmail</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1ac1eb59f10fa4e40932de1a188e7be78d" kind="variable"><name>btnRegistration</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a57761b072b29058b6acd696125a49d05" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a9e1f80e15206f3eccb5d678fa1b8193a" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a9e1f80e15206f3eccb5d678fa1b8193a" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a9e1f80e15206f3eccb5d678fa1b8193a" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a559ebde56d93fa31464fba05ae346e80" kind="function"><name>RegistrationWindowView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a6f949839d6fe8f848c70c55790333c85" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a6f949839d6fe8f848c70c55790333c85" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a6f949839d6fe8f848c70c55790333c85" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a2f5a5bf03f9444491b204fa190bfb35d" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a2f5a5bf03f9444491b204fa190bfb35d" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a2f5a5bf03f9444491b204fa190bfb35d" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a901d2b2d539283a1aa0ae255fd3a1925" kind="function"><name>Window_MouseDown</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a4f2bcb6f7b94b58926f73fd51f2aafef" kind="function"><name>btnMinimize_click</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1ac2d4a466b2719aeaf6b120a9adf8d43c" kind="function"><name>btnClose_click</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1a4ec6911d3c7ec4e5c4d72017ea0e4d40" kind="function"><name>TextBlockLogin_PreviewMouseDown</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view_1ad2080827881c493c6a1059ed5555589b" kind="function"><name>btnRegistrate_Click</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model" kind="class"><name>Hospital_Reservation_App::Model::ReservationModel</name>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1a90b7dd93e37391925c20c9b8a8a27014" kind="property"><name>Id</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1aeea607a5792138f60195cb72a72c1099" kind="property"><name>PatientId</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1a8fcb1897766c3437058a384e40a6d342" kind="property"><name>Doctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_reservation_model_1afa845f90c24f01f650a0a43e30bbfe6b" kind="property"><name>ReservationTime</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository" kind="class"><name>Hospital_Reservation_App::Repositories::ReservationRepository</name>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a6e799cc7dc8525bde2323cdb6d746f5f" kind="function"><name>AddRes</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1ac2f0ca9b4f0947fb519a3c5a283956fb" kind="function"><name>GetAllReservationsData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a5b8e4051a4a8a48176f37d788abf39b7" kind="function"><name>GetPastReservationsData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a8e016b963bc18c9322a8ba3bbc5bfa08" kind="function"><name>GetFutureReservationsData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a3c3444c42797ed7edad1c0c8ac3cf6cb" kind="function"><name>GetAllReservationsData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a8946c965c5423149ad3ada6dae553f56" kind="function"><name>GetPastReservationsData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1a838d24c9271fc8814215eda831f5cfc3" kind="function"><name>GetFutureReservationsData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1af13d1dddcb2c80b3248ab580c14f309c" kind="function"><name>DeleteReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1af9304bb491a841e927312c39d8191349" kind="function"><name>DeleteAllReservationuser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_1aeccc44b32461b0643f1b036e8fee9866" kind="function"><name>GetUserTime</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view" kind="class"><name>Hospital_Reservation_App::View::ReservationView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1adc532c43d114daee7b6c5155a4222044" kind="variable"><name>btnChangeReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1ae8a0c770e30e878f3aa20950b1c16b51" kind="variable"><name>btnDeleteReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1a723a06a761930c68185856028319bcae" kind="variable"><name>ComboBoxGradeChoice</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1a17796cba247e453fe6afde65d4664777" kind="variable"><name>btnAddComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1a4bae72dccef0abca04ab3ce50c0f7591" kind="variable"><name>TextBoxForShowingComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1aa28d1dbd9979a93b20cd7481ef0108b6" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1a9897e441092565fffbe33c2538b62e2f" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1a9897e441092565fffbe33c2538b62e2f" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1a9897e441092565fffbe33c2538b62e2f" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1ae7ecea5484a1b4c0077a1e7e0017fd55" kind="function"><name>ReservationView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1abdb30395383fda62def7d0773a5ac318" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1abdb30395383fda62def7d0773a5ac318" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1abdb30395383fda62def7d0773a5ac318" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view_1aefb4af73c40b239bb6e098b2cde00a0c" kind="function"><name>My_reserevations_PreviewMouseDown</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::ReservationViewModel</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1ab12c2bb262187eb9b6c904ae0571f1e8" kind="variable"><name>_currentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a2d9ae4cfdf8a48a135e0914d7eebe412" kind="variable"><name>_selectedReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a7e821716b7fc3b528f78743154cef3c6" kind="variable"><name>_showReservations</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1ad55c4e8e86574ac2e850f2472be699af" kind="variable"><name>_showComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a8d2b6f4f87c59d07412024b95181409b" kind="variable"><name>_gradeChoice</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a241ccd0a93f245d6da2314300700b50f" kind="variable"><name>_doctorNote</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a1a155910ea17399f20b58c13829b5de0" kind="variable"><name>_showListGrades</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a69b24ebb015fa333a788ca7ac7cbcbb3" kind="variable"><name>_checkBoxAllChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a9d66da17b0521a7eb110243088541c83" kind="variable"><name>_checkBoxPastChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a9f1f8000d5bc1bf10f487d7239b4aee5" kind="variable"><name>_checkBoxFutureChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a6b2337d082e44dc05aa32b95117e595f" kind="variable"><name>userRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a96db77c9b4e83d73eb1d65fc015cd3be" kind="variable"><name>reservationRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a7978b900b4fe4ef087211bc31573ee9b" kind="variable"><name>gradeAndCommentRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1abc39e79a6d7cbaaeaccda316e07d9eb3" kind="variable"><name>doctorNoteRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a2494162be00dc2cb3bdeaefa86267d87" kind="property"><name>CurrentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a864f4987cef7076edf25308e52aab20c" kind="property"><name>SelectedReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a82869f2434726905e85e6dc5750a61ef" kind="property"><name>ShowReservations</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1ade8f4bac0c8823b750fd7c649a32f762" kind="property"><name>CheckBoxAllChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a13bf954f7e62a51d2bec04d29c3b06b0" kind="property"><name>CheckBoxPastChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1accab2f5a776a21ed7582b081771bec26" kind="property"><name>CheckBoxFutureChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a7e5615c7414d495dfdbb2e0d179e47f8" kind="property"><name>ShowComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a8486b61206f2e0adf4ca3a89072e076e" kind="property"><name>GradeChoice</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a89e51a7a7f63a113c75db212fed0cd3a" kind="property"><name>DoctorNote</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1ab507b6e25486b8d9f41ea59c93568371" kind="property"><name>ShowListGrades</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a9cc60320c01fcf26b7a81e3399090b2a" kind="property"><name>DeleteReservationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a856a1613920132ebefb9428184d777fd" kind="property"><name>AddCommentCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a0ede9a1c4afcc8610edb49a7f567407c" kind="function"><name>ReservationViewModel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a7d102cc9dfe75bbf2ea2dae1ad9c3092" kind="function"><name>CanExecuteDeleteReservationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a445bba7ab704ece6be1d8e7a1f6c08df" kind="function"><name>CanExecuteAddCommentCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a0260b4d0d62193ce0208fd6fcd40caff" kind="function"><name>ExecuteAddCommentCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1aa4b176cb1b00d93beda3dfd0f88d960a" kind="function"><name>ExecuteDeleteReservationCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1ad88c4c3ccca7ce331e6400d1af3e9be4" kind="function"><name>LoadShowListGrades</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1ac1f06e1d6088d729922f0cb115a7db5d" kind="function"><name>LoadCurrentAccountData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a7f688e1f52508b2f726a5835e05231be" kind="function"><name>LoadCurrentUserAllReservations</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1aad73796446e2098b40866aab8a2bc6b1" kind="function"><name>LoadCurrentUserPastReservations</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1ae7027c9d9cf463657e73082309f5eaf9" kind="function"><name>LoadCurrentUserFutureReservations</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model_1a228fc928f4bc6467e48db4958f91c95b" kind="function"><name>LoadDoctorNote</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_reservation_window_view" kind="class"><name>Hospital_Reservation_App::View::ReservationWindowView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_window_view_1abc4e25ef292717785c36495e4038a1cb" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_window_view_1a5265da5027d9a56b25f9258c92967d80" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_window_view_1a5265da5027d9a56b25f9258c92967d80" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_window_view_1aa5b1013c5077acd3e8cefd284ac7382c" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_reservation_window_view_1aa5b1013c5077acd3e8cefd284ac7382c" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_properties_1_1_resources" kind="class"><name>Hospital_Reservation_App::Properties::Resources</name>
+    <member refid="class_hospital___reservation___app_1_1_properties_1_1_resources_1a108f8672fe6aec50a21fc90f2fe7dd97" kind="variable"><name>resourceMan</name></member>
+    <member refid="class_hospital___reservation___app_1_1_properties_1_1_resources_1ab881a49d480c6bc7fd5bbc2b7ddaffc5" kind="variable"><name>resourceCulture</name></member>
+    <member refid="class_hospital___reservation___app_1_1_properties_1_1_resources_1aad037890818422129854775dde2110f2" kind="property"><name>ResourceManager</name></member>
+    <member refid="class_hospital___reservation___app_1_1_properties_1_1_resources_1a8440986cd02d4e778cda8035113b67aa" kind="property"><name>Culture</name></member>
+    <member refid="class_hospital___reservation___app_1_1_properties_1_1_resources_1a9779d50c5eef531847861a2663628d72" kind="function"><name>Resources</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_properties_1_1_settings" kind="class"><name>Hospital_Reservation_App::Properties::Settings</name>
+    <member refid="class_hospital___reservation___app_1_1_properties_1_1_settings_1a6a65c6e55303b74542b817b2458247d7" kind="variable"><name>defaultInstance</name></member>
+    <member refid="class_hospital___reservation___app_1_1_properties_1_1_settings_1ab00635c76cb4f2d117e4cd9ea4188338" kind="property"><name>Default</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_settings_view" kind="class"><name>Hospital_Reservation_App::View::SettingsView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a9eb4321bb60abd771e02ea5ce6525518" kind="variable"><name>btnChangeData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a130e2f2a3151f1e740cb11029710598a" kind="variable"><name>btnChangePassword</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a311391e4b7ff8fdeb2acdb50fe6a0a7f" kind="variable"><name>btnDeleteReservation</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a7485017ff670dbc2235a6b7db35f9566" kind="variable"><name>btnDeleteAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a6df2ed6aa9023c6a59ad0e7665f4be96" kind="variable"><name>txtFirstName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a2c2aa130b6dca65de6fa213b832d9ad5" kind="variable"><name>txtLastName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a7d581c282563db77528ef2a52e729260" kind="variable"><name>txtEmail</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a022ec449c00f54429ee8731d5f4acae3" kind="variable"><name>btnChangeDataAccept</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1adc09455f0d5c2b4a25231d9896409f1d" kind="variable"><name>btnRegistration</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a3ccac7f6d248976350ea42c4d091c0fb" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a2c4fc096b4a8cd279114b18c35caf088" kind="function"><name>SettingsView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::SettingsViewModel</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1d97ceaa2a2be0f3ffe472f70e951a85" kind="variable"><name>_currentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2375fa5c84efca716dbae5c55c93fa8d" kind="variable"><name>_checkBoxMaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a374c5698e47679888d57981ffd75f841" kind="variable"><name>_checkBoxFemaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ac529c4fc0d8758ce4055295065b68c89" kind="variable"><name>_passwordOld</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a268bbb02b389d148baf2628b2df23f32" kind="variable"><name>_passwordNew</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1adba65a6f11bf472e492ff057ad7d34c0" kind="variable"><name>_passwordRepNew</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4302954340b93cc31464965db5f7bfdc" kind="variable"><name>_passwordCheck</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a288a344c09c2831f546c75fbf60f2770" kind="variable"><name>_passwordDeleteUser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a0358650eb55c997a06117d8f41d5b692" kind="variable"><name>_errorMessageChangeData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af28fd905519723e372f4a59475d2db6f" kind="variable"><name>_errorMessageChangePassword</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a214badada9375aad92d7794aba958b59" kind="variable"><name>_errorMessageChangePassword2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5732045a1eb40a824afae0312c9d8037" kind="variable"><name>_errorMessageDeleteReservations</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1acd9bae2fffc88205578d87bf9e52ed13" kind="variable"><name>_errorMessageDeleteUser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a03627e19ddee827099e047d0980d94fc" kind="variable"><name>_isChangePasswordVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a960e66ccbd496da64399fda56ed3b462" kind="variable"><name>_isChangeDataVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aff2054b13a08b1db0ebb2f7863c52f00" kind="variable"><name>_isDeleteReservationsVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a9d29629f379e7664cc754ea0d52e3805" kind="variable"><name>_isDeleteUserVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ae8cf2d376e355d4d3617cf4f01256412" kind="variable"><name>userRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aae384a72bb58c432e1d9a092fe4777b7" kind="variable"><name>reservationRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a85b9004f3e0a6f7584361c2228ddec8c" kind="property"><name>CurrentAccount</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af0ba7805c4e1205a8a2d90d5bfc45e4f" kind="property"><name>CheckBoxMaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4eeccb359f9146c4caa0961abe3a3606" kind="property"><name>CheckBoxFemaleChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5638f9c697acf164b622798f09ca1bdb" kind="property"><name>passwordNew</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5bbdb478637f98caee6848d051fd31be" kind="property"><name>passwordOld</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a491385bd2e948a7608923ffc38a6a909" kind="property"><name>passwordRepNew</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aa3cc5c8d1465fd5c61b64b09d3465363" kind="property"><name>passwordCheck</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a3527d13f64c0d67c1818170e5063ad4d" kind="property"><name>passwordDeleteUser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af122758e80550843ec569c0a47e60b9c" kind="property"><name>ErrorMessageChangeData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a71be1c2e5c4b323d2b13d49a49e8eac1" kind="property"><name>ErrorMessageChangePassword</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a86e949ddff17ecce7190764911504af7" kind="property"><name>ErrorMessageChangePassword2</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1acb4b435b975a5e3fe7f3c8029cf7424e" kind="property"><name>ErrorMessageDeleteReservations</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a08338bf093947e286197a1088ec780e4" kind="property"><name>ErrorMessageDeleteUser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a69f99fb7245a8b92e1b4fe279ba75bd0" kind="property"><name>IsChangePasswordVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a02b993debf4b1d3baf773c657b0009be" kind="property"><name>IsChangeDataVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab35d1633454291a7fa9673ec98d2886b" kind="property"><name>IsDeleteReservationsVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a848d51b53dfde60e1a751d64026200c1" kind="property"><name>IsDeleteUserVisible</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab8b8108da10583a29e1b84106df8dff8" kind="property"><name>ChangeDataUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4a80b729ef7b1f0988081a79894580c6" kind="property"><name>ChangeUserPasswordCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a06ceba72549608fc9a00c53d31dca620" kind="property"><name>DeleteReservationsUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a6d6f9b116f380b934de8df9da4a03c58" kind="property"><name>DeleteUserAccountCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a7822581998f3d0be605e1a8c648b1445" kind="property"><name>ShowChangeDataUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a956bfc360ca85634b93c116c7565c68c" kind="property"><name>ShowChangeUserPasswordCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a3d870c38cf8a641cfb4c99df7189e320" kind="property"><name>ShowDeleteReservationsUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2bfad576e64f12479cd64e526a4b3c28" kind="property"><name>ShowDeleteUserAccountCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aa207711022c62799e24e13b0ff5ed75c" kind="function"><name>SettingsViewModel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ac8aadad078f93799b06db5ab47b57e21" kind="function"><name>ExecuteShowChangeDataUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a81a52e9b9a681b42e9a74d61fe866513" kind="function"><name>CanExecuteChangeDataUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1ee9f4c54d16013d3040c37c79ef8b1e" kind="function"><name>ExecuteChangeDataUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a96cc4c98ed7655b957b91b71308f6186" kind="function"><name>ExecuteShowChangeUserPasswordCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab5a7c76658d62c375dcb5cf2b990d97c" kind="function"><name>CanExecuteChangeUserPasswordCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1bb908d92195c56a86f9a9d1123c70cd" kind="function"><name>ExecuteChangeUserPasswordCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a13233ec58db4f09ab9d4c53a839a3ea7" kind="function"><name>ExecuteShowDeleteReservationsUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2451c2e6ae46db15644ed80b0404836f" kind="function"><name>ExecuteDeleteReservationsUserCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a89d2e1615fa0d2fc8d44743e58587d21" kind="function"><name>ExecuteShowDeleteUserAccountCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a349c5f17db3de86285a1c729313ce725" kind="function"><name>ExecuteDeleteUserAccountCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab3d5a22c9f6b707f5e30e147bfe49700" kind="function"><name>LogOut</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a0e30f46d539c3aea085a9ac0313a26e7" kind="function"><name>LoadCurrentAccountData</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kind="class"><name>Hospital_Reservation_App::Model::SpecialityModel</name>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model_1ab6d43b550cffc04539164f0ab5c18db2" kind="property"><name>Id</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model_1a6aff4fe574f77fcd0cb19591aa92a597" kind="property"><name>Name</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository" kind="class"><name>Hospital_Reservation_App::Repositories::SpecialityRepository</name>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1a35e5184468696222548e894314657014" kind="function"><name>GetAll</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1aff2f6a95fe7268dcf2ffc114e990ab44" kind="function"><name>Add</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1ad110deb185e53f839d588c779e7d4830" kind="function"><name>Delete</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_start_window" kind="class"><name>Hospital_Reservation_App::View::StartWindow</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1aef26f7cba03f3116586448e2a94e708a" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1a9e02af50219033ef026bfda6613db8a3" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1a3486aa52d44da98c6f8c1a9c280885f8" kind="function"><name>_CreateDelegate</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_start_window_1a141659f3fbcffd8b223aea8d6b93935b" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kind="class"><name>Hospital_Reservation_App::Model::UserModel</name>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a85a08241a17bbaeb3a3678e9f1bc5a76" kind="property"><name>id</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a445ca237b6d6d8ada643daf15988bc67" kind="property"><name>PESEL</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1ab43bfaa364a58becc418b8b199689b01" kind="property"><name>firstName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a01be3197da4fa1cb24483179097d33e4" kind="property"><name>lastName</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1a9ab42821273822f21438ab34668da137" kind="property"><name>sex</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1aa2d0df01728346f9fcd7b25227a6699d" kind="property"><name>email</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1aaf17aeb5b6562ccf02ca28a43abe967d" kind="property"><name>Password</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1acd5c58d99a4a20bdaf9c2c62d9ae0653" kind="property"><name>privilege</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_user_model_1afd7b2eea8f47b203d753fc0cbcd8749f" kind="property"><name>DisplayName</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository" kind="class"><name>Hospital_Reservation_App::Repositories::UserRepository</name>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1acb405909216b63d19428e9d883b30b83" kind="function"><name>Add</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1aef0bf3fcbf86189ca7a48ce29b69bf02" kind="function"><name>Delete</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ac3b67ae6c770da5db06e054972a5fd1f" kind="function"><name>Delete</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ae57cb9f5a8caed91499de7144900a4cf" kind="function"><name>Update</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ad0e2352cc5b174d3a04bb04f792b45d2" kind="function"><name>UpdatePassword</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a392653547325df727487d3298022c0c9" kind="function"><name>AuthentificateUser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a95de5e6cc6e8377397d6196d7c705d8c" kind="function"><name>SecureStringToString</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a660fa0a8c0b92b662e48e91dd8ecc957" kind="function"><name>checkMail</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a2ef74e28af203e35d114c1475d373505" kind="function"><name>checkPeselLength</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1aa906cc1bc60fd83f5304121612c256f5" kind="function"><name>checkPeselUser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a3da0087fec95ea4357abbecbbdd1d261" kind="function"><name>checkPassRepeat</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1af6e9f67e5217d1b4884b8e5540e7c8f5" kind="function"><name>checkOldPassword</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a4bfdc4089b613948ad364feeeb90ff28" kind="function"><name>GetUser</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a8e20138db91360e3a6f3bebcecc4e1ea" kind="function"><name>GetDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a37b975b3b70733caf5f44f7d85fc49bd" kind="function"><name>GetDoctorsData</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ae72299342d7406ce98cc22932a1f1286" kind="function"><name>GetPatients</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1aa178128ef07586d508a483ca45509622" kind="function"><name>GetDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1a440e11ec73389a39d9191bf8d908cee3" kind="function"><name>DeleteDoctorFromDoctors</name></member>
+    <member refid="class_hospital___reservation___app_1_1_repositories_1_1_user_repository_1ab206920b24bf9f8fae680fa51eb1b434" kind="function"><name>CreateDoctor</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base" kind="class"><name>Hospital_Reservation_App::ViewModel::ViewModelBase</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a1b05557ff9266295ab38a0d097ad9357" kind="event"><name>PropertyChanged</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a04dccc71666ad3c682eaba547d40dc4e" kind="function"><name>OnPropertyChanged</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command" kind="class"><name>Hospital_Reservation_App::ViewModel::ViewModelCommand</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a5b5aa870569f8cdf587e342d48498265" kind="variable"><name>_executeExtion</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1ada749bc66127c695543cf7e7ad749ab2" kind="variable"><name>_canExecuteAction</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1ac4647e59ec168be3c488ac6d54fd7e75" kind="property"><name>CanExecuteChanged</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a2d601c8361584e803d049423d6f8c86b" kind="function"><name>ViewModelCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a7a4468a1fd4238c8d23af5ea0aae4039" kind="function"><name>ViewModelCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1aa09d684a43f2cf291f35a2a1f0c7885d" kind="function"><name>CanExecute</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_command_1a52eab7309dcae16292501191df750410" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kind="class"><name>Hospital_Reservation_App::Model::VisitModel</name>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1aad8b3520e5bb8ab0a1632ecc312042c5" kind="property"><name>ReservationId</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1aaff80b778f1929e677ab67269ab722be" kind="property"><name>Patient</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1a5d244c650643874731c28813e8cd50bc" kind="property"><name>Doctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_model_1_1_visit_model_1ab54342d5b31b7259282d748d08fe5d20" kind="property"><name>ReservationTime</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_1_1_visits_view" kind="class"><name>Hospital_Reservation_App::View::VisitsView</name>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a02595209ff325384513c69e498b07159" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a2161249c1d0cf3ab311ff2eed41d6f1a" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1a16fcb7bd6d9c9c42664475604166581f" kind="function"><name>VisitsView</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" kind="function"><name>Connect</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_1_1_visits_view_1afb4cdfd2fe55c0cdedd3fbb4235084a5" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model" kind="class"><name>Hospital_Reservation_App::ViewModel::VisitsViewModel</name>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a16b30c7247fa3138593813f0dde74165" kind="variable"><name>_currentDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a5fa4aebdeaaaa736ecae92720fa39c34" kind="variable"><name>_selectedVisit</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a74c2a136ac2da384dddccf5691176b54" kind="variable"><name>_doctorNote</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a07410da35350dd9969a870949c728f0d" kind="variable"><name>_patientComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a20c34350a16b217b89ad78fc15d41534" kind="variable"><name>_showVisits</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a47df293ee41fabdb32fea962ebd9c943" kind="variable"><name>_checkBoxAllChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a516e5903e0ee25fbadfc98b61c901b19" kind="variable"><name>_checkBoxPastChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1ae9995749152b451af76e7f1a57ec675a" kind="variable"><name>_checkBoxFutureChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1aa46986f9990c8d881cdb061efef1345e" kind="variable"><name>reservationRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a20221440ea54d9cd5c8f65aec5241ce4" kind="variable"><name>userRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af0940634d639cd9440d3ce48500b3bf2" kind="variable"><name>gradeAndCommentRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a0fae05bc814a053e7fe79e28964a5aab" kind="variable"><name>doctorNoteRepository</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a6dedc98f0ca8f266671389e147b18c46" kind="property"><name>CurrentDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9e1f45642157bd4b1ac70532eb2c769d" kind="property"><name>SelectedVisit</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af93a3316c01eddcf7fa491451e77b430" kind="property"><name>DoctorNote</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a479a548b043f80857e31efdd28f7443c" kind="property"><name>PatientComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1af817cf4e22fe73f5fc62f4b4d7dacca3" kind="property"><name>ShowVisits</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a02b0b2243b621890d5c3a7511294a891" kind="property"><name>CheckBoxAllChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9a232bfb333d6208cc8feae8281da582" kind="property"><name>CheckBoxPastChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1afa3d722510511c27e9f954a72857851e" kind="property"><name>CheckBoxFutureChecked</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a94b2067bc1e78c029ac7ce4bf34fc01a" kind="property"><name>AddNoteCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9aaee2c52eef4c737e81ef3d2b64d5a2" kind="function"><name>VisitsViewModel</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a82d118ce161abd9447026df506a033fe" kind="function"><name>CanExecuteAddNoteCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a6f5d843ea74570c948ae8c752da53165" kind="function"><name>ExecuteAddNoteCommand</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a1d35db497e47efe6aa7379ee1b9325d4" kind="function"><name>LoadCurrentDoctor</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1aecf268e0faa5a58cc1ce3c8f3d321735" kind="function"><name>LoadComment</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a29e273ca25c6ddf71130d3a9fbb5c620" kind="function"><name>LoadCurrentDoctorAllVisits</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a13c0fb0a0895a9cf8ab2c757cdae6403" kind="function"><name>LoadCurrentDoctorPastVisits</name></member>
+    <member refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model_1a9ea49f54c2255908645704e3b46d4934" kind="function"><name>LoadCurrentDoctorFutureVisits</name></member>
+  </compound>
+  <compound refid="namespace_font_awesome_1_1_sharp" kind="namespace"><name>FontAwesome::Sharp</name>
+  </compound>
+  <compound refid="namespaceglobal" kind="namespace"><name>global</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_configuration" kind="namespace"><name>global::SystemConfiguration</name>
+  </compound>
+  <compound refid="namespace_hospital___reservation___app" kind="namespace"><name>Hospital_Reservation_App</name>
+  </compound>
+  <compound refid="namespace_hospital___reservation___app_1_1_custom_controlls" kind="namespace"><name>Hospital_Reservation_App::CustomControlls</name>
+  </compound>
+  <compound refid="namespace_hospital___reservation___app_1_1_model" kind="namespace"><name>Hospital_Reservation_App::Model</name>
+  </compound>
+  <compound refid="namespace_hospital___reservation___app_1_1_properties" kind="namespace"><name>Hospital_Reservation_App::Properties</name>
+  </compound>
+  <compound refid="namespace_hospital___reservation___app_1_1_repositories" kind="namespace"><name>Hospital_Reservation_App::Repositories</name>
+  </compound>
+  <compound refid="namespace_hospital___reservation___app_1_1_view" kind="namespace"><name>Hospital_Reservation_App::View</name>
+  </compound>
+  <compound refid="namespace_hospital___reservation___app_1_1_view_model" kind="namespace"><name>Hospital_Reservation_App::ViewModel</name>
+  </compound>
+  <compound refid="namespace_my_sql_1_1_data_1_1_my_sql_client" kind="namespace"><name>MySql::Data::MySqlClient</name>
+  </compound>
+  <compound refid="namespace_org_1_1_bouncy_castle_1_1_crypto_1_1_tls" kind="namespace"><name>Org::BouncyCastle::Crypto::Tls</name>
+  </compound>
+  <compound refid="namespacestatic" kind="namespace"><name>static</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_object_model" kind="namespace"><name>System::Collections::ObjectModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_configuration" kind="namespace"><name>System::Configuration</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data_1_1_sql_client" kind="namespace"><name>System::Data::SqlClient</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net" kind="namespace"><name>System::Net</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_resources" kind="namespace"><name>System::Resources</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security" kind="namespace"><name>System::Security</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_principal" kind="namespace"><name>System::Security::Principal</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_regular_expressions" kind="namespace"><name>System::Text::RegularExpressions</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows" kind="namespace"><name>System::Windows</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_automation" kind="namespace"><name>System::Windows::Automation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls" kind="namespace"><name>System::Windows::Controls</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls_1_1_primitives" kind="namespace"><name>System::Windows::Controls::Primitives</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_data" kind="namespace"><name>System::Windows::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_documents" kind="namespace"><name>System::Windows::Documents</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms_1_1_visual_styles_1_1_visual_style_element_1_1_list_view" kind="namespace"><name>System::Windows::Forms::VisualStyles::VisualStyleElement::ListView</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_ink" kind="namespace"><name>System::Windows::Ink</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_input" kind="namespace"><name>System::Windows::Input</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_markup" kind="namespace"><name>System::Windows::Markup</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media" kind="namespace"><name>System::Windows::Media</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_animation" kind="namespace"><name>System::Windows::Media::Animation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_effects" kind="namespace"><name>System::Windows::Media::Effects</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_imaging" kind="namespace"><name>System::Windows::Media::Imaging</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_media3_d" kind="namespace"><name>System::Windows::Media::Media3D</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_text_formatting" kind="namespace"><name>System::Windows::Media::TextFormatting</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_navigation" kind="namespace"><name>System::Windows::Navigation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shapes" kind="namespace"><name>System::Windows::Shapes</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shell" kind="namespace"><name>System::Windows::Shell</name>
+  </compound>
+  <compound refid="namespace_xaml_generated_namespace" kind="namespace"><name>XamlGeneratedNamespace</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit" kind="namespace"><name>Xceed::Wpf::Toolkit</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_chromes" kind="namespace"><name>Xceed::Wpf::Toolkit::Chromes</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_converters" kind="namespace"><name>Xceed::Wpf::Toolkit::Converters</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_core" kind="namespace"><name>Xceed::Wpf::Toolkit::Core</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_core_1_1_converters" kind="namespace"><name>Xceed::Wpf::Toolkit::Core::Converters</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_core_1_1_input" kind="namespace"><name>Xceed::Wpf::Toolkit::Core::Input</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_core_1_1_media" kind="namespace"><name>Xceed::Wpf::Toolkit::Core::Media</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_core_1_1_utilities" kind="namespace"><name>Xceed::Wpf::Toolkit::Core::Utilities</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_mag_1_1_converters" kind="namespace"><name>Xceed::Wpf::Toolkit::Mag::Converters</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_panels" kind="namespace"><name>Xceed::Wpf::Toolkit::Panels</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_primitives" kind="namespace"><name>Xceed::Wpf::Toolkit::Primitives</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_property_grid" kind="namespace"><name>Xceed::Wpf::Toolkit::PropertyGrid</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_property_grid_1_1_attributes" kind="namespace"><name>Xceed::Wpf::Toolkit::PropertyGrid::Attributes</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_property_grid_1_1_commands" kind="namespace"><name>Xceed::Wpf::Toolkit::PropertyGrid::Commands</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_property_grid_1_1_converters" kind="namespace"><name>Xceed::Wpf::Toolkit::PropertyGrid::Converters</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_property_grid_1_1_editors" kind="namespace"><name>Xceed::Wpf::Toolkit::PropertyGrid::Editors</name>
+  </compound>
+  <compound refid="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_zoombox" kind="namespace"><name>Xceed::Wpf::Toolkit::Zoombox</name>
+  </compound>
+  <compound refid="_app_8xaml_8cs" kind="file"><name>App.xaml.cs</name>
+  </compound>
+  <compound refid="_pass_box_8xaml_8cs" kind="file"><name>PassBox.xaml.cs</name>
+  </compound>
+  <compound refid="_doctor_model_8cs" kind="file"><name>DoctorModel.cs</name>
+  </compound>
+  <compound refid="_doctor_note_model_8cs" kind="file"><name>DoctorNoteModel.cs</name>
+  </compound>
+  <compound refid="_grade_and_comment_model_8cs" kind="file"><name>GradeAndCommentModel.cs</name>
+  </compound>
+  <compound refid="_i_doctor_note_repository_8cs" kind="file"><name>IDoctorNoteRepository.cs</name>
+  </compound>
+  <compound refid="_i_grade_and_comment_repository_8cs" kind="file"><name>IGradeAndCommentRepository.cs</name>
+  </compound>
+  <compound refid="_i_reservation_repository_8cs" kind="file"><name>IReservationRepository.cs</name>
+  </compound>
+  <compound refid="_i_speciality_repository_8cs" kind="file"><name>ISpecialityRepository.cs</name>
+  </compound>
+  <compound refid="_i_user_repository_8cs" kind="file"><name>IUserRepository.cs</name>
+  </compound>
+  <compound refid="_reservation_model_8cs" kind="file"><name>ReservationModel.cs</name>
+  </compound>
+  <compound refid="_speciality_model_8cs" kind="file"><name>SpecialityModel.cs</name>
+  </compound>
+  <compound refid="_user_model_8cs" kind="file"><name>UserModel.cs</name>
+  </compound>
+  <compound refid="_visit_model_8cs" kind="file"><name>VisitModel.cs</name>
+  </compound>
+  <compound refid="_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_release_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_debug_2_app_8g_8cs" kind="file"><name>App.g.cs</name>
+  </compound>
+  <compound refid="_release_2_app_8g_8cs" kind="file"><name>App.g.cs</name>
+  </compound>
+  <compound refid="_app_8g_8i_8cs" kind="file"><name>App.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_custom_controlls_2_pass_box_8g_8cs" kind="file"><name>PassBox.g.cs</name>
+  </compound>
+  <compound refid="_release_2_custom_controlls_2_pass_box_8g_8cs" kind="file"><name>PassBox.g.cs</name>
+  </compound>
+  <compound refid="_pass_box_8g_8i_8cs" kind="file"><name>PassBox.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_generated_internal_type_helper_8g_8cs" kind="file"><name>GeneratedInternalTypeHelper.g.cs</name>
+  </compound>
+  <compound refid="_release_2_generated_internal_type_helper_8g_8cs" kind="file"><name>GeneratedInternalTypeHelper.g.cs</name>
+  </compound>
+  <compound refid="_generated_internal_type_helper_8g_8i_8cs" kind="file"><name>GeneratedInternalTypeHelper.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_add_reservation_view_8g_8cs" kind="file"><name>AddReservationView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_add_reservation_view_8g_8cs" kind="file"><name>AddReservationView.g.cs</name>
+  </compound>
+  <compound refid="_add_reservation_view_8g_8i_8cs" kind="file"><name>AddReservationView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_admin_view_8g_8cs" kind="file"><name>AdminView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_admin_view_8g_8cs" kind="file"><name>AdminView.g.cs</name>
+  </compound>
+  <compound refid="_admin_view_8g_8i_8cs" kind="file"><name>AdminView.g.i.cs</name>
+  </compound>
+  <compound refid="_doctor_main_view_8g_8i_8cs" kind="file"><name>DoctorMainView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_home_view_8g_8cs" kind="file"><name>HomeView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_home_view_8g_8cs" kind="file"><name>HomeView.g.cs</name>
+  </compound>
+  <compound refid="_home_view_8g_8i_8cs" kind="file"><name>HomeView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_login_window_view_8g_8cs" kind="file"><name>LoginWindowView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_login_window_view_8g_8cs" kind="file"><name>LoginWindowView.g.cs</name>
+  </compound>
+  <compound refid="_login_window_view_8g_8i_8cs" kind="file"><name>LoginWindowView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_main_window_view_8g_8cs" kind="file"><name>MainWindowView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_main_window_view_8g_8cs" kind="file"><name>MainWindowView.g.cs</name>
+  </compound>
+  <compound refid="_main_window_view_8g_8i_8cs" kind="file"><name>MainWindowView.g.i.cs</name>
+  </compound>
+  <compound refid="_patient_main_view_8g_8i_8cs" kind="file"><name>PatientMainView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_registration_window_view_8g_8cs" kind="file"><name>RegistrationWindowView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_registration_window_view_8g_8cs" kind="file"><name>RegistrationWindowView.g.cs</name>
+  </compound>
+  <compound refid="_registration_window_view_8g_8i_8cs" kind="file"><name>RegistrationWindowView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_reservation_view_8g_8cs" kind="file"><name>ReservationView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_reservation_view_8g_8cs" kind="file"><name>ReservationView.g.cs</name>
+  </compound>
+  <compound refid="_reservation_view_8g_8i_8cs" kind="file"><name>ReservationView.g.i.cs</name>
+  </compound>
+  <compound refid="_reservation_window_view_8g_8i_8cs" kind="file"><name>ReservationWindowView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_settings_view_8g_8cs" kind="file"><name>SettingsView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_settings_view_8g_8cs" kind="file"><name>SettingsView.g.cs</name>
+  </compound>
+  <compound refid="_settings_view_8g_8i_8cs" kind="file"><name>SettingsView.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_view_2_visits_view_8g_8cs" kind="file"><name>VisitsView.g.cs</name>
+  </compound>
+  <compound refid="_release_2_view_2_visits_view_8g_8cs" kind="file"><name>VisitsView.g.cs</name>
+  </compound>
+  <compound refid="_visits_view_8g_8i_8cs" kind="file"><name>VisitsView.g.i.cs</name>
+  </compound>
+  <compound refid="_doctor_main_view_8g_8cs" kind="file"><name>DoctorMainView.g.cs</name>
+  </compound>
+  <compound refid="_reservation_window_view_8g_8cs" kind="file"><name>ReservationWindowView.g.cs</name>
+  </compound>
+  <compound refid="_start_window_8g_8cs" kind="file"><name>StartWindow.g.cs</name>
+  </compound>
+  <compound refid="readme_8md" kind="file"><name>readme.md</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_resources_8_designer_8cs" kind="file"><name>Resources.Designer.cs</name>
+  </compound>
+  <compound refid="_settings_8_designer_8cs" kind="file"><name>Settings.Designer.cs</name>
+  </compound>
+  <compound refid="_data_base_repository_8cs" kind="file"><name>DataBaseRepository.cs</name>
+  </compound>
+  <compound refid="_doctor_note_repository_8cs" kind="file"><name>DoctorNoteRepository.cs</name>
+  </compound>
+  <compound refid="_grade_and_comment_repository_8cs" kind="file"><name>GradeAndCommentRepository.cs</name>
+  </compound>
+  <compound refid="_reservation_repository_8cs" kind="file"><name>ReservationRepository.cs</name>
+  </compound>
+  <compound refid="_speciality_repository_8cs" kind="file"><name>SpecialityRepository.cs</name>
+  </compound>
+  <compound refid="_user_repository_8cs" kind="file"><name>UserRepository.cs</name>
+  </compound>
+  <compound refid="_add_reservation_view_8xaml_8cs" kind="file"><name>AddReservationView.xaml.cs</name>
+  </compound>
+  <compound refid="_admin_view_8xaml_8cs" kind="file"><name>AdminView.xaml.cs</name>
+  </compound>
+  <compound refid="_home_view_8xaml_8cs" kind="file"><name>HomeView.xaml.cs</name>
+  </compound>
+  <compound refid="_login_window_view_8xaml_8cs" kind="file"><name>LoginWindowView.xaml.cs</name>
+  </compound>
+  <compound refid="_main_window_view_8xaml_8cs" kind="file"><name>MainWindowView.xaml.cs</name>
+  </compound>
+  <compound refid="_registration_window_view_8xaml_8cs" kind="file"><name>RegistrationWindowView.xaml.cs</name>
+  </compound>
+  <compound refid="_reservation_view_8xaml_8cs" kind="file"><name>ReservationView.xaml.cs</name>
+  </compound>
+  <compound refid="_settings_view_8xaml_8cs" kind="file"><name>SettingsView.xaml.cs</name>
+  </compound>
+  <compound refid="_visits_view_8xaml_8cs" kind="file"><name>VisitsView.xaml.cs</name>
+  </compound>
+  <compound refid="_add_reservation_view_model_8cs" kind="file"><name>AddReservationViewModel.cs</name>
+  </compound>
+  <compound refid="_admin_view_model_8cs" kind="file"><name>AdminViewModel.cs</name>
+  </compound>
+  <compound refid="_home_view_model_8cs" kind="file"><name>HomeViewModel.cs</name>
+  </compound>
+  <compound refid="_login_view_model_8cs" kind="file"><name>LoginViewModel.cs</name>
+  </compound>
+  <compound refid="_main_view_model_8cs" kind="file"><name>MainViewModel.cs</name>
+  </compound>
+  <compound refid="_reservation_view_model_8cs" kind="file"><name>ReservationViewModel.cs</name>
+  </compound>
+  <compound refid="_settings_view_model_8cs" kind="file"><name>SettingsViewModel.cs</name>
+  </compound>
+  <compound refid="_view_model_base_8cs" kind="file"><name>ViewModelBase.cs</name>
+  </compound>
+  <compound refid="_view_model_command_8cs" kind="file"><name>ViewModelCommand.cs</name>
+  </compound>
+  <compound refid="_visits_view_model_8cs" kind="file"><name>VisitsViewModel.cs</name>
+  </compound>
+  <compound refid="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme" kind="page"><name>md_packages_2_b_crypt_8_net-_next_84_80_83_2readme</name>
+  </compound>
+  <compound refid="dir_4e3946749bd901a1689a0723e6cecb40" kind="dir"><name>packages/BCrypt.Net-Next.4.0.3</name>
+  </compound>
+  <compound refid="dir_b0c5a1b7a3de469521b7961366ac09df" kind="dir"><name>CustomControlls</name>
+  </compound>
+  <compound refid="dir_bb60d54f7d6ce0fd178e0eb354ee399e" kind="dir"><name>obj/Debug/CustomControlls</name>
+  </compound>
+  <compound refid="dir_5773b5286603ba2985636d77d413a13a" kind="dir"><name>obj/Release/CustomControlls</name>
+  </compound>
+  <compound refid="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir"><name>obj/Debug</name>
+  </compound>
+  <compound refid="dir_312950da3f243a51cc00f4a947545131" kind="dir"><name>Model</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+  <compound refid="dir_93501a11e921083efbd154e0cdff5f10" kind="dir"><name>packages</name>
+  </compound>
+  <compound refid="dir_d051c76eebdc544d9c3d734575641c72" kind="dir"><name>Properties</name>
+  </compound>
+  <compound refid="dir_9fe5cc214b8578ee5b8e153089aca810" kind="dir"><name>obj/Release</name>
+  </compound>
+  <compound refid="dir_7fb377fcbd06abb80635f9f2b7f1dfe2" kind="dir"><name>Repositories</name>
+  </compound>
+  <compound refid="dir_f5afee478c3ef8c79e79db73f9c4438f" kind="dir"><name>obj/Debug/View</name>
+  </compound>
+  <compound refid="dir_90fb269620c4cf7988c632a868bf56ed" kind="dir"><name>obj/Release/View</name>
+  </compound>
+  <compound refid="dir_f2ee84e8e3a17eaa7015d788fa443c27" kind="dir"><name>View</name>
+  </compound>
+  <compound refid="dir_8b813a46eb1ef45602fb594223d0a80f" kind="dir"><name>ViewModel</name>
+  </compound>
+</doxygenindex>

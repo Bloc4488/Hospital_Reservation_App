@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme" kind="page">
+    <compoundname>md_packages_2_b_crypt_8_net-_next_84_80_83_2readme</compoundname>
+    <title>bcrypt.net - next</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md0"/> Porting of bcrypt.codeplex.com with enhanced security, missing fixes, features and better .net support.</para>
+<para><ulink url="https://ci.appveyor.com/project/ChrisMcKee/bcrypt-net/branch/master"><image type="html" name="https://ci.appveyor.com/api/projects/status/me6tlh95u59jl17d/branch/master?svg=true" alt="Build status" inline="yes"></image>
+</ulink></para>
+<para>[<image type="html" name="https://sonarcloud.io/api/project_badges/quality_gate?project=bcryptnet" alt="SonarCloud" inline="yes"></image>
+]()</para>
+<sect1 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md1">
+<title>Nuget</title>
+<para>Download using nuget or Paket (<ulink url="https://fsprojects.github.io/Paket/">https://fsprojects.github.io/Paket/</ulink>)</para>
+<para>Package: <ulink url="https://www.nuget.org/packages/BCrypt.Net-Next/">https://www.nuget.org/packages/BCrypt.Net-Next/</ulink> <ulink url="https://www.nuget.org/packages/BCrypt.Net-Next"><image type="html" name="https://img.shields.io/nuget/v/BCrypt.Net-Next.svg?style=flat-square" alt="NuGet" inline="yes"></image>
+</ulink></para>
+<para>Signed Package - <ulink url="https://www.nuget.org/packages/BCrypt.Net-Next.StrongName/">https://www.nuget.org/packages/BCrypt.Net-Next.StrongName/</ulink> <ulink url="https://www.nuget.org/packages/BCrypt.Net-Next.StrongName"><image type="html" name="https://img.shields.io/nuget/v/BCrypt.Net-Next.StrongName.svg?style=plastic" alt="NuGet Signed Package" inline="yes"></image>
+</ulink></para>
+</sect1>
+<sect1 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md2">
+<title>How to use</title>
+<para>The simplest usage is as follows...</para>
+<para>To Hash a password:</para>
+<para><programlisting filename=".cs"><codeline><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>passwordHash<sp/>=<sp/><sp/>BCrypt.HashPassword(</highlight><highlight class="stringliteral">&quot;my<sp/>password&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting></para>
+<para><emphasis>Note: Although this library allows you to supply your own salt, it is <bold>highly</bold> advisable that you allow the library to generate the salt for you. These methods are supplied to maintain compatibility and for more advanced cross-platform requirements that may necessitate their use.</emphasis></para>
+<para>To Verify a password against a hash (assuming you&apos;ve stored the hash and retrieved from storage for verification):</para>
+<para><programlisting filename=".cs"><codeline><highlight class="normal">BCrypt.Verify(</highlight><highlight class="stringliteral">&quot;my<sp/>password&quot;</highlight><highlight class="normal">,<sp/>passwordHash);</highlight></codeline>
+</programlisting></para>
+<para>This implementation on hashing will generate a salt automatically for you with the work factor (2^number of rounds) set to 11 (which matches the default across most implementation and is currently viewed as a good level of security/risk).</para>
+<para>To save you the maths a small table covering the iterations is provided below. The minimum allowed in this library is 4 for compatibility, the maximum is 31 (at 31 your processor will be wishing for death).</para>
+<para><programlisting><codeline><highlight class="normal">|<sp/>Cost<sp/><sp/>|<sp/>Iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------|--------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/>8<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>256<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/>9<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>512<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>10<sp/><sp/><sp/>|<sp/><sp/>1,024<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>11<sp/><sp/><sp/>|<sp/><sp/>2,048<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>12<sp/><sp/><sp/>|<sp/><sp/>4,096<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>13<sp/><sp/><sp/>|<sp/><sp/>8,192<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>14<sp/><sp/><sp/>|<sp/>16,384<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>15<sp/><sp/><sp/>|<sp/>32,768<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>16<sp/><sp/><sp/>|<sp/>65,536<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>17<sp/><sp/><sp/>|<sp/>131,072<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>18<sp/><sp/><sp/>|<sp/>262,144<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>19<sp/><sp/><sp/>|<sp/>524,288<sp/>iterations<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>20<sp/><sp/><sp/>|<sp/>1,048,576<sp/>iterations<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>21<sp/><sp/><sp/>|<sp/>2,097,152<sp/>iterations<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>22<sp/><sp/><sp/>|<sp/>4,194,304<sp/>iterations<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>23<sp/><sp/><sp/>|<sp/>8,388,608<sp/>iterations<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>24<sp/><sp/><sp/>|<sp/>16,777,216<sp/>iterations<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>25<sp/><sp/><sp/>|<sp/>33,554,432<sp/>iterations<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>26<sp/><sp/><sp/>|<sp/>67,108,864<sp/>iterations<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>27<sp/><sp/><sp/>|<sp/>134,217,728<sp/>iterations<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>28<sp/><sp/><sp/>|<sp/>268,435,456<sp/>iterations<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>29<sp/><sp/><sp/>|<sp/>536,870,912<sp/>iterations<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>30<sp/><sp/><sp/>|<sp/>1,073,741,824<sp/>iterations<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>31<sp/><sp/><sp/>|<sp/>2,147,483,648<sp/>iterations<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">etc</highlight></codeline>
+</programlisting></para>
+<para>and a simple benchmark you can run by creating a console program, adding this BCrypt Library and using this code.</para>
+<para><programlisting filename=".cs"><codeline><highlight class="normal">var<sp/>cost<sp/>=<sp/>16;</highlight></codeline>
+<codeline><highlight class="normal">var<sp/>timeTarget<sp/>=<sp/>100;<sp/></highlight><highlight class="comment">//<sp/>Milliseconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>timeTaken;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>sw<sp/>=<sp/>Stopwatch.StartNew();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>BCrypt.HashPassword(</highlight><highlight class="stringliteral">&quot;RwiKnN&gt;9xg3*C)1AZl.)y8f_:GCz,vt3T]PI&quot;</highlight><highlight class="normal">,<sp/>workFactor:<sp/>cost);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sw.Stop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>timeTaken<sp/>=<sp/>sw.ElapsedMilliseconds;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cost<sp/>-=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((timeTaken)<sp/>&gt;=<sp/>timeTarget);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Console.WriteLine(</highlight><highlight class="stringliteral">&quot;Appropriate<sp/>Cost<sp/>Found:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>(cost<sp/>+<sp/>1));</highlight></codeline>
+<codeline><highlight class="normal">Console.ReadLine();</highlight></codeline>
+</programlisting></para>
+<para>This will start at 16 which is <computeroutput>65,536 iterations</computeroutput> and reduce the cost until the time target is reached. It&apos;s up to you what you consider an allowable time, but if it&apos;s below 10, I&apos;d seriously advice leaving it at 10 and maybe investing in a larger server package.</para>
+<sect2 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md3">
+<title>Enhanced Entropy</title>
+<para>The recommended 56 byte password limit (including null termination byte) for bcrypt relates to the 448 bit limit of the Blowfish key; Any bytes beyond that limit are not fully mixed into the hash, as such making the 72 byte absolute limit on bcrypt passwords less relevant considering what actual effect on the resulting hash by those bytes.</para>
+<para>Other languages have handled this perceived issue by pre-hashing the passphrase/password to increase the used entropy, dropbox being one of the more public articles on this.</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://blogs.dropbox.com/tech/2016/09/how-dropbox-securely-stores-your-passwords/">https://blogs.dropbox.com/tech/2016/09/how-dropbox-securely-stores-your-passwords/</ulink></para>
+</listitem><listitem><para><ulink url="https://crypto.stackexchange.com/questions/42415/dropbox-password-security">https://crypto.stackexchange.com/questions/42415/dropbox-password-security</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para>You can opt into enhanced hashing simply using the following code (basically prefixing the method calls with Enhanced)</para>
+<para><programlisting filename=".cs"><codeline><highlight class="normal">var<sp/>enhancedHashPassword<sp/>=<sp/>BCrypt.EnhancedHashPassword(myPassword);</highlight></codeline>
+<codeline><highlight class="normal">var<sp/>validatePassword<sp/>=<sp/>BCrypt.EnhancedVerify(myPassword,<sp/>enhancedHashPassword);</highlight></codeline>
+</programlisting></para>
+<para>By default the library uses SHA384 hashing of the passphrase, the material generated is then passed to bcrypt to form your hash via the usual bcrypt routine. If you want to specify a different version of SHA, or just wish to explicitly set in your code the version used in case it ever changes in a major release of the library, you can do so by using the following change to the above.</para>
+<para><programlisting filename=".cs"><codeline><highlight class="normal">var<sp/>enhancedHashPassword<sp/>=<sp/>BCrypt.EnhancedHashPassword(myPassword,<sp/>hashType:<sp/>HashType.SHA384);</highlight></codeline>
+<codeline><highlight class="normal">var<sp/>validatePassword<sp/>=<sp/>BCrypt.EnhancedVerify(myPassword,<sp/>enhancedHashPassword,<sp/>hashType:HashType.SHA384);</highlight></codeline>
+</programlisting></para>
+<para><emphasis>Why SHA384?</emphasis> It&apos;s a good balance of performance, security, collision protection and is the only version that wasn&apos;t vulnerable to length extension attacks <ulink url="https://blog.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks">https://blog.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks</ulink> .</para>
+<para><emphasis>Should I use Enhanced Entropy?</emphasis> You lose nothing by using it</para>
+<para><emphasis>Why would I need to change the SHA type?</emphasis> Some libraries like PassLib hash using SHA256, so mostly a compatibility thing. DropBox used SHA512 so if you worked at dropbox you&apos;d want compatibility. The enhancing is mostly a convenience extension in that you could already pre-hash and pass into the standard method calls.</para>
+<para><emphasis>What does it do?</emphasis> We take the utf8 bytes of your password as inputBytes SHA hash them, convert to base64 (for compatibility with other language implementations) then use those bytes to perform the standard bcrypt call.</para>
+</sect2>
+<sect2 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md4">
+<title>Compiling</title>
+<para>You&apos;ll need at least VS2017 with the current SDK <ulink url="https://www.microsoft.com/net/download;">https://www.microsoft.com/net/download;</ulink></para>
+<para>The nuget packages can be built by running <computeroutput>buildfornuget.cmd</computeroutput> or</para>
+<para><programlisting filename=".shell"><codeline><highlight class="normal">dotnet<sp/>restore<sp/>.\src</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>pack<sp/>.\src\BCrypt.Net<sp/>--configuration<sp/>Release</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md5">
+<title>Tests</title>
+<para>You can run the tests from the main folder by typing <computeroutput>dotnet test .\src\BCrypt.Net.UnitTests\</computeroutput> Running <computeroutput>TestGenerateSaltWithMaxWorkFactor</computeroutput> will take significant time.</para>
+</sect2>
+<sect2 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md6">
+<title>Description</title>
+<para>A .Net port of jBCrypt implemented in C#. It uses a variant of the Blowfish encryption algorithm’s keying schedule, and introduces a work factor, which allows you to determine how expensive the hash function will be, allowing the algorithm to be &quot;future-proof&quot;.</para>
+</sect2>
+<sect2 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md7">
+<title>Details</title>
+<para>This is, for all intents and purposes, a direct port of jBCrypt written by Damien Miller. The main differences are the addition of some convenience methods and some mild re-factoring. The easiest way to verify BCrypt.Net&apos;s parity with jBCrypt is to compare the unit tests.</para>
+<para>For an overview of why BCrypt is important, see How to Safely Store a Password. In general, it&apos;s a hashing algorithm that can be adjusted over time to require more CPU power to generate the hashes. This, in essence, provides some protection against Moore&apos;s Law. That is, as computers get faster, this algorithm can be adjusted to require more CPU power. The more CPU power that&apos;s required to hash a given password, the more time a &quot;hacker&quot; must invest, per password. Since the &quot;work factor&quot; is embedded in the resultant hash, the hashes generated by this algorithm are forward/backward-compatible.</para>
+</sect2>
+<sect2 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md8">
+<title>Why BCrypt</title>
+<sect3 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md9">
+<title>From How to Safely Store a Password:</title>
+<para>It uses a variant of the Blowfish encryption algorithm’s keying schedule and introduces a work factor, which allows you to determine how expensive the hash function will be. Because of this, BCrypt can keep up with Moore’s law. As computers get faster you can increase the work factor and the hash will get slower.</para>
+</sect3>
+<sect3 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md10">
+<title>Blowfish-based scheme - Versioning/BCrypt Revisions</title>
+<para><blockquote><para><zwj/>Niels Provos and David Mazières designed a crypt() scheme called bcrypt based on Blowfish, and presented it at USENIX in 1999.[14] </para>
+</blockquote>The printable form of these hashes starts with $2$, $2a$, $2b$, $2x$ or $2y$ depending on which variant of the algorithm is used:</para>
+<para><programlisting><codeline><highlight class="normal">$2$<sp/>–<sp/>Currently<sp/>obsolete</highlight></codeline>
+<codeline><highlight class="normal">$2a$<sp/>–<sp/>The<sp/>current<sp/>key<sp/>used<sp/>to<sp/>identify<sp/>this<sp/>scheme.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Since<sp/>a<sp/>major<sp/>security<sp/>flaw<sp/>was<sp/>discovered<sp/>in<sp/>2011<sp/>in<sp/>a<sp/>third-party<sp/>implementation<sp/>of<sp/>the<sp/>algorithm,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hashes<sp/>indicated<sp/>by<sp/>this<sp/>string<sp/>are<sp/>now<sp/>ambiguous<sp/>and<sp/>might<sp/>have<sp/>been<sp/>generated<sp/>by<sp/>the<sp/>flawed</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>implementation,<sp/>or<sp/>a<sp/>subsequent<sp/>fixed,<sp/>implementation.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>flaw<sp/>may<sp/>be<sp/>triggered<sp/>by<sp/>some<sp/>password<sp/>strings<sp/>containing<sp/>non-ASCII<sp/>characters,<sp/>such<sp/>as<sp/>specially</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crafted<sp/>password<sp/>strings.</highlight></codeline>
+<codeline><highlight class="normal">$2b$<sp/>–<sp/>Used<sp/>by<sp/>some<sp/>recent<sp/>implementations<sp/>which<sp/>include<sp/>a<sp/>mitigation<sp/>to<sp/>a<sp/>wraparound<sp/>problem.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Previous<sp/>versions<sp/>of<sp/>the<sp/>algorithm<sp/>have<sp/>a<sp/>problem<sp/>with<sp/>long<sp/>passwords.<sp/>By<sp/>design,<sp/>long<sp/>passwords</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>are<sp/>truncated<sp/>at<sp/>72<sp/>characters,<sp/>but<sp/>there<sp/>is<sp/>an<sp/>8-bit<sp/>wraparound<sp/>problem<sp/>with<sp/>certain<sp/>password</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lengths<sp/>resulting<sp/>in<sp/>weak<sp/>hashes.</highlight></codeline>
+<codeline><highlight class="normal">$2x$<sp/>–<sp/>Post-2011<sp/>bug<sp/>discovery,<sp/>old<sp/>hashes<sp/>can<sp/>be<sp/>renamed<sp/>to<sp/>be<sp/>$2x$<sp/>to<sp/>indicate<sp/>that<sp/>they<sp/>were<sp/>generated<sp/>with</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>broken<sp/>algorithm.<sp/>These<sp/>hashes<sp/>are<sp/>still<sp/>weak,<sp/>but<sp/>at<sp/>least<sp/>it&apos;s<sp/>clear<sp/>which<sp/>algorithm<sp/>was<sp/>used<sp/>to</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>generate<sp/>them.</highlight></codeline>
+<codeline><highlight class="normal">$2y$<sp/>–<sp/>Post<sp/>Post-2011<sp/>bug<sp/>discovery,<sp/>$2y$<sp/>may<sp/>be<sp/>used<sp/>to<sp/>unambiguously<sp/>use<sp/>the<sp/>new,<sp/>corrected<sp/>algorithm.<sp/>On<sp/>an</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>implementation<sp/>suffering<sp/>from<sp/>the<sp/>bug,<sp/>$2y$<sp/>simply<sp/>won&apos;t<sp/>work.<sp/>On<sp/>a<sp/>newer,<sp/>fixed<sp/>implementation,<sp/>it<sp/>will</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>produce<sp/>the<sp/>same<sp/>result<sp/>as<sp/>using<sp/>$2a$.</highlight></codeline>
+</programlisting></para>
+<para>First and foremost this library originated as a port of jBCrypt from <computeroutput>mindrot</computeroutput>, and subsequently the bcrypt revision was set to match, which in this case is <computeroutput>$2a$</computeroutput>. This has been changed as handling only the single revision causes issues cross-platform with implementations that moved altered their revision to handle migrations and other issues.</para>
+<para><programlisting><codeline><highlight class="normal">The<sp/>original<sp/>bcrypt<sp/>code<sp/>(released<sp/>in<sp/>OpenBSD<sp/>2.1)<sp/>identified<sp/>itself<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">$2$.<sp/>Shortly<sp/>after<sp/>release,<sp/>a<sp/>bug<sp/>was<sp/>fixed<sp/>and<sp/>the<sp/>hash<sp/>identifier</highlight></codeline>
+<codeline><highlight class="normal">changed<sp/>to<sp/>$2a$.<sp/>Support<sp/>for<sp/>&quot;minor&quot;<sp/>versions<sp/>wasn&apos;t<sp/>really</highlight></codeline>
+<codeline><highlight class="normal">planned,<sp/>but<sp/>it<sp/>was<sp/>backwards<sp/>compatible.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Solar<sp/>Designer<sp/>wrote<sp/>a<sp/>second<sp/>implementation<sp/>of<sp/>bcrypt.<sp/>This</highlight></codeline>
+<codeline><highlight class="normal">reimplementation<sp/>suffered<sp/>from<sp/>a<sp/>flaw<sp/>dealing<sp/>with<sp/>8<sp/>bit<sp/>characters</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>led<sp/>to<sp/>the<sp/>introduction<sp/>of<sp/>the<sp/>&apos;x&apos;<sp/>and<sp/>&apos;y&apos;<sp/>flavours.<sp/>OpenBSD<sp/>did</highlight></codeline>
+<codeline><highlight class="normal">not<sp/>have<sp/>this<sp/>problem<sp/>and<sp/>supports<sp/>neither<sp/>&apos;x&apos;<sp/>nor<sp/>&apos;y&apos;<sp/>hash<sp/>versions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Solar<sp/>found<sp/>a<sp/>bug<sp/>in<sp/>their<sp/>OpenBSD<sp/>implementation<sp/>of<sp/>bcrypt<sp/>when<sp/>hashing</highlight></codeline>
+<codeline><highlight class="normal">long<sp/>passwords.<sp/>The<sp/>length<sp/>is<sp/>stored<sp/>in<sp/>an<sp/>unsigned<sp/>char<sp/>type,<sp/>which</highlight></codeline>
+<codeline><highlight class="normal">will<sp/>overflow<sp/>and<sp/>wrap<sp/>at<sp/>256.<sp/>Although<sp/>we<sp/>consider<sp/>the<sp/>existence<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">affected<sp/>hashes<sp/>very<sp/>rare,<sp/>in<sp/>order<sp/>to<sp/>differentiate<sp/>hashes<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">before<sp/>and<sp/>after<sp/>the<sp/>fix,<sp/>we<sp/>are<sp/>introducing<sp/>a<sp/>new<sp/>minor<sp/>&apos;b&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OpenBSD<sp/>5.5<sp/>(coming<sp/>this<sp/>spring)<sp/>will<sp/>accept<sp/>and<sp/>verify<sp/>&apos;b&apos;<sp/>hashes,</highlight></codeline>
+<codeline><highlight class="normal">although<sp/>it<sp/>will<sp/>still<sp/>generate<sp/>&apos;a&apos;<sp/>hashes.<sp/>OpenBSD<sp/>5.6<sp/>(coming<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">fall)<sp/>will<sp/>change<sp/>to<sp/>generating<sp/>&apos;b&apos;<sp/>hashes<sp/>by<sp/>default.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>future<sp/>release<sp/>of<sp/>Solar&apos;s<sp/>bcrypt<sp/>code<sp/>should<sp/>also<sp/>support<sp/>&apos;b&apos;.</highlight></codeline>
+</programlisting></para>
+<para><bold>There is no difference between 2a, 2x, 2y, and 2b. They all output the same result.</bold></para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://github.com/spring-projects/spring-security/issues/3320">https://github.com/spring-projects/spring-security/issues/3320</ulink></para>
+</listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Crypt_(C)#Blowfish-based_scheme">https://en.wikipedia.org/wiki/Crypt_(C)#Blowfish-based_scheme</ulink></para>
+</listitem><listitem><para><ulink url="http://undeadly.org/cgi?action=article&amp;sid=20140224132743">http://undeadly.org/cgi?action=article&amp;sid=20140224132743</ulink></para>
+</listitem><listitem><para><ulink url="http://marc.info/?l=openbsd-misc&amp;m=139320023202696">http://marc.info/?l=openbsd-misc&amp;m=139320023202696</ulink></para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="md_packages_2_b_crypt_8_net-_next_84_80_83_2readme_1autotoc_md11">
+<title>Releases</title>
+<para>release notes are here <ulink url="https://github.com/BcryptNet/bcrypt.net/releases">https://github.com/BcryptNet/bcrypt.net/releases</ulink></para>
+<para><emphasis>v4.0.2</emphasis> - Addition of .net 5 targeting; wrap <computeroutput>shaxxx</computeroutput> creation in using to release.</para>
+<para><emphasis>v4.0.0 (breaking changes)</emphasis> - A bug in <computeroutput>Enhanced Hashing</computeroutput> was discovered that causes the hashes created to be inoperable between different languages. V4 provides the fix for this as well as adding test vectors from PHP and Python to ensure the issue remains fixed in the future. V4 also removes the legacy 384 option that came before Base64 was added.</para>
+<para><emphasis>v3.5.0</emphasis> - A bug in <computeroutput>Enhanced Hashing</computeroutput> was discovered that causes the hashes created to be inoperable between different languages. As part of the fix 3.5 release contains the ability to <computeroutput>Verify</computeroutput> and <computeroutput>HashPassword</computeroutput> were given an additional <computeroutput>v4CompatibleEnhancedEntropy</computeroutput> parameter. This allows the user to verify their Enhanced hash as normal; then re-hash + store using V4. This functionality is purely to allow migration and is removed in V4.</para>
+<para><emphasis>v3.3.3</emphasis> -Performance (heap reduction) for netcore and removal of regex <ulink url="https://github.com/BcryptNet/bcrypt.net/releases/tag/3.3.0">https://github.com/BcryptNet/bcrypt.net/releases/tag/3.3.0</ulink></para>
+<para><emphasis>v2.1.3 -</emphasis></para>
+<para><itemizedlist>
+<listitem><para>Update test SDK</para>
+</listitem><listitem><para>Match versions between Strong-Signed / Normal package</para>
+</listitem><listitem><para>Update copyright year in metadata</para>
+</listitem><listitem><para>Typo correction</para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis>v2.1.2 -</emphasis></para>
+<para><itemizedlist>
+<listitem><para>NetStandard2 and Net 4.7 addition</para>
+</listitem><listitem><para>Correct typo in <computeroutput>PasswordNeedsReshash</computeroutput> to <computeroutput>PasswordNeedsRehash</computeroutput></para>
+</listitem><listitem><para>Consolidate config changes</para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis>v2.1.1 -</emphasis></para>
+<para><itemizedlist>
+<listitem><para>Minor csproj changes / typo</para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis>v2.1.0 -</emphasis></para>
+<para><itemizedlist>
+<listitem><para>Adds enhanced mode; enhanced hashing allows you to opt-in to ensuring optimal entropy on your users passwords by first making use of the fast SHA384 algorithm before BCrypt hashes the password.</para>
+</listitem><listitem><para>Added Hash interrogation to allow a hash to be passed in and its component parts are returned.</para>
+</listitem><listitem><para>Added timeouts to regex and set compiler flags for msbuild so &lt; .net 4.5 (where timeouts were added to regex) we use old regex method.</para>
+</listitem><listitem><para>Alter safe equals from ceq/and to xor/and/ceq moving the check outside of the loop to mitigate against branch prediction causing a timing leak</para>
+</listitem><listitem><para>Add new method <computeroutput>PasswordNeedsReshash(string hash, int newMinimumWorkLoad)</computeroutput> as a helper method for developers to use when logging a user in to increase legacy workloads</para>
+</listitem><listitem><para>Add <computeroutput>ValidateAndReplacePassword</computeroutput> method to allow inline password validation and replacement. Throws <computeroutput>BcryptAuthenticationException</computeroutput> in the event of authentication failure.</para>
+</listitem><listitem><para>Cleaned up XML-doc for intellisense</para>
+</listitem><listitem><para>Increased compatibility by allowing BCrypt revisions from other frameworks/languages to be validated and generated whilst maintaining compatibility.</para>
+</listitem><listitem><para>VS2017 RTW changes</para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis>v2.0.1 -</emphasis></para>
+<para><itemizedlist>
+<listitem><para>Corrects usage of Secure random number generator</para>
+</listitem><listitem><para>Change UTF8 handling to safer default (throwOnInvalidBytes: true)</para>
+</listitem><listitem><para>.NET Encoding.UTF8 encoding instance does not raise exceptions used to encode bytes which cannot represent a valid encoding &amp; will return the same &apos;unknown&apos; character instead. This can cause entropy loss when converting from bytes to strings.</para>
+</listitem><listitem><para>Change secure equals to match .net identity implementation</para>
+</listitem><listitem><para>Inline vars in encipher method</para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis>v2.0.0 -</emphasis></para>
+<para>Fresh release packaged for the majority of .net &amp; containing safe-equals to reduce the risks from timing attacks <ulink url="https://en.wikipedia.org/wiki/Timing_attack">https://en.wikipedia.org/wiki/Timing_attack</ulink> / <ulink url="https://cryptocoding.net/index.php/Coding_rules#Compare_secret_strings_in_constant_time">https://cryptocoding.net/index.php/Coding_rules#Compare_secret_strings_in_constant_time</ulink> Technically the implementation details of BCrypt theoretically mitigate against timing attacks. But the Bcrypt.net official validation function was vulnerable to timing attacks as it returned as soon as a non-matching byte was found in the hash comparison. </para>
+</sect1>
+    </detaileddescription>
+    <location file="packages/BCrypt.Net-Next.4.0.3/readme.md"/>
+  </compounddef>
+</doxygen>

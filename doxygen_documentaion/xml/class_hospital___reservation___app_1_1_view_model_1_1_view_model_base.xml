@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::ViewModel::ViewModelBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">INotifyPropertyChanged</basecompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.AddReservationViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.AdminViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_home_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.HomeViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.LoginViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.MainViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.ReservationViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.SettingsViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.VisitsViewModel</derivedcompoundref>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a1b05557ff9266295ab38a0d097ad9357" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>PropertyChangedEventHandler</type>
+        <definition>PropertyChangedEventHandler Hospital_Reservation_App.ViewModel.ViewModelBase.PropertyChanged</definition>
+        <argsstring></argsstring>
+        <name>PropertyChanged</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelBase.PropertyChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelBase.cs" line="15" column="50" bodyfile="ViewModel/ViewModelBase.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a04dccc71666ad3c682eaba547d40dc4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.ViewModelBase.OnPropertyChanged</definition>
+        <argsstring>(string propertyName)</argsstring>
+        <name>OnPropertyChanged</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.ViewModelBase.OnPropertyChanged</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>propertyName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/ViewModelBase.cs" line="17" column="21" bodyfile="ViewModel/ViewModelBase.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract class to represent OnPropertyChanged logic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Hospital_Reservation_App.ViewModel.AddReservationViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_add_reservation_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Hospital_Reservation_App.ViewModel.AdminViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_admin_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Hospital_Reservation_App.ViewModel.HomeViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_home_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Hospital_Reservation_App.ViewModel.LoginViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_login_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Hospital_Reservation_App.ViewModel.MainViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_main_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Hospital_Reservation_App.ViewModel.ReservationViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_reservation_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Hospital_Reservation_App.ViewModel.SettingsViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Hospital_Reservation_App.ViewModel.VisitsViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_visits_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>INotifyPropertyChanged</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>INotifyPropertyChanged</label>
+      </node>
+    </collaborationgraph>
+    <location file="ViewModel/ViewModelBase.cs" line="13" column="21" bodyfile="ViewModel/ViewModelBase.cs" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a04dccc71666ad3c682eaba547d40dc4e" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelBase</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a1b05557ff9266295ab38a0d097ad9357" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::ViewModelBase</scope><name>PropertyChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

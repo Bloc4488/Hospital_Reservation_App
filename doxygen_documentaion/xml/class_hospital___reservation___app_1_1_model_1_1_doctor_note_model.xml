@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::DoctorNoteModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1adbcb84fa2cc232ae484efd7d72b8a9fb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorNoteModel.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorNoteModel.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorNoteModel.cs" line="14" column="23" bodyfile="Model/DoctorNoteModel.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1ad3b630e11760ce2ae823e7d3d1f85517" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorNoteModel.Reservation_id</definition>
+        <argsstring></argsstring>
+        <name>Reservation_id</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorNoteModel.Reservation_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorNoteModel.cs" line="15" column="23" bodyfile="Model/DoctorNoteModel.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1a07e30da6662a573d569587cd70b99113" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.DoctorNoteModel.Note</definition>
+        <argsstring></argsstring>
+        <name>Note</name>
+        <qualifiedname>Hospital_Reservation_App.Model.DoctorNoteModel.Note</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/DoctorNoteModel.cs" line="16" column="23" bodyfile="Model/DoctorNoteModel.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents doctor_notes table of DataBase. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/DoctorNoteModel.cs" line="12" column="11" bodyfile="Model/DoctorNoteModel.cs" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1adbcb84fa2cc232ae484efd7d72b8a9fb" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorNoteModel</scope><name>Id</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1a07e30da6662a573d569587cd70b99113" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorNoteModel</scope><name>Note</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_doctor_note_model_1ad3b630e11760ce2ae823e7d3d1f85517" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::DoctorNoteModel</scope><name>Reservation_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

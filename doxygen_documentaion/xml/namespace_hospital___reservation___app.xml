@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_hospital___reservation___app" kind="namespace" language="C#">
+    <compoundname>Hospital_Reservation_App</compoundname>
+    <innerclass refid="class_hospital___reservation___app_1_1_app" prot="public">Hospital_Reservation_App::App</innerclass>
+    <innernamespace refid="namespace_hospital___reservation___app_1_1_custom_controlls">Hospital_Reservation_App::CustomControlls</innernamespace>
+    <innernamespace refid="namespace_hospital___reservation___app_1_1_model">Hospital_Reservation_App::Model</innernamespace>
+    <innernamespace refid="namespace_hospital___reservation___app_1_1_properties">Hospital_Reservation_App::Properties</innernamespace>
+    <innernamespace refid="namespace_hospital___reservation___app_1_1_repositories">Hospital_Reservation_App::Repositories</innernamespace>
+    <innernamespace refid="namespace_hospital___reservation___app_1_1_view">Hospital_Reservation_App::View</innernamespace>
+    <innernamespace refid="namespace_hospital___reservation___app_1_1_view_model">Hospital_Reservation_App::ViewModel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="App.xaml.cs" line="9" column="1"/>
+  </compounddef>
+</doxygen>
