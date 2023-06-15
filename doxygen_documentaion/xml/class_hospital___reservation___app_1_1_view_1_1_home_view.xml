@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_1_1_home_view" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::View::HomeView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Controls.UserControl</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1a8ace20a0505cc40376e3d9d9548bce9a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.View.HomeView::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/HomeView.g.cs" line="43" column="22" bodyfile="obj/Debug/View/HomeView.g.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.HomeView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/HomeView.g.cs" line="50" column="21" bodyfile="obj/Debug/View/HomeView.g.cs" bodystart="50" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.HomeView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/HomeView.g.i.cs" line="50" column="21" bodyfile="obj/Debug/View/HomeView.g.i.cs" bodystart="50" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.HomeView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/HomeView.g.cs" line="50" column="21" bodyfile="obj/Release/View/HomeView.g.cs" bodystart="50" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1ac9b3b9ad33fe1cf0351887a5051afadc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.View.HomeView.HomeView</definition>
+        <argsstring>()</argsstring>
+        <name>HomeView</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView.HomeView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/HomeView.xaml.cs" line="22" column="16" bodyfile="View/HomeView.xaml.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.HomeView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/HomeView.g.cs" line="70" column="52" bodyfile="obj/Debug/View/HomeView.g.cs" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.HomeView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/HomeView.g.i.cs" line="70" column="52" bodyfile="obj/Debug/View/HomeView.g.i.cs" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.HomeView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.HomeView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/HomeView.g.cs" line="70" column="52" bodyfile="obj/Release/View/HomeView.g.cs" bodystart="70" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HomeView. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Interaction logic for HomeView.xaml. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.HomeView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_home_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.HomeView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_home_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+    </collaborationgraph>
+    <location file="obj/Debug/View/HomeView.g.cs" line="41" column="19" bodyfile="obj/Debug/View/HomeView.g.cs" bodystart="41" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a8ace20a0505cc40376e3d9d9548bce9a" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>_contentLoaded</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1adbae2e33084914901cbf9c5aba6aa01a" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1ac9b3b9ad33fe1cf0351887a5051afadc" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>HomeView</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_home_view_1a55dca02139f264ffc3ec62999e8c3086" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::HomeView</scope><name>InitializeComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

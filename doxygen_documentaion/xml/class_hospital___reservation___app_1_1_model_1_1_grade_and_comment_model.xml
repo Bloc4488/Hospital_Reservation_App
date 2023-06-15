@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::GradeAndCommentModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a6e03115264bd958595bc76a767c53833" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.GradeAndCommentModel.iD</definition>
+        <argsstring></argsstring>
+        <name>iD</name>
+        <qualifiedname>Hospital_Reservation_App.Model.GradeAndCommentModel.iD</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/GradeAndCommentModel.cs" line="14" column="23" bodyfile="Model/GradeAndCommentModel.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a24c42705aebb0e6fea664f61405850c2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.GradeAndCommentModel.ReservationID</definition>
+        <argsstring></argsstring>
+        <name>ReservationID</name>
+        <qualifiedname>Hospital_Reservation_App.Model.GradeAndCommentModel.ReservationID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/GradeAndCommentModel.cs" line="15" column="23" bodyfile="Model/GradeAndCommentModel.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1ac7c5b3afcc724188da27771f28692393" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.GradeAndCommentModel.grade</definition>
+        <argsstring></argsstring>
+        <name>grade</name>
+        <qualifiedname>Hospital_Reservation_App.Model.GradeAndCommentModel.grade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/GradeAndCommentModel.cs" line="16" column="23" bodyfile="Model/GradeAndCommentModel.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a03a215b129f0b3f13a015569c46ee704" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.Model.GradeAndCommentModel.comment</definition>
+        <argsstring></argsstring>
+        <name>comment</name>
+        <qualifiedname>Hospital_Reservation_App.Model.GradeAndCommentModel.comment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/GradeAndCommentModel.cs" line="17" column="23" bodyfile="Model/GradeAndCommentModel.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents grades_and_comments table of DataBase. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/GradeAndCommentModel.cs" line="12" column="11" bodyfile="Model/GradeAndCommentModel.cs" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a03a215b129f0b3f13a015569c46ee704" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::GradeAndCommentModel</scope><name>comment</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1ac7c5b3afcc724188da27771f28692393" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::GradeAndCommentModel</scope><name>grade</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a6e03115264bd958595bc76a767c53833" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::GradeAndCommentModel</scope><name>iD</name></member>
+      <member refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model_1a24c42705aebb0e6fea664f61405850c2" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::GradeAndCommentModel</scope><name>ReservationID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_7fb377fcbd06abb80635f9f2b7f1dfe2" kind="dir">
+    <compoundname>Repositories</compoundname>
+    <innerfile refid="_data_base_repository_8cs">DataBaseRepository.cs</innerfile>
+    <innerfile refid="_doctor_note_repository_8cs">DoctorNoteRepository.cs</innerfile>
+    <innerfile refid="_grade_and_comment_repository_8cs">GradeAndCommentRepository.cs</innerfile>
+    <innerfile refid="_reservation_repository_8cs">ReservationRepository.cs</innerfile>
+    <innerfile refid="_speciality_repository_8cs">SpecialityRepository.cs</innerfile>
+    <innerfile refid="_user_repository_8cs">UserRepository.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Repositories/"/>
+  </compounddef>
+</doxygen>

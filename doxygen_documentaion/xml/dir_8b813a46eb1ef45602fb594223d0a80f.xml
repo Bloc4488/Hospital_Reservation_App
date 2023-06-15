@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_8b813a46eb1ef45602fb594223d0a80f" kind="dir">
+    <compoundname>ViewModel</compoundname>
+    <innerfile refid="_add_reservation_view_model_8cs">AddReservationViewModel.cs</innerfile>
+    <innerfile refid="_admin_view_model_8cs">AdminViewModel.cs</innerfile>
+    <innerfile refid="_home_view_model_8cs">HomeViewModel.cs</innerfile>
+    <innerfile refid="_login_view_model_8cs">LoginViewModel.cs</innerfile>
+    <innerfile refid="_main_view_model_8cs">MainViewModel.cs</innerfile>
+    <innerfile refid="_reservation_view_model_8cs">ReservationViewModel.cs</innerfile>
+    <innerfile refid="_settings_view_model_8cs">SettingsViewModel.cs</innerfile>
+    <innerfile refid="_view_model_base_8cs">ViewModelBase.cs</innerfile>
+    <innerfile refid="_view_model_command_8cs">ViewModelCommand.cs</innerfile>
+    <innerfile refid="_visits_view_model_8cs">VisitsViewModel.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ViewModel/"/>
+  </compounddef>
+</doxygen>

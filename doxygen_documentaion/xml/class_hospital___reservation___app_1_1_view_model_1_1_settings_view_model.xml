@@ -1,0 +1,958 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::ViewModel::SettingsViewModel</compoundname>
+    <basecompoundref refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base" prot="public" virt="non-virtual">Hospital_Reservation_App.ViewModel.ViewModelBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1d97ceaa2a2be0f3ffe472f70e951a85" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+        <definition>UserModel Hospital_Reservation_App.ViewModel.SettingsViewModel._currentAccount</definition>
+        <argsstring></argsstring>
+        <name>_currentAccount</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._currentAccount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="25" column="27" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2375fa5c84efca716dbae5c55c93fa8d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.SettingsViewModel._checkBoxMaleChecked</definition>
+        <argsstring></argsstring>
+        <name>_checkBoxMaleChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._checkBoxMaleChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="26" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a374c5698e47679888d57981ffd75f841" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.SettingsViewModel._checkBoxFemaleChecked</definition>
+        <argsstring></argsstring>
+        <name>_checkBoxFemaleChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._checkBoxFemaleChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="27" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ac529c4fc0d8758ce4055295065b68c89" prot="private" static="no" mutable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordOld</definition>
+        <argsstring></argsstring>
+        <name>_passwordOld</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordOld</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="28" column="30" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a268bbb02b389d148baf2628b2df23f32" prot="private" static="no" mutable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordNew</definition>
+        <argsstring></argsstring>
+        <name>_passwordNew</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="29" column="30" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1adba65a6f11bf472e492ff057ad7d34c0" prot="private" static="no" mutable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordRepNew</definition>
+        <argsstring></argsstring>
+        <name>_passwordRepNew</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordRepNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="30" column="30" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4302954340b93cc31464965db5f7bfdc" prot="private" static="no" mutable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordCheck</definition>
+        <argsstring></argsstring>
+        <name>_passwordCheck</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordCheck</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="31" column="30" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a288a344c09c2831f546c75fbf60f2770" prot="private" static="no" mutable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordDeleteUser</definition>
+        <argsstring></argsstring>
+        <name>_passwordDeleteUser</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._passwordDeleteUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="32" column="30" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a0358650eb55c997a06117d8f41d5b692" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageChangeData</definition>
+        <argsstring></argsstring>
+        <name>_errorMessageChangeData</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageChangeData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="34" column="24" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af28fd905519723e372f4a59475d2db6f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageChangePassword</definition>
+        <argsstring></argsstring>
+        <name>_errorMessageChangePassword</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageChangePassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="35" column="24" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a214badada9375aad92d7794aba958b59" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageChangePassword2</definition>
+        <argsstring></argsstring>
+        <name>_errorMessageChangePassword2</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageChangePassword2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="36" column="24" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5732045a1eb40a824afae0312c9d8037" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageDeleteReservations</definition>
+        <argsstring></argsstring>
+        <name>_errorMessageDeleteReservations</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageDeleteReservations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="37" column="24" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1acd9bae2fffc88205578d87bf9e52ed13" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageDeleteUser</definition>
+        <argsstring></argsstring>
+        <name>_errorMessageDeleteUser</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._errorMessageDeleteUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="38" column="24" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a03627e19ddee827099e047d0980d94fc" prot="private" static="no" mutable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel._isChangePasswordVisible</definition>
+        <argsstring></argsstring>
+        <name>_isChangePasswordVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._isChangePasswordVisible</qualifiedname>
+        <initializer>= System.Windows.Visibility.Collapsed</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="40" column="41" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a960e66ccbd496da64399fda56ed3b462" prot="private" static="no" mutable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel._isChangeDataVisible</definition>
+        <argsstring></argsstring>
+        <name>_isChangeDataVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._isChangeDataVisible</qualifiedname>
+        <initializer>= System.Windows.Visibility.Collapsed</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="41" column="41" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aff2054b13a08b1db0ebb2f7863c52f00" prot="private" static="no" mutable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel._isDeleteReservationsVisible</definition>
+        <argsstring></argsstring>
+        <name>_isDeleteReservationsVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._isDeleteReservationsVisible</qualifiedname>
+        <initializer>= System.Windows.Visibility.Collapsed</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="42" column="41" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a9d29629f379e7664cc754ea0d52e3805" prot="private" static="no" mutable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel._isDeleteUserVisible</definition>
+        <argsstring></argsstring>
+        <name>_isDeleteUserVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel._isDeleteUserVisible</qualifiedname>
+        <initializer>= System.Windows.Visibility.Collapsed</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="43" column="41" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ae8cf2d376e355d4d3617cf4f01256412" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_hospital___reservation___app_1_1_model_1_1_i_user_repository" kindref="compound">IUserRepository</ref></type>
+        <definition>IUserRepository Hospital_Reservation_App.ViewModel.SettingsViewModel.userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.userRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="259" column="33" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aae384a72bb58c432e1d9a092fe4777b7" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository" kindref="compound">IReservationRepository</ref></type>
+        <definition>IReservationRepository Hospital_Reservation_App.ViewModel.SettingsViewModel.reservationRepository</definition>
+        <argsstring></argsstring>
+        <name>reservationRepository</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.reservationRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="260" column="40" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a85b9004f3e0a6f7584361c2228ddec8c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_user_model" kindref="compound">UserModel</ref></type>
+        <definition>UserModel Hospital_Reservation_App.ViewModel.SettingsViewModel.CurrentAccount</definition>
+        <argsstring></argsstring>
+        <name>CurrentAccount</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.CurrentAccount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="45" column="26" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af0ba7805c4e1205a8a2d90d5bfc45e4f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.SettingsViewModel.CheckBoxMaleChecked</definition>
+        <argsstring></argsstring>
+        <name>CheckBoxMaleChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.CheckBoxMaleChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="54" column="21" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="55" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4eeccb359f9146c4caa0961abe3a3606" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.SettingsViewModel.CheckBoxFemaleChecked</definition>
+        <argsstring></argsstring>
+        <name>CheckBoxFemaleChecked</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.CheckBoxFemaleChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="68" column="21" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5638f9c697acf164b622798f09ca1bdb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordNew</definition>
+        <argsstring></argsstring>
+        <name>passwordNew</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="81" column="29" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5bbdb478637f98caee6848d051fd31be" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordOld</definition>
+        <argsstring></argsstring>
+        <name>passwordOld</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordOld</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="93" column="29" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="94" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a491385bd2e948a7608923ffc38a6a909" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordRepNew</definition>
+        <argsstring></argsstring>
+        <name>passwordRepNew</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordRepNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="105" column="29" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="106" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aa3cc5c8d1465fd5c61b64b09d3465363" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordCheck</definition>
+        <argsstring></argsstring>
+        <name>passwordCheck</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordCheck</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="117" column="29" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="118" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a3527d13f64c0d67c1818170e5063ad4d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>SecureString</type>
+        <definition>SecureString Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordDeleteUser</definition>
+        <argsstring></argsstring>
+        <name>passwordDeleteUser</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.passwordDeleteUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="129" column="29" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="130" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af122758e80550843ec569c0a47e60b9c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageChangeData</definition>
+        <argsstring></argsstring>
+        <name>ErrorMessageChangeData</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageChangeData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="141" column="23" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="142" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a71be1c2e5c4b323d2b13d49a49e8eac1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageChangePassword</definition>
+        <argsstring></argsstring>
+        <name>ErrorMessageChangePassword</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageChangePassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="153" column="23" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="154" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a86e949ddff17ecce7190764911504af7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageChangePassword2</definition>
+        <argsstring></argsstring>
+        <name>ErrorMessageChangePassword2</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageChangePassword2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="165" column="23" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="166" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1acb4b435b975a5e3fe7f3c8029cf7424e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageDeleteReservations</definition>
+        <argsstring></argsstring>
+        <name>ErrorMessageDeleteReservations</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageDeleteReservations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="177" column="23" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="178" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a08338bf093947e286197a1088ec780e4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageDeleteUser</definition>
+        <argsstring></argsstring>
+        <name>ErrorMessageDeleteUser</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ErrorMessageDeleteUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="189" column="23" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="190" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a69f99fb7245a8b92e1b4fe279ba75bd0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel.IsChangePasswordVisible</definition>
+        <argsstring></argsstring>
+        <name>IsChangePasswordVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.IsChangePasswordVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="201" column="40" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="202" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a02b993debf4b1d3baf773c657b0009be" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel.IsChangeDataVisible</definition>
+        <argsstring></argsstring>
+        <name>IsChangeDataVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.IsChangeDataVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="213" column="40" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="214" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab35d1633454291a7fa9673ec98d2886b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel.IsDeleteReservationsVisible</definition>
+        <argsstring></argsstring>
+        <name>IsDeleteReservationsVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.IsDeleteReservationsVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="225" column="40" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="226" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a848d51b53dfde60e1a751d64026200c1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>System.Windows.Visibility</type>
+        <definition>System.Windows.Visibility Hospital_Reservation_App.ViewModel.SettingsViewModel.IsDeleteUserVisible</definition>
+        <argsstring></argsstring>
+        <name>IsDeleteUserVisible</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.IsDeleteUserVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="237" column="40" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="238" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab8b8108da10583a29e1b84106df8dff8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.ChangeDataUserCommand</definition>
+        <argsstring></argsstring>
+        <name>ChangeDataUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ChangeDataUserCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="249" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4a80b729ef7b1f0988081a79894580c6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.ChangeUserPasswordCommand</definition>
+        <argsstring></argsstring>
+        <name>ChangeUserPasswordCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ChangeUserPasswordCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="250" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a06ceba72549608fc9a00c53d31dca620" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.DeleteReservationsUserCommand</definition>
+        <argsstring></argsstring>
+        <name>DeleteReservationsUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.DeleteReservationsUserCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="251" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="251" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a6d6f9b116f380b934de8df9da4a03c58" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.DeleteUserAccountCommand</definition>
+        <argsstring></argsstring>
+        <name>DeleteUserAccountCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.DeleteUserAccountCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="252" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="252" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a7822581998f3d0be605e1a8c648b1445" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowChangeDataUserCommand</definition>
+        <argsstring></argsstring>
+        <name>ShowChangeDataUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowChangeDataUserCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="254" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="254" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a956bfc360ca85634b93c116c7565c68c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowChangeUserPasswordCommand</definition>
+        <argsstring></argsstring>
+        <name>ShowChangeUserPasswordCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowChangeUserPasswordCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="255" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="255" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a3d870c38cf8a641cfb4c99df7189e320" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowDeleteReservationsUserCommand</definition>
+        <argsstring></argsstring>
+        <name>ShowDeleteReservationsUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowDeleteReservationsUserCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="256" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="256" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2bfad576e64f12479cd64e526a4b3c28" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowDeleteUserAccountCommand</definition>
+        <argsstring></argsstring>
+        <name>ShowDeleteUserAccountCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ShowDeleteUserAccountCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="257" column="25" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="257" bodyend="257"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aa207711022c62799e24e13b0ff5ed75c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.ViewModel.SettingsViewModel.SettingsViewModel</definition>
+        <argsstring>()</argsstring>
+        <name>SettingsViewModel</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.SettingsViewModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="261" column="16" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="261" bodyend="275"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ac8aadad078f93799b06db5ab47b57e21" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowChangeDataUserCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteShowChangeDataUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowChangeDataUserCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="277" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="277" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a81a52e9b9a681b42e9a74d61fe866513" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.SettingsViewModel.CanExecuteChangeDataUserCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>CanExecuteChangeDataUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.CanExecuteChangeDataUserCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="288" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="288" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1ee9f4c54d16013d3040c37c79ef8b1e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteChangeDataUserCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteChangeDataUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteChangeDataUserCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="322" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="322" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a96cc4c98ed7655b957b91b71308f6186" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowChangeUserPasswordCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteShowChangeUserPasswordCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowChangeUserPasswordCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="334" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="334" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab5a7c76658d62c375dcb5cf2b990d97c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.ViewModel.SettingsViewModel.CanExecuteChangeUserPasswordCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>CanExecuteChangeUserPasswordCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.CanExecuteChangeUserPasswordCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="342" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="342" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1bb908d92195c56a86f9a9d1123c70cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteChangeUserPasswordCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteChangeUserPasswordCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteChangeUserPasswordCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="371" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="371" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a13233ec58db4f09ab9d4c53a839a3ea7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowDeleteReservationsUserCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteShowDeleteReservationsUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowDeleteReservationsUserCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="391" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="391" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2451c2e6ae46db15644ed80b0404836f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteDeleteReservationsUserCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteDeleteReservationsUserCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteDeleteReservationsUserCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="399" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="399" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a89d2e1615fa0d2fc8d44743e58587d21" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowDeleteUserAccountCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteShowDeleteUserAccountCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteShowDeleteUserAccountCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="414" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="414" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a349c5f17db3de86285a1c729313ce725" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteDeleteUserAccountCommand</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>ExecuteDeleteUserAccountCommand</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.ExecuteDeleteUserAccountCommand</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="422" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="422" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab3d5a22c9f6b707f5e30e147bfe49700" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.LogOut</definition>
+        <argsstring>()</argsstring>
+        <name>LogOut</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.LogOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="437" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="437" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a0e30f46d539c3aea085a9ac0313a26e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.ViewModel.SettingsViewModel.LoadCurrentAccountData</definition>
+        <argsstring>()</argsstring>
+        <name>LoadCurrentAccountData</name>
+        <qualifiedname>Hospital_Reservation_App.ViewModel.SettingsViewModel.LoadCurrentAccountData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ViewModel/SettingsViewModel.cs" line="442" column="22" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="442" bodyend="460"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ViewModel class for SettingsView. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.SettingsViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2">
+        <label>ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.ViewModel.SettingsViewModel</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2">
+        <label>ViewModelBase</label>
+        <link refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ViewModel/SettingsViewModel.cs" line="23" column="11" bodyfile="ViewModel/SettingsViewModel.cs" bodystart="24" bodyend="461"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a374c5698e47679888d57981ffd75f841" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_checkBoxFemaleChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2375fa5c84efca716dbae5c55c93fa8d" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_checkBoxMaleChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1d97ceaa2a2be0f3ffe472f70e951a85" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_currentAccount</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a0358650eb55c997a06117d8f41d5b692" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_errorMessageChangeData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af28fd905519723e372f4a59475d2db6f" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_errorMessageChangePassword</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a214badada9375aad92d7794aba958b59" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_errorMessageChangePassword2</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5732045a1eb40a824afae0312c9d8037" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_errorMessageDeleteReservations</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1acd9bae2fffc88205578d87bf9e52ed13" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_errorMessageDeleteUser</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a960e66ccbd496da64399fda56ed3b462" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_isChangeDataVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a03627e19ddee827099e047d0980d94fc" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_isChangePasswordVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aff2054b13a08b1db0ebb2f7863c52f00" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_isDeleteReservationsVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a9d29629f379e7664cc754ea0d52e3805" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_isDeleteUserVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4302954340b93cc31464965db5f7bfdc" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_passwordCheck</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a288a344c09c2831f546c75fbf60f2770" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_passwordDeleteUser</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a268bbb02b389d148baf2628b2df23f32" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_passwordNew</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ac529c4fc0d8758ce4055295065b68c89" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_passwordOld</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1adba65a6f11bf472e492ff057ad7d34c0" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>_passwordRepNew</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a81a52e9b9a681b42e9a74d61fe866513" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>CanExecuteChangeDataUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab5a7c76658d62c375dcb5cf2b990d97c" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>CanExecuteChangeUserPasswordCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab8b8108da10583a29e1b84106df8dff8" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ChangeDataUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4a80b729ef7b1f0988081a79894580c6" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ChangeUserPasswordCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a4eeccb359f9146c4caa0961abe3a3606" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>CheckBoxFemaleChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af0ba7805c4e1205a8a2d90d5bfc45e4f" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>CheckBoxMaleChecked</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a85b9004f3e0a6f7584361c2228ddec8c" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>CurrentAccount</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a06ceba72549608fc9a00c53d31dca620" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>DeleteReservationsUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a6d6f9b116f380b934de8df9da4a03c58" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>DeleteUserAccountCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1af122758e80550843ec569c0a47e60b9c" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ErrorMessageChangeData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a71be1c2e5c4b323d2b13d49a49e8eac1" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ErrorMessageChangePassword</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a86e949ddff17ecce7190764911504af7" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ErrorMessageChangePassword2</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1acb4b435b975a5e3fe7f3c8029cf7424e" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ErrorMessageDeleteReservations</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a08338bf093947e286197a1088ec780e4" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ErrorMessageDeleteUser</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1ee9f4c54d16013d3040c37c79ef8b1e" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteChangeDataUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a1bb908d92195c56a86f9a9d1123c70cd" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteChangeUserPasswordCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2451c2e6ae46db15644ed80b0404836f" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteDeleteReservationsUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a349c5f17db3de86285a1c729313ce725" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteDeleteUserAccountCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ac8aadad078f93799b06db5ab47b57e21" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteShowChangeDataUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a96cc4c98ed7655b957b91b71308f6186" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteShowChangeUserPasswordCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a13233ec58db4f09ab9d4c53a839a3ea7" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteShowDeleteReservationsUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a89d2e1615fa0d2fc8d44743e58587d21" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ExecuteShowDeleteUserAccountCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a02b993debf4b1d3baf773c657b0009be" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>IsChangeDataVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a69f99fb7245a8b92e1b4fe279ba75bd0" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>IsChangePasswordVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab35d1633454291a7fa9673ec98d2886b" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>IsDeleteReservationsVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a848d51b53dfde60e1a751d64026200c1" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>IsDeleteUserVisible</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a0e30f46d539c3aea085a9ac0313a26e7" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>LoadCurrentAccountData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ab3d5a22c9f6b707f5e30e147bfe49700" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>LogOut</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a04dccc71666ad3c682eaba547d40dc4e" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aa3cc5c8d1465fd5c61b64b09d3465363" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>passwordCheck</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a3527d13f64c0d67c1818170e5063ad4d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>passwordDeleteUser</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5638f9c697acf164b622798f09ca1bdb" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>passwordNew</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a5bbdb478637f98caee6848d051fd31be" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>passwordOld</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a491385bd2e948a7608923ffc38a6a909" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>passwordRepNew</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_view_model_base_1a1b05557ff9266295ab38a0d097ad9357" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>PropertyChanged</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aae384a72bb58c432e1d9a092fe4777b7" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>reservationRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1aa207711022c62799e24e13b0ff5ed75c" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>SettingsViewModel</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a7822581998f3d0be605e1a8c648b1445" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ShowChangeDataUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a956bfc360ca85634b93c116c7565c68c" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ShowChangeUserPasswordCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a3d870c38cf8a641cfb4c99df7189e320" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ShowDeleteReservationsUserCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1a2bfad576e64f12479cd64e526a4b3c28" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>ShowDeleteUserAccountCommand</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_model_1_1_settings_view_model_1ae8cf2d376e355d4d3617cf4f01256412" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::ViewModel::SettingsViewModel</scope><name>userRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

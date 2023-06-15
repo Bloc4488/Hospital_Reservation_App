@@ -1,0 +1,285 @@
+\doxysection{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository Class Reference}
+\hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository}{}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository}\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+Inheritance diagram for Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.501341cm]{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a6e799cc7dc8525bde2323cdb6d746f5f}{Add\+Res}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} reservation)
+\begin{DoxyCompactList}\small\item\em The method user adding reservation on selected date, speciality and doctor. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_ac2f0ca9b4f0947fb519a3c5a283956fb}{Get\+All\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\begin{DoxyCompactList}\small\item\em The method for get all reservations user had been done. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a5b8e4051a4a8a48176f37d788abf39b7}{Get\+Past\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\begin{DoxyCompactList}\small\item\em The method for get past reservations data for user. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a8e016b963bc18c9322a8ba3bbc5bfa08}{Get\+Future\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\begin{DoxyCompactList}\small\item\em The method for get future reservations data for user. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a3c3444c42797ed7edad1c0c8ac3cf6cb}{Get\+All\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} user)
+\begin{DoxyCompactList}\small\item\em The method for get all reservations which doctor have. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a8946c965c5423149ad3ada6dae553f56}{Get\+Past\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} user)
+\begin{DoxyCompactList}\small\item\em The method for get past reservations data for doctor. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a838d24c9271fc8814215eda831f5cfc3}{Get\+Future\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} user)
+\begin{DoxyCompactList}\small\item\em The method for get future reservations data for doctor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_af13d1dddcb2c80b3248ab580c14f309c}{Delete\+Reservation}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} reservation)
+\begin{DoxyCompactList}\small\item\em The method for deleting selected reservation by user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_af9304bb491a841e927312c39d8191349}{Delete\+All\+Reservationuser}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\begin{DoxyCompactList}\small\item\em The method for deleting all reservations by user. \end{DoxyCompactList}\item 
+List$<$ Date\+Time $>$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_aeccc44b32461b0643f1b036e8fee9866}{Get\+User\+Time}} (Date\+Time date, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\begin{DoxyCompactList}\small\item\em The method get list of hours when user already have reserved visit to doctor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Data\+Base\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Data\+Base\+Repository} ()
+\begin{DoxyCompactList}\small\item\em The object about database information using in program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a3b278b44af960f1a6fc738dbae8de854}{Add\+Res}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} reservation)
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a987a4490e2ba60c0e37c1d87ad954e69}{Delete\+Reservation}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} reservation)
+\item 
+void \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_ade080ccb186218ac2fec923e7cb15835}{Delete\+All\+Reservationuser}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user\+Model)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_ad6bb0f147425174aaf333a36ef547844}{Get\+All\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a17bebd3de4cb6d7f0f346154a982b7c7}{Get\+Past\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a2e772f1e2986a897ba0b638a425b9272}{Get\+Future\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a345a33574f58fd7ff07901ca93f928b5}{Get\+All\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} user)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a829389cdac20e1cfc05ba8274a09eb1b}{Get\+Past\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} user)
+\item 
+List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a386bdf1b5af699aa3c002fca3d5e2794}{Get\+Future\+Reservations\+Data}} (\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}} user)
+\item 
+List$<$ Date\+Time $>$ \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository_a192327d069b33db540903179a313f3ea}{Get\+User\+Time}} (Date\+Time date, \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}} user)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Data\+Base\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+My\+Sql\+Connection \mbox{\hyperlink{class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_aa5b4f73aad0190fb8ea0e1ca2cf03fd2}{Get\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em The method for get connection with database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a6e799cc7dc8525bde2323cdb6d746f5f}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a6e799cc7dc8525bde2323cdb6d746f5f} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!AddRes@{AddRes}}
+\index{AddRes@{AddRes}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{AddRes()}{AddRes()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Add\+Res (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}}}]{reservation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method user adding reservation on selected date, speciality and doctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reservation} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_af9304bb491a841e927312c39d8191349}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_af9304bb491a841e927312c39d8191349} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!DeleteAllReservationuser@{DeleteAllReservationuser}}
+\index{DeleteAllReservationuser@{DeleteAllReservationuser}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteAllReservationuser()}{DeleteAllReservationuser()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Delete\+All\+Reservationuser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for deleting all reservations by user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_af13d1dddcb2c80b3248ab580c14f309c}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_af13d1dddcb2c80b3248ab580c14f309c} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!DeleteReservation@{DeleteReservation}}
+\index{DeleteReservation@{DeleteReservation}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteReservation()}{DeleteReservation()}}
+{\footnotesize\ttfamily void Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Delete\+Reservation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}}}]{reservation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for deleting selected reservation by user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reservation} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a3c3444c42797ed7edad1c0c8ac3cf6cb}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a3c3444c42797ed7edad1c0c8ac3cf6cb} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!GetAllReservationsData@{GetAllReservationsData}}
+\index{GetAllReservationsData@{GetAllReservationsData}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{GetAllReservationsData()}{GetAllReservationsData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Get\+All\+Reservations\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for get all reservations which doctor have. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of all reservations doctor have.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_ac2f0ca9b4f0947fb519a3c5a283956fb}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_ac2f0ca9b4f0947fb519a3c5a283956fb} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!GetAllReservationsData@{GetAllReservationsData}}
+\index{GetAllReservationsData@{GetAllReservationsData}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{GetAllReservationsData()}{GetAllReservationsData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Get\+All\+Reservations\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for get all reservations user had been done. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of all reservations done by user.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a838d24c9271fc8814215eda831f5cfc3}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a838d24c9271fc8814215eda831f5cfc3} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!GetFutureReservationsData@{GetFutureReservationsData}}
+\index{GetFutureReservationsData@{GetFutureReservationsData}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{GetFutureReservationsData()}{GetFutureReservationsData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Get\+Future\+Reservations\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for get future reservations data for doctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of all future reservations doctor have.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a8e016b963bc18c9322a8ba3bbc5bfa08}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a8e016b963bc18c9322a8ba3bbc5bfa08} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!GetFutureReservationsData@{GetFutureReservationsData}}
+\index{GetFutureReservationsData@{GetFutureReservationsData}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{GetFutureReservationsData()}{GetFutureReservationsData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Get\+Future\+Reservations\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for get future reservations data for user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of all future reservations for user
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a8946c965c5423149ad3ada6dae553f56}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a8946c965c5423149ad3ada6dae553f56} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!GetPastReservationsData@{GetPastReservationsData}}
+\index{GetPastReservationsData@{GetPastReservationsData}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{GetPastReservationsData()}{GetPastReservationsData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_visit_model}{Visit\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Get\+Past\+Reservations\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_doctor_model}{Doctor\+Model}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for get past reservations data for doctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of all past reservations of doctor.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a5b8e4051a4a8a48176f37d788abf39b7}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_a5b8e4051a4a8a48176f37d788abf39b7} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!GetPastReservationsData@{GetPastReservationsData}}
+\index{GetPastReservationsData@{GetPastReservationsData}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{GetPastReservationsData()}{GetPastReservationsData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_reservation_model}{Reservation\+Model}} $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Get\+Past\+Reservations\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method for get past reservations data for user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of all past reservations of user.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+\Hypertarget{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_aeccc44b32461b0643f1b036e8fee9866}\label{class_hospital___reservation___app_1_1_repositories_1_1_reservation_repository_aeccc44b32461b0643f1b036e8fee9866} 
+\index{Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}!GetUserTime@{GetUserTime}}
+\index{GetUserTime@{GetUserTime}!Hospital\_Reservation\_App.Repositories.ReservationRepository@{Hospital\_Reservation\_App.Repositories.ReservationRepository}}
+\doxysubsubsection{\texorpdfstring{GetUserTime()}{GetUserTime()}}
+{\footnotesize\ttfamily List$<$ Date\+Time $>$ Hospital\+\_\+\+Reservation\+\_\+\+App.\+Repositories.\+Reservation\+Repository.\+Get\+User\+Time (\begin{DoxyParamCaption}\item[{Date\+Time}]{date,  }\item[{\mbox{\hyperlink{class_hospital___reservation___app_1_1_model_1_1_user_model}{User\+Model}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method get list of hours when user already have reserved visit to doctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of hours when user already have reserved visit to doctor
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_hospital___reservation___app_1_1_model_1_1_i_reservation_repository}{Hospital\+\_\+\+Reservation\+\_\+\+App.\+Model.\+IReservation\+Repository}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/Reservation\+Repository.\+cs\end{DoxyCompactItemize}

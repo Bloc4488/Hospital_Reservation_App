@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_hospital___reservation___app_1_1_view" kind="namespace" language="C#">
+    <compoundname>Hospital_Reservation_App::View</compoundname>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_add_reservation_view" prot="public">Hospital_Reservation_App::View::AddReservationView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_admin_view" prot="public">Hospital_Reservation_App::View::AdminView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_doctor_main_view" prot="public">Hospital_Reservation_App::View::DoctorMainView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_home_view" prot="public">Hospital_Reservation_App::View::HomeView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_login_window_view" prot="public">Hospital_Reservation_App::View::LoginWindowView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_main_window_view" prot="public">Hospital_Reservation_App::View::MainWindowView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_patient_main_view" prot="public">Hospital_Reservation_App::View::PatientMainView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_registration_window_view" prot="public">Hospital_Reservation_App::View::RegistrationWindowView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_reservation_view" prot="public">Hospital_Reservation_App::View::ReservationView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_reservation_window_view" prot="public">Hospital_Reservation_App::View::ReservationWindowView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_settings_view" prot="public">Hospital_Reservation_App::View::SettingsView</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_start_window" prot="public">Hospital_Reservation_App::View::StartWindow</innerclass>
+    <innerclass refid="class_hospital___reservation___app_1_1_view_1_1_visits_view" prot="public">Hospital_Reservation_App::View::VisitsView</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/View/AddReservationView.g.cs" line="53" column="1"/>
+  </compounddef>
+</doxygen>

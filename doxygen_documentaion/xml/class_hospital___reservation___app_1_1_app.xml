@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_app" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Application</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_app_1af29fdd593109653c9d1f6f9c5be2ac1a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.App::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Hospital_Reservation_App.App._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/App.g.cs" line="43" column="22" bodyfile="obj/Debug/App.g.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.App.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/App.g.cs" line="50" column="21" bodyfile="obj/Debug/App.g.cs" bodystart="50" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.App.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/App.g.i.cs" line="50" column="21" bodyfile="obj/Debug/App.g.i.cs" bodystart="50" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.App.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/App.g.cs" line="50" column="21" bodyfile="obj/Release/App.g.cs" bodystart="50" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Hospital_Reservation_App.App.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Hospital_Reservation_App.App.Main</qualifiedname>
+        <briefdescription>
+<para>Application Entry Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/App.g.cs" line="76" column="28" bodyfile="obj/Debug/App.g.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Hospital_Reservation_App.App.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Hospital_Reservation_App.App.Main</qualifiedname>
+        <briefdescription>
+<para>Application Entry Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/App.g.i.cs" line="76" column="28" bodyfile="obj/Debug/App.g.i.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Hospital_Reservation_App.App.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Hospital_Reservation_App.App.Main</qualifiedname>
+        <briefdescription>
+<para>Application Entry Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/App.g.cs" line="76" column="28" bodyfile="obj/Release/App.g.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interaction logic for App.xaml. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>App. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.App</label>
+        <link refid="class_hospital___reservation___app_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Application</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.App</label>
+        <link refid="class_hospital___reservation___app_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Application</label>
+      </node>
+    </collaborationgraph>
+    <location file="App.xaml.cs" line="14" column="19" bodyfile="App.xaml.cs" bodystart="15" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_app_1af29fdd593109653c9d1f6f9c5be2ac1a" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::App</scope><name>_contentLoaded</name></member>
+      <member refid="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_app_1ad068c5be4c4f37f81b0efb1be8b49719" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::App</scope><name>Main</name></member>
+      <member refid="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::App</scope><name>Main</name></member>
+      <member refid="class_hospital___reservation___app_1_1_app_1a7e1d24ee5b74888d68f663ff11ca5b67" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::App</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

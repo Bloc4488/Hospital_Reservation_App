@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Repositories::SpecialityRepository</compoundname>
+    <basecompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.DataBaseRepository</basecompoundref>
+    <basecompoundref refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Model.ISpecialityRepository</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1a35e5184468696222548e894314657014" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref> &gt;</type>
+        <definition>List&lt; SpecialityModel &gt; Hospital_Reservation_App.Repositories.SpecialityRepository.GetAll</definition>
+        <argsstring>()</argsstring>
+        <name>GetAll</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.SpecialityRepository.GetAll</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a06368e49047a8f65803f762bcf40a008">GetAll</reimplements>
+        <briefdescription>
+<para>The method getting all specialties in hospital from database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>list of all specialties in hospital.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/SpecialityRepository.cs" line="19" column="21" bodyfile="Repositories/SpecialityRepository.cs" bodystart="19" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1aff2f6a95fe7268dcf2ffc114e990ab44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Repositories.SpecialityRepository.Add</definition>
+        <argsstring>(SpecialityModel speciality)</argsstring>
+        <name>Add</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.SpecialityRepository.Add</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1af671e5ed83e29a62ff03a4d62e0c3f48">Add</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref></type>
+          <declname>speciality</declname>
+        </param>
+        <briefdescription>
+<para>The method for adding new speciality in database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speciality</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/SpecialityRepository.cs" line="46" column="21" bodyfile="Repositories/SpecialityRepository.cs" bodystart="46" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1ad110deb185e53f839d588c779e7d4830" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Repositories.SpecialityRepository.Delete</definition>
+        <argsstring>(SpecialityModel speciality)</argsstring>
+        <name>Delete</name>
+        <qualifiedname>Hospital_Reservation_App.Repositories.SpecialityRepository.Delete</qualifiedname>
+        <reimplements refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository_1a2f4461ed7c6c1b579849dcaed8dd8f58">Delete</reimplements>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_speciality_model" kindref="compound">SpecialityModel</ref></type>
+          <declname>speciality</declname>
+        </param>
+        <briefdescription>
+<para>The method for delete selected speciality from database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speciality</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Repositories/SpecialityRepository.cs" line="62" column="21" bodyfile="Repositories/SpecialityRepository.cs" bodystart="62" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DataBaseRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository"/>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.Repositories.SpecialityRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ISpecialityRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DataBaseRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository"/>
+      </node>
+      <node id="1">
+        <label>Hospital_Reservation_App.Repositories.SpecialityRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ISpecialityRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_speciality_repository"/>
+      </node>
+    </collaborationgraph>
+    <location file="Repositories/SpecialityRepository.cs" line="13" column="11" bodyfile="Repositories/SpecialityRepository.cs" bodystart="14" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1aff2f6a95fe7268dcf2ffc114e990ab44" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::SpecialityRepository</scope><name>Add</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aaa8d194e9cc3b9f5358b598f287992d6" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::SpecialityRepository</scope><name>DataBaseRepository</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1ad110deb185e53f839d588c779e7d4830" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::SpecialityRepository</scope><name>Delete</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_speciality_repository_1a35e5184468696222548e894314657014" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::SpecialityRepository</scope><name>GetAll</name></member>
+      <member refid="class_hospital___reservation___app_1_1_repositories_1_1_data_base_repository_1aa5b4f73aad0190fb8ea0e1ca2cf03fd2" prot="protected" virt="non-virtual"><scope>Hospital_Reservation_App::Repositories::SpecialityRepository</scope><name>GetConnection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

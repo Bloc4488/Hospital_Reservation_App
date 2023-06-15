@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_hospital___reservation___app_1_1_view_1_1_settings_view" kind="class" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::View::SettingsView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Controls.UserControl</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a9eb4321bb60abd771e02ea5ce6525518" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.SettingsView::btnChangeData</definition>
+        <argsstring></argsstring>
+        <name>btnChangeData</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.btnChangeData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="48" column="46" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a130e2f2a3151f1e740cb11029710598a" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.SettingsView::btnChangePassword</definition>
+        <argsstring></argsstring>
+        <name>btnChangePassword</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.btnChangePassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="56" column="46" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a311391e4b7ff8fdeb2acdb50fe6a0a7f" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.SettingsView::btnDeleteReservation</definition>
+        <argsstring></argsstring>
+        <name>btnDeleteReservation</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.btnDeleteReservation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="64" column="46" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a7485017ff670dbc2235a6b7db35f9566" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.SettingsView::btnDeleteAccount</definition>
+        <argsstring></argsstring>
+        <name>btnDeleteAccount</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.btnDeleteAccount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="72" column="46" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a6df2ed6aa9023c6a59ad0e7665f4be96" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBox</type>
+        <definition>System Windows Controls TextBox Hospital_Reservation_App.View.SettingsView::txtFirstName</definition>
+        <argsstring></argsstring>
+        <name>txtFirstName</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.txtFirstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="80" column="47" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a2c2aa130b6dca65de6fa213b832d9ad5" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBox</type>
+        <definition>System Windows Controls TextBox Hospital_Reservation_App.View.SettingsView::txtLastName</definition>
+        <argsstring></argsstring>
+        <name>txtLastName</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.txtLastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="88" column="47" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a7d581c282563db77528ef2a52e729260" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBox</type>
+        <definition>System Windows Controls TextBox Hospital_Reservation_App.View.SettingsView::txtEmail</definition>
+        <argsstring></argsstring>
+        <name>txtEmail</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.txtEmail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="96" column="47" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a022ec449c00f54429ee8731d5f4acae3" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.SettingsView::btnChangeDataAccept</definition>
+        <argsstring></argsstring>
+        <name>btnChangeDataAccept</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.btnChangeDataAccept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="104" column="46" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1adc09455f0d5c2b4a25231d9896409f1d" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button Hospital_Reservation_App.View.SettingsView::btnRegistration</definition>
+        <argsstring></argsstring>
+        <name>btnRegistration</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.btnRegistration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="112" column="46" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a3ccac7f6d248976350ea42c4d091c0fb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Hospital_Reservation_App.View.SettingsView::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="117" column="22" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.SettingsView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="124" column="21" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="124" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.SettingsView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.i.cs" line="124" column="21" bodyfile="obj/Debug/View/SettingsView.g.i.cs" bodystart="124" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.View.SettingsView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/SettingsView.g.cs" line="124" column="21" bodyfile="obj/Release/View/SettingsView.g.cs" bodystart="124" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a2c4fc096b4a8cd279114b18c35caf088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hospital_Reservation_App.View.SettingsView.SettingsView</definition>
+        <argsstring>()</argsstring>
+        <name>SettingsView</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.SettingsView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="View/SettingsView.xaml.cs" line="22" column="16" bodyfile="View/SettingsView.xaml.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>System.Delegate</type>
+        <definition>System.Delegate Hospital_Reservation_App.View.SettingsView._CreateDelegate</definition>
+        <argsstring>(System.Type delegateType, string handler)</argsstring>
+        <name>_CreateDelegate</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView._CreateDelegate</qualifiedname>
+        <param>
+          <type>System.Type</type>
+          <declname>delegateType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="141" column="33" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>System.Delegate</type>
+        <definition>System.Delegate Hospital_Reservation_App.View.SettingsView._CreateDelegate</definition>
+        <argsstring>(System.Type delegateType, string handler)</argsstring>
+        <name>_CreateDelegate</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView._CreateDelegate</qualifiedname>
+        <param>
+          <type>System.Type</type>
+          <declname>delegateType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.i.cs" line="141" column="33" bodyfile="obj/Debug/View/SettingsView.g.i.cs" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>System.Delegate</type>
+        <definition>System.Delegate Hospital_Reservation_App.View.SettingsView._CreateDelegate</definition>
+        <argsstring>(System.Type delegateType, string handler)</argsstring>
+        <name>_CreateDelegate</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView._CreateDelegate</qualifiedname>
+        <param>
+          <type>System.Type</type>
+          <declname>delegateType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/SettingsView.g.cs" line="141" column="33" bodyfile="obj/Release/View/SettingsView.g.cs" bodystart="141" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.SettingsView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.cs" line="151" column="52" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="151" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.SettingsView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Debug/View/SettingsView.g.i.cs" line="151" column="52" bodyfile="obj/Debug/View/SettingsView.g.i.cs" bodystart="151" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Hospital_Reservation_App.View.SettingsView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Hospital_Reservation_App.View.SettingsView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="obj/Release/View/SettingsView.g.cs" line="151" column="52" bodyfile="obj/Release/View/SettingsView.g.cs" bodystart="151" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SettingsView. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Interaction logic for SettingsView.xaml. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.SettingsView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_settings_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.View.SettingsView</label>
+        <link refid="class_hospital___reservation___app_1_1_view_1_1_settings_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>btnChangeData</edgelabel>
+          <edgelabel>btnChangeDataAccept</edgelabel>
+          <edgelabel>btnChangePassword</edgelabel>
+          <edgelabel>btnDeleteAccount</edgelabel>
+          <edgelabel>btnDeleteReservation</edgelabel>
+          <edgelabel>btnRegistration</edgelabel>
+          <edgelabel>txtEmail</edgelabel>
+          <edgelabel>txtFirstName</edgelabel>
+          <edgelabel>txtLastName</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>System</label>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+    </collaborationgraph>
+    <location file="obj/Debug/View/SettingsView.g.cs" line="43" column="19" bodyfile="obj/Debug/View/SettingsView.g.cs" bodystart="43" bodyend="184"/>
+    <listofallmembers>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a3ccac7f6d248976350ea42c4d091c0fb" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>_contentLoaded</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>_CreateDelegate</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>_CreateDelegate</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1aaf1dd3ed0c1eb6dfe4338e856bb1d5fa" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>_CreateDelegate</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a9eb4321bb60abd771e02ea5ce6525518" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>btnChangeData</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a022ec449c00f54429ee8731d5f4acae3" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>btnChangeDataAccept</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a130e2f2a3151f1e740cb11029710598a" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>btnChangePassword</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a7485017ff670dbc2235a6b7db35f9566" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>btnDeleteAccount</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a311391e4b7ff8fdeb2acdb50fe6a0a7f" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>btnDeleteReservation</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1adc09455f0d5c2b4a25231d9896409f1d" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>btnRegistration</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a5a47bfe87e22ad6b58f67000f77e7f6d" prot="private" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>Connect</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a44039bf62de49d6c569d307d7e7fb85d" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>InitializeComponent</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a2c4fc096b4a8cd279114b18c35caf088" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>SettingsView</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a7d581c282563db77528ef2a52e729260" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>txtEmail</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a6df2ed6aa9023c6a59ad0e7665f4be96" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>txtFirstName</name></member>
+      <member refid="class_hospital___reservation___app_1_1_view_1_1_settings_view_1a2c2aa130b6dca65de6fa213b832d9ad5" prot="package" virt="non-virtual"><scope>Hospital_Reservation_App::View::SettingsView</scope><name>txtLastName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

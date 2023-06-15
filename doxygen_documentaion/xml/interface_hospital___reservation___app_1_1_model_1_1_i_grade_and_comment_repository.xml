@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository" kind="interface" language="C#" prot="public">
+    <compoundname>Hospital_Reservation_App::Model::IGradeAndCommentRepository</compoundname>
+    <derivedcompoundref refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository" prot="public" virt="non-virtual">Hospital_Reservation_App.Repositories.GradeAndCommentRepository</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository_1aa3d1219d849f186cc09a7d73b4daa204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hospital_Reservation_App.Model.IGradeAndCommentRepository.AddComment</definition>
+        <argsstring>(GradeAndCommentModel GradeAndCom)</argsstring>
+        <name>AddComment</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IGradeAndCommentRepository.AddComment</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository_1ab851c96fe015d883b4d6591bbb31e498">AddComment</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kindref="compound">GradeAndCommentModel</ref></type>
+          <declname>GradeAndCom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IGradeAndCommentRepository.cs" line="11" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository_1a65d292afd85441394c213d17ce634d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_grade_and_comment_model" kindref="compound">GradeAndCommentModel</ref></type>
+        <definition>GradeAndCommentModel Hospital_Reservation_App.Model.IGradeAndCommentRepository.GetComment</definition>
+        <argsstring>(VisitModel visit)</argsstring>
+        <name>GetComment</name>
+        <qualifiedname>Hospital_Reservation_App.Model.IGradeAndCommentRepository.GetComment</qualifiedname>
+        <reimplementedby refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository_1a91c425b96a8502b073e86dd62ccc199b">GetComment</reimplementedby>
+        <param>
+          <type><ref refid="class_hospital___reservation___app_1_1_model_1_1_visit_model" kindref="compound">VisitModel</ref></type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Model/IGradeAndCommentRepository.cs" line="13" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hospital_Reservation_App.Model.IGradeAndCommentRepository</label>
+        <link refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository"/>
+      </node>
+      <node id="2">
+        <label>Hospital_Reservation_App.Repositories.GradeAndCommentRepository</label>
+        <link refid="class_hospital___reservation___app_1_1_repositories_1_1_grade_and_comment_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Model/IGradeAndCommentRepository.cs" line="9" column="15" bodyfile="Model/IGradeAndCommentRepository.cs" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository_1aa3d1219d849f186cc09a7d73b4daa204" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IGradeAndCommentRepository</scope><name>AddComment</name></member>
+      <member refid="interface_hospital___reservation___app_1_1_model_1_1_i_grade_and_comment_repository_1a65d292afd85441394c213d17ce634d49" prot="public" virt="non-virtual"><scope>Hospital_Reservation_App::Model::IGradeAndCommentRepository</scope><name>GetComment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

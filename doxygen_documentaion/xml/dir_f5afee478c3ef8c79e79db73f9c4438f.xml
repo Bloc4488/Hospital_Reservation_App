@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_f5afee478c3ef8c79e79db73f9c4438f" kind="dir">
+    <compoundname>obj/Debug/View</compoundname>
+    <innerfile refid="_debug_2_view_2_add_reservation_view_8g_8cs">AddReservationView.g.cs</innerfile>
+    <innerfile refid="_add_reservation_view_8g_8i_8cs">AddReservationView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_admin_view_8g_8cs">AdminView.g.cs</innerfile>
+    <innerfile refid="_admin_view_8g_8i_8cs">AdminView.g.i.cs</innerfile>
+    <innerfile refid="_doctor_main_view_8g_8i_8cs">DoctorMainView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_home_view_8g_8cs">HomeView.g.cs</innerfile>
+    <innerfile refid="_home_view_8g_8i_8cs">HomeView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_login_window_view_8g_8cs">LoginWindowView.g.cs</innerfile>
+    <innerfile refid="_login_window_view_8g_8i_8cs">LoginWindowView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_main_window_view_8g_8cs">MainWindowView.g.cs</innerfile>
+    <innerfile refid="_main_window_view_8g_8i_8cs">MainWindowView.g.i.cs</innerfile>
+    <innerfile refid="_patient_main_view_8g_8i_8cs">PatientMainView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_registration_window_view_8g_8cs">RegistrationWindowView.g.cs</innerfile>
+    <innerfile refid="_registration_window_view_8g_8i_8cs">RegistrationWindowView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_reservation_view_8g_8cs">ReservationView.g.cs</innerfile>
+    <innerfile refid="_reservation_view_8g_8i_8cs">ReservationView.g.i.cs</innerfile>
+    <innerfile refid="_reservation_window_view_8g_8i_8cs">ReservationWindowView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_settings_view_8g_8cs">SettingsView.g.cs</innerfile>
+    <innerfile refid="_settings_view_8g_8i_8cs">SettingsView.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_view_2_visits_view_8g_8cs">VisitsView.g.cs</innerfile>
+    <innerfile refid="_visits_view_8g_8i_8cs">VisitsView.g.i.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/View/"/>
+  </compounddef>
+</doxygen>

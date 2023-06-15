@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_312950da3f243a51cc00f4a947545131" kind="dir">
+    <compoundname>Model</compoundname>
+    <innerfile refid="_doctor_model_8cs">DoctorModel.cs</innerfile>
+    <innerfile refid="_doctor_note_model_8cs">DoctorNoteModel.cs</innerfile>
+    <innerfile refid="_grade_and_comment_model_8cs">GradeAndCommentModel.cs</innerfile>
+    <innerfile refid="_i_doctor_note_repository_8cs">IDoctorNoteRepository.cs</innerfile>
+    <innerfile refid="_i_grade_and_comment_repository_8cs">IGradeAndCommentRepository.cs</innerfile>
+    <innerfile refid="_i_reservation_repository_8cs">IReservationRepository.cs</innerfile>
+    <innerfile refid="_i_speciality_repository_8cs">ISpecialityRepository.cs</innerfile>
+    <innerfile refid="_i_user_repository_8cs">IUserRepository.cs</innerfile>
+    <innerfile refid="_reservation_model_8cs">ReservationModel.cs</innerfile>
+    <innerfile refid="_speciality_model_8cs">SpecialityModel.cs</innerfile>
+    <innerfile refid="_user_model_8cs">UserModel.cs</innerfile>
+    <innerfile refid="_visit_model_8cs">VisitModel.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Model/"/>
+  </compounddef>
+</doxygen>

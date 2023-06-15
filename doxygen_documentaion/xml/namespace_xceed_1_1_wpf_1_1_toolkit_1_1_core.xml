@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_xceed_1_1_wpf_1_1_toolkit_1_1_core" kind="namespace" language="C#">
+    <compoundname>Xceed::Wpf::Toolkit::Core</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/Debug/View/AddReservationView.g.cs" line="37" column="29"/>
+  </compounddef>
+</doxygen>
