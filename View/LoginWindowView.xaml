@@ -1,0 +1,269 @@
+﻿<Window x:Class="Hospital_Reservation_App.View.LoginWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital_Reservation_App.View"
+        xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
+        xmlns:customcontrol="clr-namespace:Hospital_Reservation_App.CustomControlls"
+        mc:Ignorable="d"
+        Title="LoginWindowView" Height="650" Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown"
+        IsEnabled="{Binding IsViewVisible}">
+    <Window.DataContext>
+        <viewmodel:LoginViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+    </Window.Resources>
+
+    <Window.Visibility>
+        <Binding Path="IsViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
+    </Window.Visibility>
+
+    <Border CornerRadius="10">
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/back-image.jpg"
+                        Stretch="Fill"/>
+        </Border.Background>
+
+        <Border CornerRadius="10"
+                BorderThickness="1"
+                Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="Aqua" Offset="0"/>
+                    <GradientStop Color="#FF345ADA" Offset="0.75"/>
+                    <GradientStop Color="#FF2F16C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="Aqua" Offset="0.25"/>
+                    <GradientStop Color="#1B1448" Offset="0.95"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Logowanie"
+                               Foreground="DarkGray"
+                               FontSize="10"
+                               FontFamily="Montsterrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
+                    <Button x:Name="btnMinimize"
+                            BorderThickness="0"
+                            Content="-"
+                            Foreground="White"
+                            FontSize="16"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btnMinimize_click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#28AEED"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#278BEF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="btnClose"
+                            BorderThickness="0"
+                            Content="X"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montsterrat"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Click="btnClose_click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#DA34AE"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#C62DAE"/>
+
+                                    </Trigger>
+                                </Style.Triggers>
+
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <StackPanel Width="200"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            Margin="0,35,0,0">
+                    <Image Source="/Images/logo-icon.png"
+                           Width="100"
+                           Height="50"/>
+                    <TextBlock Text="ORS"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="System reserwacji wizyty do lekarza"
+                               Foreground="LightGray"
+                               FontSize="12"
+                               FontFamily="Monsterrat"
+                               Margin="0,5,0,0"
+                               TextAlignment="Center"/>
+                    <TextBlock Text="E-mail"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,35,0,0"/>
+                    <TextBox x:Name="txtEmail"
+                             Text="{Binding email, UpdateSourceTrigger=PropertyChanged}"
+                             FontSize="15"
+                             FontWeight="Medium"
+                             FontFamily="Monsterrat"
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="/Images/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                        </TextBox.Background>
+                    </TextBox>
+                    <TextBlock Text="Hasło"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,20,0,0"/>
+                    <customcontrol:PassBox Password="{Binding password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Height="28"
+                            Margin="0,5,0,0"/>
+                    <TextBlock Text="{Binding ErrorMessageLogin}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,10,0,0" 
+                               TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding ErrorMessageLogin2}"
+                               Foreground="#D7596D"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               FontWeight="Medium"
+                               Margin="0,0,0,0" 
+                               TextWrapping="Wrap"/>
+                    <Button x:Name="btnLogin"
+                            Command="{Binding LoginCommand}"
+                            BorderThickness="0"
+                            Content="Załoguj się"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,30,0,0">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#462AD8"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#28AEED"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="0,15,0,0">
+                        <TextBlock Text="Nie pamiętam hasła"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontWeight="Medium"
+                                   FontFamily="Monsterrat"
+                                   TextAlignment="Center"
+                                   Cursor="Hand"
+                                   Style="{StaticResource MouseOverText}"
+                                   PreviewMouseDown="TextBlockForgotPass_PreviewMouseDown"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="0,20,0,0">
+                        <TextBlock Text="Nie masz konta?"
+                                   Foreground="White"
+                                   FontSize="12"
+                                   FontFamily="Monsterrat"/>
+                        <TextBlock Text="Załóż!"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontFamily="Monsterrat"
+                                   Cursor="Hand"
+                                   Margin="8,0,0,0"
+                                   Style="{StaticResource MouseOverText}"
+                                   PreviewMouseDown="TextBlockRegister_PreviewMouseDown"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

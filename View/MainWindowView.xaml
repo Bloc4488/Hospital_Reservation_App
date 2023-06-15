@@ -1,0 +1,248 @@
+﻿<Window x:Class="Hospital_Reservation_App.View.MainWindowView"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital_Reservation_App.View"
+        xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
+        xmlns:customcontrol="clr-namespace:Hospital_Reservation_App.CustomControlls"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        mc:Ignorable="d"
+        Title="MainWindowView" Height="750" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
+    <Window.DataContext>
+        <viewmodel:MainViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <!--<BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>-->
+        
+        <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+            <local:HomeView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:ReservationViewModel}">
+            <local:ReservationView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:VisitsViewModel}">
+            <local:VisitsView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:AddReservationViewModel}">
+            <local:AddReservationView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:SettingsViewModel}">
+            <local:SettingsView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:AdminViewModel}">
+            <local:AdminView/>
+        </DataTemplate>
+    </Window.Resources>
+
+    <!--<Window.Visibility>
+        <Binding Path="isMainViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
+    </Window.Visibility>-->
+
+    <Border CornerRadius="10">
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/back-image.jpg"
+                        Stretch="Fill"/>
+        </Border.Background>
+
+        <Border CornerRadius="10"
+                BorderThickness="1"
+                Opacity="0.95" BorderBrush="Black">
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="Aqua" Offset="0.25"/>
+                    <GradientStop Color="#1B1448" Offset="0.95"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="176*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Title}"
+                               Foreground="DarkGray"
+                               FontSize="10"
+                               FontFamily="Montsterrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
+                    <Button x:Name="btnMinimize"
+                            BorderThickness="0"
+                            Content="-"
+                            Foreground="White"
+                            FontSize="16"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btnMinimize_click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#28AEED"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#278BEF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="btnClose"
+                            BorderThickness="0"
+                            Content="X"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montsterrat"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Click="btnClose_click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#DA34AE"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#C62DAE"/>
+
+                                    </Trigger>
+                                </Style.Triggers>
+
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid >
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="220"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color1}"
+                                     IsChecked="True"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowHomeViewCommand}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Menu główne" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color10}"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowUsersAdminViewCommand}"
+                                     Visibility="{Binding IsVisibleUsers, UpdateSourceTrigger=PropertyChanged}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="UserGroup" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Użytkownicy" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color2}"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowReservationsViewCommand}"
+                                     Visibility="{Binding IsVisibleReservation, UpdateSourceTrigger=PropertyChanged}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="ListDots" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Rezerwacje" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color2}"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowVisitsViewCommand}"
+                                     Visibility="{Binding IsVisibleVisits, UpdateSourceTrigger=PropertyChanged}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="UserDoctor" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Wizyty" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color3}"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowAddReservationViewCommand}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="Add" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Dodać rezerwację" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color4}"
+                                     Margin="0,10,0,0"
+                                     Command="{Binding ShowSettingsViewCommand}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:IconImage Icon="UserGear" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Ustawienia" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </RadioButton>
+                    </StackPanel>
+                    <RadioButton Grid.Column="0" Style="{StaticResource menuButton}"
+                                     Tag="{StaticResource color5}"
+                                     Margin="0,600,0,0"
+                                     Checked="Exit_Checked">
+                        <StackPanel Orientation="Horizontal">
+                            <fa:IconImage Icon="RightFromBracket" Style="{StaticResource menuButtonIcon}"/>
+                            <TextBlock Text="Wyłoguj się" Style="{StaticResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <Border Grid.Column="1" BorderThickness="1" Margin="0,0,0,0" Width="NaN" Height="NaN" BorderBrush="#FFF8F8F8" HorizontalAlignment="Right"/>
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="{Binding CurrentAccount.DisplayName}"
+                                   Foreground="DarkGray"
+                                   FontSize="16"
+                                   FontFamily="Montsterrat"
+                                   Grid.Column="0"
+                                   VerticalAlignment="Center"
+                                   Margin="0,10,10,0"
+                                   HorizontalAlignment="Right"/>
+                        <ContentControl Content="{Binding ChildView}"
+                                        Margin="25"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

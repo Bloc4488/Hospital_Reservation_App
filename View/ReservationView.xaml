@@ -1,0 +1,261 @@
+﻿<UserControl x:Class="Hospital_Reservation_App.View.ReservationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hospital_Reservation_App.View"
+             xmlns:viewmodel ="clr-namespace:Hospital_Reservation_App.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="900">
+    <UserControl.DataContext>
+        <viewmodel:ReservationViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <StackPanel>
+                <!--<Button x:Name="btnChangeReservation"
+                            Command="{Binding }"
+                            BorderThickness="0"
+                            Content="Zmień rezerwację"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>-->
+                <Button x:Name="btnDeleteReservation"
+                            Command="{Binding DeleteReservationCommand}"
+                            BorderThickness="0"
+                            Content="Usuń rezerwację"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,50,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="DarkRed"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Grid Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton IsChecked="{Binding CheckBoxAllChecked, Mode=TwoWay}"
+                                  Grid.Column="0"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="All"
+                                           TextWrapping="Wrap"
+                                       Foreground="White"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton IsChecked="{Binding CheckBoxPastChecked, Mode=TwoWay}"
+                                  Grid.Column="1"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Past"
+                                           TextWrapping="Wrap"
+                                       Foreground="White"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton IsChecked="{Binding CheckBoxFutureChecked, Mode=TwoWay}"
+                                  Grid.Column="2"
+                                  Tag="#FFFFFF"
+                                  Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Future"
+                                           TextWrapping="Wrap"
+                                       Foreground="White"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,2,5,0"
+                                           FontFamily="Monsterrat"
+                                           FontSize="12"/>
+                        </StackPanel>
+                    </RadioButton>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Width="650">
+                    <ListBox ItemsSource="{Binding ShowReservations}"
+                         FontSize="16"
+                         Foreground="Transparent"
+                         Background="Transparent"
+                         FontFamily="Monsterrat"
+                         FontWeight="Medium"
+                         Margin="0,20,0,0"
+                         Height="Auto"
+                         SelectedItem="{Binding SelectedReservation, UpdateSourceTrigger=PropertyChanged}">
+                        <ListBox.Template>
+                            <ControlTemplate>
+                                <DockPanel LastChildFill="True">
+                                    <Grid DockPanel.Dock="Top" Height="30">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="200"></ColumnDefinition>
+                                            <ColumnDefinition Width="200"></ColumnDefinition>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Foreground="White">Data wizyty</Label>
+                                        <Label Grid.Column="1" Foreground="White">Lekarz</Label>
+                                        <Label Grid.Column="2" Foreground="White">Specjalność lekarza</Label>
+                                    </Grid>
+                                    <ItemsPresenter></ItemsPresenter>
+                                </DockPanel>
+                            </ControlTemplate>
+                        </ListBox.Template>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"/>
+                                        <ColumnDefinition Width="200"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="{Binding ReservationTime}" Foreground="LightGray"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding Doctor.Fullname}" Foreground="LightGray"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding Doctor.Speciality.Name}" Foreground="LightGray"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="220"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                    <TextBlock Text="Napisz komentarz o odbytej wizycie"
+                               Foreground="White"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,15,0,0"/>
+                    <TextBox Text="{Binding ShowComment, UpdateSourceTrigger=PropertyChanged}"
+                         Width="200" 
+                         Height="100"
+                         HorizontalAlignment="Left" Margin="0,5,0,0"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2" HorizontalAlignment="Center">
+                    <TextBlock Text="Oceń wizyt w skali od 1 do 5"
+                               Foreground="White"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,15,0,0"/>
+                    <ComboBox x:Name="ComboBoxGradeChoice" 
+                          SelectedValue="{Binding GradeChoice, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          Margin="0,5,0,0"
+                          Height="30" 
+                          FontSize="12"
+                          Width="150"
+                          ItemsSource="{Binding ShowListGrades, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button x:Name="btnAddComment"
+                            Command="{Binding AddCommentCommand}"
+                            BorderThickness="0"
+                            Content="Dodaj komentarz"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Monsterrat"
+                            Cursor="Hand"
+                            Margin="0,80,0,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#462AD8"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                </StackPanel>
+                <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                    <TextBlock Text="Notatka lekarza"
+                               Foreground="White"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Monsterrat"
+                               Margin="0,15,0,0"/>
+                    <TextBox x:Name="TextBoxForShowingComment"
+                             Text="{Binding DoctorNote.Note, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                             IsReadOnly="True"
+                         Width="200" 
+                         Height="100"
+                         HorizontalAlignment="Left" Margin="0,5,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
