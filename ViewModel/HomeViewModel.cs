@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// ViewModel class for HomeView
+    /// </summary>
     public class HomeViewModel : ViewModelBase
     {
     }

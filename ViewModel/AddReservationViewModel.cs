@@ -18,6 +18,9 @@ using System.Collections.ObjectModel;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// ViewModel class for AddReservationView
+    /// </summary>
     public class AddReservationViewModel : ViewModelBase
     {
         private UserModel _currentAccount; 

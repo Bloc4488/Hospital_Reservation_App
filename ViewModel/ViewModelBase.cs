@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// Abstract class to represent OnPropertyChanged logic
+    /// </summary>
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
