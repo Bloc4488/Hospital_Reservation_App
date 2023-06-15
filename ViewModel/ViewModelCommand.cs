@@ -7,6 +7,9 @@ using System.Windows.Input;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// Class to represent ViewModelCommand for buttons logic in View
+    /// </summary>
     public class ViewModelCommand : ICommand
     {
         private readonly Action<Object> _executeExtion;

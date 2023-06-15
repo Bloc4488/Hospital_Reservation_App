@@ -11,6 +11,9 @@ using System.Windows.Input;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// ViewModel class for AdminView
+    /// </summary>
     public class AdminViewModel : ViewModelBase
     {
         private ObservableCollection<UserModel> _showPatients;

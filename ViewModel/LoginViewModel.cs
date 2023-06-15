@@ -16,6 +16,9 @@ using Hospital_Reservation_App.View;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// ViewModel class for LoginWindowView, RegistrationWindowView
+    /// </summary>
     public class LoginViewModel : ViewModelBase
     {
         private string _email;

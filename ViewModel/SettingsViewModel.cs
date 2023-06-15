@@ -17,6 +17,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Hospital_Reservation_App.ViewModel
 {
+    /// <summary>
+    /// ViewModel class for SettingsView
+    /// </summary>
     public class SettingsViewModel : ViewModelBase
     {
         private UserModel _currentAccount;
