@@ -62,6 +62,7 @@
                                            TextWrapping="Wrap"
                                            HorizontalAlignment="Center"
                                            Margin="0,2,5,0"
+                                       Foreground="White"
                                            FontFamily="Monsterrat"
                                            FontSize="12"/>
                         </StackPanel>
@@ -74,6 +75,7 @@
                             <TextBlock Text="Past"
                                            TextWrapping="Wrap"
                                            HorizontalAlignment="Center"
+                                       Foreground="White"
                                            Margin="0,2,5,0"
                                            FontFamily="Monsterrat"
                                            FontSize="12"/>
@@ -87,6 +89,7 @@
                             <TextBlock Text="Future"
                                            TextWrapping="Wrap"
                                            HorizontalAlignment="Center"
+                                       Foreground="White"
                                            Margin="0,2,5,0"
                                            FontFamily="Monsterrat"
                                            FontSize="12"/>
@@ -104,7 +107,7 @@
                 <StackPanel Width="650">
                     <ListBox ItemsSource="{Binding ShowVisits}"
                          FontSize="16"
-                         Foreground="Transparent"
+                         Foreground="White"
                          Background="Transparent"
                          FontFamily="Monsterrat"
                          FontWeight="Medium"
@@ -119,8 +122,8 @@
                                             <ColumnDefinition Width="250"></ColumnDefinition>
                                             <ColumnDefinition Width="400"></ColumnDefinition>
                                         </Grid.ColumnDefinitions>
-                                        <Label Grid.Column="0">Data wizyty</Label>
-                                        <Label Grid.Column="1">Pacjent</Label>
+                                        <Label Grid.Column="0" Foreground="White">Data wizyty</Label>
+                                        <Label Grid.Column="1" Foreground="White">Pacjent</Label>
                                     </Grid>
                                     <ItemsPresenter></ItemsPresenter>
                                 </DockPanel>
@@ -133,8 +136,8 @@
                                         <ColumnDefinition Width="250"/>
                                         <ColumnDefinition Width="400"/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="{Binding ReservationTime}" Foreground="Black"/>
-                                    <TextBlock Grid.Column="1" Text="{Binding Patient.DisplayName}" Foreground="Black"/>
+                                    <TextBlock Grid.Column="0" Text="{Binding ReservationTime}" Foreground="LightGray"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding Patient.DisplayName}" Foreground="LightGray"/>
                                 </Grid>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
@@ -149,7 +152,7 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="1" HorizontalAlignment="Center">
                     <TextBlock Text="Napisz notatkę dla pacjenta"
-                               Foreground="DarkGray"
+                               Foreground="White"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
@@ -192,7 +195,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="0" HorizontalAlignment="Center">
                     <TextBlock Text="Komentarz pacjenta"
-                               Foreground="DarkGray"
+                               Foreground="White"
                                FontSize="12"
                                FontWeight="Medium"
                                FontFamily="Monsterrat"
